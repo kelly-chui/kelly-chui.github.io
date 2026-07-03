@@ -1,0 +1,102 @@
+---
+title: "[백준]BOJ 14502 - 연구소"
+date: 2023-07-05
+categories: ["Online Judge"]
+series: ["Problem Solving"]
+tags: ["BOJ", "Swift", "BFS", "DFS"]
+draft: false
+original: "https://junmusu.tistory.com/116"
+---
+
+## 문제
+
+<https://www.acmicpc.net/problem/14502>
+
+## 풀이
+
+dfs와 bfs가 합쳐진 문제이다. 벽을 꼭 3개를 세워야 하므로 dfs를 이용하여 벽을 세울 위치를 전체 탐색할 수 있다. 연구소의 크기가 최대 8 * 8 이므로 전체 탐색하는데 큰 문제가 발생하지 않는다.
+
+벽을 세웠으면 bfs를 이용하여 바이러스가 퍼졌을 때의 연구소의 모습을 그린다. 이 때 바이러스가 지나간 자리는 2로 마킹되고, 벽은 바이러스가 지나가지 못하므로 `isVisited`와 같은 배열이 없어도 이미 지나간 곳임을 알 수 있다.
+
+알고리즘을 순서대로 나타내면 다음과 같다.
+
+1. dfs를 사용하여 벽을 3개 세우는 모든 경우의 수를 탐색한다.
+2. 벽을 3개 세울 때 마다 bfs를 사용하여 바이러스가 최대로 퍼진 연구소를 그린다.  
+3. 2.에서 얻은 연구소에서 바이러스가 퍼지지 않은 칸의 개수를 구한다. 1.의 dfs를 완료하면 가장 0이 많은 경우일때의 0의 수를 리턴한다.
+
+입력 받은 문자열을 `Int` 타입 배열로 변환하는 동시에 `map`에서 바이러스의 칸을 센다.
+
+### 코드
+
+```swift
+import Foundation
+
+func dfs(count: Int) {
+    if count == 3 {
+        bfs()
+        return
+    }
+    for row in 0..<n {
+        for column in 0..<m {
+            if lab[row][column] != 0 { continue }
+            lab[row][column] = 1
+            dfs(count: count + 1)
+            lab[row][column] = 0
+        }
+    }
+}
+
+func bfs() {
+    struct Queue {
+        private var queue = [(Int, Int)]()
+        private var ptr = 0
+        var isEmpty: Bool {
+            ptr >= queue.count
+        }
+        init(queue: [(Int, Int)] = [(Int, Int)]()) {
+            self.queue = queue
+        }
+        mutating func push(_ v: (Int, Int)) {
+            queue.append(v)
+        }
+        mutating func pop() -> (Int, Int) {
+            let popped = queue[ptr]
+            ptr += 1
+            return popped
+        }
+    }
+    var tempLab = lab
+    let moves = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+    var queue = Queue(queue: virus)
+    while !queue.isEmpty {
+        let node = queue.pop()
+        for move in moves {
+            let newNode = (node.0 + move.0, node.1 + move.1)
+            if newNode.0 < 0 || newNode.0 >= n || newNode.1 < 0 || newNode.1 >= m { continue }
+            if tempLab[newNode.0][newNode.1] != 0 { continue }
+            tempLab[newNode.0][newNode.1] = 2
+            queue.push(newNode)
+        }
+    }
+    answer = max(answer, tempLab.map { $0.filter { $0 == 0 }.count }.reduce(0) { $0 + $1 })
+}
+
+let nm = readLine()!.split(separator: " ").map { Int(String($0))! }
+let (n, m) = (nm[0], nm[1])
+var lab = [[Int]]()
+var virus = [(Int, Int)]()
+var answer = 0
+for row in 0..<n {
+    var column = 0
+    lab.append(readLine()!.split(separator: " ").map {
+        let cell = String($0)
+        if cell == "2" {
+            virus.append((row, column))
+        }
+        column += 1
+        return Int(cell)!
+    })
+}
+dfs(count: 0)
+print(answer)
+```

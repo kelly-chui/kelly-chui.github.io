@@ -1,0 +1,177 @@
+---
+title: "[백준]BOJ 12100: 2048 (Easy)"
+date: 2024-04-14
+categories: ["Online Judge"]
+series: ["Problem Solving"]
+tags: ["BOJ", "Swift", "DFS"]
+draft: false
+original: "https://junmusu.tistory.com/142"
+---
+
+## 문제
+
+<https://www.acmicpc.net/problem/12100>
+
+## 풀이
+
+최대 20 * 20 크기의 보드에서 2048 게임을 하는 것이다. 최대 5번의 이동만 한다고 문제에 주어져 있으므로, 모든 경우를 탐색하여 문제를 풀 수 있다.
+
+이 문제에서 주의해야할 점은 다음과 같다.
+
+- 이동하는 방향에서 가까운 숫자부터 이동해야한다.
+- 한 번의 이동동안 이미 합쳐진 숫자는 다시 합쳐지지 않는다.
+
+이 두가지 조건만 잘 생각하면서 작성하면 된다.
+
+### 코드
+
+```swift
+import Foundation
+
+func dfs(_ size: Int) {
+    if size == 5 {
+        for row in 0..<n {
+            for column in 0..<n {
+                answer = max(answer, graph[row][column])
+            }
+        }
+        return
+    }
+    for i in 0..<4 {
+        let currentGraph = graph
+        shift(i)
+        dfs(size + 1)
+        graph = currentGraph
+    }
+}
+
+func shift(_ order: Int) {
+    var isMerged = [[Bool]](repeating: [Bool](repeating: false, count: n), count: n)
+    if order == 0 {
+        for row in 0..<n {
+            for column in 0..<n {
+                if graph[row][column] != 0 {
+                    var newRow = row
+                    while newRow > 0 {
+                        if graph[newRow - 1][column] == 0 {
+                            let temp = graph[newRow][column]
+                            graph[newRow][column] = graph[newRow - 1][column]
+                            graph[newRow - 1][column] = temp
+                            newRow -= 1
+                        } else if graph[newRow][column] == graph[newRow - 1][column] {
+                            if isMerged[newRow - 1][column] {
+                                break
+                            }
+                            let temp = graph[newRow][column]
+                            graph[newRow][column] = graph[newRow - 1][column]
+                            graph[newRow - 1][column] = temp * 2
+                            graph[newRow][column] = 0
+                            isMerged[newRow - 1][column] = true
+                            break
+                        } else {
+                            break
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if order == 1 {
+        for column in 0..<n {
+            for row in (0..<n).reversed() {
+                if graph[row][column] != 0 {
+                    var newRow = row
+                    while newRow < n - 1 {
+                        if graph[newRow + 1][column] == 0 {
+                            let temp = graph[newRow][column]
+                            graph[newRow][column] = graph[newRow + 1][column]
+                            graph[newRow + 1][column] = temp
+                            newRow += 1
+                        } else if graph[newRow][column] == graph[newRow + 1][column] {
+                            if isMerged[newRow + 1][column] {
+                                break
+                            }
+                            let temp = graph[newRow][column]
+                            graph[newRow][column] = graph[newRow + 1][column]
+                            graph[newRow + 1][column] = temp * 2
+                            graph[newRow][column] = 0
+                            isMerged[newRow + 1][column] = true
+                            break
+                        } else {
+                            break
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if order == 2 {
+        for row in 0..<n {
+            for column in 0..<n {
+                if graph[row][column] != 0 {
+                    var newColumn = column
+                    while newColumn > 0 {
+                        if graph[row][newColumn - 1] == 0 {
+                            let temp = graph[row][newColumn]
+                            graph[row][newColumn] = graph[row][newColumn - 1]
+                            graph[row][newColumn - 1] = temp
+                            newColumn -= 1
+                        } else if graph[row][newColumn] == graph[row][newColumn - 1] {
+                            if isMerged[row][newColumn - 1] {
+                                break
+                            }
+                            let temp = graph[row][newColumn]
+                            graph[row][newColumn] = graph[row][newColumn - 1]
+                            graph[row][newColumn - 1] = temp * 2
+                            graph[row][newColumn] = 0
+                            isMerged[row][newColumn - 1] = true
+                            break
+                        } else {
+                            break
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if order == 3 {
+        for row in 0..<n {
+            for column in (0..<n).reversed() {
+                if graph[row][column] != 0 {
+                    var newColumn = column
+                    while newColumn < n - 1 {
+                        if graph[row][newColumn + 1] == 0 {
+                            let temp = graph[row][newColumn]
+                            graph[row][newColumn] = graph[row][newColumn + 1]
+                            graph[row][newColumn + 1] = temp
+                            newColumn += 1
+                        } else if graph[row][newColumn] == graph[row][newColumn + 1] {
+                            if isMerged[row][newColumn + 1] {
+                                break
+                            }
+                            let temp = graph[row][newColumn]
+                            graph[row][newColumn] = graph[row][newColumn + 1]
+                            graph[row][newColumn + 1] = temp * 2
+                            graph[row][newColumn] = 0
+                            isMerged[row][newColumn + 1] = true
+                            break
+                        } else {
+                            break
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+var n = Int(readLine()!)!
+var graph = [[Int]]()
+for _ in 0..<n {
+    graph.append(readLine()!.split(separator: " ").map { Int(String($0))! })
+}
+var answer = 0
+
+dfs(0)
+print(answer)
+```
