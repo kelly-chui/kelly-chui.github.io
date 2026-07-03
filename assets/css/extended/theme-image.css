@@ -1,0 +1,23 @@
+.theme-image {
+  margin: 1rem 0;
+  line-height: 0;
+}
+
+.theme-image__image {
+  display: block;
+  width: var(--theme-image-width, auto);
+  max-width: 100%;
+  height: auto;
+}
+
+.theme-image__image--dark {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-image__image--light {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-image__image--dark {
+  display: block;
+}

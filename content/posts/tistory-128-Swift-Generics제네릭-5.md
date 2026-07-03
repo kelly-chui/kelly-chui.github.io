@@ -3,12 +3,14 @@ title: "[Swift] Generics(제네릭) - 5"
 date: 2023-08-08
 categories: ["Swift"]
 series: ["The Swift Programming Language"]
-tags: ["generics", "Swift", "스위프트", "제네릭"]
+tags: ["The Swift Programming Language", "Swift", "Generics"]
+weight: 47
+
 draft: false
 original: "https://junmusu.tistory.com/128"
 ---
 
-![](/images/tistory/tistory-128-Swift-Generics제네릭-5/image-001.svg)
+{{< theme-image light="/images/assets/swift-logo-light.svg" dark="/images/assets/swift-logo-dark.svg" alt="Swift logo" >}}
 
 ### Generic Where Clauses
 

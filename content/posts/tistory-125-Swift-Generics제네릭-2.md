@@ -3,12 +3,14 @@ title: "[Swift] Generics(제네릭) - 2"
 date: 2023-08-02
 categories: ["Swift"]
 series: ["The Swift Programming Language"]
-tags: ["generics", "Swift", "스위프트", "제네릭"]
+tags: ["The Swift Programming Language", "Swift", "Generics"]
+weight: 44
+
 draft: false
 original: "https://junmusu.tistory.com/125"
 ---
 
-![](/images/tistory/tistory-125-Swift-Generics제네릭-2/image-001.svg)
+{{< theme-image light="/images/assets/swift-logo-light.svg" dark="/images/assets/swift-logo-dark.svg" alt="Swift logo" >}}
 
 ### Generic Types
 
