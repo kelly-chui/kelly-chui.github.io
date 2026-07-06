@@ -2,9 +2,43 @@ baseURL = "https://kelly-chui.github.io/"
 title = "Kelly Dev"
 theme = "PaperMod"
 
-defaultContentLanguage = "ko"
+defaultContentLanguage = "en"
+languageCode = "en-us"
 
-[languages.ko]
-label = "한국어"
-locale = "ko-KR"
+[pagination]
+pagerSize = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[params]
+defaultTheme = "auto"
+
+[params.homeInfoParams]
+Title = "Kelly Dev"
+Content = "Blog home"
+
+[[menu.main]]
+name = "Home"
+url = "/"
 weight = 1
+
+[[menu.main]]
+name = "Posts"
+url = "/posts/"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 3
+
+[markup]
+[markup.highlight]
+noClasses = true
+codeFences = true
+guessSyntax = true
+lineNos = false
+style = "monokai"
