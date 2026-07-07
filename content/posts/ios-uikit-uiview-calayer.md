@@ -1,5 +1,5 @@
 ---
-title: "[UIKit] UIView와 CALayer 사용하기"
+title: "UIKit. UIView와 CALayer"
 date: 2024-09-17
 categories: ["iOS"]
 series: ["UIKit"]
@@ -25,7 +25,7 @@ var magentaRectView: UIView = {
 
 오토레이아웃 제약은 임의로 정했다.
 
-![](/images/tistory/tistory-166-UIKit-UIView와-CALayer-사용하기/image-001.png)
+![](/images/ios-uikit-uiview-calayer/image-001.png)
 
 `UIView`는 내부에 다른 `UIView`를 포함할 수 있다. 상위 뷰에 포함된 뷰를 서브 뷰라고 한다. `UIViewController`의 `view` 프로퍼티도 `UIView` 인스턴스이기 때문에, 위 마젠타 사각형도 `UIView` 내부의 `UIView`이다. 좀 더 직관적으로 확인하려면, 마젠타 사각형 안에 검은색 사각형을 추가해보자.
 
@@ -54,7 +54,7 @@ var blackRectSubView: UIView = {
 ```
  
 
-![](/images/tistory/tistory-166-UIKit-UIView와-CALayer-사용하기/image-002.png)
+![](/images/ios-uikit-uiview-calayer/image-002.png)
 
 UIKit에서 기본 제공하는 `UIStackView`, `UITableView`, `UIImageView` 등 대부분의 뷰가 `UIView`를 상속받는다. UIKit에서 시각적으로 콘텐츠를 보여주는 역할을 `UIView`가 맡고 있기 때문이다.
 
@@ -71,7 +71,7 @@ UIKit에서 기본 제공하는 `UIStackView`, `UITableView`, `UIImageView` 등 
 
 `UIViewController`가 `view` 프로퍼티에 `UIView`를 가지고 있듯, `UIView`도 `layer` 프로퍼티에 `CALayer` 인스턴스를 기본으로 가지고 있다.
 
-![](/images/tistory/tistory-166-UIKit-UIView와-CALayer-사용하기/image-003.png)
+![](/images/ios-uikit-uiview-calayer/image-003.png)
 
 ### 계층 구조
 
@@ -96,7 +96,7 @@ magentaRectView.layer.addSublayer(blackRectSubLayer)
 ```
  
 
-![](/images/tistory/tistory-166-UIKit-UIView와-CALayer-사용하기/image-004.png)
+![](/images/ios-uikit-uiview-calayer/image-004.png)
 
 서브 뷰를 추가하지 않고도 같은 형태를 만들 수 있다.
 
@@ -130,7 +130,7 @@ final class LayerView: UIView {
 
 instruments에서 호출 부분을 찾기 쉽게 signpost를 지정했다. 이 뷰를 뷰 컨트롤러에 추가하고 콜 트리를 보면,
 
-![](/images/tistory/tistory-166-UIKit-UIView와-CALayer-사용하기/image-005.png)
+![](/images/ios-uikit-uiview-calayer/image-005.png)
 
 `draw(_:)`가 실행되면 `CALayer`가 Objective-C 브릿징을 거쳐 델리게이트 메소드를 호출하는 과정을 확인할 수 있다.
 
@@ -154,7 +154,7 @@ layer.cornerRadius = 12
 ```
  
 
-![](/images/tistory/tistory-166-UIKit-UIView와-CALayer-사용하기/image-006.png)
+![](/images/ios-uikit-uiview-calayer/image-006.png)
 
 각 프로퍼티에 대한 자세한 설명은 생략한다. 핵심은 UIView에서 시각적인 부분을 담당하는 게 `CALayer`라는 점이다.
 
@@ -178,7 +178,7 @@ override func viewDidAppear(_ animated: Bool) {
 ```
  
 
-![](/images/tistory/tistory-166-UIKit-UIView와-CALayer-사용하기/image-007.gif)
+![](/images/ios-uikit-uiview-calayer/image-007.gif)
 
 잘 동작하는 것을 확인할 수 있다.
 

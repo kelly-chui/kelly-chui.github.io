@@ -1,8 +1,9 @@
 ---
-title: "[Swift Concurrency] Swift Concurrency 도입 배경"
+title: "Swift Concurrency. 01. 도입 배경"
 date: 2025-08-03
 categories: ["Swift"]
 series: ["Swift Concurrency"]
+weight: 1
 tags: ["Swift Concurrency"]
 draft: false
 original: "https://junmusu.tistory.com/190"
@@ -120,7 +121,7 @@ for _ in 0..<100_000 {
 
 이러한 연쇄 때문에 폭발적으로 스레드가 생성된다. 이게 바로 thread explosion이다. 그러면 위 코드를 Instruments로 분석해보자. RunLoop를 계속 실행되게 설정했으므로, 10초 후에 자동으로 종료되게 한다.
 
-![](/images/tistory/tistory-190-Swift-Concurrency-Swift-Concurrency-도입-배경/image-001.png)
+![](/images/swift-concurrency-introduction/image-001.png)
 
 직접 세어보니 60개 이상의 스레드가 생성되었고, 약 11초간 18,282,348회의 컨텍스트 스위칭이 감지되었다. 컨텍스트 스위칭은 결국 CPU 오버헤드다. 위는 극단적이고, 비현실적인 예시지만, 실제 애플리케이션에서 스레드를 블록하는 작업은 많다. 대표적으로 I/O 작업이나, NSLock, 세마포어를 이용한 접근 제어등이 있다.
 
