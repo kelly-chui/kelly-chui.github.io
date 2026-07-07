@@ -1,5 +1,5 @@
 ---
-title: "dev-data-server-light #2-2. DB 구현체 만들기."
+title: "dev-data-server-light. 3. Database Implementation"
 date: 2026-07-02
 categories: ["개발일지"]
 series: ["dev-data-server-light"]

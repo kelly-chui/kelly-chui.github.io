@@ -1,5 +1,5 @@
 ---
-title: "dev-data-server-light #3-1. File Storage"
+title: "dev-data-server-light. 4. File Storage"
 date: 2026-07-02
 categories: ["개발일지"]
 series: ["dev-data-server-light"]
@@ -148,6 +148,6 @@ After implementing:
 
 하지만 이 프롬프트는 cursor에서 사용하지 못했다.(유료로 사용하는 Codex는 iOS 개발 작업에서만 쓴다.)
 
-![](/images/tistory/tistory-199-dev-data-server-light-개발일지-3-1-File-Storage/image-001.png)
+![](/images/tistory/dev-data-server-light-04-file-storage/image-001.png)
 
 사용량을 모두 소진했기기 때문에 결국 프로젝트를 Gemini Antigravity 환경으로 옮기기로 했다. 마이그레이션 과정과 Local File Storage 구현은 다음 글(3-2)에서 이어서 정리한다.

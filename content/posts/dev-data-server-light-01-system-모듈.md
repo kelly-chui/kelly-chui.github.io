@@ -1,5 +1,5 @@
 ---
-title: "dev-data-server-light #1. System 모듈"
+title: "dev-data-server-light. 1. System"
 date: 2026-06-25
 categories: ["개발일지"]
 series: ["dev-data-server-light"]
