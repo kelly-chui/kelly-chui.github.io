@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Generics(제네릭) - 1"
+title: "The Swift Programming Language. Generics (1)"
 date: 2023-08-01
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

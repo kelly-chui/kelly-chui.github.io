@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Error Handling(에러 처리) - 1"
+title: "The Swift Programming Language. Error Handling (1)"
 date: 2023-06-21
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

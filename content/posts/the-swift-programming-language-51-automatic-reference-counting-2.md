@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Automatic Reference Counting(자동 참조 카운팅) - 2"
+title: "The Swift Programming Language. Automatic Reference Counting (2)"
 date: 2023-08-16
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

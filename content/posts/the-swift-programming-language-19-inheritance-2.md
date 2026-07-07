@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Inheritance(상속) - 2"
+title: "The Swift Programming Language. Inheritance (2)"
 date: 2023-06-08
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

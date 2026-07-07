@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Methods(메소드) - 1"
+title: "The Swift Programming Language. Methods (1)"
 date: 2023-06-06
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

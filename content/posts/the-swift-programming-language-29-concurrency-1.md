@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Concurrency(동시성) - 1"
+title: "The Swift Programming Language. Concurrency (1)"
 date: 2023-06-23
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

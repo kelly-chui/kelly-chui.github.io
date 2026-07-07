@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Initialization(초기화) - 2"
+title: "The Swift Programming Language. Initialization (2)"
 date: 2023-06-14
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

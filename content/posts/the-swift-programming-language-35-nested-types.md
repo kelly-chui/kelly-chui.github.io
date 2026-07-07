@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Nested Types(중첩 타입)"
+title: "The Swift Programming Language. Nested Types"
 date: 2023-06-28
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

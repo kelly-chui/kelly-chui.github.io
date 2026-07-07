@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Optional Chaining(옵셔널 체이닝) - 2"
+title: "The Swift Programming Language. Optional Chaining (2)"
 date: 2023-06-20
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

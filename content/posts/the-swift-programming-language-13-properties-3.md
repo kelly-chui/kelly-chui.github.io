@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Properties(프로퍼티) - 3"
+title: "The Swift Programming Language. Properties (3)"
 date: 2023-06-05
 categories: ["Swift"]
 series: ["The Swift Programming Language"]
