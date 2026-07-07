@@ -184,7 +184,7 @@ init(parameters) {
 
 이 규칙들은 다음과 같이 그림으로 표현할 수 있다.
 
-![](/images/tistory/tistory-93-Swift-Initialization초기화-2/image-002.png)
+![](/images/the-swift-programming-language-21-initialization-2/image-002.png)
 
 그림에서 슈퍼클래스는 하나의 데지그네이티드 이니셜라이저와 두 개의 컨비니언스 이니셜라이저를 가지고 있다. 그중 하나의 컨비니언스 이니셜라이저는 다른 컨비니언스 이니셜라이저를 호출하고, 호출 받은 컨비니언스 이니셜라이저는 데지그네이티드 이니셜라이저를 호출한다. 이는 위의 규칙 2와 3을 만족한다. 그림의 슈퍼클래스는 다른 슈퍼클래스를 가지지 않으므로 규칙 1은 적용되지 않는다.
 
@@ -195,7 +195,7 @@ init(parameters) {
 
 다음 그림은 네 개의 클래스가 좀 더 복잡한 계층을 이루고 있는 것을 보여준다. 이 계층에서 데지그네이티드 이니셜라이저가 클래스의 초기화를 위한 "funnel" 지점 역할을 하여 연쇄적인 클래스들 간의 상호 관계를 간단하게 하는지 보여준다. (주: funnel: 깔때기, 굴뚝, 상속 계층 사이에서 이니셜라이저가 슈퍼클래스의 이니셜라이저를 호출하는 방식을 이렇게 표현한 것 같다)
 
-![](/images/tistory/tistory-93-Swift-Initialization초기화-2/image-003.png)
+![](/images/the-swift-programming-language-21-initialization-2/image-003.png)
 
 #### Two-Phase Initialization
 
@@ -241,7 +241,7 @@ init(parameters) {
 
 다음은 페이즈 1에서 가상의 서브클래스와 슈퍼클래스가 이니셜라이제이션 호출을 찾는 방법이다.
 
-![](/images/tistory/tistory-93-Swift-Initialization초기화-2/image-004.png)
+![](/images/the-swift-programming-language-21-initialization-2/image-004.png)
 
 이 예시에서, 서브클래스의 컨비니언스 이니셜라이저를 호출함으로써 이니셜라이제이션이 시작된다. 이 컨비니언스 이니셜라이저는 아직 아무런 프로퍼티도 수정하지 못한다. 이 이니셜라이저는 같은 클래스의 데지그네이티드 이니셜라이저를 호출한다.
 
@@ -253,7 +253,7 @@ init(parameters) {
 
 다음은 페이즈 2의 그림이다.
 
-![](/images/tistory/tistory-93-Swift-Initialization초기화-2/image-005.png)
+![](/images/the-swift-programming-language-21-initialization-2/image-005.png)
 
 슈퍼클래스의 데지그네이티드 이니셜라이저는 인스턴스를 더 커스터마이즈할 기회를 가진다(커스터마이즈할 필요가 없어도 기회는 가진다).
 

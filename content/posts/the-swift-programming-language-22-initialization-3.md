@@ -144,7 +144,7 @@ class Food {
 
 아래의 그림은 Food 클래스의 이니셜라이저 체인을 보여준다.
 
-![](/images/tistory/tistory-96-Swift-Initialization초기화-3/image-002.png)
+![](/images/the-swift-programming-language-22-initialization-3/image-002.png)
 
 클래스는 디폴트 멤버와이즈 이니셜라이저를 가지고 있지 않으므로, Food 클래스는 name이라는 하나의 아규먼트를 받는 데지그네이티드 이니셜라이저를 제공한다.
 
@@ -185,7 +185,7 @@ class RecipeIngredient: Food {
 
 아래의 그림은 RecipeIngredient의 이니셜라이저 체인을 보여준다.
 
-![](/images/tistory/tistory-96-Swift-Initialization초기화-3/image-003.png)
+![](/images/the-swift-programming-language-22-initialization-3/image-003.png)
 
 RecipeIngredient 클래스는 하나의 데지그네이티드 이니셜라이저 init(name: String, quantity: Int)를 가지고 있다. 이 이니셜라이저는 RecipeIngredient 인스턴스의 모든 프로퍼티들을 채울 수 있다. 이 이니셜라이저는 quantity 아규먼트를 받아 quantity 프로퍼티를 할당하는 것 부터 시작한다. 이후에 이니셜라이저는 Food의 init(name: String)에 위임한다. 이 프로세스는 2 페이즈 이니셜라이제이션의 세이프티 체크 1을 만족한다.
 
@@ -228,7 +228,7 @@ class ShoppingListItem: RecipeIngredient {
 
 다음의 그림은 이 세 개의 클래스의 전체적인 이니셜라이저 체인을 보여준다.
 
-![](/images/tistory/tistory-96-Swift-Initialization초기화-3/image-004.png)
+![](/images/the-swift-programming-language-22-initialization-3/image-004.png)
 
 상속받은 세 개의 이니셜라이저 모두 ShoppingListItem의 새 인스턴스를 만드는데 사용할 수 있다.
 

@@ -46,7 +46,7 @@ func greet(person: String) -> String {
 함수가 꼭 파라미터가 있을 필요는 없다.
 
 
-```go
+```swift
 func sayHelloWorld() -> String {
     return "hello, world"
 }
@@ -62,7 +62,7 @@ print(sayHelloWorld())
 함수가 여러개의 파라미터들을 가질 수도 있다. 이 파라미터들은 괄호 속에 컴마로 구분된다.
 
 
-```groovy
+```swift
 func greet(person: String, alreadyGreeted: Bool) -> String {
     if alreadyGreeted {
         return greetAgain(person: person)
@@ -80,7 +80,7 @@ print(greet(person: "Tim", alreadyGreeted: true))
 리턴 값이 없는 함수를 만들 수도 있다. 아래의 함수는 리턴 값을 리턴하는 대신, 스스로 출력한다.
 
 
-```less
+```swift
 func greet(person: String) {
     print("Hello, \(person)!")
 }
@@ -94,7 +94,7 @@ greet(person: "Dave")
 또한 함수의 리턴값을 무시할 수도 있다.
 
 
-```go
+```swift
 func printAndCount(string: String) -> Int {
     print(string)
     return string.count
@@ -119,7 +119,7 @@ printWithoutCounting(string: "hello, world")
 튜플을 이용하여 여러 개의 리턴 값을 묶어 하나의 값으로 리턴할 수 있다.
 
 
-```pgsql
+```swift
 func minMax(array: [Int]) -> (min: Int, max: Int) {
     var currentMin = array[0]
     var currentMax = array[0]
@@ -147,7 +147,7 @@ func minMax(array: [Int]) -> (min: Int, max: Int) {
 위의 함수 `minMax(array:)`는 파라미터 `array`로 빈 배열이 들어오면, `array[0]`에 접근할 때 런타임 에러가 발생한다. 이러한 문제들을 안전하게 처리하기 위해 옵셔널 튜플을 리턴 타입으로 써서 빈 배열이 들어왔을 때 `nil`을 리턴해보자
 
 
-```pgsql
+```swift
 func minMax(array: [Int]) -> (min: Int, max: Int)? {
     if array.isEmpty { return nil }
     var currentMin = array[0]
@@ -167,7 +167,7 @@ func minMax(array: [Int]) -> (min: Int, max: Int)? {
 위 함수의 경우, 옵셔널 바인딩을 이용해 실제 값을 리턴하는지 혹은 `nil`을 리턴하는지 확인 할 수 있다.
 
 
-```angelscript
+```swift
 if let bounds = minMax(array: [8, -6, 2, 109, 3, 71]) {
     print("min is \(bounds.min) and max is \(bounds.max)")
 }

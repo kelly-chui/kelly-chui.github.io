@@ -159,7 +159,7 @@ unit4A = Apartment(unit: "4A")
 
 다음은 이 두 인스턴스를 만들고 할당하였을 때 강한 참조가 어떻게 보이는지를 보여준다. `john` 변수는 새 `Person` 인스턴스, `unit4A` 변수는 새 `Apartment` 인스턴스와 강한 참조를 가지게 된다:
 
-![](/images/tistory/tistory-131-Swift-Automatic-Reference-Counting자동-참조-카운팅-1/image-002.png)
+![](/images/the-swift-programming-language-50-automatic-reference-counting-1/image-002.png)
 
 이 두 인스턴스를 서로 연결하여 사람이 아파트를 소유하게 만들 수있고, 아파트가 거주자를 가지게 만들 수 있다. 느낌표(`!`)는 `john`과 `unit4A` 두 옵셔널 변수에 저장된 인스턴스를 언래핑하고 접근하기 위해 사용되어 해당 인스턴스를 설정할 수 있게 해준다.
 
@@ -170,7 +170,7 @@ unit4A!.tenant = john
 ```
  
 
-![](/images/tistory/tistory-131-Swift-Automatic-Reference-Counting자동-참조-카운팅-1/image-003.png)
+![](/images/the-swift-programming-language-50-automatic-reference-counting-1/image-003.png)
 
 두 인스턴스를 연결하는 것은 두 인스턴스 사이에 강한 참조 사이클을 생성한다. `Person` 인스턴스는 이제 `Apartment` 인스턴스에 대한 강한 참조 사이클을 가지게 되고, `Apartment` 인스턴스는 `Person` 인스턴스에 강한 참조 사이클을 가지게 된다, 그러므로 `john`과 `unit4A` 변수 사이에 있는 강한 참조들을 깨뜨려도, 참조 카운트는 0으로 떨어지지 않고, 이 인스턴스들은 ARC가 할당 해제시키지 않는다:
 
@@ -185,7 +185,7 @@ unit4A = nil
 
 다음은 `john`과 `unit4A` 변수를 `nil`로 설정한 이후의 강한 참조를 보여준다:
 
-![](/images/tistory/tistory-131-Swift-Automatic-Reference-Counting자동-참조-카운팅-1/image-004.png)
+![](/images/the-swift-programming-language-50-automatic-reference-counting-1/image-004.png)
 
 `Person`과 `Apartment` 인스턴스 사이의 강한 참조는 계속해서 남게 되고, 깨뜨릴수 없게 된다.
 
