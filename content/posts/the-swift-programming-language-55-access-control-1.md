@@ -10,7 +10,7 @@ draft: false
 original: "https://junmusu.tistory.com/154"
 ---
 
-![](/images/tistory/tistory-154-Swift-Access-Control액세스-컨트롤-1/image-001.dat)
+![](/images/the-swift-programming-language-55-access-control-1/image-001.dat)
 
 # Access Control
 

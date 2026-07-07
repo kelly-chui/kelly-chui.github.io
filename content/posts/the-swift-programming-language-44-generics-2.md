@@ -23,7 +23,7 @@ original: "https://junmusu.tistory.com/125"
 
 아래의 그림은 스택에서 push와 pop의 동작을 보여준다:
 
-![](/images/tistory/tistory-125-Swift-Generics제네릭-2/image-002.png)
+![](/images/the-swift-programming-language-44-generics-2/image-002.png)
 
   1. 스택에 3개의 값이 들어있다.
   2. 4번째 값이 스택의 top에 push 된다.
@@ -96,7 +96,7 @@ stackOfStrings.push("cuatro")
 
 다음은 `stackOfStrings`가 4개의 값을 push한 후 보이는 모습이다:
 
-![](/images/tistory/tistory-125-Swift-Generics제네릭-2/image-003.png)
+![](/images/the-swift-programming-language-44-generics-2/image-003.png)
 
 스택에서 값을 pop하면 top에 있는 값 `"cuatro"`가 리턴되고, 스택에서 제거된다:
 
@@ -109,7 +109,7 @@ let fromTheTop = stackOfStrings.pop()
 
 다음은 top에 있는 값을 제거한 후 스택의 모습이다:
 
-![](/images/tistory/tistory-125-Swift-Generics제네릭-2/image-004.png)
+![](/images/the-swift-programming-language-44-generics-2/image-004.png)
 
 ### Extending a Generic Type
 

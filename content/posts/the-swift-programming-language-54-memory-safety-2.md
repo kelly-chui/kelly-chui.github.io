@@ -10,7 +10,7 @@ draft: false
 original: "https://junmusu.tistory.com/153"
 ---
 
-![](/images/tistory/tistory-153-Swift-Memory-Safety메모리-안전-2/image-001.dat)
+![](/images/the-swift-programming-language-54-memory-safety-2/image-001.dat)
 
 ## Conflicting Access to In-Out Parameters
 
@@ -33,7 +33,7 @@ increment(&stepSize)
 
 위의 코드에서, `stepSize`는 글로벌 변수이므로 일반적으로 `increment(_:)`에서 접근 가능하다. 하지만, `stepSize`의 읽기 접근은 `number`의 쓰기 접근과 오버랩 된다. 아래의 그림처럼, `number`와 `stepSize` 둘 다 메모리의 같은 공간을 가리키게 된다. 읽기와 쓰기 접근이 같은 메모리를 가리키고, 오버랩되어 충돌을 일으킨다.
 
-![](/images/tistory/tistory-153-Swift-Memory-Safety메모리-안전-2/image-002.png)
+![](/images/the-swift-programming-language-54-memory-safety-2/image-002.png)
 
 이 충돌을 해결하는 방법중 하나는 `stepSize`의 명시적인 카피를 만드는 것이다:
 
@@ -110,7 +110,7 @@ oscar.shareHealth(with: &maria)  // OK
 
 위의 예시에서, Oscar 플레이어가 Maria 플레이어와 체력을 공유하기 위해 `shareHealth(with:)`를 쓰는 것은 충돌을 야기하지 않는다. `oscar`가 뮤테이팅 메소드에서 `self`의 값이기 때문에, `oscar`에 대한 쓰기 접근 권한이 메소드의 호출 동안 존재하고, `maria`의 쓰기 접근도 in-out 파라미터로 전달되었기 때문에, 같은 기간동안 존재한다. 아래의 그림처럼, 메모리의 다른 위치에 접근했기 때문에, 같은 시간에 두 쓰기 접근이 오버랩되어도, 충돌하지 않는다.
 
-![](/images/tistory/tistory-153-Swift-Memory-Safety메모리-안전-2/image-003.png)
+![](/images/the-swift-programming-language-54-memory-safety-2/image-003.png)
 
 하지만, `oscar`를 `shareHealth(with:)`의 아규먼트로 전달한다면, 충돌이 발생하게 된다:
 
@@ -123,7 +123,7 @@ oscar.shareHealth(with: &oscar)
 
 이 뮤테이팅 메소드는 `self`에 대한 쓰기 접근 권한이 메소드가 실행되는 동안 필요하고, in-out 파라미터 `teammate`에 대한 쓰기 접근 권한이 같은 기간동안 필요하다. 메소드의 내부에서, `self`와 `teammate`가 메모리의 같은 위치를 참조한다—아래의 그림에서 보이듯이. 두 쓰기 접근 권한은 같은 메모리를 가리키고 오버랩되어, 충돌을 발생시킨다.
 
-![](/images/tistory/tistory-153-Swift-Memory-Safety메모리-안전-2/image-004.png)
+![](/images/the-swift-programming-language-54-memory-safety-2/image-004.png)
 
 ## Conflicting Access to Properties
 

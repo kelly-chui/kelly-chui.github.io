@@ -14,7 +14,7 @@ original: "https://junmusu.tistory.com/183"
 
 매크로는 컴파일할 때 소스 코드를 변환하여, 반복적인 코드를 직접 작성하지 않게 해준다. 컴파일하는 동안, Swift는 평상시처럼 코드를 빌드하기 전에 매크로들을 확장한다.
 
-![](/images/tistory/tistory-183-Swift-Macro매크로-1/image-002.png)
+![](/images/the-swift-programming-language-32-macro-1/image-002.png)
 
 매크로를 확장하는 것은 항상 추가하는(additive) 작업이다: 매크로는 새로운 코드를 더하지만, 기존에 존재하는 코드를 삭제하거나 수정하지 않는다.
 
