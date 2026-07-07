@@ -1,5 +1,5 @@
 ---
-title: "[UIKit] 화면 전환"
+title: "UIKit. 화면 전환 방식"
 date: 2024-08-21
 categories: ["iOS"]
 series: ["UIKit"]
@@ -51,7 +51,7 @@ present(_:animated:completion:)
 ## 시연
 
 ### iOS
-![](/images/tistory/tistory-163-UIKit-화면-전환/image-001.gif) 
+![](/images/ios-uikit-screen-transitions/image-001.gif) 
 
 ### iPadOS
-![](/images/tistory/tistory-163-UIKit-화면-전환/image-002.gif)
+![](/images/ios-uikit-screen-transitions/image-002.gif)
