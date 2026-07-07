@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Structures and Classes(스트럭처와 클래스) - 2"
+title: "The Swift Programming Language. Structures And Classes (2)"
 date: 2023-06-01
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

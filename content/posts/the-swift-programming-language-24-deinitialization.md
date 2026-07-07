@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Deinitialization(초기화 해제)"
+title: "The Swift Programming Language. Deinitialization"
 date: 2023-06-18
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

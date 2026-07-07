@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Memory Safety(메모리 안전) - 2"
+title: "The Swift Programming Language. Memory Safety (2)"
 date: 2025-01-27
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Closures(클로저) - 2"
+title: "The Swift Programming Language. Closures (2)"
 date: 2023-05-29
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

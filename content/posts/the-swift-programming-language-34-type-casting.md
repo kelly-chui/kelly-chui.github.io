@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Type Casting(타입 캐스팅)"
+title: "The Swift Programming Language. Type Casting"
 date: 2023-06-27
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

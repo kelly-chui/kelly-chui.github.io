@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Subscripts(서브스크립트) - 1"
+title: "The Swift Programming Language. Subscripts (1)"
 date: 2023-06-07
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

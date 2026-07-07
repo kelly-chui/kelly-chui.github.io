@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Extensions(익스텐션) - 2"
+title: "The Swift Programming Language. Extensions (2)"
 date: 2023-06-29
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Functions(함수) - 2"
+title: "The Swift Programming Language. Functions (2)"
 date: 2023-05-26
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

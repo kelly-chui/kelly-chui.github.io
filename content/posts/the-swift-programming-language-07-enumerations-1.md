@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Enumerations(열거형) - 1"
+title: "The Swift Programming Language. Enumerations (1)"
 date: 2023-05-30
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Access Control(액세스 컨트롤) - 2"
+title: "The Swift Programming Language. Access Control (2)"
 date: 2025-01-29
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

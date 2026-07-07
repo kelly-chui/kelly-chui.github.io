@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Macro(매크로) - 2"
+title: "The Swift Programming Language. Macro (2)"
 date: 2025-08-15
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Opaque Types(불투명 타입) - 1"
+title: "The Swift Programming Language. Opaque Types (1)"
 date: 2023-08-12
 categories: ["Swift"]
 series: ["The Swift Programming Language"]

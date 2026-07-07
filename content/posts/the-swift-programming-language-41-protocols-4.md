@@ -1,5 +1,5 @@
 ---
-title: "[Swift] Protocols(프로토콜) - 4"
+title: "The Swift Programming Language. Protocols (4)"
 date: 2023-07-03
 categories: ["Swift"]
 series: ["The Swift Programming Language"]
