@@ -1,7 +1,7 @@
 ---
 title: "dev-data-server-light. 2. Database CRUD"
 date: 2026-06-30
-categories: ["개발일지"]
+categories: ["Project"]
 series: ["dev-data-server-light"]
 weight: 3
 tags: ["Backend", "dev-data-server-light", "Express", "TypeScript", "DB", "DIP"]

@@ -1,7 +1,7 @@
 ---
 title: "dev-data-server-light. 0. Concept"
 date: 2026-06-24
-categories: ["개발일지"]
+categories: ["Project"]
 series: ["dev-data-server-light"]
 weight: 1
 tags: ["Backend", "dev-data-server-light", "Express", "TypeScript"]

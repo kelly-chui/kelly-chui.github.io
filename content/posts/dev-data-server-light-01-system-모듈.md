@@ -1,7 +1,7 @@
 ---
 title: "dev-data-server-light. 1. System"
 date: 2026-06-25
-categories: ["개발일지"]
+categories: ["Project"]
 series: ["dev-data-server-light"]
 weight: 2
 tags: ["Backend", "dev-data-server-light", "Express", "TypeScript"]

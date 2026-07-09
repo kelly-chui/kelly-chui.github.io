@@ -1,7 +1,7 @@
 ---
 title: "dev-data-server-light. 4. File Storage"
 date: 2026-07-02
-categories: ["개발일지"]
+categories: ["Project"]
 series: ["dev-data-server-light"]
 weight: 5
 tags: ["Backend", "dev-data-server-light", "Express", "TypeScript", "File Storage", "DIP"]

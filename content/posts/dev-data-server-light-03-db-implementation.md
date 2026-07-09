@@ -1,7 +1,7 @@
 ---
 title: "dev-data-server-light. 3. Database Implementation"
 date: 2026-07-02
-categories: ["개발일지"]
+categories: ["Project"]
 series: ["dev-data-server-light"]
 weight: 4
 tags: ["Backend", "dev-data-server-light", "Express", "TypeScript", "DB", "DIP"]
