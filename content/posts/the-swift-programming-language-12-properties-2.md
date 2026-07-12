@@ -255,7 +255,7 @@ print(mixedRectangle.height)
 
 #### Projecting a Value From a Property Wrapper
 
-프로퍼티 래퍼는 프로젝팅된 값(projected value)을 사용하여 추가 기능을 드러낼 수 있다. 예를 들어 데이터베이스 접근을 관리하는 프로퍼티 래퍼는 flushDatabaseConnection() 메소드를 프로젝팅 된 값을 통해 드러낼 수 있다. 프로젝팅된 값의 이름은 래핑된 값의 이름과 같지만 앞에 달러 기호($)가 붙는다.
+프로퍼티 래퍼는 프로젝팅된 값(projected value)을 사용하여 추가 기능을 드러낼 수 있다. 예를 들어 데이터베이스 접근을 관리하는 프로퍼티 래퍼는 flushDatabaseConnection() 메소드를 프로젝팅 된 값을 통해 드러낼 수 있다. 프로젝팅된 값의 이름은 래핑된 값의 이름과 같지만 앞에 달러 기호(`$`)가 붙는다.
 
 위의 SmallNumber 예시에서는 프로퍼티를 너무 높은 숫자로 설정했을때, 프로퍼티 래퍼는 그 수를 조정하여 저장한다. 아래의 코드는 프로퍼티에 새로운 값을 저장하기전에 프로퍼티 래퍼가 값을 조정하였는지 알기 위해 SmallNumber 스트럭처에 projectedValue 프로퍼티를 추가했다.
 
@@ -299,11 +299,11 @@ print(someStructure.$someNumber)
 ```
  
 
-someStructure.$someNumber는 래퍼의 프로젝팅된 값에 접근한다. 12보다 작은 숫자를 저장하면 프로젝팅 된 값이 false가 되고 높은 숫자를 저장하면 true가 된다.
+`someStructure.$someNumber`는 래퍼의 프로젝팅된 값에 접근한다. 12보다 작은 숫자를 저장하면 프로젝팅 된 값이 false가 되고 높은 숫자를 저장하면 true가 된다.
 
 프로퍼티 래퍼는 프로젝팅된 값으로 어떠한 타입이든지 리턴할 수있다. 이 예시에서 프로퍼티 래퍼는 숫자가 조정되었는지의 정보만 드러낸다. 더 많은 정보를 드러내기 위해 다른 타입의 인스턴스나 self를 리턴할 수 있다.
 
-프로젝팅된 값을 프로퍼티 getter나 인스턴스의 메소드로 접근할 때는 프로퍼티 이름 뒤에 적는 self. 을 생략할 수 있다. 다음 예제 코드는 $height와 $width로 height와 width 래퍼의 프로젝팅된 값을 참조한다.
+프로젝팅된 값을 프로퍼티 getter나 인스턴스의 메소드로 접근할 때는 프로퍼티 이름 뒤에 적는 self. 을 생략할 수 있다. 다음 예제 코드는 `$height`와 `$width`로 height와 width 래퍼의 프로젝팅된 값을 참조한다.
 
 
 ```swift

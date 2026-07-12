@@ -17,3 +17,27 @@ flowchart LR
     A[Router] --> B[Service]
     B --> C[Repository]
 ```
+
+## KaTeX
+
+인라인 수식은 $f(x)=\int_{-\infty}^{\infty} e^{-t^2}\,dt = \sqrt{\pi}$ 처럼 보이고, 코드 안의 `` `$0` `` 는 그대로 보여야 한다.
+
+블록 수식은 아래처럼 렌더링되어야 한다.
+
+$$
+\mathcal{L}\{f\}(s)
+= \int_{0}^{\infty} e^{-st} f(t)\,dt
+= \frac{1}{\sqrt{2\pi}}
+  \int_{-\infty}^{\infty}
+  \left(\int_{-\infty}^{\infty} e^{-x^2/2}\,dx\right)
+  e^{-st}\,dt
+$$
+
+### 예외 (코드블록, 인라인)
+
+`arr.map { $0 + 1 }`
+
+```swift
+let xs = [1, 2, 3]
+let ys = xs.map { $0 * $0 + 2 * $0 + 1 }
+```

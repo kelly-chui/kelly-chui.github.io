@@ -1,0 +1,5 @@
+{{- $raw := .RawContent | default .Content -}}
+{{- $mathCandidate := or (findRE "(?m)^[[:space:]]*\\$\\$" $raw) (findRE "(?m)\\$[^\\n\\$]+\\$" $raw) (findRE "\\\\\\([\\s\\S]+?\\\\\\)" $raw) (findRE "\\\\\\[[\\s\\S]+?\\\\\\]" $raw) -}}
+{{- if $mathCandidate -}}
+<link rel="stylesheet" href="/css/vendor/katex.min.css">
+{{- end -}}

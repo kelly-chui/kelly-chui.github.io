@@ -1,4 +1,5 @@
-{{- if findRE `class="mermaid"` .Content -}}
+{{- $raw := .RawContent | default .Content -}}
+{{- if findRE "(?m)^```mermaid\\b" $raw -}}
 <script src="/js/vendor/mermaid.min.js"></script>
 <script>
   (async () => {
@@ -14,5 +15,30 @@
       querySelector: ".mermaid"
     });
   })();
+</script>
+{{- end -}}
+
+{{- $mathCandidate := or (findRE "(?m)^[[:space:]]*\\$\\$" $raw) (findRE "(?m)\\$[^\\n\\$]+\\$" $raw) (findRE "\\\\\\([\\s\\S]+?\\\\\\)" $raw) (findRE "\\\\\\[[\\s\\S]+?\\\\\\]" $raw) -}}
+{{- if $mathCandidate -}}
+<script defer src="/js/vendor/katex.min.js"></script>
+<script defer src="/js/vendor/auto-render.min.js"></script>
+<script>
+  window.addEventListener("load", () => {
+    if (typeof renderMathInElement !== "function") {
+      return;
+    }
+
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+      throwOnError: false,
+      ignoredTags: ["script", "noscript", "style", "textarea", "pre", "code"],
+      ignoredClasses: ["mermaid"]
+    });
+  });
 </script>
 {{- end -}}
