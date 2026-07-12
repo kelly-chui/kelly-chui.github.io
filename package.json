@@ -1,0 +1,12 @@
+{
+  "name": "kelly-chui-blog",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "hugo --minify",
+    "vendor:mermaid": "mkdir -p static/js/vendor && cp node_modules/mermaid/dist/mermaid.min.js static/js/vendor/mermaid.min.js"
+  },
+  "dependencies": {
+    "mermaid": "^11.11.0"
+  }
+}
