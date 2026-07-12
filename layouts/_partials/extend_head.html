@@ -1,0 +1,4 @@
+{{- $features := .Param "features" -}}
+{{- if and .IsPage (in $features "katex") }}
+<link rel="stylesheet" href="{{ "css/vendor/katex.min.css" | relURL }}">
+{{- end }}

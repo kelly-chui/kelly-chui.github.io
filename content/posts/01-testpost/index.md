@@ -8,6 +8,7 @@ series: []
 tags: []
 features:
   - mermaid
+  - katex
 
 draft: true
 original: ""
@@ -38,3 +39,11 @@ classDiagram
 
     Post "1" o-- "*" Feature : enables
 ```
+
+## KaTeX
+
+인라인 수식 \\(a^2 + b^2 = c^2\\)과 블록 수식을 함께 테스트한다.
+
+$$
+E = mc^2
+$$

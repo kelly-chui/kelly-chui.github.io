@@ -1,6 +1,8 @@
 (() => {
   const root = document.documentElement;
   let renderScheduled = false;
+  let renderInProgress = false;
+  let renderPending = false;
 
   const mermaidBlocks = () => [
     ...document.querySelectorAll(".post-content pre.mermaid")
@@ -18,27 +20,42 @@
   };
 
   const renderMermaid = async () => {
+    if (renderInProgress) return;
+
     const blocks = mermaidBlocks();
     if (!blocks.length || !window.mermaid) return;
 
-    blocks.forEach((block) => {
-      if (!block.dataset.mermaidSource) {
-        block.dataset.mermaidSource = block.textContent;
+    renderInProgress = true;
+    try {
+      blocks.forEach((block) => {
+        if (!block.dataset.mermaidSource) {
+          block.dataset.mermaidSource = block.textContent;
+        }
+        block.textContent = block.dataset.mermaidSource;
+        block.removeAttribute("data-processed");
+      });
+
+      window.mermaid.initialize({
+        startOnLoad: false,
+        securityLevel: "strict",
+        theme: resolvedTheme() === "dark" ? "dark" : "default"
+      });
+
+      await window.mermaid.run({ nodes: blocks });
+    } finally {
+      renderInProgress = false;
+      if (renderPending) {
+        renderPending = false;
+        scheduleRender();
       }
-      block.textContent = block.dataset.mermaidSource;
-      block.removeAttribute("data-processed");
-    });
-
-    window.mermaid.initialize({
-      startOnLoad: false,
-      securityLevel: "strict",
-      theme: resolvedTheme() === "dark" ? "dark" : "default"
-    });
-
-    await window.mermaid.run({ nodes: blocks });
+    }
   };
 
   const scheduleRender = () => {
+    if (renderInProgress) {
+      renderPending = true;
+      return;
+    }
     if (renderScheduled) return;
     renderScheduled = true;
 
@@ -63,11 +80,10 @@
   });
 
   const contentObserver = new MutationObserver(() => {
+    if (renderInProgress) return;
     if (hasUnprocessedMermaid()) scheduleRender();
   });
-  if (document.body) {
-    contentObserver.observe(document.body, { childList: true, subtree: true });
-  }
+  contentObserver.observe(document, { childList: true, subtree: true });
 
   // PaperMod sets the final data-theme later in the footer.
   scheduleRender();
