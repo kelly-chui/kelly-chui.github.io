@@ -1,0 +1,23 @@
+{{- $type := lower (default "note" (.Get "type")) -}}
+{{- $title := .Get "title" | default (title $type) -}}
+{{- $icon := "" -}}
+{{- if eq $type "note" -}}
+  {{- $icon = "i" -}}
+{{- else if eq $type "tip" -}}
+  {{- $icon = "!" -}}
+{{- else if eq $type "warning" -}}
+  {{- $icon = "!" -}}
+{{- else if eq $type "danger" -}}
+  {{- $icon = "!!" -}}
+{{- end -}}
+<aside class="callout" data-callout="{{ $type }}">
+  <div class="callout__header">
+    {{- if $icon -}}
+    <span class="callout__icon" aria-hidden="true">{{ $icon }}</span>
+    {{- end -}}
+    <span class="callout__title">{{ $title }}</span>
+  </div>
+  <div class="callout__body">
+    {{- .Inner | markdownify -}}
+  </div>
+</aside>

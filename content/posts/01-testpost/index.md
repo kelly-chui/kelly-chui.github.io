@@ -47,3 +47,21 @@ classDiagram
 $$
 E = mc^2
 $$
+
+## Callout
+
+{{< callout type="note" title="참고" >}}
+이 블록은 참고용 정보를 담을 때 씁니다.
+{{< /callout >}}
+
+{{< callout type="tip" title="팁" >}}
+짧은 조언이나 추천은 tip으로 두면 읽는 흐름이 좋습니다.
+{{< /callout >}}
+
+{{< callout type="warning" title="주의" >}}
+색이 너무 많아지면 페이지의 톤이 깨질 수 있습니다.
+{{< /callout >}}
+
+{{< callout type="danger" title="위험" >}}
+정말 중요한 경고는 적게, 하지만 확실하게 보여주는 편이 좋습니다.
+{{< /callout >}}
