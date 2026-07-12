@@ -1,0 +1,12 @@
+.katex {
+    font-size: 0.82em;
+}
+
+.katex-display {
+    font-size: 0.82em;
+    margin: 1rem 0;
+}
+
+.katex .base {
+    line-height: 1.2;
+}
