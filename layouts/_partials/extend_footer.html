@@ -1,0 +1,5 @@
+{{- $features := .Param "features" -}}
+{{- if and .IsPage (in $features "mermaid") }}
+<script src="{{ "js/vendor/mermaid.min.js" | relURL }}"></script>
+<script src="{{ "js/mermaid-init.js" | relURL }}"></script>
+{{- end }}

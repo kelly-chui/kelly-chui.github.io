@@ -1,0 +1,6 @@
+{{- $features := .Page.Param "features" -}}
+{{- if and (eq .Type "mermaid") (in $features "mermaid") -}}
+<pre class="mermaid">{{ .Inner }}</pre>
+{{- else -}}
+{{ highlight .Inner .Type "" }}
+{{- end -}}

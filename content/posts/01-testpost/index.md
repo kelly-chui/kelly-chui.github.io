@@ -6,6 +6,8 @@ categories:
   - Archive
 series: []
 tags: []
+features:
+  - mermaid
 
 draft: true
 original: ""
@@ -20,3 +22,19 @@ original: ""
 ![](image-001.gif#center)
 
 ![마크다운 이미지 캡션 예시](image-001.gif "마크다운 제목")
+
+## Mermaid
+
+```mermaid
+classDiagram
+    class Post {
+        +String title
+        +render()
+    }
+
+    class Feature {
+        +String name
+    }
+
+    Post "1" o-- "*" Feature : enables
+```

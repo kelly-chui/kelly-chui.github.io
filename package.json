@@ -1,5 +1,11 @@
 {
   "name": "kelly-chui-blog",
   "private": true,
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "scripts": {
+    "vendor:mermaid": "mkdir -p static/js/vendor && cp node_modules/mermaid/dist/mermaid.min.js static/js/vendor/mermaid.min.js"
+  },
+  "dependencies": {
+    "mermaid": "^11.16.0"
+  }
 }
