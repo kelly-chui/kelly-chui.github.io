@@ -36,6 +36,13 @@ url = "/about/"
 weight = 3
 
 [markup]
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
+[markup.goldmark.parser.attribute]
+block = true
+title = true
+
 [markup.highlight]
 noClasses = true
 codeFences = true
