@@ -179,4 +179,4 @@ typeof("문자열") // "String"
 
 숫자로 변환할 수 없는 문자열을 변환하면 `NaN`을 출력 `NaN`은 숫자 자료형이지만 숫자가 아닌 것을 의미함
 
-![Screenshot 2025-06-01 at 12.18.32 PM.png](/images/javascript-basics-02-operators-and-statements/Screenshot_2025-06-01_at_12.18.32_PM.png)
+![Screenshot 2025-06-01 at 12.18.32 PM.png](/images/javascript-basics-02-operators-and-statements/image-001.png)

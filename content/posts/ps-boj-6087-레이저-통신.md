@@ -34,7 +34,7 @@ original: "https://junmusu.tistory.com/117"
 
 따라서 `distances` 배열 값은 같지만 `directions` 배열 값이 다른 경우도 `heap`에 추가를 해야한다.
 
-![](/images/tistory/tistory-117-백준BOJ-6087-레이저-통신-SwiftDijkstras-Algorithm/image-004.png)
+![](/images/ps-boj-6087-레이저-통신/image-004.png)
 
 이 때, 이미 방향이 `neutral`인 노드였으면, 이 과정을 한번 거친 노드이므로 무한 루프를 방지하기 위해 제외한다.
 
