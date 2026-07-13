@@ -3,17 +3,44 @@
 <script src="/js/vendor/mermaid.min.js"></script>
 <script>
   (async () => {
-    mermaid.initialize({
-      startOnLoad: false,
-      theme: document.documentElement.dataset.theme === "dark"
-        ? "dark"
-        : "default",
-      securityLevel: "strict"
+    const diagrams = Array.from(document.querySelectorAll(".mermaid"));
+    const sources = new Map(
+      diagrams.map((diagram) => [diagram, diagram.textContent])
+    );
+
+    const render = async () => {
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: document.documentElement.dataset.theme === "dark"
+          ? "dark"
+          : "default",
+        securityLevel: "strict"
+      });
+
+      diagrams.forEach((diagram) => {
+        diagram.textContent = sources.get(diagram);
+        diagram.removeAttribute("data-processed");
+      });
+
+      await mermaid.run({ nodes: diagrams });
+    };
+
+    let renderQueue = render();
+
+    new MutationObserver((mutations) => {
+      const themeChanged = mutations.some(
+        (mutation) => mutation.attributeName === "data-theme"
+      );
+
+      if (themeChanged) {
+        renderQueue = renderQueue.then(render, render);
+      }
+    }).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"]
     });
 
-    await mermaid.run({
-      querySelector: ".mermaid"
-    });
+    await renderQueue;
   })();
 </script>
 {{- end -}}
