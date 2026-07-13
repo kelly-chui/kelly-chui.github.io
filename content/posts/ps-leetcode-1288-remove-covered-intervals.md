@@ -4,7 +4,7 @@ date: 2026-07-07T12:33:49+09:00
 
 categories: ["Online Judge"]
 series: ["Problem Solving"]
-tags: ["LeetCode", "Swift", "Sort"]
+tags: ["LeetCode", "Swift", "Sorting"]
 
 draft: false
 original: ""

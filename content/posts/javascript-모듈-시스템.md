@@ -1,6 +1,6 @@
 ---
 title: "JavaScript. 모듈 시스템"
-date: 2026-07-07
+date: 2025-10-07
 
 categories: 
     - JavaScript

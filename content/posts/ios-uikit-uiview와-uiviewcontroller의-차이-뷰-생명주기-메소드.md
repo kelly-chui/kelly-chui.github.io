@@ -41,7 +41,7 @@ original: "notion-export/블로그 이관/UIKit/UIView와 UIViewControllerᄋ
 
 ## 뷰 라이프 사이클 + 뷰 컨트롤러 관련 메소드
 
-![](/images/uikit-uiview와-uiviewcontroller의-차이-뷰-생명주기-메소드/image-001.png)
+![](/images/ios-uikit-uiview와-uiviewcontroller의-차이-뷰-생명주기-메소드/image-001.png)
 
 순서대로 작성하면
 
