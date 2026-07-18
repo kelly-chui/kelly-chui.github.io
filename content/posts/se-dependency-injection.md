@@ -1,14 +1,14 @@
 ---
-title: "의존성 주입"
+title: "Software Engineering. DI와 DIP"
 date: 2025-03-27
 
 categories:
-    - Computer Science
+    - Software Engineering
 series:
-    - Concepts
 tags:
-    - DI
+    - Dependency Injection
     - DIP
+    - SOLID
 
 draft: true
 original: "notion-export/블로그 이관/Article/의존성 주입 fbaade8f376582b282a501a2586d7bbb.md"
@@ -31,7 +31,7 @@ ex)
 
 - `B`의 메소드 동작이 달라지면, `B`의 메소드를 사용하는 `A`의 메소드들의 동작도 달라짐
 
-![Screenshot 2024-09-29 at 4.21.47 PM.png](/images/cs-concepts-dependency-injection/image-001.png)
+![Screenshot 2024-09-29 at 4.21.47 PM.png](/images/se-dependency-injection/image-001.png)
 
 ```swift
 class B {
@@ -45,7 +45,7 @@ class A {
 }
 ```
 
-### DI를 적용한다 > DIP를 적용한다.
+### DI를 적용한다 ≈ DIP를 적용한다.
 
 DIP: 의존성 역전 법칙
 - 상위 모듈은 하위 모듈에 의존해서는 안 된다. 둘 다 추상화에 의존해야 한다.
@@ -55,7 +55,7 @@ DIP: 의존성 역전 법칙
 
 `B`의 화살표 방향을 보면 역전된 것을 알 수 있음
 
-![Screenshot 2024-09-29 at 4.25.20 PM.png](/images/cs-concepts-dependency-injection/image-002.png)
+![Screenshot 2024-09-29 at 4.25.20 PM.png](/images/se-dependency-injection/image-002.png)
 
 ```swift
 protocol C {
