@@ -8,7 +8,7 @@ series:
 tags:
     - Protocol
 
-draft: true
+draft: false
 ---
 
 `RemoteDBRequestBuildable` 프로토콜을 추가한 뒤, 이전에는 나타나지 않던 unused-result 경고가 발생했다.

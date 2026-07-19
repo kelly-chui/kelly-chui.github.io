@@ -10,7 +10,7 @@ tags:
     - Computer Science
     - Network
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/Network basic 1e5ade8f3765813abc06eb4eb43b4142.md"
 ---
 
@@ -64,8 +64,7 @@ original: "notion-export/블로그 이관/ComputerScience/Network/Network basic 
 | 계층 | 패킷 명칭 |
 | --- | --- |
 | 세션, 표현, 응용 | 데이터, 메세지 |
-| 전송 | TCP: 세그먼트
-UDP: 데이터그램 |
+| 전송 | TCP: 세그먼트, UDP: 데이터그램 |
 | 네트워크 | 패킷 |
 | 데이터 링크 | 프레임 |
 | 물리 | 비트 |

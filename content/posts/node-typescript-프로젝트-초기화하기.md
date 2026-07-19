@@ -11,7 +11,7 @@ tags:
     - TypeScript
     - npm
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/Node/Node 프로젝트 초기화하기 285ade8f376580c99016debbd8dc05ad.md"
 ---
 

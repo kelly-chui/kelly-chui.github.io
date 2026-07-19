@@ -6,7 +6,7 @@ categories: ["SniffMEET"]
 series: []
 tags: []
 
-draft: true
+draft: false
 ---
 
 ## Interactor에서 직접 매니저 호출하지 않기

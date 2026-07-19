@@ -13,7 +13,7 @@ tags:
     - UITextView
     - Auto Layout
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/UIKit/TableViewCell UITextView 넣고 동적으로 높이 변경하기 50fade8f3765836a81c901be3eb7be7d.md"
 ---
 

@@ -12,7 +12,7 @@ tags:
     - Container
     - Docker Image
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/DevOps/컨테이너와 이미지 286ade8f37658018aa4ee95d8fcb28d9.md"
 ---
 

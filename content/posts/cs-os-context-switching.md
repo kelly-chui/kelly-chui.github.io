@@ -12,7 +12,7 @@ tags:
     - Thread
     - Context Switching
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ComputerScience/OS/컨텍스트 스위칭 178ade8f376580259b18c09fb8291a23.md"
 ---
 

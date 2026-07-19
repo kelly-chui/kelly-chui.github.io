@@ -11,7 +11,7 @@ tags:
     - Docker
     - Docker Image
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/DevOps/Docker로 이미지 Build하고 Push하기 286ade8f37658006a338e7a43e770d26.md"
 ---
 

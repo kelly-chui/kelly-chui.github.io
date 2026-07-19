@@ -6,7 +6,7 @@ categories: ["SniffMEET"]
 series: []
 tags: []
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/SniffMEET/Supabase 용어 8efade8f376582958cf4810d24200061.md"
 ---
 

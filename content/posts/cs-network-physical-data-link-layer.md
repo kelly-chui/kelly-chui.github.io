@@ -11,7 +11,7 @@ tags:
     - Physical Layer
     - Data Link Layer
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/Physical & Data Link Layer 1e5ade8f3765809882a8d350cdfe224f.md"
 ---
 

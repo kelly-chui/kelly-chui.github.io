@@ -10,7 +10,7 @@ tags:
     - Network
     - NAT
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/NAT 18cade8f376580febe04ce5473e10ca7.md"
 ---
 

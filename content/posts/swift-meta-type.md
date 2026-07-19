@@ -9,7 +9,7 @@ tags:
   - Meta Type
   - Type
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/Swift/Meta Type b23ade8f376583948d9701bbd81b7353.md"
 ---
 

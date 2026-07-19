@@ -9,7 +9,7 @@ series:
 tags:
     - Database
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ComputerScience/DB/Database basic 1e8ade8f376580538910fc447ab4e839.md"
 ---
 
@@ -54,10 +54,11 @@ original: "notion-export/블로그 이관/ComputerScience/DB/Database basic 1e8a
 - 고립성(Isolation): 하나의 트랜잭션이 완료되기 전에는, 다른 트랜잭션과 간섭 없이 독립적으로 수행되어야 한다.
 - 지속성(Durability): 성공적으로 완료된 트랜잭션의 결과는, 디스크에 영구적으로 반영되어야 한다.
 
-### SQL(Structered Query Language)
+### SQL(Structured Query Language)
 
-관계형 데이터베이스를 다루기 위한 표준 질의 언어. DDL, DML, DCL이 있음.
+관계형 데이터베이스를 다루기 위한 표준 질의 언어. 명령의 목적에 따라 DDL, DML, DCL, TCL 등으로 구분할 수 있다.
 
 - DDL(Data Definition Language): 데이터 정의 언어 (CREATE, ALTER, DROP 등)
 - DML(Data Manipulation Language): 데이터 조작 언어 (SELECT, INSERT, UPDATE, DELETE 등)
-- DCL(Data Control Language): 데이터 제어 언어 (GRANT, REVOKE, COMMIT, ROLLBACK) 등
+- DCL(Data Control Language): 권한 제어 언어 (GRANT, REVOKE 등)
+- TCL(Transaction Control Language): 트랜잭션 제어 언어 (COMMIT, ROLLBACK, SAVEPOINT 등)

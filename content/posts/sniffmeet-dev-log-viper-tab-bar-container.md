@@ -11,7 +11,7 @@ tags:
     - VIPER
     - UIKit
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/SniffMEET/UITabBarController VIPER 아키텍처에서 사용하기 355ade8f3765831c943881c7a7ce0b3c.md"
 ---
 

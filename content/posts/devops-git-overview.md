@@ -10,7 +10,7 @@ tags:
     - DevOps
     - Git
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/DevOps/Git 048ade8f3765836aa04001c09ba21748.md"
 ---
 
@@ -74,7 +74,7 @@ original: "notion-export/블로그 이관/DevOps/Git 048ade8f3765836aa04001c09ba
 
 `forgotten.md`파일이 다시 Unstaged 상태로 돌아온 것을 확인할 수 있다.
 
-### Modified 파일 되돌리기(git checkout — <file>)
+### Modified 파일 되돌리기(`git checkout -- <file>`)
 
 이미 수정된 `forgotten.md` 파일을 다시 최근 커밋된 버전으로 되돌리기 위해서는 `git checkout -- <file>` 명령어를 사용한다:
 
@@ -92,7 +92,7 @@ original: "notion-export/블로그 이관/DevOps/Git 048ade8f3765836aa04001c09ba
 
 리모트 저장소를 Clone 하면 `origin`이라는 리모트 저장소가 자동으로 등록된다.
 
-### 리모트 저장소 추가하기(git remote add <단축이름> <url>)
+### 리모트 저장소 추가하기(`git remote add <단축이름> <url>`)
 
 기존 워킹 디렉토리에 새 리모트 저장소를 추가하기 위해서는 `git remote add <단축이름> <url>`을 사용한다
 
@@ -150,7 +150,7 @@ Upstream 저장소에 Push 할 수 있다. 이 명령어는 `git push <리모트
 
 ![Screenshot 2024-08-20 at 4.43.27 PM.png](/images/devops-git-overview/image-018.png)
 
-### 브랜치 이동하기 (git checkout)
+### 브랜치 이동하기 (`git checkout`)
 
 `git checkout` 명령으로 다른 브랜치로 이동할 수 있다:
 

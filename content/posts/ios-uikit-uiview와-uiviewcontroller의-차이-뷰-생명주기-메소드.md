@@ -14,7 +14,7 @@ tags:
     - View Lifecycle
     - IBOutlet
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/UIKit/UIView와 UIViewController의 차이 + 뷰 생명주기 메소드 401ade8f376583b0bfa5013fd2cf70c6.md"
 ---
 

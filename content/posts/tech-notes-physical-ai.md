@@ -9,7 +9,7 @@ tags:
     - AI
     - Physical AI
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ETC/Physical AI 2feade8f3765800ebb51d8975ed6a8e9.md"
 ---
 

@@ -9,7 +9,7 @@ tags:
     - System Programming
     - Serial Communication
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ETC/System Programming 38eade8f37658082b273c253f1a7530d.md"
 ---
 

@@ -10,7 +10,7 @@ tags:
     - Docker
     - Docker Desktop
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/DevOps/Docker Desktop 실습해보기 286ade8f3765805c9754ce45f07de322.md"
 ---
 

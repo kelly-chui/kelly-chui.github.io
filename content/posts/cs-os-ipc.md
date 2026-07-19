@@ -11,7 +11,7 @@ tags:
     - Process
     - IPC
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ComputerScience/OS/IPC 17fade8f37658084999beca46a934262.md"
 ---
 

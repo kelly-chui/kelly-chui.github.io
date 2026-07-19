@@ -9,7 +9,7 @@ series:
 tags:
     - Operating System
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ComputerScience/OS/OS basic 1f6ade8f3765805eadfde37f036b90e5.md"
 ---
 

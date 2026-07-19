@@ -10,7 +10,7 @@ tags:
     - Network
     - REST API
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/RESTful API 18dade8f376580fca8a6f3bb821006a8.md"
 ---
 

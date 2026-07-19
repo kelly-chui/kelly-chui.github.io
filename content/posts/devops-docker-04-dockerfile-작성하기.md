@@ -11,7 +11,7 @@ tags:
     - Docker
     - Dockerfile
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/DevOps/Dockerfile 작성하기 286ade8f3765804aaeefc24cb212644b.md"
 ---
 

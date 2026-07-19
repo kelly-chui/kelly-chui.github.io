@@ -6,7 +6,7 @@ categories: ["SniffMEET"]
 series: []
 tags: []
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/SniffMEET/작업일지 11 24 2024 5c8ade8f3765838a91dc0106132e8efa.md"
 ---
 

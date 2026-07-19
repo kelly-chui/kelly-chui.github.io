@@ -11,7 +11,7 @@ tags:
     - Cookie
     - Session
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/쿠키, 세션 18dade8f376580059437d849c3d3979d.md"
 ---
 

@@ -11,7 +11,7 @@ tags:
     - Network Protocol
     - DHCP
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/DHCP 18dade8f3765805a89fec1656ec9056b.md"
 ---
 

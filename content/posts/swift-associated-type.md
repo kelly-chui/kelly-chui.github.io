@@ -11,7 +11,7 @@ tags:
     - Associated Type
     - Generic
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/Swift/Associated Type 9aaade8f3765820fb5b8018a162473c4.md"
 ---
 

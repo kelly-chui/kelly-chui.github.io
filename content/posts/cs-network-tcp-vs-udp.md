@@ -11,7 +11,7 @@ tags:
     - TCP
     - UDP
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/UDP 18cade8f3765806ab6c2e12fbe5302f2.md"
 ---
 

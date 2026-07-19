@@ -10,7 +10,7 @@ tags:
     - iOS
     - Debugging
 
-draft: true
+draft: false
 original: "notion-export/블로그 이관/SniffMEET/Private & Shared 3/프로젝트 파일 정리하기 227f6d0576c280b5a0a3c115c0859b61.md"
 ---
 
