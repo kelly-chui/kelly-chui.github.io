@@ -1,9 +1,18 @@
 ---
 title: "Programmers. 징검다리 건너기"
 date: 2025-07-22
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Swift", "Binary Search", "Sliding Window", "Deque"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Binary Search
+  - Deque
+  - Programmers
+  - Sliding Window
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/172"
 ---

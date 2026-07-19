@@ -3,13 +3,14 @@ title: "SniffMEET. UITabBarController VIPER 컨테이너로 다루기"
 date: 2024-11-11
 
 categories:
-    - Project
+  - Project
 series:
-    - SniffMEET
+  - SniffMEET
 tags:
-    - iOS
-    - VIPER
-    - UIKit
+  - iOS
+  - UIKit
+  - UITabBarController
+  - VIPER
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/UITabBarController VIPER 아키텍처에서 사용하기 355ade8f3765831c943881c7a7ce0b3c.md"

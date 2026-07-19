@@ -1,9 +1,16 @@
 ---
 title: "BOJ 2193. 이친수"
 date: 2025-04-30
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Swift", "DP"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BOJ
+  - Dynamic Programming
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/157"
 ---

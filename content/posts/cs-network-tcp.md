@@ -3,12 +3,14 @@ title: "Network. TCP(Transmission Control Protocol)"
 date: 2025-01-31
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - TCP
+  - Four-Way Handshake
+  - TCP
+  - Three-Way Handshake
+  - Transport Layer
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/TCP 18cade8f3765802c8153f3531fc98dc1.md"

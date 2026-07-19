@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Macro (2)"
 date: 2025-08-15
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Macros"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Macros
+
 weight: 33
 
 draft: false

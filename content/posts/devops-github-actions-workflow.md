@@ -4,10 +4,11 @@ date: 2024-11-05
 
 categories:
   - DevOps
-series:
+series: []
 tags:
   - CI/CD
   - GitHub Actions
+  - Workflow
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/Private & Shared 11/GitHub Actions 간단소개! f2860e12d4ff4eba849bb26cdf8682a5.md"

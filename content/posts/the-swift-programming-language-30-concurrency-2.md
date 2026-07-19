@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Concurrency (2)"
 date: 2023-06-26
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Concurrency"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Concurrency
+
 weight: 30
 
 draft: false

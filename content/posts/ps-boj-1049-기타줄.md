@@ -1,9 +1,16 @@
 ---
 title: "BOJ 1049. 기타줄"
 date: 2023-06-16
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Swift", "Greedy"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BOJ
+  - Greedy
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/95"
 ---

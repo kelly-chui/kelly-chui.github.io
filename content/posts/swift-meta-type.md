@@ -2,12 +2,13 @@
 title: "Meta Type"
 date: 2024-01-26
 
-categories: ["Swift"]
+categories:
+  - Swift
 series: []
 tags:
-  - Swift
-  - Meta Type
-  - Type
+  - Metatype
+  - Protocol Metatype
+  - Type System
 
 draft: false
 original: "notion-export/블로그 이관/Swift/Meta Type b23ade8f376583948d9701bbd81b7353.md"

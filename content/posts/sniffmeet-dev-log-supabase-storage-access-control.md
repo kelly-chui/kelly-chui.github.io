@@ -2,9 +2,14 @@
 title: "SniffMEET. Storage 버킷과 접근 제어"
 date: 2024-11-24
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: []
+tags:
+  - Access Control
+  - RLS
+  - Storage
+  - Supabase
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/작업일지 11 24 2024 5c8ade8f3765838a91dc0106132e8efa.md"

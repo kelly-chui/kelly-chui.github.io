@@ -3,14 +3,12 @@ title: "Docker. 컨테이너와 이미지"
 date: 2025-10-08
 
 categories:
-    - DevOps
+  - DevOps
 series:
-    - Docker
+  - Docker
 tags:
-    - DevOps
-    - Docker
-    - Container
-    - Docker Image
+  - Container
+  - Docker Image
 
 draft: false
 original: "notion-export/블로그 이관/DevOps/컨테이너와 이미지 286ade8f37658018aa4ee95d8fcb28d9.md"

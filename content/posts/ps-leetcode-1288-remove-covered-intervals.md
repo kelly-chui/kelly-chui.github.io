@@ -2,9 +2,14 @@
 title: "LeetCode 1288. Remove Covered Intervals"
 date: 2026-07-07T12:33:49+09:00
 
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["LeetCode", "Swift", "Sorting"]
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - LeetCode
+  - Sorting
+  - Swift
 
 draft: false
 original: ""

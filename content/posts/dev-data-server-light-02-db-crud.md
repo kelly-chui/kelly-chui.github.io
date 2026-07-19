@@ -1,10 +1,19 @@
 ---
 title: "dev-data-server-light. 2. Database CRUD"
 date: 2026-06-30
-categories: ["Project"]
-series: ["dev-data-server-light"]
+
+categories:
+  - Project
+series:
+  - dev-data-server-light
 weight: 3
-tags: ["Backend", "dev-data-server-light", "Express", "TypeScript", "DB", "DIP"]
+tags:
+  - CRUD
+  - Database
+  - DIP
+  - Express
+  - TypeScript
+
 draft: false
 original: "https://junmusu.tistory.com/197"
 ---

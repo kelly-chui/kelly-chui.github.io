@@ -3,12 +3,13 @@ title: "Network. UDP(User Datagram Protocol)"
 date: 2025-01-31
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - UDP
+  - Datagram
+  - Transport Layer
+  - UDP
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/UDP 18cade8f3765806ab6c2e12fbe5302f2.md"

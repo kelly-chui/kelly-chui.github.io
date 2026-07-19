@@ -2,9 +2,13 @@
 title: "SniffMEET. Interactor가 인프라를 직접 알아도 될까"
 date: 2025-02-10
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: []
+tags:
+  - Dependency Injection
+  - Layered Architecture
+  - VIPER
 
 draft: false
 ---

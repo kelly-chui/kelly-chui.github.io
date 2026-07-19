@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Methods (2)"
 date: 2023-06-06
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Methods"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Methods
+
 weight: 15
 
 draft: false

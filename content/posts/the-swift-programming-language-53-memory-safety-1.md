@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Memory Safety (1)"
 date: 2023-08-26
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Memory Safety"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Memory Safety
+
 weight: 53
 
 draft: false

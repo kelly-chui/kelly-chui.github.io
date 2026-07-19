@@ -3,13 +3,12 @@ title: "Algorithm. LCS(Subsequence)"
 date: 2025-01-02
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Algorithm
+  - Algorithm
 tags:
-    - Algorithm
-    - LCS
-    - DP
+  - Dynamic Programming
+  - LCS
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Algorithm/LCS(Subsequence) d1f908d7018248008ebeaa2b35e5027c.md"

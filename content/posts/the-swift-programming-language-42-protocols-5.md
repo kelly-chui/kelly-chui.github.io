@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Protocols (5)"
 date: 2023-07-04
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Protocols"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Protocols
+
 weight: 42
 
 draft: false

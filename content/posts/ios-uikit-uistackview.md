@@ -1,9 +1,16 @@
 ---
 title: "UIKit. UIStackView 레이아웃"
 date: 2024-08-27
-categories: ["iOS"]
-series: ["UIKit"]
-tags: ["iOS", "UIKit", "Auto Layout"]
+
+categories:
+  - iOS
+series:
+  - UIKit
+tags:
+  - Auto Layout
+  - Intrinsic Content Size
+  - UIStackView
+
 draft: false
 original: "https://junmusu.tistory.com/165"
 ---

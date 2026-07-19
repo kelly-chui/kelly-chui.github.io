@@ -1,9 +1,16 @@
 ---
 title: "UIKit. 화면 전환 방식"
 date: 2024-08-21
-categories: ["iOS"]
-series: ["UIKit"]
-tags: ["iOS", "UIKit"]
+
+categories:
+  - iOS
+series:
+  - UIKit
+tags:
+  - Modal Presentation
+  - Navigation
+  - UIViewController
+
 draft: false
 original: "https://junmusu.tistory.com/163"
 ---

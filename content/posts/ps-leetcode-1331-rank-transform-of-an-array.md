@@ -3,13 +3,13 @@ title: "Leetcode 1331. Rank Transform of an Array"
 date: 2026-07-13T11:09:28+09:00
 
 categories:
-    - Online Judge
+  - Online Judge
 series:
-    - Problem Solving
+  - Problem Solving
 tags:
-    - LeetCode
-    - Python
-    - Sorting
+  - LeetCode
+  - Python
+  - Sorting
 
 draft: false
 original: ""

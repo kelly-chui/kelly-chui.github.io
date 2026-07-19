@@ -1,9 +1,16 @@
 ---
 title: "BOJ 1753. 최단경로"
 date: 2023-03-05
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Swift", "Dijkstra"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BOJ
+  - Dijkstra
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/60"
 ---

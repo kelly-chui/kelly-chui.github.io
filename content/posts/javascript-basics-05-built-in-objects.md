@@ -2,10 +2,15 @@
 title: "JavaScript Basics. 05. 자바스크립트 내장 객체"
 date: 2025-06-03
 
-categories: ["JavaScript"]
-series: ["JavaScript Basics"]
+categories:
+  - JavaScript
+series:
+  - JavaScript Basics
 weight: 5
-tags: ["JavaScript"]
+tags:
+  - Built-in Object
+  - Object
+  - Prototype
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/5 자바스크립트 내장 객체 e13ade8f3765825ebc26810cee5e81e0.md"

@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Automatic Reference Counting (1)"
 date: 2023-08-15
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Automatic Reference Counting"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Automatic Reference Counting
+
 weight: 50
 
 draft: false

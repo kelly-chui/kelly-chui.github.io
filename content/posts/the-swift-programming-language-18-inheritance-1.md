@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Inheritance (1)"
 date: 2023-06-08
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Inheritance"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Inheritance
+
 weight: 18
 
 draft: false

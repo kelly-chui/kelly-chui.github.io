@@ -3,12 +3,12 @@ title: "Call by reference와 Call by pointer의 차이"
 date: 2025-06-07
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Programming Language
+  - Programming Language
 tags:
-    - Call by reference
-    - Call by pointer
+  - C++
+  - Pointer
 
 draft: false
 original: "notion-export/블로그 이관/Article/Call by reference와 Call by pointer의 차이 20aade8f376580c5bd84f1b5278cae83.md"

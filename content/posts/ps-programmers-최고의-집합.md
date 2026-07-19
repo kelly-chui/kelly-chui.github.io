@@ -1,9 +1,16 @@
 ---
 title: "Programmers. 최고의 집합"
 date: 2025-07-20
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Python", "Mathematics"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Mathematics
+  - Programmers
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/167"
 ---

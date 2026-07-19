@@ -1,8 +1,14 @@
 ---
 title: "iOS. 파일 시스템과 샌드박스"
 date: 2025-07-21
-categories: ["iOS"]
-tags: ["iOS"]
+
+categories:
+  - iOS
+tags:
+  - App Group
+  - FileManager
+  - Sandbox
+
 draft: false
 original: "https://junmusu.tistory.com/171"
 ---

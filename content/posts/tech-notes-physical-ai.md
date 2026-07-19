@@ -3,11 +3,14 @@ title: "Notes. NVIDIA Physical AI 생태계 정리 노트"
 date: 2026-02-06T01:39:00+09:00
 
 categories:
-    - Tech Notes
-series:
+  - Tech Notes
+series: []
 tags:
-    - AI
-    - Physical AI
+  - NVIDIA
+  - Physical AI
+  - Robotics
+  - ROS 2
+  - Simulation
 
 draft: false
 original: "notion-export/블로그 이관/ETC/Physical AI 2feade8f3765800ebb51d8975ed6a8e9.md"

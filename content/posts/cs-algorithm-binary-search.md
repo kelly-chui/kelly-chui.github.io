@@ -3,12 +3,12 @@ title: "Algorithm. Binary Search off-by-one 에러 없이 구현하기"
 date: 2024-12-31
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Algorithm
+  - Algorithm
 tags:
-    - Algorithm
-    - Binary Search
+  - Binary Search
+  - Off-by-One
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Algorithm/Binary Search 166ade8f3765800f8e57caa793a0a6bf.md"

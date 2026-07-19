@@ -1,9 +1,17 @@
 ---
 title: "BOJ 3055. 탈출"
 date: 2022-11-17
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Python", "BFS", "Multi-source BFS"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BFS
+  - BOJ
+  - Multi-source BFS
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/41"
 ---

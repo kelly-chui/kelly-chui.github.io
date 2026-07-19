@@ -1,9 +1,16 @@
 ---
 title: "BOJ 6087. 레이저 통신"
 date: 2023-07-05
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Swift", "Dijkstra"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BOJ
+  - Dijkstra
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/117"
 ---

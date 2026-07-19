@@ -3,12 +3,14 @@ title: "Network. TCP Flow & Congestion Control"
 date: 2025-01-31
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - TCP
+  - Congestion Control
+  - Flow Control
+  - TCP
+  - Transport Layer
 
 draft: false
 ---

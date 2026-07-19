@@ -2,9 +2,14 @@
 title: "SniffMEET. RLS와 테이블 권한"
 date: 2024-11-20
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: ["Supabase"]
+tags:
+  - Authorization
+  - PostgreSQL
+  - RLS
+  - Supabase
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/트러블 슈팅/Supabase Database 673ade8f3765839db95d0108429d9d3a.md"

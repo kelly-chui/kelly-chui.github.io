@@ -3,12 +3,12 @@ title: "Software Engineering. DI와 DIP"
 date: 2025-03-27
 
 categories:
-    - Software Engineering
-series:
+  - Software Engineering
+series: []
 tags:
-    - Dependency Injection
-    - DIP
-    - SOLID
+  - Dependency Injection
+  - DIP
+  - SOLID
 
 draft: false
 original: "notion-export/블로그 이관/Article/의존성 주입 fbaade8f376582b282a501a2586d7bbb.md"

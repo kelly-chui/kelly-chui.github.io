@@ -1,9 +1,17 @@
 ---
 title: "BOJ 10021. watering the fields"
 date: 2024-04-12
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Python", "MST", "Kruskal"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BOJ
+  - Kruskal
+  - MST
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/138"
 ---

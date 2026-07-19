@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Properties (3)"
 date: 2023-06-05
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Properties"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Properties
+
 weight: 13
 
 draft: false

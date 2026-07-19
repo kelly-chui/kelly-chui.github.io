@@ -3,13 +3,13 @@ title: "Node. TypeScript 프로젝트 초기화하기"
 date: 2025-10-08
 
 categories:
-    - Node.js
-    - TypeScript
-series:
+  - Node.js
+  - TypeScript
+series: []
 tags:
-    - Node.js
-    - TypeScript
-    - npm
+  - Compiler Configuration
+  - npm
+  - Project Setup
 
 draft: false
 original: "notion-export/블로그 이관/Node/Node 프로젝트 초기화하기 285ade8f376580c99016debbd8dc05ad.md"

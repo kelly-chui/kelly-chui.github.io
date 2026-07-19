@@ -3,12 +3,12 @@ title: "Docker. Docker Desktop 실습해보기"
 date: 2025-10-08
 
 categories:
-    - DevOps
+  - DevOps
 series:
-    - Docker
+  - Docker
 tags:
-    - Docker
-    - Docker Desktop
+  - Container
+  - Docker Desktop
 
 draft: false
 original: "notion-export/블로그 이관/DevOps/Docker Desktop 실습해보기 286ade8f3765805c9754ce45f07de322.md"

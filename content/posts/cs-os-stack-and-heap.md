@@ -3,12 +3,13 @@ title: "OS. Stack, Heap 메모리 관리"
 date: 2025-02-02
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Operating System
+  - Operating System
 tags:
-    - Operating System
-    - Virtual Memory
+  - Heap
+  - Stack
+  - Virtual Memory
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/OS/stack, heap 메모리 관리 18eade8f376580c6bb01c607cbafaeb3.md"

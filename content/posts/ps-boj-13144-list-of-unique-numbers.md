@@ -1,9 +1,16 @@
 ---
 title: "BOJ 13144. list of unique numbers"
 date: 2024-06-12
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Swift", "Two Pointers"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BOJ
+  - Swift
+  - Two Pointers
+
 draft: false
 original: "https://junmusu.tistory.com/151"
 ---

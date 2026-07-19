@@ -3,14 +3,13 @@ title: "Algorithm. LIS(Subsequence)"
 date: 2025-04-03
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Algorithm
+  - Algorithm
 tags:
-    - Algorithm
-    - LIS
-    - Binary Search
-    - DP
+  - Binary Search
+  - Dynamic Programming
+  - LIS
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Algorithm/LIS(Subsequence) 1caade8f37658030a7c6f0656bde7c84.md"

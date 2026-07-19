@@ -1,9 +1,16 @@
 ---
 title: "BOJ 1520. 내리막 길"
 date: 2023-07-06
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Swift", "DP"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BOJ
+  - Dynamic Programming
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/119"
 ---

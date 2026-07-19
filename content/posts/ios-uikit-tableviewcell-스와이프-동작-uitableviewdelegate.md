@@ -3,13 +3,11 @@ title: "UIKit. TableViewCell 스와이프 동작 넣기"
 date: 2024-09-20
 
 categories:
-    - iOS
+  - iOS
 series:
-    - UIKit
+  - UIKit
 tags:
-    - iOS
-    - UIKit
-    - UITableView
+  - UITableView
 
 draft: false
 original: "notion-export/블로그 이관/UIKit/TableViewCell 스와이프 동작(UITableViewDelegate) ff1ade8f376583c4bc4081992b3a303e.md"

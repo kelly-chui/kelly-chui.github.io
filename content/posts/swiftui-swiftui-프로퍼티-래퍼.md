@@ -3,12 +3,14 @@ title: "SwiftUI 상태 관리"
 date: 2025-09-25
 
 categories:
-    - iOS
+  - iOS
 series:
-    - SwiftUI
-tags: 
-    - iOS
-    - SwiftUI
+  - SwiftUI
+tags:
+  - Binding
+  - ObservableObject
+  - Property Wrapper
+  - State
 
 draft: false
 original: "notion-export/블로그 이관/SwiftUI/SwiftUI 상태관리 109ade8f3765831989d181a6c324d021.md"

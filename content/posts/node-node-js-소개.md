@@ -3,12 +3,12 @@ title: "Node. Node.js 소개"
 date: 2025-10-05
 
 categories:
-    - Node.js
-series:
+  - Node.js
+series: []
 tags:
-    - Node.js
-    - JavaScript
-    - npm
+  - JavaScript
+  - npm
+  - Runtime
 
 draft: false
 original: "notion-export/블로그 이관/Node/Node js 개요 285ade8f37658072bf75ce7b406c1432.md"

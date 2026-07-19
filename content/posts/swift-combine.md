@@ -2,15 +2,14 @@
 title: "WWDC Note. Combine"
 date: 2024-03-17
 
-categories: 
-    - Swift
-series:
+categories:
+  - Swift
+series: []
 tags:
-    - Swift
-    - Combine
-    - Publisher
-    - Subscriber
-    - Operator
+  - Combine
+  - Operator
+  - Publisher
+  - Subscriber
 
 draft: false
 original: "notion-export/블로그 이관/Swift/Combine d84ade8f376583aa8e6a81dc3736c877.md"

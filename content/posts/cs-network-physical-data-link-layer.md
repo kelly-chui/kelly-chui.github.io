@@ -3,13 +3,13 @@ title: "Network. Physical & Data Link Layer"
 date: 2024-04-30
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - Physical Layer
-    - Data Link Layer
+  - Data Link Layer
+  - Ethernet
+  - Physical Layer
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/Physical & Data Link Layer 1e5ade8f3765809882a8d350cdfe224f.md"

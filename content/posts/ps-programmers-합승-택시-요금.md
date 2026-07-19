@@ -1,9 +1,16 @@
 ---
 title: "Programmers. 합승 택시 요금"
 date: 2025-08-14
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Swift", "Floyd-Warshall"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Floyd-Warshall
+  - Programmers
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/181"
 ---

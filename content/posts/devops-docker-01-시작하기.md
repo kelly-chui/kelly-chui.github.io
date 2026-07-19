@@ -3,12 +3,12 @@ title: "Docker. Docker 시작하기"
 date: 2025-10-08
 
 categories:
-    - DevOps
+  - DevOps
 series:
-    - Docker
+  - Docker
 tags:
-    - DevOps
-    - Docker
+  - Container
+  - Virtualization
 
 draft: false
 original: "notion-export/블로그 이관/DevOps/Docker 개요 286ade8f376580799bd1c96bfd738422.md"

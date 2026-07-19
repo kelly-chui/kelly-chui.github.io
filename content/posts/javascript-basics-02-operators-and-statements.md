@@ -2,10 +2,15 @@
 title: "JavaScript Basics. 02. 연산자와 명령문"
 date: 2025-06-01
 
-categories: ["JavaScript"]
-series: ["JavaScript Basics"]
+categories:
+  - JavaScript
+series:
+  - JavaScript Basics
 weight: 2
-tags: ["JavaScript"]
+tags:
+  - Expression
+  - Operator
+  - Statement
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/2 연산자와 명령문 02cade8f3765828abe1c81ec1cd9cb8b.md"

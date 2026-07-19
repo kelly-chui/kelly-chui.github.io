@@ -1,9 +1,16 @@
 ---
 title: "Programmers. 순위"
 date: 2025-08-05
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Python", "DFS"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - DFS
+  - Programmers
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/178"
 ---

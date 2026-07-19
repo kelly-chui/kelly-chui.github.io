@@ -1,9 +1,17 @@
 ---
 title: "BOJ 7576. 토마토"
 date: 2022-11-10
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Python", "BFS", "Multi-source BFS"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BFS
+  - BOJ
+  - Multi-source BFS
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/39"
 ---

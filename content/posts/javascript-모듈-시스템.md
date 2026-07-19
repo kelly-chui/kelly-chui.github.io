@@ -2,13 +2,13 @@
 title: "JavaScript. 모듈 시스템"
 date: 2025-10-07
 
-categories: 
-    - JavaScript
-series:
+categories:
+  - JavaScript
+series: []
 tags:
-    - JavaScript
-    - CommonJS
-    - ECM
+  - CommonJS
+  - ES Modules
+  - Module System
 
 draft: false
 original: "notion-export/블로그 이관/JavaScript/JS 모듈 시스템 285ade8f376580ff8c11cd32d6ae43ab.md"

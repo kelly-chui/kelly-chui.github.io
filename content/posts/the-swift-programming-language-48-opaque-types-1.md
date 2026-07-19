@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Opaque Types (1)"
 date: 2023-08-12
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Opaque and Boxed Protocol Types"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Opaque and Boxed Protocol Types
+
 weight: 48
 
 draft: false

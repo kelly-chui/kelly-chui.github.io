@@ -2,9 +2,14 @@
 title: "SniffMEET. 세션 저장 메소드를 공개해도 괜찮을까?"
 date: 2025-02-10
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: []
+tags:
+  - Access Control
+  - Encapsulation
+  - Session
+  - Swift
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/SessionManager와 AuthManager 역할 분리하기 f37ade8f376583d99abf817d3597c14d.md"

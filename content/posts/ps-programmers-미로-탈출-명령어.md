@@ -1,9 +1,16 @@
 ---
 title: "Programmers. 미로 탈출 명령어"
 date: 2025-08-23
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Swift", "Backtracking"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Backtracking
+  - Programmers
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/186"
 ---

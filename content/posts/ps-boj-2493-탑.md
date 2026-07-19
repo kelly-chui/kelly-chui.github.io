@@ -1,9 +1,16 @@
 ---
 title: "BOJ 2493. 탑"
 date: 2023-07-10
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Swift", "Stack"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BOJ
+  - Stack
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/122"
 ---

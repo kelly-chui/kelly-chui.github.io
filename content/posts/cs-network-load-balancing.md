@@ -3,12 +3,12 @@ title: "Network. Load Balancing"
 date: 2025-02-01
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - Load Balancing
+  - Load Balancing
+  - Reverse Proxy
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/로드 밸런싱 18cade8f376580beb501cbca4bdea3e3.md"

@@ -3,13 +3,13 @@ title: "프로세스와 스레드"
 date: 2025-01-12
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Operating System
+  - Operating System
 tags:
-    - Operating System
-    - Process
-    - Thread
+  - Concurrency
+  - Process
+  - Thread
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/OS/프로세스와 스레드 178ade8f376580718607c251d7237eac.md"

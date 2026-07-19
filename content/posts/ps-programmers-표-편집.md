@@ -1,9 +1,18 @@
 ---
 title: "Programmers. 표 편집"
 date: 2025-08-14
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Swift", "Data Structure", "Linked List", "Stack"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Data Structure
+  - Linked List
+  - Programmers
+  - Stack
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/182"
 ---

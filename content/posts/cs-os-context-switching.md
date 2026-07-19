@@ -3,14 +3,13 @@ title: "OS. Context Switching"
 date: 2025-01-12
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Operating System
+  - Operating System
 tags:
-    - Operating System
-    - Process
-    - Thread
-    - Context Switching
+  - Context Switching
+  - Process
+  - Thread
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/OS/컨텍스트 스위칭 178ade8f376580259b18c09fb8291a23.md"

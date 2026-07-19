@@ -3,12 +3,11 @@ title: "DevOps. Git 기초"
 date: 2024-08-20
 
 categories:
-    - DevOps
+  - DevOps
 series:
-    - Git
+  - Git
 tags:
-    - DevOps
-    - Git
+  - Version Control
 
 draft: false
 original: "notion-export/블로그 이관/DevOps/Git 048ade8f3765836aa04001c09ba21748.md"

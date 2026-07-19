@@ -1,9 +1,18 @@
 ---
 title: "Swift. C부터 시작하는 메소드 디스패치"
 date: 2025-05-31
-categories: ["Swift"]
-series: ["Article"]
-tags: ["C/C++", "Swift"]
+
+categories:
+  - Swift
+series:
+  - Article
+tags:
+  - C
+  - C++
+  - Method Dispatch
+  - Objective-C
+  - Vtable
+
 draft: false
 original: "https://junmusu.tistory.com/174"
 ---

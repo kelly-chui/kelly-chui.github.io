@@ -2,10 +2,14 @@
 title: "JavaScript Basics. 08. 자바스크립트 API 활용 및 그림판 프로그램 만들기"
 date: 2025-06-09
 
-categories: ["JavaScript"]
-series: ["JavaScript Basics"]
+categories:
+  - JavaScript
+series:
+  - JavaScript Basics
 weight: 8
-tags: ["JavaScript"]
+tags:
+  - Browser API
+  - Web API
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/8 자바스크립트 API 활용 및 그림판 프로그램 만들기 16cade8f37658251ae9a015f91d18f1b.md"

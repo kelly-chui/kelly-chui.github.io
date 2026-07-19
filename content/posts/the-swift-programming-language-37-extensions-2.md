@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Extensions (2)"
 date: 2023-06-29
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Extensions"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Extensions
+
 weight: 37
 
 draft: false

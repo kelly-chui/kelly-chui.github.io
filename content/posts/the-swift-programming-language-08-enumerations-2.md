@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Enumerations (2)"
 date: 2023-05-31
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Enumerations"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Enumerations
+
 weight: 8
 
 draft: false

@@ -1,9 +1,16 @@
 ---
 title: "BOJ 4179. 불"
 date: 2024-06-10
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Python", "BFS"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BFS
+  - BOJ
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/150"
 ---

@@ -1,9 +1,16 @@
 ---
 title: "SwiftUI Tutorials. Handling User Input"
 date: 2024-06-25
-categories: ["iOS"]
-series: ["SwiftUI"]
-tags: ["SwiftUI"]
+
+categories:
+  - iOS
+series:
+  - SwiftUI
+tags:
+  - Binding
+  - ObservableObject
+  - State
+
 draft: false
 original: "https://junmusu.tistory.com/189"
 ---

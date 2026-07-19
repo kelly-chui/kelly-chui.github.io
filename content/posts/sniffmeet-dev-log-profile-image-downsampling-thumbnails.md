@@ -2,9 +2,15 @@
 title: "SniffMEET. 프로필 이미지 다운샘플링과 썸네일 분리하기"
 date: 2025-01-17
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: ["iOS", "CGImage"]
+tags:
+  - CGImage
+  - Image Downsampling
+  - Instruments
+  - iOS
+  - Thumbnail
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/이미지 다운샘플링, 썸네일 분리 b6fade8f376582c798f901dbeecfb266.md"

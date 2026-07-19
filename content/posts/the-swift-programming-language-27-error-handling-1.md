@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Error Handling (1)"
 date: 2023-06-21
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Error Handling"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Error Handling
+
 weight: 27
 
 draft: false

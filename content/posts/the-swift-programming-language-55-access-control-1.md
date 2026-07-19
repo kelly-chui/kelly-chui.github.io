@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Access Control (1)"
 date: 2025-01-28
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Access Control"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Access Control
+
 weight: 55
 
 draft: false

@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Generics (2)"
 date: 2023-08-02
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Generics"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Generics
+
 weight: 44
 
 draft: false

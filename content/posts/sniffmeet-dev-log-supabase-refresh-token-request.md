@@ -2,9 +2,14 @@
 title: "SniffMEET. Supabase 세션 갱신 요청이 실패한 이유"
 date: 2024-11-21
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: ["Supabase"]
+tags:
+  - Authentication
+  - HTTP
+  - Refresh Token
+  - Supabase
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/10 21 개발일지 145ade8f37658060812fe0ca739ebfb0.md"

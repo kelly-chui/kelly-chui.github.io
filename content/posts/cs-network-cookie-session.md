@@ -3,13 +3,15 @@ title: "Network. 쿠키, 세션"
 date: 2025-02-02
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - Cookie
-    - Session
+  - Application Layer
+  - Authentication
+  - Cookie
+  - HTTP
+  - Session
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/쿠키, 세션 18dade8f376580059437d849c3d3979d.md"

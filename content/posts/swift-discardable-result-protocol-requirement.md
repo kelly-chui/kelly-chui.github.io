@@ -3,10 +3,12 @@ title: "Swift. 프로토콜 요구사항과 메소드 어트리뷰트"
 date: 2025-02-10
 
 categories:
-    - Swift
-series:
+  - Swift
+series: []
 tags:
-    - Protocol
+  - "@discardableResult"
+  - Method Dispatch
+  - Protocol
 
 draft: false
 ---

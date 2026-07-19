@@ -2,10 +2,13 @@
 title: "JavaScript Basics. 01. 자바스크립트 기본 환경 설치 및 기본 문법"
 date: 2025-05-31
 
-categories: ["JavaScript"]
-series: ["JavaScript Basics"]
+categories:
+  - JavaScript
+series:
+  - JavaScript Basics
 weight: 1
-tags: ["JavaScript"]
+tags:
+  - JavaScript Syntax
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/1 자바스크립트 기본 환경 설치 및 기본 문법 af9ade8f376583c9ae46816a06ebd67c.md"

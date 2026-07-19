@@ -3,14 +3,13 @@ title: "OS. Deadlock"
 date: 2025-01-12
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Operating System
+  - Operating System
 tags:
-    - Operating System
-    - Process
-    - Thread
-    - Deadlock
+  - Deadlock
+  - Process
+  - Thread
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/OS/데드락 179ade8f37658098bdfbc0ad217c8b1d.md"

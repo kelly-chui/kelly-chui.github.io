@@ -1,9 +1,16 @@
 ---
 title: "UIKit. Responder Chain"
 date: 2024-09-04
-categories: ["iOS"]
-series: ["UIKit"]
-tags: ["iOS", "UIKit", "Responder chain"]
+
+categories:
+  - iOS
+series:
+  - UIKit
+tags:
+  - Responder Chain
+  - UIEvent
+  - UIResponder
+
 draft: false
 original: "https://junmusu.tistory.com/168"
 ---

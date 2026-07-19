@@ -3,12 +3,12 @@ title: "Network. VPN(Virtual Private Network)"
 date: 2025-03-04
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - VPN
+  - Tunneling
+  - VPN
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/VPN 18dade8f3765801fb27de7912baf4a84.md"

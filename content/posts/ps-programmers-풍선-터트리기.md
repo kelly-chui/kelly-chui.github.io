@@ -1,9 +1,16 @@
 ---
 title: "Programmers. 풍선 터트리기"
 date: 2025-08-05
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Swift", "Implementation"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Implementation
+  - Programmers
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/179"
 ---

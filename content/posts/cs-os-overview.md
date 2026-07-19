@@ -3,11 +3,12 @@ title: "OS. Operating System 오버뷰"
 date: 2025-05-17
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Operating System
+  - Operating System
 tags:
-    - Operating System
+  - Kernel
+  - System Call
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/OS/OS basic 1f6ade8f3765805eadfde37f036b90e5.md"

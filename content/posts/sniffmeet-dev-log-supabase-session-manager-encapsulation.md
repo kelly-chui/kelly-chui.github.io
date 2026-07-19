@@ -2,9 +2,14 @@
 title: "SniffMEET. 세션 갱신과 정보 접근을 SessionManager에 캡슐화하기"
 date: 2025-02-10
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: []
+tags:
+  - Encapsulation
+  - Session
+  - Supabase
+  - Swift
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/Supabase Session 구조 개선하기 302ade8f376582dc878d813cfb5f67ba.md"

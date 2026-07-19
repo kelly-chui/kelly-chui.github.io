@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Closures (2)"
 date: 2023-05-29
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Closures"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Closures
+
 weight: 5
 
 draft: false

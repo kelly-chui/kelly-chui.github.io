@@ -1,9 +1,17 @@
 ---
 title: "BOJ 1260. dfs와 bfs"
 date: 2022-11-06
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Python", "DFS", "BFS"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BFS
+  - BOJ
+  - DFS
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/33"
 ---

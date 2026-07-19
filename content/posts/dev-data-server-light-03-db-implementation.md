@@ -1,10 +1,19 @@
 ---
 title: "dev-data-server-light. 3. Database Implementation"
 date: 2026-07-02
-categories: ["Project"]
-series: ["dev-data-server-light"]
+
+categories:
+  - Project
+series:
+  - dev-data-server-light
 weight: 4
-tags: ["Backend", "dev-data-server-light", "Express", "TypeScript", "DB", "DIP"]
+tags:
+  - Database
+  - DIP
+  - In-Memory Database
+  - Testing
+  - TypeScript
+
 draft: false
 original: "https://junmusu.tistory.com/198"
 ---
@@ -33,7 +42,7 @@ export interface RecordStore {
 
 ### 프롬프트
 
-```
+```text
 Implement an in-memory Database implementation in src/db.
 
 Requirements:

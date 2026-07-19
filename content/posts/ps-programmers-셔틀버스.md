@@ -1,9 +1,17 @@
 ---
 title: "Programmers. 셔틀버스"
 date: 2025-08-03
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Swift", "Implementation", "Simulation"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Implementation
+  - Programmers
+  - Simulation
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/177"
 ---

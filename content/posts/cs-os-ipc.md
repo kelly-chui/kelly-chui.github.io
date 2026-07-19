@@ -3,13 +3,13 @@ title: "OS. IPC(Inter-Process Communication)"
 date: 2025-01-19
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Operating System
+  - Operating System
 tags:
-    - Operating System
-    - Process
-    - IPC
+  - IPC
+  - Message Passing
+  - Process
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/OS/IPC 17fade8f37658084999beca46a934262.md"

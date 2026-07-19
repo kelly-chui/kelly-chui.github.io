@@ -2,9 +2,15 @@
 title: "SniffMEET. OSSignposter로 앱 내부 작업 구간 측정하기"
 date: 2025-01-14
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: ["Performance"]
+tags:
+  - Instruments
+  - iOS
+  - OSLog
+  - OSSignposter
+  - Performance
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/Private & Shared 2/Signposter 기반 프로파일링할 수 있게 만들기 4b5b250096e14d309519b3a29e2ba1b2.md"

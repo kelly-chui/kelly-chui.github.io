@@ -2,10 +2,15 @@
 title: "JavaScript Basics. 03. 자바스크립트 사용자 정의 자료형 활용"
 date: 2025-06-01
 
-categories: ["JavaScript"]
-series: ["JavaScript Basics"]
+categories:
+  - JavaScript
+series:
+  - JavaScript Basics
 weight: 3
-tags: ["JavaScript"]
+tags:
+  - Array
+  - Control Flow
+  - Iteration
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/3 자바스크립트 사용자 정의 자료형 활용 2dcade8f3765824ebcea811c42e91fb6.md"

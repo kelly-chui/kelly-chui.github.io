@@ -1,9 +1,16 @@
 ---
 title: "SwiftUI Tutorials. Creating and Combining Views"
 date: 2024-06-25
-categories: ["iOS"]
-series: ["SwiftUI"]
-tags: ["SwiftUI"]
+
+categories:
+  - iOS
+series:
+  - SwiftUI
+tags:
+  - Layout
+  - Preview
+  - View
+
 draft: false
 original: "https://junmusu.tistory.com/187"
 ---

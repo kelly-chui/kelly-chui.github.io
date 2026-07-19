@@ -3,16 +3,13 @@ title: "UIView와 UIViewController의 차이 + 뷰  생명주기 메소드"
 date: 2024-08-20
 
 categories:
-    - iOS
+  - iOS
 series:
-    - UIKit
+  - UIKit
 tags:
-    - iOS
-    - UIKit
-    - UIView
-    - UIViewController
-    - View Lifecycle
-    - IBOutlet
+  - UIView
+  - UIViewController
+  - View Lifecycle
 
 draft: false
 original: "notion-export/블로그 이관/UIKit/UIView와 UIViewController의 차이 + 뷰 생명주기 메소드 401ade8f376583b0bfa5013fd2cf70c6.md"

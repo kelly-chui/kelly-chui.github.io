@@ -1,10 +1,18 @@
 ---
 title: "dev-data-server-light. 1. System"
 date: 2026-06-25
-categories: ["Project"]
-series: ["dev-data-server-light"]
+
+categories:
+  - Project
+series:
+  - dev-data-server-light
 weight: 2
-tags: ["Backend", "dev-data-server-light", "Express", "TypeScript"]
+tags:
+  - Backend
+  - Express
+  - TDD
+  - TypeScript
+
 draft: false
 original: "https://junmusu.tistory.com/196"
 ---
@@ -34,7 +42,7 @@ Route는 HTTP 요청과 응답만 담당하고, Service는 실제 애플리케�
 
 ### 첫 번째 프롬프트
 
-```
+```text
 Create the initial system module.
 
 Requirements:
@@ -53,7 +61,7 @@ Requirements:
 
 #### Service
 
-```
+```ts
 export type SystemStatus = {
   status: "ok";
   timestamp: string;
@@ -92,7 +100,7 @@ export class SystemService {
 
 #### Route
 
-```
+```ts
 import { Router } from "express";
 import type { SystemService } from "./system.js";
 

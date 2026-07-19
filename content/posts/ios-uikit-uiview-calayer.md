@@ -1,9 +1,15 @@
 ---
 title: "UIKit. UIView와 CALayer"
 date: 2024-09-17
-categories: ["iOS"]
-series: ["UIKit"]
-tags: ["iOS", "UIKit"]
+
+categories:
+  - iOS
+series:
+  - UIKit
+tags:
+  - CALayer
+  - UIView
+
 draft: false
 original: "https://junmusu.tistory.com/166"
 ---

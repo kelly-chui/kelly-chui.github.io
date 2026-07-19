@@ -3,11 +3,14 @@ title: "Notes. System Programming 정리 노트"
 date: 2026-06-29T16:38:00+09:00
 
 categories:
-    - Tech Notes
-series:
+  - Tech Notes
+series: []
 tags:
-    - System Programming
-    - Serial Communication
+  - I2C
+  - RTOS
+  - SPI
+  - System Programming
+  - UART
 
 draft: false
 original: "notion-export/블로그 이관/ETC/System Programming 38eade8f37658082b273c253f1a7530d.md"

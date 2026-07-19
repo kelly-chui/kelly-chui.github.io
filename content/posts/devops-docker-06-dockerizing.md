@@ -3,13 +3,12 @@ title: "Docker. 내 애플리케이션 Dockerizing 하기"
 date: 2025-10-09
 
 categories:
-    - DevOps
+  - DevOps
 series:
-    - Docker
+  - Docker
 tags:
-    - DevOps
-    - Docker
-    - Dockerizing
+  - Container
+  - Dockerizing
 
 draft: true
 original: "notion-export/블로그 이관/DevOps/Dockerizing 286ade8f376580e2a5f3ceaefc6e9091.md"

@@ -3,12 +3,12 @@ title: "Network. DNS(Domain Name System)"
 date: 2025-02-01
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - DNS
+  - Application Layer
+  - DNS
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/DNS 18dade8f376580a8ae29e2107c500e4d.md"

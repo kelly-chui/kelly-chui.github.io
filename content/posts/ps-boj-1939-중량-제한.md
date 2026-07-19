@@ -1,9 +1,16 @@
 ---
 title: "BOJ 1939. 중량 제한"
 date: 2023-07-07
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Swift", "Binary Search"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Binary Search
+  - BOJ
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/120"
 ---

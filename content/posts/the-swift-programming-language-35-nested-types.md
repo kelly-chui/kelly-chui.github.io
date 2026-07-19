@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Nested Types"
 date: 2023-06-28
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Nested Types"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Nested Types
+
 weight: 35
 
 draft: false

@@ -3,12 +3,13 @@ title: "Network. NAT(Network Address Translation)"
 date: 2025-02-05
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - NAT
+  - IP Address
+  - NAT
+  - Network Layer
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/NAT 18cade8f376580febe04ce5473e10ca7.md"

@@ -1,9 +1,16 @@
 ---
 title: "Programmers. 단속 카메라"
 date: 2025-07-21
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Python", "Mathematics"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Greedy
+  - Programmers
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/169"
 ---

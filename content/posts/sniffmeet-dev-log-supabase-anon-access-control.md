@@ -2,9 +2,14 @@
 title: "SniffMEET. anon-key와 익명 사용자의 접근 권한 구분"
 date: 2024-11-28
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: []
+tags:
+  - Authentication
+  - Authorization
+  - RLS
+  - Supabase
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/트러블 슈팅/Supabase 트러블 슈팅 7e7ade8f3765820cabb58165d114eee9.md"

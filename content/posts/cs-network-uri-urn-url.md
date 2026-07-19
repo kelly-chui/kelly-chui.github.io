@@ -3,12 +3,14 @@ title: "Network. URI(Uniform Resource Identifier)"
 date: 2025-01-12
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - URI
+  - Application Layer
+  - URI
+  - URL
+  - URN
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/URI, URN, URL 179ade8f37658095ac9de06472b05af8.md"

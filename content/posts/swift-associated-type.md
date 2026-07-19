@@ -3,13 +3,12 @@ title: "Swift. Associated Type"
 date: 2025-01-26
 
 categories:
-    - Swift
-series:
+  - Swift
+series: []
 tags:
-    - Swift
-    - Protocol
-    - Associated Type
-    - Generic
+  - Associated Type
+  - Generics
+  - Protocol
 
 draft: false
 original: "notion-export/블로그 이관/Swift/Associated Type 9aaade8f3765820fb5b8018a162473c4.md"

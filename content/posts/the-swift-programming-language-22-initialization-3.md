@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Initialization (3)"
 date: 2023-06-16
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Initialization"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Initialization
+
 weight: 22
 
 draft: false

@@ -2,14 +2,14 @@
 title: "LeetCode 3756. Concatenate Non-Zero Digits and Multiply by Sum II"
 date: 2026-07-08T14:30:01+09:00
 
-categories: 
-    - "Online Judge"
-series: 
-    - Problem Solving
-tags: 
-    - LeetCode
-    - Python
-    - Prefix Sum
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - LeetCode
+  - Prefix Sum
+  - Python
 
 draft: false
 original: ""
@@ -26,7 +26,7 @@ original: ""
 
 전처리 단계에서 네 가지 누적 배열을 만든다.
 
-- `pow10`: $\text{pow10}[i] = 10^i \mod (10^9 + 7) $
+- `pow10`: $\text{pow10}[i] = 10^i \mod (10^9 + 7)$
 - `preSum`: 각 인덱스까지 자릿수의 합
 - `preConcat`: 각 인덱스까지 0이 아닌 숫자들을 이어붙인 값
 - `nonZeroCount`: 각 인덱스까지 0이 아닌 숫자의 개수

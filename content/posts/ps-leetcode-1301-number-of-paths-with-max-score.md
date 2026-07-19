@@ -2,9 +2,14 @@
 title: "LeetCode 1301. Number of Paths with Max Score"
 date: 2026-07-05T14:30:01+09:00
 
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["LeetCode", "Python", "DP"]
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Dynamic Programming
+  - LeetCode
+  - Python
 
 draft: false
 original: ""

@@ -3,13 +3,13 @@ title: "Network. DHCP(Dynamic Host Configuration Protocol)"
 date: 2025-02-01
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - Network Protocol
-    - DHCP
+  - Application Layer
+  - DHCP
+  - IP Address
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/DHCP 18dade8f3765805a89fec1656ec9056b.md"

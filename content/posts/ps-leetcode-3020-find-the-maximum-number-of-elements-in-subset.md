@@ -2,14 +2,14 @@
 title: "Leetcode 3020. Find the Maximum Number of Elements in Subset"
 date: 2026-07-09T08:23:02+09:00
 
-categories: 
-    - Online Judge
-series: 
-    - Problem Solving
-tags: 
-    - LeetCode
-    - Python
-    - Hash Map
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Hash Map
+  - LeetCode
+  - Python
 
 draft: false
 original: ""

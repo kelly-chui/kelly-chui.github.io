@@ -1,9 +1,16 @@
 ---
 title: "BOJ 2667. 단지 번호 붙이기"
 date: 2022-11-07
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Python", "BFS"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BFS
+  - BOJ
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/36"
 ---

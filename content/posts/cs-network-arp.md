@@ -3,13 +3,14 @@ title: "Network. ARP(Address Resolution Protocol)"
 date: 2025-02-01
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - Network Protocol
-    - ARP
+  - ARP
+  - Data Link Layer
+  - IP
+  - MAC
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/ARP 18dade8f3765804497a8fc9bb5a2a739.md"

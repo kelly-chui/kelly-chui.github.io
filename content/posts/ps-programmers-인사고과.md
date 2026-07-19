@@ -1,9 +1,16 @@
 ---
 title: "Programmers. 인사고과"
 date: 2025-08-06
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Swift", "Sorting"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Programmers
+  - Sorting
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/180"
 ---

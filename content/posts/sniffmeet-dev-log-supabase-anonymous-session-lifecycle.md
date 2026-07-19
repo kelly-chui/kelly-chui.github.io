@@ -2,9 +2,14 @@
 title: "SniffMEET. 익명 로그인 세션의 생성·복원·갱신 흐름"
 date: 2024-11-14
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: []
+tags:
+  - Anonymous Sign-In
+  - Authentication
+  - Session
+  - Supabase
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/트러블 슈팅/Supabase 트러블 슈팅 7e7ade8f3765820cabb58165d114eee9.md"

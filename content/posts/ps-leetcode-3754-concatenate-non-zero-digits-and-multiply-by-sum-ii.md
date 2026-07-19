@@ -2,14 +2,14 @@
 title: "LeetCode 3754. Concatenate Non-Zero Digits and Multiply by Sum I"
 date: 2026-07-07T14:30:01+09:00
 
-categories: 
-    - "Online Judge"
-series: 
-    - Problem Solving
-tags: 
-    - LeetCode
-    - Python
-    - String
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - LeetCode
+  - Python
+  - String
 
 draft: false
 original: ""

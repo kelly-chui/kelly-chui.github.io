@@ -3,12 +3,12 @@ title: "Algorithm. Counter Clock Wise"
 date: 2025-01-30
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Algorithm
+  - Algorithm
 tags:
-    - Algorithm
-    - CCW
+  - CCW
+  - Computational Geometry
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Algorithm/Counter Clock Wise 18bade8f37658014bf90d7c6bddf2be0.md"

@@ -1,9 +1,16 @@
 ---
 title: "Programmers. 하노이의 탑"
 date: 2023-05-03
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Swift", "Recursion"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Programmers
+  - Recursion
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/67"
 ---

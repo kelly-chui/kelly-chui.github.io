@@ -3,12 +3,14 @@ title: "SniffMEET. Xcode 프로젝트 파일 정리하기"
 date: 2025-06-05
 
 categories:
-    - Projects
+  - Projects
 series:
-    - SniffMeet
+  - SniffMeet
 tags:
-    - iOS
-    - Debugging
+  - CI
+  - iOS
+  - Project Configuration
+  - Xcode
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/Private & Shared 3/프로젝트 파일 정리하기 227f6d0576c280b5a0a3c115c0859b61.md"

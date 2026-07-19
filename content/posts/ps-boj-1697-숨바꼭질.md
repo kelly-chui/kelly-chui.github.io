@@ -1,9 +1,16 @@
 ---
 title: "BOJ 1697. 숨바꼭질"
 date: 2022-11-07
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Python", "BFS"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BFS
+  - BOJ
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/38"
 ---

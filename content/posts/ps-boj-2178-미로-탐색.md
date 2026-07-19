@@ -1,9 +1,16 @@
 ---
 title: "BOJ 2178. 미로 탐색"
 date: 2022-11-06
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Python", "BFS"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BFS
+  - BOJ
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/34"
 ---

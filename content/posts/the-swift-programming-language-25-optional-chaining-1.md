@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Optional Chaining (1)"
 date: 2023-06-19
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Optional Chaining"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Optional Chaining
+
 weight: 25
 
 draft: false

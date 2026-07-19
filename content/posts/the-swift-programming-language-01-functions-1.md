@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Functions (1)"
 date: 2023-05-25
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Functions"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Functions
+
 weight: 1
 
 draft: false

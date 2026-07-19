@@ -1,10 +1,18 @@
 ---
 title: "dev-data-server-light. 4. File Storage"
 date: 2026-07-02
-categories: ["Project"]
-series: ["dev-data-server-light"]
+
+categories:
+  - Project
+series:
+  - dev-data-server-light
 weight: 5
-tags: ["Backend", "dev-data-server-light", "Express", "TypeScript", "File Storage", "DIP"]
+tags:
+  - DIP
+  - Express
+  - File Storage
+  - TypeScript
+
 draft: false
 original: "https://junmusu.tistory.com/199"
 ---
@@ -15,7 +23,7 @@ DB 모듈을 마무리하고, 다음으로 구현한 것은 File Storage 모듈�
 
 처음 작성한 프롬프트는 다음과 같다.
 
-```
+```text
 Create the initial FileStorage contract in src/storage.
 
 Requirements:
@@ -50,7 +58,7 @@ export interface FileStorage {
 
 따라서 첫 번째 프롬프트의 결과로 나온 코드를 폐기하고, 다시 프롬프트를 구현이 끝난 이후에 에이전트에게 설계에 대한 설명을 하도록 작성했다:
 
-```
+```text
 Implement the initial storage contract.
 
 Create only:
@@ -124,7 +132,7 @@ export interface FileStorage {
 
 프롬프트는 다음과 같이 작성했다.
 
-```
+```text
 Implement StorageService.
 
 Create:

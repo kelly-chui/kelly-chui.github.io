@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Deinitialization"
 date: 2023-06-18
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Deinitialization"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Deinitialization
+
 weight: 24
 
 draft: false

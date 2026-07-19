@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Structures And Classes (2)"
 date: 2023-06-01
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Structures and Classes"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Structures and Classes
+
 weight: 10
 
 draft: false

@@ -7,11 +7,10 @@ categories:
 series:
   - Combine
 tags:
-  - Swift
-  - Combine
+  - Operator
   - Publisher
   - Subscriber
-  - Operator
+  - SwiftUI
 
 draft: false
 original: "notion-export/블로그 이관/Swift/Combine in Practice 266ade8f376583f1ad67818d14cb406d.md"

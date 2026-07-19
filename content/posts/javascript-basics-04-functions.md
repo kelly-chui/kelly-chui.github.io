@@ -2,10 +2,15 @@
 title: "JavaScript Basics. 04. 자바스크립트 함수"
 date: 2025-06-02
 
-categories: ["JavaScript"]
-series: ["JavaScript Basics"]
+categories:
+  - JavaScript
+series:
+  - JavaScript Basics
 weight: 4
-tags: ["JavaScript"]
+tags:
+  - Callback
+  - Closure
+  - Function
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/4 자바스크립트 함수 3c8ade8f376583b1b34b8158fb5f02e6.md"

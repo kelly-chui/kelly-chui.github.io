@@ -1,9 +1,16 @@
 ---
 title: "Programmers. 거스름돈"
 date: 2025-08-03
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Python", "DP"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Dynamic Programming
+  - Programmers
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/176"
 ---

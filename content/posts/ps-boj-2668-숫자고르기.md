@@ -1,9 +1,16 @@
 ---
 title: "BOJ 2668. 숫자고르기"
 date: 2024-06-04
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "C++", "DFS"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BOJ
+  - C++
+  - DFS
+
 draft: false
 original: "https://junmusu.tistory.com/148"
 ---

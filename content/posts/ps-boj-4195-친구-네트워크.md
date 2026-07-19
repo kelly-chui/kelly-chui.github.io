@@ -1,9 +1,16 @@
 ---
 title: "BOJ 4195. 친구 네트워크"
 date: 2023-02-23
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Swift", "Union Find"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BOJ
+  - Swift
+  - Union Find
+
 draft: false
 original: "https://junmusu.tistory.com/48"
 ---

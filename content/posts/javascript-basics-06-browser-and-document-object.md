@@ -2,10 +2,15 @@
 title: "JavaScript Basics. 06. 브라우저 및 문서 객체"
 date: 2025-06-06
 
-categories: ["JavaScript"]
-series: ["JavaScript Basics"]
+categories:
+  - JavaScript
+series:
+  - JavaScript Basics
 weight: 6
-tags: ["JavaScript"]
+tags:
+  - BOM
+  - Browser API
+  - DOM
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/6 브라우저 및 문서 객체 28aade8f376583e4a3ad812410ab21b6.md"

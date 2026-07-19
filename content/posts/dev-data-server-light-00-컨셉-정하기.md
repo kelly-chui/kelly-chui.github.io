@@ -1,10 +1,18 @@
 ---
 title: "dev-data-server-light. 0. Concept"
 date: 2026-06-24
-categories: ["Project"]
-series: ["dev-data-server-light"]
+
+categories:
+  - Project
+series:
+  - dev-data-server-light
 weight: 1
-tags: ["Backend", "dev-data-server-light", "Express", "TypeScript"]
+tags:
+  - Backend
+  - Express
+  - Software Architecture
+  - TypeScript
+
 draft: false
 original: "https://junmusu.tistory.com/195"
 ---
@@ -69,7 +77,7 @@ This project is a lightweight development server for app development and local t
 
 처음에 생각한 구조는 단순했다.
 
-```routeros
+```text
 Route
   ↓
 Service

@@ -1,9 +1,17 @@
 ---
 title: "Programmers. 순위 검색"
 date: 2025-01-07
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Swift", "Binary Serach"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Binary Search
+  - Hash Map
+  - Programmers
+  - Swift
+
 draft: false
 original: "https://junmusu.tistory.com/152"
 ---

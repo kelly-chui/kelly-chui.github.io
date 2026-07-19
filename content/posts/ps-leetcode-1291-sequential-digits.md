@@ -3,13 +3,13 @@ title: "Leetcode 1291. Sequential Digits"
 date: 2026-07-13T10:59:57+09:00
 
 categories:
-    - Online Judge
+  - Online Judge
 series:
-    - Problem Solving
+  - Problem Solving
 tags:
-    - LeetCode
-    - Python
-    - Back Tracking
+  - Backtracking
+  - LeetCode
+  - Python
 
 draft: false
 original: ""

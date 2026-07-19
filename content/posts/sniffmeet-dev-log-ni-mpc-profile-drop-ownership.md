@@ -2,9 +2,14 @@
 title: "SniffMEET. NI·MPC 프로필 드랍 흐름 소유권 고민하기"
 date: 2025-01-14
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: []
+tags:
+  - iOS
+  - Multipeer Connectivity
+  - Nearby Interaction
+  - VIPER
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/Private & Shared 15/NI, MPC 유즈케이스 분리 da4369c610504524b41752ed777a1712.md"

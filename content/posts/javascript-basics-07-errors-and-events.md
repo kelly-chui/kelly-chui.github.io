@@ -2,10 +2,15 @@
 title: "JavaScript Basics. 07. 자바스크립트 예외처리 및 이벤트 처리"
 date: 2025-06-09
 
-categories: ["JavaScript"]
-series: ["JavaScript Basics"]
+categories:
+  - JavaScript
+series:
+  - JavaScript Basics
 weight: 7
-tags: ["JavaScript"]
+tags:
+  - DOM
+  - Error Handling
+  - Event
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/7 자바스크립트 예외처리 및 이벤트 처리 27fade8f3765825295dc819696f69de4.md"

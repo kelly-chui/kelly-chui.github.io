@@ -3,15 +3,13 @@ title: "UIKit. TableViewCell에 UITextView 넣고 동적으로 높이 변경하�
 date: 2024-09-15
 
 categories:
-    - iOS
+  - iOS
 series:
-    - UIKit
+  - UIKit
 tags:
-    - iOS
-    - UIKit
-    - UITableView
-    - UITextView
-    - Auto Layout
+  - Auto Layout
+  - UITableView
+  - UITextView
 
 draft: false
 original: "notion-export/블로그 이관/UIKit/TableViewCell UITextView 넣고 동적으로 높이 변경하기 50fade8f3765836a81c901be3eb7be7d.md"

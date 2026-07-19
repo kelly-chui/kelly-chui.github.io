@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Type Casting"
 date: 2023-06-27
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Type Casting"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Type Casting
+
 weight: 34
 
 draft: false

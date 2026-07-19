@@ -3,12 +3,13 @@ title: "Swift. Xcode 디버깅과 LLDB 기본 명령어"
 date: 2024-11-20
 
 categories:
-    - iOS
-series:
+  - iOS
+series: []
 tags:
-    - Xcode
-    - Debugging
-    - LLVM
+  - Breakpoint
+  - Debugging
+  - LLDB
+  - Xcode
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/Private & Shared 10/Debugging with Xcode + LLDB 8d692c230a0f4a848e9baa66afd87f9b.md"

@@ -1,9 +1,16 @@
 ---
 title: "BOJ 15591. mootubesliver"
 date: 2024-04-12
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["BOJ", "Python", "BFS"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - BFS
+  - BOJ
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/139"
 ---

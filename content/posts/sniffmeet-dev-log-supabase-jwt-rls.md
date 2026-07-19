@@ -2,9 +2,14 @@
 title: "SniffMEET. JWT와 Supabase RLS 정책에 연결하기"
 date: 2024-11-20
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: []
+tags:
+  - Authentication
+  - JWT
+  - RLS
+  - Supabase
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/Supabase 용어 8efade8f376582958cf4810d24200061.md"

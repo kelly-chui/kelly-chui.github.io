@@ -2,9 +2,14 @@
 title: "SniffMEET. DTO와 Entity의 경계 점검하기"
 date: 2025-01-11
 
-categories: ["SniffMEET"]
+categories:
+  - SniffMEET
 series: []
-tags: []
+tags:
+  - DTO
+  - Entity
+  - Mapper
+  - Swift
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/엔티티 정리 179ade8f37658064afc1f1e030b4d919.md"

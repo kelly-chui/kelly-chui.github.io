@@ -3,14 +3,13 @@ title: "Leetcode 3867. Sum of GCD of Formed Pairs"
 date: 2026-07-16T10:29:15+09:00
 
 categories:
-    - Online Judge
+  - Online Judge
 series:
-    - LeetCode
+  - LeetCode
 tags:
-    - LeetCode
-    - Swift
-    - GCD
-    - Two Pointers
+  - GCD
+  - Swift
+  - Two Pointers
 
 draft: false
 original: ""

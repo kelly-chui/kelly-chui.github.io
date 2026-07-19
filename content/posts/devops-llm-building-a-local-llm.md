@@ -3,13 +3,13 @@ title: "DevOps. 로컬 LLM 설치하고 실행하기"
 date: 2026-07-13T20:34:39+09:00
 
 categories:
-    - DevOps
+  - DevOps
 series:
-    - AI AGENTS
+  - AI AGENTS
 tags:
-    - AI AGENTS
-    - LLM
-    - OLLAMA
+  - LLM
+  - Local AI
+  - Ollama
 
 draft: false
 original: ""

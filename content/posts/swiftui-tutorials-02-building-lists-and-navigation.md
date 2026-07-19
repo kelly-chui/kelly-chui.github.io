@@ -1,9 +1,16 @@
 ---
 title: "SwiftUI Tutorials. Building Lists and Navigation"
 date: 2024-06-25
-categories: ["iOS"]
-series: ["SwiftUI"]
-tags: ["SwiftUI"]
+
+categories:
+  - iOS
+series:
+  - SwiftUI
+tags:
+  - Identifiable
+  - List
+  - Navigation
+
 draft: false
 original: "https://junmusu.tistory.com/188"
 ---

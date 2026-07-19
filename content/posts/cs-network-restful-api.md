@@ -3,12 +3,13 @@ title: "Network. REST(Representational State Transfer)"
 date: 2025-02-01
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - REST API
+  - Application Layer
+  - HTTP
+  - REST API
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/RESTful API 18dade8f376580fca8a6f3bb821006a8.md"

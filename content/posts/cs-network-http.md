@@ -3,14 +3,14 @@ title: "Network. HTTP(HyperText Transfer Protocol)"
 date: 2024-03-14
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - Network Protocol
-    - HTTP
-    - HTTPS
+  - Application Layer
+  - HTTP
+  - HTTPS
+  - TLS
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/HTTP 1c8e9d7f8fa740818ce984429b3e90eb.md"

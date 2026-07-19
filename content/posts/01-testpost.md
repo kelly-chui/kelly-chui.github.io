@@ -2,9 +2,9 @@
 title: "TestPost"
 date: 2026-07-11
 
-categories:
-series:
-tags:
+categories: []
+series: []
+tags: []
 
 draft: true
 original: ""

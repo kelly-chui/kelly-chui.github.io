@@ -3,12 +3,12 @@ title: "Network. Network 오버뷰"
 date: 2024-04-30
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Computer Science
-    - Network
+  - OSI Model
+  - TCP/IP
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/Network basic 1e5ade8f3765813abc06eb4eb43b4142.md"

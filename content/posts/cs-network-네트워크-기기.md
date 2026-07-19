@@ -3,12 +3,13 @@ title: "Network. 네트워크 기기"
 date: 2024-03-14
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Network
+  - Network
 tags:
-    - Network
-    - Network Device
+  - Network Device
+  - Router
+  - Switch
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/네트워크 기기 3a1aa09804a74c15888ad282ef0dae2f.md"

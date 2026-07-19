@@ -3,13 +3,12 @@ title: "Docker. Dockerfile 작성하기"
 date: 2025-10-09
 
 categories:
-    - DevOps
+  - DevOps
 series:
-    - Docker
+  - Docker
 tags:
-    - DevOps
-    - Docker
-    - Dockerfile
+  - Docker Image
+  - Dockerfile
 
 draft: false
 original: "notion-export/블로그 이관/DevOps/Dockerfile 작성하기 286ade8f3765804aaeefc24cb212644b.md"

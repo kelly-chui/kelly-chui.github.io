@@ -3,12 +3,12 @@ title: "Software Engineering. VIPER 아키텍처"
 date: 2024-11-11
 
 categories:
-    - Software Engineering
-series:
+  - Software Engineering
+series: []
 tags:
-    - VIPER
-    - Architecture Pattern
-    - iOS
+  - Architecture Pattern
+  - iOS
+  - VIPER
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/VIPER 패턴 dafade8f376583d1a047819dff44758e.md"

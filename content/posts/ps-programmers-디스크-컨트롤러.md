@@ -1,9 +1,16 @@
 ---
 title: "Programmers. 디스크 컨트롤러"
 date: 2025-08-02
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Python", "Priority Queue"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Priority Queue
+  - Programmers
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/175"
 ---

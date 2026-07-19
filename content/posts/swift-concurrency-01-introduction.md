@@ -1,10 +1,18 @@
 ---
 title: "Swift Concurrency. 01. 도입 배경"
 date: 2025-08-03
-categories: ["Swift"]
-series: ["Swift Concurrency"]
+
+categories:
+  - Swift
+series:
+  - Swift Concurrency
 weight: 1
-tags: ["Swift Concurrency"]
+tags:
+  - Actor
+  - Async/Await
+  - GCD
+  - Structured Concurrency
+
 draft: false
 original: "https://junmusu.tistory.com/190"
 ---

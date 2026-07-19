@@ -1,9 +1,14 @@
 ---
 title: "The Swift Programming Language. Subscripts (2)"
 date: 2023-06-07
-categories: ["Swift"]
-series: ["The Swift Programming Language"]
-tags: ["The Swift Programming Language", "Swift", "Subscripts"]
+
+categories:
+  - Swift
+series:
+  - The Swift Programming Language
+tags:
+  - Subscripts
+
 weight: 17
 
 draft: false

@@ -3,11 +3,12 @@ title: "DB. Database 오버뷰."
 date: 2025-05-03
 
 categories:
-    - Computer Science
+  - Computer Science
 series:
-    - Database
+  - Database
 tags:
-    - Database
+  - Relational Database
+  - SQL
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/DB/Database basic 1e8ade8f376580538910fc447ab4e839.md"

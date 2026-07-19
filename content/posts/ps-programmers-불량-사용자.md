@@ -1,9 +1,16 @@
 ---
 title: "Programmers. 불량 사용자"
 date: 2025-07-21
-categories: ["Online Judge"]
-series: ["Problem Solving"]
-tags: ["Programmers", "Python", "Backtracking"]
+
+categories:
+  - Online Judge
+series:
+  - Problem Solving
+tags:
+  - Backtracking
+  - Programmers
+  - Python
+
 draft: false
 original: "https://junmusu.tistory.com/170"
 ---

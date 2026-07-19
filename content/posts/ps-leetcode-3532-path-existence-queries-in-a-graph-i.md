@@ -2,14 +2,14 @@
 title: "Leetcode 3532. Path Existence Queries in a Graph I"
 date: 2026-07-10T09:21:23+09:00
 
-categories: 
-    - Online Judge
+categories:
+  - Online Judge
 series:
-    - Problem Solving
-tags: 
-    - LeetCode
-    - Swift
-    - Union Find
+  - Problem Solving
+tags:
+  - LeetCode
+  - Swift
+  - Union Find
 
 draft: false
 original: ""
