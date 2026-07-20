@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-7490-0-만들기/"
+
 original: "https://junmusu.tistory.com/149"
 ---
 

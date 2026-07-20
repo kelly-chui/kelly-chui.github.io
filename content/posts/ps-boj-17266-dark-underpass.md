@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-17266-어두운-굴다리/"
+
 original: "https://junmusu.tistory.com/146"
 ---
 

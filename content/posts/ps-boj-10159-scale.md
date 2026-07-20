@@ -13,6 +13,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-10159-저울/"
+
 original: "https://junmusu.tistory.com/135"
 ---
 

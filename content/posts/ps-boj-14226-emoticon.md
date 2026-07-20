@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-14226-이모티콘/"
+
 original: "https://junmusu.tistory.com/137"
 ---
 

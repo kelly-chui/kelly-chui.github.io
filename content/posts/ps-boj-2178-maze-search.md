@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-2178-미로-탐색/"
+
 original: "https://junmusu.tistory.com/34"
 ---
 

@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-미로-탈출-명령어/"
+
 original: "https://junmusu.tistory.com/186"
 ---
 

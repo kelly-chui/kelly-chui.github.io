@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-하노이의-탑/"
+
 original: "https://junmusu.tistory.com/67"
 ---
 

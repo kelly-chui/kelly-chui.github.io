@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-풍선-터트리기/"
+
 original: "https://junmusu.tistory.com/179"
 ---
 

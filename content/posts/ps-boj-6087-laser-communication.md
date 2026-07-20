@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-6087-레이저-통신/"
+
 original: "https://junmusu.tistory.com/117"
 ---
 

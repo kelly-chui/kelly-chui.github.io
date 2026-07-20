@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-불량-사용자/"
+
 original: "https://junmusu.tistory.com/170"
 ---
 

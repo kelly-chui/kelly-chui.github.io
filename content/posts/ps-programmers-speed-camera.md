@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-단속-카메라/"
+
 original: "https://junmusu.tistory.com/169"
 ---
 

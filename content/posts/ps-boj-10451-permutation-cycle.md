@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-10451-순열-사이클/"
+
 original: "https://junmusu.tistory.com/35"
 ---
 

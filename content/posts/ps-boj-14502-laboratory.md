@@ -13,6 +13,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-14502-연구소/"
+
 original: "https://junmusu.tistory.com/116"
 ---
 

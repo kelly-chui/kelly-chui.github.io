@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-2493-탑/"
+
 original: "https://junmusu.tistory.com/122"
 ---
 

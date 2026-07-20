@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-최고의-집합/"
+
 original: "https://junmusu.tistory.com/167"
 ---
 

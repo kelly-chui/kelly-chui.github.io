@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-1520-내리막-길/"
+
 original: "https://junmusu.tistory.com/119"
 ---
 

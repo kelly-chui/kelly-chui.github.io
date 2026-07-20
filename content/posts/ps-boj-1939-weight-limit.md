@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-1939-중량-제한/"
+
 original: "https://junmusu.tistory.com/120"
 ---
 

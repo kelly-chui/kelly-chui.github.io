@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-16398-행성-연결/"
+
 original: "https://junmusu.tistory.com/51"
 ---
 

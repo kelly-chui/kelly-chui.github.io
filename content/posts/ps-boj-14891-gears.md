@@ -13,6 +13,9 @@ tags:
   - Simulation
 
 draft: false
+aliases:
+  - "/posts/ps-boj-14891-톱니바퀴/"
+
 original: "https://junmusu.tistory.com/145"
 ---
 

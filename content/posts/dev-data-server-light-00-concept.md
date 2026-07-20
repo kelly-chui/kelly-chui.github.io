@@ -14,6 +14,9 @@ tags:
   - TypeScript
 
 draft: false
+aliases:
+  - "/posts/dev-data-server-light-00-컨셉-정하기/"
+
 original: "https://junmusu.tistory.com/195"
 ---
 

@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-1753-최단경로/"
+
 original: "https://junmusu.tistory.com/60"
 ---
 

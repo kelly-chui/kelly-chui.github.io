@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-순위/"
+
 original: "https://junmusu.tistory.com/178"
 ---
 

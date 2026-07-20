@@ -12,6 +12,9 @@ tags:
   - Union Find
 
 draft: false
+aliases:
+  - "/posts/ps-boj-4195-친구-네트워크/"
+
 original: "https://junmusu.tistory.com/48"
 ---
 

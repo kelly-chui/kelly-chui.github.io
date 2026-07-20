@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-합승-택시-요금/"
+
 original: "https://junmusu.tistory.com/181"
 ---
 

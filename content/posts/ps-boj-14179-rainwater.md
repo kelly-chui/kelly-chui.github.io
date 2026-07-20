@@ -12,6 +12,9 @@ tags:
   - Stack
 
 draft: false
+aliases:
+  - "/posts/ps-boj-14179-빗물/"
+
 original: "https://junmusu.tistory.com/147"
 ---
 

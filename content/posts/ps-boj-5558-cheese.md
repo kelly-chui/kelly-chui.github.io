@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-5558-チ-ズ-cheese/"
+
 original: "https://junmusu.tistory.com/140"
 ---
 

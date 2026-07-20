@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-12852-1로-만들기-2/"
+
 original: "https://junmusu.tistory.com/156"
 ---
 

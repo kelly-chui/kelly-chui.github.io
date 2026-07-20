@@ -12,6 +12,9 @@ tags:
   - Simulation
 
 draft: false
+aliases:
+  - "/posts/ps-boj-2331-반복-수열/"
+
 original: "https://junmusu.tistory.com/37"
 ---
 

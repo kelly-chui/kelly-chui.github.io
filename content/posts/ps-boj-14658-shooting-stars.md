@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-14658-하늘에서-별똥별이-빗발친다/"
+
 original: "https://junmusu.tistory.com/136"
 ---
 

@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-디스크-컨트롤러/"
+
 original: "https://junmusu.tistory.com/175"
 ---
 

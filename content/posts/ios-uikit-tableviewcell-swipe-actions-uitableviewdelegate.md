@@ -10,6 +10,9 @@ tags:
   - UITableView
 
 draft: false
+aliases:
+  - "/posts/ios-uikit-tableviewcell-스와이프-동작-uitableviewdelegate/"
+
 original: "notion-export/블로그 이관/UIKit/TableViewCell 스와이프 동작(UITableViewDelegate) ff1ade8f376583c4bc4081992b3a303e.md"
 ---
 

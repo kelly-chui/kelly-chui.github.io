@@ -13,6 +13,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-17298-오큰수/"
+
 original: "https://junmusu.tistory.com/123"
 ---
 

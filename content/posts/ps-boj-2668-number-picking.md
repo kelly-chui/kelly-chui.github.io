@@ -12,6 +12,9 @@ tags:
   - DFS
 
 draft: false
+aliases:
+  - "/posts/ps-boj-2668-숫자고르기/"
+
 original: "https://junmusu.tistory.com/148"
 ---
 

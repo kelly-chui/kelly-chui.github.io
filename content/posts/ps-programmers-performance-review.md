@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-인사고과/"
+
 original: "https://junmusu.tistory.com/180"
 ---
 

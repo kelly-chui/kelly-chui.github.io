@@ -11,6 +11,9 @@ tags:
   - TCP/IP
 
 draft: false
+aliases:
+  - "/posts/cs-network-tcp-ip-4계층/"
+
 original: "notion-export/블로그 이관/ComputerScience/Network/TCP IP 4계층 89e609d0242740db8352e13035ecadcf.md"
 ---
 

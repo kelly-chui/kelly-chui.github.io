@@ -11,6 +11,9 @@ tags:
   - Virtualization
 
 draft: false
+aliases:
+  - "/posts/devops-docker-01-시작하기/"
+
 original: "notion-export/블로그 이관/DevOps/Docker 개요 286ade8f376580799bd1c96bfd738422.md"
 ---
 

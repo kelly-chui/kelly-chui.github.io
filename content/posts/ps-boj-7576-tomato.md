@@ -13,6 +13,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-7576-토마토/"
+
 original: "https://junmusu.tistory.com/39"
 ---
 

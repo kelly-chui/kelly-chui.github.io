@@ -14,6 +14,9 @@ tags:
   - TypeScript
 
 draft: false
+aliases:
+  - "/posts/dev-data-server-light-01-system-모듈/"
+
 original: "https://junmusu.tistory.com/196"
 ---
 

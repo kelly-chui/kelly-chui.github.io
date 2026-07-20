@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-거스름돈/"
+
 original: "https://junmusu.tistory.com/176"
 ---
 

@@ -13,6 +13,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-셔틀버스/"
+
 original: "https://junmusu.tistory.com/177"
 ---
 
