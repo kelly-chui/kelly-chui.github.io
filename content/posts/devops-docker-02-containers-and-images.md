@@ -43,7 +43,7 @@ VM은 자체 커널, 드라이버, 프로그램을 갖춘 완전한 운영체제
 
 이미지의 각 레이어에는 추가, 삭제 또는 수정과 같은 파일 시스템 변경 사항이 포함된다. 다음은 이미지의 예시이다.
 
-![image.png](/images/devops-docker-02-컨테이너와-이미지/image-001.png)
+![image.png](/images/devops-docker-02-containers-and-images/image-001.png)
 
 - 예시
     1. apt와 같은 기본 명령과 패키지 관리자를 추가한다.

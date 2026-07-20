@@ -33,13 +33,13 @@ original: "https://junmusu.tistory.com/94"
 
 이때, 배열 lecture를 시간순으로만 정렬하게 되면 문제에서 다음과 같은 부분 때문에 문제가 생긴다.
 
-![](/images/ps-boj-11000-강의실-배정/image-002.png)
+![](/images/ps-boj-11000-classroom-assignment/image-002.png)
 
 강의가 입력으로 들어오는 순서는 랜덤이므로, `Ti = Sj` 인 경우일 때 정렬에 문제가 생긴다. **특정 시점 `X`에 끝나는 강의와 시작하는 강의가 있을 때, 시점 `X`에 끝나는 강의를 모두 `current`에 반영한 다음, 시작하는 강의를 `current`에 반영해야 한다.**
 
 따라서 정렬 코드에 비교 클로저를 더 상세하게 작성할 필요가 있다.
 
-![](/images/ps-boj-11000-강의실-배정/image-003.png)
+![](/images/ps-boj-11000-classroom-assignment/image-003.png)
 
 처음에는 시간을 비교하고, 시간이 같다면 그 시점에 끝나는 강의가 앞으로 오도록 정렬을 해야 한다.
 

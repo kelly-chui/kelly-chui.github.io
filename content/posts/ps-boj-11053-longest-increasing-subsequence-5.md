@@ -23,7 +23,7 @@ original: "https://junmusu.tistory.com/52"
 ## 풀이  
 LIS(Longest Increasing Subsequence)라고 하는 유명한 DP 문제이다. 이 문제 외에도 연계된 문제들이 많으니 1번(BOJ 11722)부터 차례대로 풀면 어느새 여기까지 풀게 된다.
 
-![](/images/ps-boj-11053-가장-긴-증가하는-부분-수열-5/image-002.png)
+![](/images/ps-boj-11053-longest-increasing-subsequence-5/image-002.png)
 
 이 문제들은 총 2가지 기준으로 분류된다. 첫 번째 기준은 O(n²), O(nlogn) 두 번째는 LIS 출력 여부이다. 이 중에 O(nlogn) 알고리즘을 사용하고 LIS를 직접 출력해야 하는 문제가 이 문제이다. 원래는 Swift로 작성하려 했지만, 백준의 입력시간 문제 때문에 Swift론 입력 횟수가 적은 O(n²)문제를 풀고 O(nlogn) 문제는 C++로 작성하였다.  
   
@@ -38,7 +38,7 @@ LIS(Longest Increasing Subsequence)라고 하는 유명한 DP 문제이다. 이 
 
 글로 설명하려니 복잡한데 그냥 표로 표시하면 다음과 같다.
 
-![](/images/ps-boj-11053-가장-긴-증가하는-부분-수열-5/image-003.jpg)
+![](/images/ps-boj-11053-longest-increasing-subsequence-5/image-003.jpg)
 
 1. `dpTable`은 입력으로 가능한 최댓값보다 큰 수로 초기화한다. 표에서는 `1B`라고 적었지만, 실제로는 `1B + 1`이 맞다.
 2. `dpTable`에서 `a[i]`보다 크거나 같은 값이 처음 등장하는 위치를 이진 탐색으로 찾는다.
