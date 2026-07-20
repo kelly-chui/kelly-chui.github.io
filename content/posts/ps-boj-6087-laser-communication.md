@@ -31,17 +31,17 @@ original: "https://junmusu.tistory.com/117"
 2. 현재 있는 칸에서 내가 바라보고 있는 방향을 기준으로 수직인 노드는 거리가 1, 아닌 노드는 0으로 설정  
 3. 2.를 반복하면서 다익스트라 수행
 
-![](/images/ps-boj-6087-레이저-통신/image-002.png)
+![](/images/ps-boj-6087-laser-communication/image-002.png)
 
 `vertical`은 가로 이동 `horizontal`은 세로 이동 `neutral`은 중립 방향인데, 시작 지점이나 아래에서 설명할 다른 `Direction`이지만 같은 거리에 있는 노드가 가지는 방향이다. `none`은 아직 탐색하지 않은 노드가 가지는 방향이다.
 
 문제에서 미처 생각하지 못하고 넘어갈만한 부분은 같은 거리로 도착했어도 그 칸에서 바라볼수 있는 방향이 다르다는 것이다. 따라서 `directions` 배열을 만들었다. `distances` 배열을 `(Int, Direction)`꼴로 만들어도 좋다.
 
-![](/images/ps-boj-6087-레이저-통신/image-003.png)
+![](/images/ps-boj-6087-laser-communication/image-003.png)
 
 따라서 `distances` 배열 값은 같지만 `directions` 배열 값이 다른 경우도 `heap`에 추가를 해야한다.
 
-![](/images/ps-boj-6087-레이저-통신/image-004.png)
+![](/images/ps-boj-6087-laser-communication/image-004.png)
 
 이 때, 이미 방향이 `neutral`인 노드였으면, 이 과정을 한번 거친 노드이므로 무한 루프를 방지하기 위해 제외한다.
 

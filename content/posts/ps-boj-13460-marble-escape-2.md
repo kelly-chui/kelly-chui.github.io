@@ -31,7 +31,7 @@ original: "https://junmusu.tistory.com/141"
 
 1, 2 조건을 조합하면 구슬이 다른 구슬을 만나도 벽을 만난것과 같음을 알 수 있고, 따라서 구슬이 겹친 경우에는 처리를 해줘야 한다.
 
-![](/images/ps-boj-13460-구슬-탈출-2/image-002.png)
+![](/images/ps-boj-13460-marble-escape-2/image-002.png)
 
 단순히 겹친 구슬들 중 더 많이 움직인 구슬을 한 칸 뒤로 옮겨주면 된다.
 

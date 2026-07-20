@@ -109,7 +109,7 @@ extension ViewController: GrowingCellProtocol {
 
 ## 실제 적용 화면
 
-![](/images/ios-uikit-tableviewcell-uitextview-넣고-동적으로-높이-변경하기/image-001.gif)
+![](/images/ios-uikit-tableviewcell-uitextview-dynamic-height/image-001.gif)
 
 ## 레퍼런스
 
