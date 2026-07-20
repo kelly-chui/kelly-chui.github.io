@@ -4,11 +4,17 @@
   "version": "1.0.0",
   "scripts": {
     "build": "hugo --minify",
+    "posts:bundle": "tsx scripts/bundle-posts.ts",
     "vendor:mermaid": "mkdir -p static/js/vendor && cp node_modules/mermaid/dist/mermaid.min.js static/js/vendor/mermaid.min.js",
     "vendor:katex": "mkdir -p static/css/vendor/fonts static/js/vendor && cp node_modules/katex/dist/katex.min.css static/css/vendor/katex.min.css && cp node_modules/katex/dist/fonts/* static/css/vendor/fonts/ && cp node_modules/katex/dist/katex.min.js static/js/vendor/katex.min.js && cp node_modules/katex/dist/contrib/auto-render.min.js static/js/vendor/auto-render.min.js"
   },
   "dependencies": {
     "katex": "^0.16.47",
     "mermaid": "^11.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2"
   }
 }
