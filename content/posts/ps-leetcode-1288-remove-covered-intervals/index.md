@@ -3,7 +3,7 @@ title: "LeetCode 1288. Remove Covered Intervals"
 date: 2026-07-07T12:33:49+09:00
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

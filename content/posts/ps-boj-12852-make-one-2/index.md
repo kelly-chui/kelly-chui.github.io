@@ -3,7 +3,7 @@ title: "BOJ 12852. 1로 만들기 2"
 date: 2025-04-30
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

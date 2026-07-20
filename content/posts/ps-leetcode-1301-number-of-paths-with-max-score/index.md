@@ -3,7 +3,7 @@ title: "LeetCode 1301. Number of Paths with Max Score"
 date: 2026-07-05T14:30:01+09:00
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

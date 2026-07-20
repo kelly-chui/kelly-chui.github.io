@@ -3,7 +3,7 @@ title: "BOJ 14502. 연구소"
 date: 2023-07-05
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

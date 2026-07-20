@@ -3,7 +3,7 @@ title: "Programmers. 최고의 집합"
 date: 2025-07-20
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

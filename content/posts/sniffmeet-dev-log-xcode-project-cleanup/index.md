@@ -3,9 +3,9 @@ title: "SniffMEET. Xcode 프로젝트 파일 정리하기"
 date: 2025-06-05
 
 categories:
-  - Projects
+  - Project
 series:
-  - SniffMeet
+  - SniffMEET
 tags:
   - CI
   - iOS

@@ -3,8 +3,9 @@ title: "SniffMEET. RLS와 테이블 권한"
 date: 2024-11-20
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - Authorization
   - PostgreSQL

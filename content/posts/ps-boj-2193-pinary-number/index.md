@@ -3,7 +3,7 @@ title: "BOJ 2193. 이친수"
 date: 2025-04-30
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

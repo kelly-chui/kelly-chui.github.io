@@ -3,7 +3,7 @@ title: "Programmers. 거스름돈"
 date: 2025-08-03
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

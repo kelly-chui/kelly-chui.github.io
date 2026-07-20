@@ -3,7 +3,7 @@ title: "BOJ 1939. 중량 제한"
 date: 2023-07-07
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

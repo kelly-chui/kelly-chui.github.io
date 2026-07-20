@@ -3,7 +3,7 @@ title: "Programmers. 풍선 터트리기"
 date: 2025-08-05
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

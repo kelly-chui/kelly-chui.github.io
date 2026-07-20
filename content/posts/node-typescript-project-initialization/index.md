@@ -3,8 +3,7 @@ title: "Node. TypeScript 프로젝트 초기화하기"
 date: 2025-10-08
 
 categories:
-  - Node.js
-  - TypeScript
+  - TS/JS
 series: []
 tags:
   - Compiler Configuration

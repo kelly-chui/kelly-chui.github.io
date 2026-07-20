@@ -3,8 +3,9 @@ title: "SniffMEET. Instruments로 성능 개선 후보 찾기"
 date: 2025-01-07
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - CPU
   - Instruments

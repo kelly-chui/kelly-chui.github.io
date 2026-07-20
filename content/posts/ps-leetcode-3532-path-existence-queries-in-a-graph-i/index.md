@@ -3,7 +3,7 @@ title: "Leetcode 3532. Path Existence Queries in a Graph I"
 date: 2026-07-10T09:21:23+09:00
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

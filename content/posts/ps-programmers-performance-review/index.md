@@ -3,7 +3,7 @@ title: "Programmers. 인사고과"
 date: 2025-08-06
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

@@ -3,8 +3,9 @@ title: "SniffMEET. 세션 저장 메소드를 공개해도 괜찮을까?"
 date: 2025-02-10
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - Access Control
   - Encapsulation

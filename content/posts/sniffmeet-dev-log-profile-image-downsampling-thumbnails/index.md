@@ -3,8 +3,9 @@ title: "SniffMEET. 프로필 이미지 다운샘플링과 썸네일 분리하기
 date: 2025-01-17
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - CGImage
   - Image Downsampling

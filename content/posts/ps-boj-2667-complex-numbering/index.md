@@ -3,7 +3,7 @@ title: "BOJ 2667. 단지 번호 붙이기"
 date: 2022-11-07
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

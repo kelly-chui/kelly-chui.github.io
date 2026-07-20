@@ -3,7 +3,7 @@ title: "Programmers. 불량 사용자"
 date: 2025-07-21
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

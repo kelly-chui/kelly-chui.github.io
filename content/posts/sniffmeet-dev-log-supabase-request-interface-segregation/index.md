@@ -3,8 +3,9 @@ title: "SniffMEET. ISP로 Supabase 요청 빌더 역할 나누기"
 date: 2025-02-06
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - ISP
   - Networking

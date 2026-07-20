@@ -3,8 +3,9 @@ title: "SniffMEET. 익명 로그인 세션의 생성·복원·갱신 흐름"
 date: 2024-11-14
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - Anonymous Sign-In
   - Authentication

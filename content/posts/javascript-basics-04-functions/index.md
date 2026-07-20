@@ -3,7 +3,7 @@ title: "JavaScript Basics. 04. 자바스크립트 함수"
 date: 2025-06-02
 
 categories:
-  - JavaScript
+  - TS/JS
 series:
   - JavaScript Basics
 weight: 4

@@ -3,7 +3,7 @@ title: "BOJ 17298. 오큰수"
 date: 2023-07-10
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

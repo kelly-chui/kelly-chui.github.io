@@ -3,7 +3,7 @@ title: "BOJ 13144. list of unique numbers"
 date: 2024-06-12
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

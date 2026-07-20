@@ -3,7 +3,7 @@ title: "BOJ 14226. 이모티콘"
 date: 2024-04-09
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

@@ -3,7 +3,7 @@ title: "JavaScript. 모듈 시스템"
 date: 2025-10-07
 
 categories:
-  - JavaScript
+  - TS/JS
 series: []
 tags:
   - CommonJS

@@ -3,7 +3,7 @@ title: "JavaScript Basics. 03. 자바스크립트 사용자 정의 자료형 활
 date: 2025-06-01
 
 categories:
-  - JavaScript
+  - TS/JS
 series:
   - JavaScript Basics
 weight: 3

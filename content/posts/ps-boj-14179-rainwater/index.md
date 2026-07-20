@@ -3,7 +3,7 @@ title: "BOJ 14179. 빗물"
 date: 2024-05-28
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

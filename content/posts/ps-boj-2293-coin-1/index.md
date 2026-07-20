@@ -3,7 +3,7 @@ title: "BOJ 2293. 동전 1"
 date: 2023-07-10
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

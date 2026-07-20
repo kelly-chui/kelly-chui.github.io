@@ -2,7 +2,7 @@
 title: "TestPost"
 date: 2026-07-11
 
-categories: []
+categories:
 series: []
 tags: []
 

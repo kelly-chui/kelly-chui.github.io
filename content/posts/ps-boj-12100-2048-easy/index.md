@@ -3,7 +3,7 @@ title: "BOJ 12100. 2048(Easy)"
 date: 2024-04-14
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

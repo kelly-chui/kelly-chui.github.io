@@ -3,8 +3,9 @@ title: "SniffMEET. OSSignposter로 앱 내부 작업 구간 측정하기"
 date: 2025-01-14
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - Instruments
   - iOS

@@ -3,7 +3,7 @@ title: "BOJ 7576. 토마토"
 date: 2022-11-10
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

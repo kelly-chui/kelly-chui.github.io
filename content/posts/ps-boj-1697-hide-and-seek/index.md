@@ -3,7 +3,7 @@ title: "BOJ 1697. 숨바꼭질"
 date: 2022-11-07
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

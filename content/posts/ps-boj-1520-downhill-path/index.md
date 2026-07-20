@@ -3,7 +3,7 @@ title: "BOJ 1520. 내리막 길"
 date: 2023-07-06
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

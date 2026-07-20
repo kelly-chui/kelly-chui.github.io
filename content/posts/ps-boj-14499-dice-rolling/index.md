@@ -3,7 +3,7 @@ title: "BOJ 14499. 주사위 굴리기"
 date: 2024-04-15
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

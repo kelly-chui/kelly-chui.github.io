@@ -3,8 +3,9 @@ title: "SniffMEET. 세션 갱신과 정보 접근을 SessionManager에 캡슐화
 date: 2025-02-10
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - Encapsulation
   - Session

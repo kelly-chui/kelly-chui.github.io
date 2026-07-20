@@ -3,7 +3,7 @@ title: "BOJ 1049. 기타줄"
 date: 2023-06-16
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

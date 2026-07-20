@@ -3,7 +3,7 @@ title: "BOJ 2668. 숫자고르기"
 date: 2024-06-04
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

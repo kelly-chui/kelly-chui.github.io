@@ -3,7 +3,7 @@ title: "BOJ 7490. 0 만들기"
 date: 2024-06-10
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

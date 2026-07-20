@@ -3,7 +3,7 @@ title: "Programmers. 셔틀버스"
 date: 2025-08-03
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

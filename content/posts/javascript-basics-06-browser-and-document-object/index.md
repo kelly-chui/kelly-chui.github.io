@@ -3,7 +3,7 @@ title: "JavaScript Basics. 06. 브라우저 및 문서 객체"
 date: 2025-06-06
 
 categories:
-  - JavaScript
+  - TS/JS
 series:
   - JavaScript Basics
 weight: 6

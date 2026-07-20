@@ -3,8 +3,9 @@ title: "SniffMEET. AuthManager와 SessionManager의 책임 분리하기"
 date: 2025-02-10
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - Authentication
   - Session

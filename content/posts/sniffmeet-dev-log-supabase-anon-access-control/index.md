@@ -3,8 +3,9 @@ title: "SniffMEET. anon-key와 익명 사용자의 접근 권한 구분"
 date: 2024-11-28
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - Authentication
   - Authorization

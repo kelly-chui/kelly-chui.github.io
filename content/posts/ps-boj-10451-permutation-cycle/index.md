@@ -3,7 +3,7 @@ title: "BOJ 10451. 순열 사이클"
 date: 2022-11-06
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

@@ -3,8 +3,9 @@ title: "SniffMEET. 여러 VIPER 구현에서 Router 구조 비교하기"
 date: 2024-11-12
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - iOS
   - Router

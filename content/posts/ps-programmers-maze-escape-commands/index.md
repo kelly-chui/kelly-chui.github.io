@@ -3,7 +3,7 @@ title: "Programmers. 미로 탈출 명령어"
 date: 2025-08-23
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

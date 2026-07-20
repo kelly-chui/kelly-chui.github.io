@@ -3,7 +3,7 @@ title: "Leetcode 3658. GCD of Odd and Even Sums"
 date: 2026-07-15T10:32:37+09:00
 
 categories:
-  - Online Judge
+  - PS
 series:
   - LeetCode
 tags:

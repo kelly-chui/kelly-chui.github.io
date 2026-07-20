@@ -3,7 +3,7 @@ title: "JavaScript Basics. 02. 연산자와 명령문"
 date: 2025-06-01
 
 categories:
-  - JavaScript
+  - TS/JS
 series:
   - JavaScript Basics
 weight: 2

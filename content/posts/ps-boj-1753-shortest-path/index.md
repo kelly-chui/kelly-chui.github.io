@@ -3,7 +3,7 @@ title: "BOJ 1753. 최단경로"
 date: 2023-03-05
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

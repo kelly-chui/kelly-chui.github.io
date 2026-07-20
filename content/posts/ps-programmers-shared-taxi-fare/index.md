@@ -3,7 +3,7 @@ title: "Programmers. 합승 택시 요금"
 date: 2025-08-14
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

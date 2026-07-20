@@ -3,7 +3,7 @@ title: "BOJ 13460. 구슬 탈출 2"
 date: 2024-04-13
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

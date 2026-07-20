@@ -3,7 +3,7 @@ title: "BOJ 1726. 로봇"
 date: 2022-11-18
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

@@ -3,7 +3,7 @@ title: "Programmers. 디스크 컨트롤러"
 date: 2025-08-02
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

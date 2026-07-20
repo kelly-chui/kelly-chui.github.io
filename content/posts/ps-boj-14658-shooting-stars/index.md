@@ -3,7 +3,7 @@ title: "BOJ 14658. 하늘에서 별똥별이 빗발친다"
 date: 2024-04-07
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

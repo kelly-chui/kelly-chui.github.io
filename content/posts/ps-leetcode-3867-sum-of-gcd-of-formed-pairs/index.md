@@ -3,7 +3,7 @@ title: "Leetcode 3867. Sum of GCD of Formed Pairs"
 date: 2026-07-16T10:29:15+09:00
 
 categories:
-  - Online Judge
+  - PS
 series:
   - LeetCode
 tags:

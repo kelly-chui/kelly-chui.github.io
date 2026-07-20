@@ -3,7 +3,7 @@ title: "JavaScript Basics. 05. 자바스크립트 내장 객체"
 date: 2025-06-03
 
 categories:
-  - JavaScript
+  - TS/JS
 series:
   - JavaScript Basics
 weight: 5

@@ -3,7 +3,7 @@ title: "BOJ 16398. 행성 연결"
 date: 2023-02-25
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

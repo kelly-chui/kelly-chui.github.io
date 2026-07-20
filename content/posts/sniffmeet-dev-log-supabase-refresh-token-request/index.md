@@ -3,8 +3,9 @@ title: "SniffMEET. Supabase 세션 갱신 요청이 실패한 이유"
 date: 2024-11-21
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - Authentication
   - HTTP

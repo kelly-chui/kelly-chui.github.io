@@ -3,7 +3,7 @@ title: "BOJ 2178. 미로 탐색"
 date: 2022-11-06
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

@@ -3,7 +3,7 @@ title: "Leetcode 3020. Find the Maximum Number of Elements in Subset"
 date: 2026-07-09T08:23:02+09:00
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

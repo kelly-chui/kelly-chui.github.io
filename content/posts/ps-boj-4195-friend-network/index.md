@@ -3,7 +3,7 @@ title: "BOJ 4195. 친구 네트워크"
 date: 2023-02-23
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

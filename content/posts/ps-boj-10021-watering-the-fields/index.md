@@ -3,7 +3,7 @@ title: "BOJ 10021. watering the fields"
 date: 2024-04-12
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

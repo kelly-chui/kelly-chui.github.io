@@ -3,7 +3,7 @@ title: "BOJ 14890. 경사로"
 date: 2024-04-19
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

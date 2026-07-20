@@ -3,8 +3,9 @@ title: "SniffMEET. Storage 버킷과 접근 제어"
 date: 2024-11-24
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - Access Control
   - RLS

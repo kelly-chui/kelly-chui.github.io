@@ -3,7 +3,7 @@ title: "BOJ 5558. チ ズ cheese"
 date: 2024-04-12
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

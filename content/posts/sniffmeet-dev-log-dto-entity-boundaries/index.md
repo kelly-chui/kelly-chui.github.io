@@ -3,8 +3,9 @@ title: "SniffMEET. DTO와 Entity의 경계 점검하기"
 date: 2025-01-11
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - DTO
   - Entity

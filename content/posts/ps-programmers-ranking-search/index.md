@@ -3,7 +3,7 @@ title: "Programmers. 순위 검색"
 date: 2025-01-07
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

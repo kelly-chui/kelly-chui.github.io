@@ -3,8 +3,9 @@ title: "SniffMEET. JWT와 Supabase RLS 정책에 연결하기"
 date: 2024-11-20
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - Authentication
   - JWT

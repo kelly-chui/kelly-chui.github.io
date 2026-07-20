@@ -3,7 +3,7 @@ title: "Node. Node.js 소개"
 date: 2025-10-05
 
 categories:
-  - Node.js
+  - TS/JS
 series: []
 tags:
   - JavaScript

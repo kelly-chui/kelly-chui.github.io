@@ -3,7 +3,7 @@ title: "BOJ 16234. 인구 이동"
 date: 2023-07-06
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

@@ -3,7 +3,7 @@ title: "BOJ 11053. 가장 긴 증가하는 부분 수열 5"
 date: 2023-03-01
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

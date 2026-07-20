@@ -3,7 +3,7 @@ title: "JavaScript Basics. 07. 자바스크립트 예외처리 및 이벤트 처
 date: 2025-06-09
 
 categories:
-  - JavaScript
+  - TS/JS
 series:
   - JavaScript Basics
 weight: 7

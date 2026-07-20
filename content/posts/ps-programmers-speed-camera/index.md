@@ -3,7 +3,7 @@ title: "Programmers. 단속 카메라"
 date: 2025-07-21
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

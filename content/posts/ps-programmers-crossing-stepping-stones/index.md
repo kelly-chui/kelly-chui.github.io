@@ -3,7 +3,7 @@ title: "Programmers. 징검다리 건너기"
 date: 2025-07-22
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

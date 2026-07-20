@@ -3,7 +3,7 @@ title: "BOJ 3055. 탈출"
 date: 2022-11-17
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

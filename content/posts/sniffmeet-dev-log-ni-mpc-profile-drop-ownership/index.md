@@ -3,8 +3,9 @@ title: "SniffMEET. NI·MPC 프로필 드랍 흐름 소유권 고민하기"
 date: 2025-01-14
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - iOS
   - Multipeer Connectivity

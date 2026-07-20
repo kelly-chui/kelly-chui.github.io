@@ -3,7 +3,7 @@ title: "BOJ 10159. 저울"
 date: 2024-04-07
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

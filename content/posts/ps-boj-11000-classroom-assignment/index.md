@@ -3,7 +3,7 @@ title: "BOJ 11000. 강의실 배정"
 date: 2023-06-16
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

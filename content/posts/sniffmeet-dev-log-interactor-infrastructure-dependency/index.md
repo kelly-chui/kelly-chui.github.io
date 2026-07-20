@@ -3,8 +3,9 @@ title: "SniffMEET. Interactor가 인프라를 직접 알아도 될까"
 date: 2025-02-10
 
 categories:
+  - Project
+series:
   - SniffMEET
-series: []
 tags:
   - Dependency Injection
   - Layered Architecture

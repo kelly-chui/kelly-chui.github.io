@@ -3,7 +3,7 @@ title: "Programmers. 표 편집"
 date: 2025-08-14
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

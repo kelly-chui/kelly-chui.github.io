@@ -3,7 +3,7 @@ title: "BOJ 4179. 불"
 date: 2024-06-10
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:

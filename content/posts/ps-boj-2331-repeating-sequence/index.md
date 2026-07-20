@@ -3,7 +3,7 @@ title: "BOJ 2331. 반복 수열"
 date: 2022-11-07
 
 categories:
-  - Online Judge
+  - PS
 series:
   - Problem Solving
 tags:
