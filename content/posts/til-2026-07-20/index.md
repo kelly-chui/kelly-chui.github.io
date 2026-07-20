@@ -3,8 +3,10 @@ title: "TIL. Jul 20, 2026"
 date: 2026-07-20T22:18:49+09:00
 
 categories:
-series:
+  - TIL
 tags:
+  - Python
+  - Hugo
 
 draft: false
 original: ""
@@ -28,7 +30,9 @@ PS 문제를 풀면서, 처음에 Medium 문제인데 좀 해맸다, LCS 두 개
 
 단조 스택(Monotonic Stack) 문제인데, 사실 이런 스택이 있는지 오늘 처음 알았다. 그냥 스택은 스택으로 생각했으니까, 마치 Binary Search와 Parametric Search같은 느낌인가.
 
-단조 스택은 ... 스택이다.
+단조 스택은 아무렇게나 push하고 pop하는 스택이 아니라, 스택 내부가 항상 일정한 순서를 유지하도록 관리하는 스택이다. 
+
+새로운 원소를 넣기 전에 단조성을 깨는 원소들을 pop하는 것이 핵심 로직이다. 이 문제에서는 '사전순' 이라는 조건이 단조 조건이 된다.
 
 ### 블로그 관리하기
 
