@@ -14,6 +14,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-징검다리-건너기/"
+
 original: "https://junmusu.tistory.com/172"
 ---
 

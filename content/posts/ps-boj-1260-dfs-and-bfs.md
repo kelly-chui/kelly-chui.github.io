@@ -13,6 +13,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-1260-dfs와-bfs/"
+
 original: "https://junmusu.tistory.com/33"
 ---
 

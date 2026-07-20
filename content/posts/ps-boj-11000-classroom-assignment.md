@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-11000-강의실-배정/"
+
 original: "https://junmusu.tistory.com/94"
 ---
 

@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-2667-단지-번호-붙이기/"
+
 original: "https://junmusu.tistory.com/36"
 ---
 

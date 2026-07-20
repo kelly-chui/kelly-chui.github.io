@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-16234-인구-이동/"
+
 original: "https://junmusu.tistory.com/118"
 ---
 

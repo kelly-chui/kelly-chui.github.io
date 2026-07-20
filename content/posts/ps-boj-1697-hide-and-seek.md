@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-1697-숨바꼭질/"
+
 original: "https://junmusu.tistory.com/38"
 ---
 

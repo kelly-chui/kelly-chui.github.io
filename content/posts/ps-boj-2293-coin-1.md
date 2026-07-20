@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-2293-동전-1/"
+
 original: "https://junmusu.tistory.com/121"
 ---
 

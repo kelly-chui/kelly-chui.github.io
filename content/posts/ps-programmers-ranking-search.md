@@ -13,6 +13,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-순위-검색/"
+
 original: "https://junmusu.tistory.com/152"
 ---
 

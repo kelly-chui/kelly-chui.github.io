@@ -13,6 +13,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-3055-탈출/"
+
 original: "https://junmusu.tistory.com/41"
 ---
 

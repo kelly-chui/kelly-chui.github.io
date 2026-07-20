@@ -14,6 +14,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-programmers-표-편집/"
+
 original: "https://junmusu.tistory.com/182"
 ---
 

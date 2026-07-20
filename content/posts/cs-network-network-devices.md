@@ -12,6 +12,9 @@ tags:
   - Switch
 
 draft: false
+aliases:
+  - "/posts/cs-network-네트워크-기기/"
+
 original: "notion-export/블로그 이관/ComputerScience/Network/네트워크 기기 3a1aa09804a74c15888ad282ef0dae2f.md"
 ---
 

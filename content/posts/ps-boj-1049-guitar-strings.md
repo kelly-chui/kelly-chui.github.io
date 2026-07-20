@@ -12,6 +12,9 @@ tags:
   - Swift
 
 draft: false
+aliases:
+  - "/posts/ps-boj-1049-기타줄/"
+
 original: "https://junmusu.tistory.com/95"
 ---
 

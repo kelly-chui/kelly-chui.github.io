@@ -11,6 +11,9 @@ tags:
   - Docker Image
 
 draft: false
+aliases:
+  - "/posts/devops-docker-02-컨테이너와-이미지/"
+
 original: "notion-export/블로그 이관/DevOps/컨테이너와 이미지 286ade8f37658018aa4ee95d8fcb28d9.md"
 ---
 

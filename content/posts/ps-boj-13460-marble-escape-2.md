@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-13460-구슬-탈출-2/"
+
 original: "https://junmusu.tistory.com/141"
 ---
 

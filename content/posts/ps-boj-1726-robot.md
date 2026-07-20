@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-1726-로봇/"
+
 original: "https://junmusu.tistory.com/42"
 ---
 

@@ -11,6 +11,9 @@ tags:
   - Module System
 
 draft: false
+aliases:
+  - "/posts/javascript-모듈-시스템/"
+
 original: "notion-export/블로그 이관/JavaScript/JS 모듈 시스템 285ade8f376580ff8c11cd32d6ae43ab.md"
 ---
 

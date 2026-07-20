@@ -13,6 +13,9 @@ tags:
   - Simulation
 
 draft: false
+aliases:
+  - "/posts/ps-boj-14890-경사로/"
+
 original: "https://junmusu.tistory.com/144"
 ---
 

@@ -13,6 +13,9 @@ tags:
   - Simulation
 
 draft: false
+aliases:
+  - "/posts/ps-boj-14499-주사위-굴리기/"
+
 original: "https://junmusu.tistory.com/143"
 ---
 

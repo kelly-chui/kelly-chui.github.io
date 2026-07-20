@@ -12,6 +12,9 @@ tags:
   - Python
 
 draft: false
+aliases:
+  - "/posts/ps-boj-4179-불/"
+
 original: "https://junmusu.tistory.com/150"
 ---
 
