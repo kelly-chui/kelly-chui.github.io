@@ -1,5 +1,5 @@
 ---
-title: "LeetCode. Smallest Subsequence of Distinct Characters"
+title: "LeetCode 1081. Smallest Subsequence of Distinct Characters"
 date: 2026-07-20
 
 categories:

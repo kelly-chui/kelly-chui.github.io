@@ -1,5 +1,5 @@
 ---
-title: "LeetCode. Shift 2D Grid"
+title: "LeetCode 1260. Shift 2D Grid"
 date: 2026-07-20
 
 categories:
