@@ -19,10 +19,12 @@ const CONFIG = {
   webpQuality: 85,
   sourceExtensions: [".png", ".jpg", ".jpeg", ".webp"],
   backupSuffix: "-original-image",
+  optimizedSuffix: "-optimized-image",
 } as const;
 
 const sourceExtensions = new Set<string>(CONFIG.sourceExtensions);
 const backupSuffix = CONFIG.backupSuffix;
+const optimizedSuffix = CONFIG.optimizedSuffix;
 
 function parseArgs(argv: string[]): Options {
   const options: Options = { dryRun: false, deleteOriginals: false, force: false, quality: CONFIG.webpQuality, maxWidth: CONFIG.maxWidth };
@@ -89,7 +91,11 @@ async function main() {
   const targets = files.filter((file) => {
     if (selected && !file.startsWith(`${selected}${path.sep}`)) return false;
     const name = path.basename(file);
-    return sourceExtensions.has(path.extname(file).toLowerCase()) && !name.includes(backupSuffix);
+    return (
+      sourceExtensions.has(path.extname(file).toLowerCase()) &&
+      !name.includes(backupSuffix) &&
+      !name.includes(optimizedSuffix)
+    );
   });
   let converted = 0;
   let totalOriginalBytes = 0;
@@ -97,21 +103,19 @@ async function main() {
   for (const source of targets) {
     const metadata = await sharp(source).metadata();
     const width = metadata.width ?? 0;
-    const isWebp = path.extname(source).toLowerCase() === ".webp";
-    if (isWebp && !options.force && width <= options.maxWidth) { console.log(`[skip] ${source}`); continue; }
-    const output = isWebp ? `${source}.optimized.webp` : `${source.slice(0, -path.extname(source).length)}.webp`;
+    if (path.basename(source).includes(optimizedSuffix)) {
+      console.log(`[skip] ${source}`);
+      continue;
+    }
+    const output = `${source.slice(0, -path.extname(source).length)}${optimizedSuffix}.webp`;
     const backup = backupPath(source);
     if (!options.dryRun && !options.deleteOriginals && await exists(backup)) throw new Error(`Backup already exists: ${backup}`);
-    console.log(`[convert] ${source} (${width || "?"}px) -> ${isWebp ? source : output}`);
+    console.log(`[convert] ${source} (${width || "?"}px) -> ${output}`);
     if (options.dryRun) { converted += 1; continue; }
     const originalBytes = (await stat(source)).size;
     const pipeline = sharp(source).rotate().resize({ width: options.maxWidth, withoutEnlargement: true }).webp({ quality: options.quality });
     await pipeline.toFile(output);
-    if (isWebp) {
-      if (options.deleteOriginals) await unlink(source);
-      else await rename(source, backup);
-      await rename(output, source);
-    } else if (options.deleteOriginals) {
+    if (options.deleteOriginals) {
       await unlink(source);
     } else {
       await rename(source, backup);
@@ -119,18 +123,16 @@ async function main() {
     if (!options.deleteOriginals && !(await exists(backup))) {
       throw new Error(`Original image backup was not created: ${backup}`);
     }
-    if (!(await exists(isWebp ? source : output))) {
-      throw new Error(`Optimized image was not created: ${isWebp ? source : output}`);
+    if (!(await exists(output))) {
+      throw new Error(`Optimized image was not created: ${output}`);
     }
-    if (!isWebp) {
-      const index = path.join(path.dirname(source), "index.md");
-      if (await exists(index)) {
-        const text = await readFile(index, "utf8");
-        const updated = text.replaceAll(path.basename(source), path.basename(output));
-        if (updated !== text) await writeFile(index, updated);
-      }
+    const index = path.join(path.dirname(source), "index.md");
+    if (await exists(index)) {
+      const text = await readFile(index, "utf8");
+      const updated = text.replaceAll(path.basename(source), path.basename(output));
+      if (updated !== text) await writeFile(index, updated);
     }
-    const outputBytes = (await stat(isWebp ? source : output)).size;
+    const outputBytes = (await stat(output)).size;
     const savedBytes = originalBytes - outputBytes;
     const savedPercent = originalBytes === 0 ? 0 : (savedBytes / originalBytes) * 100;
     totalOriginalBytes += originalBytes;
