@@ -9,6 +9,12 @@ node_modules/
 Desktop.ini
 *~
 
+# Image optimization backups
+/content/posts/**/*-original-image.png
+/content/posts/**/*-original-image.jpg
+/content/posts/**/*-original-image.jpeg
+/content/posts/**/*-original-image.webp
+
 # IDE
 .idea/
 *.swp
