@@ -18,7 +18,7 @@ original: "notion-export/블로그 이관/SniffMEET/Private & Shared 3/프ᄅ
 
 ## 작업 내역
 
-![](image-001.png)
+![](image-001-optimized-image.webp)
 
 Xcode에서 프로젝트 파일 관련 경고가 많이 떠서 정리했다.
 
@@ -40,7 +40,7 @@ Xcode에서 프로젝트 파일 관련 경고가 많이 떠서 정리했다.
 rg "\(null\)" SniffMeet.xcodeproj/project.pbxproj
 ```
 
-![](image-002.png)
+![](image-002-optimized-image.webp)
 
 `(null)` 파일의 참조를 제거하는건 위험하지 않은 작업이라서 과감하게 제거했다.
 

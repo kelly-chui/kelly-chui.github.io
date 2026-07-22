@@ -44,7 +44,7 @@ USING (
 );
 ```
 
-![Screenshot 2024-11-20 at 3.42.08 PM.png](image-002.png)
+![Screenshot 2024-11-20 at 3.42.08 PM.png](image-002-optimized-image.webp)
 
 RLS를 설정한 이후에는 테이블 데이터를 정상적으로 받아올 수 있었다.  
 이 과정을 통해 `authenticated-role`이 `anon-role`을 포함하지 않는다는 점도 다시 확인했다.

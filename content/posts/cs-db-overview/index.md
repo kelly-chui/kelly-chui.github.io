@@ -36,7 +36,7 @@ original: "notion-export/블로그 이관/ComputerScience/DB/Database basic 1e8a
 
 ### 구성 요소
 
-![image.png](image-001.png)
+![image.png](image-001-optimized-image.webp)
 
 - 엔티티(entity): 데이터베이스에 표현하려는 개념이나 정보 같은 현실 세계의 객체
     - 레코드(record): 데이터베이스에 기록된 각각의 엔티티 (= 튜플)

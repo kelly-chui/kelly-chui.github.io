@@ -41,7 +41,7 @@ original: "notion-export/블로그 이관/UIKit/UIView와 UIViewControllerᄋ
 
 ## 뷰 라이프 사이클 + 뷰 컨트롤러 관련 메소드
 
-![](image-001.png)
+![](image-001-optimized-image.webp)
 
 순서대로 작성하면
 
@@ -64,6 +64,6 @@ original: "notion-export/블로그 이관/UIKit/UIView와 UIViewControllerᄋ
 
 그러면 스토리 보드에 추가한 뷰가 사라지는 경우에는 어떻게 될까?
 
-![](image-002.png)
+![](image-002-optimized-image.webp)
 
 옵셔널 언래핑 에러가 뜬다. (이 시점에서 암시적 언래핑은 강제 언래핑과 같게 되기 때문)

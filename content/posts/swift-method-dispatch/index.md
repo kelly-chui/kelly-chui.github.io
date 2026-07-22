@@ -36,7 +36,7 @@ original: "https://junmusu.tistory.com/174"
 
 모든 것은 C에서 시작한다. C에서 함수 포인터란 함수가 저장되어 있는 코드 영역의 주소를 가리키는 포인터이다. 아래는 변수 포인터 `int * var_pointer`와 함수 포인터 `int (*func_pointer)`가 각각 가리키는 영역을 나타내는 그림이다.
 
-![](image-001.png)
+![](image-001-optimized-image.webp)
 
 ## OOP in C
 
@@ -188,7 +188,7 @@ final class ClosureObject {
 }
 ```
 
-![](image-002.png)
+![](image-002-optimized-image.webp)
 
 `ClosureObject`는 메모리의 주소값을 저장하고 있는 `functionPointer`와 힙에 있는 스트럭처(혹은 클래스)를 가리키는 `capturedContext`를 저장하고 있는 클래스이다.
 

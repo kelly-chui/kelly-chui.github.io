@@ -99,7 +99,7 @@ print(paragraph!.asHTML())
 
 위에 작성한 `HTMLElement` 클래스는 `HTMLElement` 인스턴스와 디폴트 상태인 `asHTML` 사이에 강한 참조 사이클을 생성하게 된다. 다음은 사이클의 모습이다:
 
-![](image-002.png)
+![](image-002-optimized-image.webp)
 
 이 인스턴스의 `asHTML` 프로퍼티는 클로저를 강한 참조로 붙잡고 있다. 해당 클로저는 본문에서 `self`를 참조하고 있기 때문에 (`self.name`, `self.text`와 같은 방법으로), HTMLElement 인스턴스를 강하게 참조하게 된다. 따라서 이 둘 사이에서 강한 참조 사이클이 만들어지게 된다.
 
@@ -204,7 +204,7 @@ print(paragraph!.asHTML())
 
 다음은 캡처 리스트가 있는 참조들의 모습을 보여준다:
 
-![](image-003.png)
+![](image-003-optimized-image.webp)
 
 클로저가 `self`를 미소유 참조로 캡처하여 `HTMLElement` 인스턴스를 강하게 붙잡지 않기 떄문에, `paragraph` 변수에서 강한 참조를 `nil`로 설정하면, `HTMLElement` 인스턴스는 할당 해제되어, 디이니셜라이저가 출력하는 메세지를 아래와 같이 볼 수 있다:
 

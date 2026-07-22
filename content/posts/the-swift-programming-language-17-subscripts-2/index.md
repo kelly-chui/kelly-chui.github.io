@@ -66,7 +66,7 @@ var matrix = Matrix(rows: 2, columns: 2)
 
 위의 예시는 두개의 행과 두개의 열을 가진 새로운 Matrix 인스턴스를 만든다. 이 Matrix의 인스턴스의 grid 배열은 오른쪽 위에서 왼쪽 아래로 읽는 방식으로 평면화된 행렬이다.
 
-![](image-002.png)
+![](image-002-optimized-image.webp)
 
 서브스크립트에 행과 열의 값을 컴마로 구분하여 전달하면 행렬의 값을 설정할 수 있다.
 
@@ -77,7 +77,7 @@ matrix[1, 0] = 3.2
 ```
  
 
-![](image-003.png)
+![](image-003-optimized-image.webp)
 
 Matrix의 서브스크립트의 getter와 setter는 서브스크립트의 row와 column 값이 유효한지 확인하기 위해 어설션을 포함한다. 어설션에서 쓰기 위해 Matrix는 indexIsValid(row:column:)이라는 메소드를 포함한다. 만약 유효하지 않은 인덱스로 서브스크립트에 접근한다면 어설션이 작동한다.
 

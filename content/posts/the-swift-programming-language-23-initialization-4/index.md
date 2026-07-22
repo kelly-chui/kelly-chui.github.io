@@ -359,7 +359,7 @@ class SomeClass {
 
 아래의 예시는 체스판을 모델링한 Chessboard 스트럭처를 정의한다. 체스판은 검은색과 흰색의 사각형이 번갈아 나타나는 8 x 8 보드이다.
 
-![](image-002.png)
+![](image-002-optimized-image.webp)
 
 체스판을 나타내기 위해, Chessboard 스트럭처는 64개의 Bool 값의 배열인 boardColors 프로퍼티를 가진다. 배열에서 true 값은 검은색 사각형을 나타내고, false 값은 흰색 사각형을 나타낸다. 배열의 첫 번째 원소는 체스판의 좌상단 사각형을 가리키고 마지막 원소는 우하단 사각형을 가리킨다.
 

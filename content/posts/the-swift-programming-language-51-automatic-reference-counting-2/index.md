@@ -73,7 +73,7 @@ unit4A!.tenant = john
 
 다음은 두 인스턴스를 연결한 참조의 모습을 보여준다:
 
-![](image-002.png)
+![](image-002-optimized-image.webp)
 
 `Person` 인스턴스는 여전히 `Apartment` 인스턴스를 강하게 참조하지만, `Apartment` 인스턴스는 `Person` 인스턴스를 약하게 참조한다. 이는 `john`에 의해 유지되고 있는 강한 참조를 `nil`로 설정하여 깨뜨리면, 더이상 `Person` 인스턴스에 대한 강한 참조가 존재하지 않게 된다:
 
@@ -86,7 +86,7 @@ john = nil
 
 `Person` 인스턴스에 대한 더이상 강한 참조가 존재하지 않으므로, 할당 해제되고, `tenant` 프로퍼티는 `nil`로 설정된다:
 
-![](image-003.png)
+![](image-003-optimized-image.webp)
 
 `Apartment` 인스턴스에 유일하게 남은 강한 참조는 변수 `unit4A`에서 온다. 만약 이 강한 참조를 깨뜨리게 되면, 더 이상 `Apartment` 인스턴스에 대한 강한 참조가 존재하지 않게 된다:
 
@@ -99,7 +99,7 @@ unit4A = nil
 
 `Apartment` 인스턴스에 더 이상 강한 참조가 존재하지 않으므로, 이 또한 할당 해제된다:
 
-![](image-004.png)
+![](image-004-optimized-image.webp)
 
 > **Note**  
 >  가비지 컬렉션을 사용하는 시스템에서는 메모리가 부족할 때만 가비지 컬렉션을 실행시키고, 이때 강한 참조가 없는 객체가 할당 해제되기 때문에 약한 포인터로 간단한 캐싱 메커니즘을 구현하는 경우가 있다. 하지만 ARC에서는 값이 가지고 있는 마지막 강한 참조가 제거되자 마자 할당 해제되기 때문에, 이러한 용도로 약한 참조를 사용하는 것은 부적절하다.
@@ -168,13 +168,13 @@ john!.card = CreditCard(number: 1234_5678_9012_3456, customer: john!)
 
 다음은 두 인스턴스를 연결한 참조가 어떤 모습인지 보여준다:
 
-![](image-005.png)
+![](image-005-optimized-image.webp)
 
 `Customer` 인스턴스는 `CreditCard` 인스턴스에 대해 강한 참조를 가지고 있고, `CreditCard` 인스턴스는 `Customer` 인스턴스에 대해 미소유 참조를 가지고 있다.
 
 미소유 `customer` 참조 때문에, `john` 변수에 의해 유지되고 있는 강한 참조를 제거하면, 더 이상 `Customer` 인스턴스에 대해 강한 참조가 존재하지 않게 된다:
 
-![](image-006.png)
+![](image-006-optimized-image.webp)
 
 `Customer` 인스턴스에 대한 강한 참조가 더 이상 존재하지 않으므로, 이는 할당 해제된다. 이후에 `CreditCard` 인스턴스에 대한 강한 참조도 존재하지 않기 때문에, 이 또한 할당 해제된다:
 
@@ -243,7 +243,7 @@ department.courses = [intro, intermediate, advanced]
 
 위의 코드는 3개의 코스를 가지고 있는 학과를 생성한다. 초급과 중급 코스는 둘 다 추천되는 다음 코스가 각자의 `nextCourse` 프로퍼티에 저장되어 있다. `nextCourse` 프로퍼티는 학생들이 코스를 완료하면 다음에 수강해야 할 코스에 대한 미소유 옵셔널 참조를 유지한다.
 
-![](image-007.png)
+![](image-007-optimized-image.webp)
 
 미소유 옵셔널 참조는 자신이 래핑하는 클래스 인스턴스를 강하게 붙잡지 않고, ARC가 해당 인스턴스를 할당 해제하는 것을 방지하지 않는다. 이는 미소유 옵셔널 참조가 `nil`이 될 수 있다는 것을 제외하고는 미소유 참조가 ARC에서 행동과 동일하다.
 

@@ -32,7 +32,7 @@ original: "https://junmusu.tistory.com/48"
 
 여기서 문제는 3번이다. 어떻게 해야 효율적으로 집합 내부의 원소를 카운트 할 수 있을까?
 
-![](image-002.png)
+![](image-002-optimized-image.webp)
 
 평상시라면 크게 해맸을 부분이지만, 과거에 학교에서 Union-Find Set에서 원소의 개수를 나타내는 방법을 배웠던 것이 기억이 나서 가져왔다.
 
@@ -94,4 +94,4 @@ for _ in 0..<t {
 
 2023년 3월 1일 수정: rank 연산 삭제
 
-![](image-003.png)
+![](image-003-optimized-image.webp)

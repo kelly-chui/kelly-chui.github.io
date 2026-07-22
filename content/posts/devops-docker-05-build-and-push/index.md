@@ -30,7 +30,7 @@ GitHub가 소스 코드를 저장하는 것처럼 Docker Hub는 컨테이너 이
 
 ### Docker Hub에서 레포지토리 만들기
 
-![image.png](image-001.png)
+![image.png](image-001-optimized-image.webp)
 
 ### 빌드하고 배포하기
 
@@ -46,4 +46,4 @@ docker build -t <DOCKER_USERNAME>/getting-started-todo-app .
 docker push <DOCKER_USERNAME>/getting-started-todo-app
 ```
 
-![image.png](image-002.png)
+![image.png](image-002-optimized-image.webp)

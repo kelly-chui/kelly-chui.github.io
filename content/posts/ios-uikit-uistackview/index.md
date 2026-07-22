@@ -27,7 +27,7 @@ original: "https://junmusu.tistory.com/165"
 
 `intrinsicContentSize`는 뷰가 자신의 내용만을 기준으로 자연스럽게 가지는 크기다. 대표적인 예시는 `UILabel`이다.
 
-![](image-001.png)
+![](image-001-optimized-image.webp)
 
 `UILabel`은 별도의 width 제약을 주지 않으면 내부 텍스트 길이에 따라 자연스럽게 가로 크기가 정해진다. 위 캡처에서도 두 레이블은 텍스트 길이에 따라 서로 다른 크기를 가진다.
 
@@ -52,7 +52,7 @@ stackView.addArrangedSubview(greenView)
 stackView.addArrangedSubview(blueView)
 ```
 
-![](image-002.png)
+![](image-002-optimized-image.webp)
 
 `redView`, `greenView`, `blueView` 순서로 추가했기 때문에 실제 화면에서도 같은 순서로 배치된다.
 
@@ -65,7 +65,7 @@ stackView.addArrangedSubview(blueView)
 
 이번에는 `blueView`, `greenView`, `redView` 순서로 넣어보자.
 
-![](image-003.png)
+![](image-003-optimized-image.webp)
 
 예상대로 추가한 순서에 맞춰 `blueView`, `greenView`, `redView` 순서로 배치된다.
 
@@ -76,7 +76,7 @@ stackView.addArrangedSubview(blueView)
 - `.horizontal`: 서브뷰를 가로 방향으로 배치한다. 스택 뷰의 기본값이다.
 - `.vertical`: 서브뷰를 세로 방향으로 배치한다.
 
-![](image-004.png)
+![](image-004-optimized-image.webp)
 
 ## distribution
 
@@ -96,11 +96,11 @@ stackView.addArrangedSubview(blueView)
 
 공간이 남아서 뷰를 늘려야 할 때는 content hugging priority를 기준으로 어떤 뷰를 늘릴지 결정한다. 반대로 공간이 부족해서 뷰를 줄여야 할 때는 compression resistance priority를 기준으로 어떤 뷰를 줄일지 결정한다.
 
-![](image-005.png)
+![](image-005-optimized-image.webp)
 
 `ColorView`의 기본 intrinsic size를 `(100, 100)`으로 설정했지만, 스택 뷰의 가로 길이에 맞추기 위해 `redView`의 길이가 늘어난 것을 볼 수 있다.
 
-![](image-006.png)
+![](image-006-optimized-image.webp)
 
 어떤 뷰가 늘어나거나 줄어들지는 hugging priority와 compression resistance priority에 따라 결정된다. 만약 모든 서브뷰의 우선순위가 같다면, 스택 뷰는 내부 기준에 따라 특정 뷰의 크기를 조정한다. 보통은 앞쪽 또는 뒤쪽 뷰가 조정되는 것처럼 보일 수 있다.
 
@@ -112,7 +112,7 @@ greenView.setContentHuggingPriority(.defaultLow, for: .horizontal)
 blueView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
 ```
 
-![](image-007.png)
+![](image-007-optimized-image.webp)
 
 `greenView`의 hugging priority를 가장 낮게 설정했기 때문에, 남는 공간을 채우기 위해 `greenView`가 늘어난다.
 
@@ -134,11 +134,11 @@ let greenView = ColorView(color: .green, preferredWidth: 100)
 let blueView = ColorView(color: .blue, preferredWidth: 150)
 ```
 
-![](image-008.png)
+![](image-008-optimized-image.webp)
 
 `redView`, `greenView`, `blueView`의 너비를 각각 50, 100, 150으로 설정했기 때문에 비율은 1:2:3이다.
 
-![](image-009.png)
+![](image-009-optimized-image.webp)
 
 스택 뷰의 크기에 맞춰 전체 길이는 늘어났지만, 각 뷰의 비율은 1:2:3으로 유지된다. 이것이 `.fillProportionally`의 동작이다.
 
@@ -150,7 +150,7 @@ let blueView = ColorView(color: .blue, preferredWidth: 150)
 
 가로 스택 뷰라면 앞 뷰의 trailing과 다음 뷰의 leading 사이 간격이 같아진다.
 
-![](image-010.png)
+![](image-010-optimized-image.webp)
 
 서브뷰의 높이나 너비는 그대로 두고, 뷰 사이의 간격만 조정된다.
 
@@ -158,7 +158,7 @@ let blueView = ColorView(color: .blue, preferredWidth: 150)
 
 `.equalCentering`은 서브뷰들의 중심점 사이의 간격을 동일하게 조정한다.
 
-![](image-011.png)
+![](image-011-optimized-image.webp)
 
 겉보기에는 뷰 사이 간격이 일정하지 않은 것처럼 보인다. 하지만 `redView`, `greenView`, `blueView`의 중심점 사이 거리는 동일하다.
 
@@ -188,11 +188,11 @@ let blueView = ColorView(color: .blue, preferredWidth: 150, preferredHeight: 150
 
 예를 들어 가로 스택 뷰라면 스택 뷰의 높이에 맞춰 모든 서브뷰의 높이를 조정한다.
 
-![](image-012.png)
+![](image-012-optimized-image.webp)
 
 서브뷰들의 선호 높이는 각각 다르게 설정했지만, 최종적으로 모두 스택 뷰의 높이인 150에 맞춰진다. 스택 뷰의 높이가 150이 되는 이유는 뒤에서 다시 정리한다. 간단히 말하면, 가로 스택 뷰의 높이는 내부 서브뷰 중 가장 큰 높이를 기준으로 계산된다.
 
-![](image-013.png)
+![](image-013-optimized-image.webp)
 
 ### center, leading, trailing, top, bottom
 
@@ -202,15 +202,15 @@ let blueView = ColorView(color: .blue, preferredWidth: 150, preferredHeight: 150
 
 #### center
 
-![](image-014.png)
+![](image-014-optimized-image.webp)
 
 #### top / leading
 
-![](image-015.png)
+![](image-015-optimized-image.webp)
 
 #### bottom / trailing
 
-![](image-016.png)
+![](image-016-optimized-image.webp)
 
 ## spacing
 
@@ -220,7 +220,7 @@ let blueView = ColorView(color: .blue, preferredWidth: 150, preferredHeight: 150
 
 `spacing`을 20으로 설정하면 다음과 같이 뷰 사이에 간격이 생긴다.
 
-![](image-017.png)
+![](image-017-optimized-image.webp)
 
 여기서 두 가지를 확인해볼 수 있다.
 
@@ -231,11 +231,11 @@ let blueView = ColorView(color: .blue, preferredWidth: 150, preferredHeight: 150
 
 `spacing`을 100으로 설정해보자.
 
-![](image-018.png)
+![](image-018-optimized-image.webp)
 
 뷰들이 수축되는 현상이 일어난다. 뷰 사이의 간격이 정말 100인지 확인해보면 다음과 같다. iPhone SE 3의 가로 길이는 375pt이다.
 
-![](image-019.png)
+![](image-019-optimized-image.webp)
 
 간격 200pt와 RGB 뷰의 전체 너비 175pt를 더하면 375pt가 된다. 즉, `spacing`은 최소 간격으로 유지되고, 남은 공간에 맞춰 서브뷰의 크기가 줄어든다.
 
@@ -251,7 +251,7 @@ let blueView = ColorView(color: .blue, preferredWidth: 150, preferredHeight: 150
 stackView.setCustomSpacing(30, after: greenView)
 ```
 
-![](image-020.png)
+![](image-020-optimized-image.webp)
 
 `greenView` 뒤의 간격만 다르게 적용된 것을 확인할 수 있다.
 
@@ -272,7 +272,7 @@ stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnch
 stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
 ```
 
-![](image-021.png)
+![](image-021-optimized-image.webp)
 
 이 경우 내부 서브뷰들은 스택 뷰의 크기에 맞춰 늘어나거나 줄어든다.
 
@@ -295,13 +295,13 @@ stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
 - 축과 수직인 방향의 크기: arranged subview 중 가장 큰 뷰의 크기
 - `isLayoutMarginsRelativeArrangement`가 `true`이면 layout margins까지 포함해서 계산
 
-![](image-022.png)
+![](image-022-optimized-image.webp)
 
 뷰들이 선호 크기에 맞게 그려지고, 간격도 지정된 값에 맞게 적용된다. 스택 뷰의 크기가 내부 뷰들을 기준으로 자동 계산된 것이다.
 
 다만 크기 제약 조건이 없다고 해서 `distribution`이 완전히 의미 없어지는 것은 아니다. 예를 들어 `.equalSpacing`은 최소 `spacing`을 지키면서 스택 뷰의 배치에 영향을 줄 수 있다.
 
-![](image-023.png)
+![](image-023-optimized-image.webp)
 
 ## 정리
 

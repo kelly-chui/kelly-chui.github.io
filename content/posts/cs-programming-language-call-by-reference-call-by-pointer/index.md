@@ -70,7 +70,7 @@ updateByReference(number);
 
 아래 캡처에서는 단순한 reference 함수와 pointer 함수가 Clang에서 같은 어셈블리로 컴파일됐다.
 
-![image.png](image-001.png)
+![image.png](image-001-optimized-image.webp)
 
 특정 코드와 컴파일러에서 구현 결과가 같을 수는 있지만, 이것이 reference와 pointer의 언어 의미가 같다는 뜻은 아니다. 컴파일러는 서로 다른 언어 규칙을 같은 기계어로 최적화할 수 있다. 두 방식을 구분할 때는 어셈블리 모양보다 C++에서 허용되는 연산과 API 계약을 기준으로 봐야 한다.
 

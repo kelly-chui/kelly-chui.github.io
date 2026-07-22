@@ -22,7 +22,7 @@ original: "notion-export/블로그 이관/DevOps/Dockerizing 286ade8f376580e2a5f
 
 현재 경로를 프로젝트 경로로 설정하고 확인하기
 
-![image.png](image-001.png)
+![image.png](image-001-optimized-image.webp)
 
 ## 2.  Dockerfile, .dockerignore 추가
 
@@ -66,7 +66,7 @@ npm-debug.log
 .DS_Store
 ```
 
-![image.png](image-002.png)
+![image.png](image-002-optimized-image.webp)
 
 ## 3. 이미지 빌드하기
 
@@ -77,7 +77,7 @@ docker run -d -p 3000:3000 --name express-example express-example
 curl http://localhost:3000
 ```
 
-![image.png](image-003.png)
+![image.png](image-003-optimized-image.webp)
 
 ## 4. 컨테이너 실행
 

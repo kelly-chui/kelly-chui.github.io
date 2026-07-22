@@ -23,7 +23,7 @@ original: "notion-export/블로그 이관/ComputerScience/Network/NAT 18cade8f37
 
 ## 동작 원리
 
-![Untitled.png](image-001.png)
+![Untitled.png](image-001-optimized-image.webp)
 
 NAT는 라우터에서 동작하며, 내부 네트워크의 사설 IP 주소를 외부에서 사용할 수 있는 공인 IP 주소로 변환한다. 이를 통해 여러 장치가 하나의 공인 IP 주소를 공유하면서 인터넷에 접속할 수 있다.
 

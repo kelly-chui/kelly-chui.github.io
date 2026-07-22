@@ -16,7 +16,7 @@ original: "notion-export/블로그 이관/SniffMEET/VIPER 패턴 dafade
 
 ## VIPER란
 
-![VIPER 구성 요소와 데이터 흐름](image-001.png)
+![VIPER 구성 요소와 데이터 흐름](image-001-optimized-image.webp)
 
 VIPER는 화면을 View, Interactor, Presenter, Entity, Router로 나누는 아키텍처 패턴이다. 각 객체의 역할과 의존 방향을 제한해 UI, 비즈니스 로직, 화면 전환을 분리한다.
 

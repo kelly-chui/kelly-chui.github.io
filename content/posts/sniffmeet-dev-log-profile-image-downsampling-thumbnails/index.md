@@ -163,7 +163,7 @@ func requestProfileImage(id: UUID, imageName: String) {
 
 `CGError`는 `Error`를 채택하지 않는다.
 
-![CGError는 Error를 채택하지 않음](image-001.png)
+![CGError는 Error를 채택하지 않음](image-001-optimized-image.webp)
 
 ## 정리
 

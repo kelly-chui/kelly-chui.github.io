@@ -42,12 +42,12 @@ PS 문제를 풀면서, 처음에 Medium 문제인데 좀 해맸다, LCS 두 개
 
 오늘은 마이그레이션보다는 블로그 구조를 좀 변경시켰다. `/content/posts/` 에는 마크다운 파일이, `/static/images/`에는 이미지가 들어가던 구조에서(찾아보니 Flat이라고 함), 하나의 폴더에 마크다운과 이미지가 동시에 들어있는 방식(Page Bundle이라고 함)으로 바꿨다.
 
-![](image-001.png#center)
+![](image-001-optimized-image.webp#center)
 { width="480" }
 
 장점은 크게 두개인데, 첫 번째로 포스트와 이미지가 너무 다른 경로라서 일관성을 유지하기 힘든 문제가 사라졌다. 파일명만 바꾸려고 하면, `/static/images/`에 있는 폴더도 똑같이 파일명을 바꿔야 했고, 이때 몇개 놓쳐서 이미지 일관성이 몇번 깨졌었다. Page Bundle 방식으로는 같은 디렉토리 안에 마크다운과 이미지가 동시에 들어있어서 그럴 가능성이 많이 줄어든다.
 
-![](image-002.png#center)
+![](image-002-optimized-image.webp#center)
 { width="480" }
 
 두 번째로는 VSCode에서 미리보기 할때, 이미지가 제대로 로드된다. Hugo에서 `static` 파일명은 때고 써서, VSCode에서 제대로 이미지 경로를 잡지 못해 프리뷰에서 이미지가 다 깨져서 나왔는데, 이제 미리보기할 때 이미지가 제대로 나온다.
@@ -70,7 +70,7 @@ PS 문제를 풀면서, 처음에 Medium 문제인데 좀 해맸다, LCS 두 개
 
 ### Xcode 프로젝트명 변경
 
-![](image-003.png#center)
+![](image-003-optimized-image.webp#center)
 { width="480" }
 
 StackDay 프로젝트의 Xcode 프로젝트 명이 stack-day였다. 케밥 케이스를 자주 쓰는 편이긴 한데, Git이나 마크다운 파일명에서나 쓰고 프로젝트명까지 쓰는건 좀 아닌 것 같아서 StackDay 처럼 카멜 케이스로 바꿨다.

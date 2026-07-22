@@ -16,7 +16,7 @@ original: "notion-export/블로그 이관/ComputerScience/Network/프록시 18ca
 
 ## 프록시
 
-![proxy.png](image-001.png)
+![proxy.png](image-001-optimized-image.webp)
 
 클라이언트와 서버 사이에 중간 역할을 하는 시스템, 클라이언트의 요청을 대신 처리하고 서버로부터 받은 응답을 클라이언트에 전달하는 방식으로 작동
 

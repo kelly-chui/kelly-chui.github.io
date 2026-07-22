@@ -113,7 +113,7 @@ func signInWithProfileData(dogInfo: UserInfo, imageData: (png: Data?, jpg: Data?
 
 Signpost를 추가한 뒤 Instruments에서 앱 내부 작업 구간을 이름으로 볼 수 있었다.
 
-![Instruments에서 확인한 Signpost 구간](image-001.png)
+![Instruments에서 확인한 Signpost 구간](image-001-optimized-image.webp)
 
 캡처에서는 `loadMateProfileImage`, `SaveProfileImage` 같은 작업 구간이 표시된다. 단순히 CPU 그래프만 보는 것보다, 특정 시점에 어떤 앱 내부 작업이 실행됐는지 확인하기 쉬워졌다.
 

@@ -17,7 +17,7 @@ original: ""
 
 1편에서는 SwiftUI가 View를 구분하는 방식인 Identity를 정리했다. 
 
-![](image-001.png)
+![](image-001-optimized-image.webp)
 
 고양이가 하루 동안 이곳 저곳 움직이더라도 계속 같은 고양이라고 생각한다. 이것처럼 Identity는 시간에 따라 달라지는 여러 값을 하나의 안정적인 원소로 연결한다. 즉 시간의 흐름 속에 연속성을 만들어 준다.
 
@@ -94,7 +94,7 @@ SwiftUI가 View에서 `State`나 `StateObject`를 발견하면, 해당 데이터
 
 즉, `State`와 `StateObject`는 View의 Identity와 연결된 영속 저장소다. View가 처음 만들어 질 때, SwiftUI는 `State`와 `StateObject`의 초기값을 사용해 메모리 안에 저장 공간을 할당한다.
 
-![](image-002.png)
+![](image-002-optimized-image.webp)
 
 위 캡처처럼 `title`이 `"" -> "Miao" -> "Nocturnal miao"`처럼 변하면 View Value가 새로 생성되지만, Identity가 유지되므로 같은 저장 공간이 사용된다.
 
@@ -145,7 +145,7 @@ ForEach(0..<5) { offset in
 }
 ```
 
-![](image-003.png#center)
+![](image-003-optimized-image.webp#center)
 { width = "360" }
 
 이 범위 안의 `offset`을 활용해 `ViewBuilder`가 생성한 각각의 View를 식별한다.

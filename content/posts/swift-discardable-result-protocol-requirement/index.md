@@ -15,7 +15,7 @@ draft: false
 
 `RemoteDBRequestBuildable` 프로토콜을 추가한 뒤, 이전에는 나타나지 않던 unused-result 경고가 발생했다.
 
-![프로토콜을 통한 호출에서 발생한 unused-result 경고](image-001.png)
+![프로토콜을 통한 호출에서 발생한 unused-result 경고](image-001-optimized-image.webp)
 
 ## 구체 타입에서는 사라졌던 경고
 
