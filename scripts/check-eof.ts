@@ -13,52 +13,26 @@ type EofIssue = {
   reason: "missing-final-newline" | "empty-file";
 };
 
-const excludedDirectoryNames = new Set([
-  ".git",
-  ".hugo_build.lock",
-  "node_modules",
-  "public",
-  "resources",
-  "themes",
-]);
+const CONFIG = {
+  rootDir: ".",
+  excludedDirectoryNames: [".git", ".hugo_build.lock", "node_modules", "public", "resources", "themes"],
+  excludedPathPrefixes: [path.join("static", "css", "vendor"), path.join("static", "js", "vendor")],
+  textExtensions: [".css", ".html", ".js", ".json", ".md", ".mjs", ".scss", ".sh", ".svg", ".toml", ".ts", ".tsx", ".txt", ".xml", ".yaml", ".yml"],
+  textFileNames: [".gitignore", ".gitmodules", "CNAME", "LICENSE", "README", "README.md"],
+} as const;
 
-const excludedPathPrefixes = [
-  path.join("static", "css", "vendor"),
-  path.join("static", "js", "vendor"),
-];
+const excludedDirectoryNames = new Set<string>(CONFIG.excludedDirectoryNames);
 
-const textExtensions = new Set([
-  ".css",
-  ".html",
-  ".js",
-  ".json",
-  ".md",
-  ".mjs",
-  ".scss",
-  ".sh",
-  ".svg",
-  ".toml",
-  ".ts",
-  ".tsx",
-  ".txt",
-  ".xml",
-  ".yaml",
-  ".yml",
-]);
+const excludedPathPrefixes = CONFIG.excludedPathPrefixes;
 
-const textFileNames = new Set([
-  ".gitignore",
-  ".gitmodules",
-  "CNAME",
-  "LICENSE",
-  "README",
-  "README.md",
-]);
+const textExtensions = new Set<string>(CONFIG.textExtensions);
+
+const textFileNames = new Set<string>(CONFIG.textFileNames);
 
 function parseArgs(argv: string[]): Options {
   const options: Options = {
     fix: false,
-    rootDir: ".",
+    rootDir: CONFIG.rootDir,
   };
 
   for (let index = 0; index < argv.length; index += 1) {

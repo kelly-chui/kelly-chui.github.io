@@ -28,18 +28,17 @@ type Report = {
   unsupportedAbsolute: ImageReference[];
 };
 
+const CONFIG = {
+  postsDir: "content/posts",
+  staticImagesDir: "static/images",
+  imageExtensions: [".avif", ".gif", ".jpeg", ".jpg", ".png", ".svg", ".webp"],
+  staticAssetPrefix: "/images/assets/",
+} as const;
+
 const markdownImagePattern = /!\[[^\]]*]\(([^)]+)\)/g;
 const themeImagePattern = /{{<\s*theme-image\b([^>]*)>}}/g;
 const shortcodeArgPattern = /(\w+)\s*=\s*"([^"]*)"|(\w+)\s*=\s*'([^']*)'/g;
-const imageExtensions = new Set([
-  ".avif",
-  ".gif",
-  ".jpeg",
-  ".jpg",
-  ".png",
-  ".svg",
-  ".webp",
-]);
+const imageExtensions = new Set<string>(CONFIG.imageExtensions);
 
 function normalize(value: string) {
   return value.normalize("NFC");
@@ -48,8 +47,8 @@ function normalize(value: string) {
 function parseArgs(argv: string[]): Options {
   const options: Options = {
     strict: false,
-    postsDir: "content/posts",
-    staticImagesDir: "static/images",
+    postsDir: CONFIG.postsDir,
+    staticImagesDir: CONFIG.staticImagesDir,
   };
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -229,7 +228,7 @@ function localBundleTarget(reference: ImageReference, bundleDir: string) {
 
 function staticAssetTarget(reference: ImageReference, staticImagesDir: string) {
   const [resourcePath] = splitResourceSuffix(normalize(reference.raw));
-  const prefix = "/images/assets/";
+  const prefix = CONFIG.staticAssetPrefix;
 
   if (!resourcePath.startsWith(prefix)) {
     return undefined;

@@ -13,11 +13,19 @@ type Options = {
   maxWidth: number;
 };
 
-const sourceExtensions = new Set([".png", ".jpg", ".jpeg", ".webp"]);
-const backupSuffix = "-original-image";
+const CONFIG = {
+  postsDir: "content/posts",
+  maxWidth: 1260,
+  webpQuality: 85,
+  sourceExtensions: [".png", ".jpg", ".jpeg", ".webp"],
+  backupSuffix: "-original-image",
+} as const;
+
+const sourceExtensions = new Set<string>(CONFIG.sourceExtensions);
+const backupSuffix = CONFIG.backupSuffix;
 
 function parseArgs(argv: string[]): Options {
-  const options: Options = { dryRun: false, deleteOriginals: false, force: false, quality: 85, maxWidth: 1260 };
+  const options: Options = { dryRun: false, deleteOriginals: false, force: false, quality: CONFIG.webpQuality, maxWidth: CONFIG.maxWidth };
   for (let i = 0; i < argv.length; i += 1) {
     switch (argv[i]) {
       case "--dry-run": case "-n": options.dryRun = true; break;
@@ -75,7 +83,7 @@ function backupPath(file: string) {
 
 async function main() {
   const options = parseArgs(process.argv.slice(2));
-  const postsRoot = path.resolve("content/posts");
+  const postsRoot = path.resolve(CONFIG.postsDir);
   const files = await listFiles(postsRoot);
   const selected = options.post ? path.join(postsRoot, options.post) : undefined;
   const targets = files.filter((file) => {

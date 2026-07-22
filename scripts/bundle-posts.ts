@@ -30,6 +30,11 @@ type PlannedPost = {
   slug: string;
 };
 
+const CONFIG = {
+  postsDir: "content/posts",
+  imagesDir: "static/images",
+} as const;
+
 class ChangeSet {
   moves: Move[] = [];
   rewrites: Rewrite[] = [];
@@ -60,8 +65,8 @@ function parseArgs(argv: string[]): Options {
     all: false,
     dryRun: false,
     force: false,
-    postsDir: "content/posts",
-    imagesDir: "static/images",
+    postsDir: CONFIG.postsDir,
+    imagesDir: CONFIG.imagesDir,
   };
 
   for (let index = 0; index < argv.length; index += 1) {
