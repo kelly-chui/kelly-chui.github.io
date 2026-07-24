@@ -24,3 +24,7 @@ node_modules/
 /content/posts/**/*-original-image.jpg
 /content/posts/**/*-original-image.jpeg
 /content/posts/**/*-original-image.webp
+/content/posts/**/*-original-video.mov
+/content/posts/**/*-original-video.mp4
+/content/posts/**/*-original-video.m4v
+/content/posts/**/*-original-video.webm
