@@ -1,0 +1,14 @@
+{{- $style := slice -}}
+{{- with .Get "width" -}}
+  {{- $style = $style | append (printf "--image-grid-width: %s;" .) -}}
+{{- end -}}
+{{- with .Get "itemWidth" -}}
+  {{- $style = $style | append (printf "--image-grid-item-width: %s;" .) -}}
+{{- end -}}
+{{- $styleAttr := "" -}}
+{{- with $style -}}
+  {{- $styleAttr = printf ` style="%s"` (delimit . " " | safeCSS) -}}
+{{- end -}}
+<div class="image-grid"{{ $styleAttr | safeHTMLAttr }}>
+  {{ .Inner }}
+</div>

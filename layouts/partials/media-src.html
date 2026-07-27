@@ -1,0 +1,30 @@
+{{- $u := urls.Parse .src -}}
+{{- $resolved := $u.String -}}
+{{- if not $resolved -}}
+  {{- errorf "%s requires src: %s" .kind .position -}}
+{{- end -}}
+{{- if not $u.IsAbs -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- with or (.page.Resources.Get $path) (resources.Get $path) -}}
+    {{- $resolved = .RelPermalink -}}
+    {{- with $u.RawQuery -}}
+      {{- $resolved = printf "%s?%s" $resolved . -}}
+    {{- end -}}
+    {{- with $u.Fragment -}}
+      {{- $resolved = printf "%s#%s" $resolved . -}}
+    {{- end -}}
+  {{- else -}}
+    {{- if .required -}}
+      {{- errorf "%s resource not found: %q in %s" .kind $path .page.File.Path -}}
+    {{- else -}}
+      {{- $resolved = (.src | relURL) -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if hasPrefix $u.Path "/" -}}
+  {{- with resources.Get (strings.TrimPrefix "/" $u.Path) -}}
+    {{- $resolved = .RelPermalink -}}
+  {{- else -}}
+    {{- $resolved = ($u.Path | relURL) -}}
+  {{- end -}}
+{{- end -}}
+{{- $resolved -}}

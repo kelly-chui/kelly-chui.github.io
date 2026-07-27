@@ -1,0 +1,12 @@
+{{- $alt := .Get "alt" | default (.Get "caption") -}}
+{{- $caption := .Get "caption" -}}
+{{- $align := .Get "align" | default "" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+{{- $src := partial "media-src.html" (dict "src" (.Get "src") "page" .Page "position" .Position "kind" "image shortcode" "required" false) -}}
+
+{{- if or $caption $align -}}
+{{ partial "media-figure.html" (dict "align" $align "caption" $caption "inner" (printf `<img src="%s" alt="%s" loading="lazy"%s%s>` $src $alt (cond $width (printf ` width="%s"` $width) "") (cond $height (printf ` height="%s"` $height) ""))) }}
+{{- else -}}
+<img src="{{ $src }}" alt="{{ $alt }}" loading="lazy"{{ with $width }} width="{{ . }}"{{ end }}{{ with $height }} height="{{ . }}"{{ end }}>
+{{- end -}}

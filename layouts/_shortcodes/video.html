@@ -1,0 +1,27 @@
+{{- $type := .Get "type" | default "video/mp4" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+{{- $caption := .Get "caption" -}}
+{{- $align := .Get "align" | default "" -}}
+{{- $src := partial "media-src.html" (dict "src" (.Get "src") "page" .Page "position" .Position "kind" "video shortcode" "required" true) -}}
+{{- $autoplay := eq (.Get "autoplay") "true" -}}
+{{- $loop := eq (.Get "loop") "true" -}}
+{{- $muted := ne (.Get "muted") "false" -}}
+{{- $controls := ne (.Get "controls") "false" -}}
+{{- $playsinline := ne (.Get "playsinline") "false" -}}
+
+<figure class="media-caption{{ with $align }} align-{{ . }}{{ end }}">
+  <video
+    {{- if $controls }} controls{{ end -}}
+    {{- if $autoplay }} autoplay{{ end -}}
+    {{- if $loop }} loop{{ end -}}
+    {{- if $muted }} muted{{ end -}}
+    {{- if $playsinline }} playsinline{{ end -}}
+    {{- with $width }} width="{{ . }}"{{ end -}}
+    {{- with $height }} height="{{ . }}"{{ end -}}>
+    <source src="{{ $src }}" type="{{ $type }}">
+  </video>
+  {{- with $caption }}
+    <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>

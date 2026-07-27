@@ -1,0 +1,10 @@
+{{- $classes := slice "media-caption" -}}
+{{- with .align -}}
+  {{- $classes = $classes | append (printf "align-%s" .) -}}
+{{- end -}}
+<figure class="{{ delimit $classes " " }}">
+  {{- .inner | safeHTML -}}
+  {{- with .caption }}
+    <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>
