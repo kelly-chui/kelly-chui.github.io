@@ -1,8 +1,10 @@
 #!/usr/bin/env tsx
 
-import { readdir, readFile, rename, stat, unlink, writeFile } from "node:fs/promises";
+import { readFile, rename, stat, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
+import { exists, listFiles } from "./lib/fs";
+import { backupPath } from "./lib/media";
 
 type Options = {
   dryRun: boolean;
@@ -26,6 +28,24 @@ const sourceExtensions = new Set<string>(CONFIG.sourceExtensions);
 const backupSuffix = CONFIG.backupSuffix;
 const optimizedSuffix = CONFIG.optimizedSuffix;
 
+function formatBytes(bytes: number) {
+  if (bytes < 1024) return `${bytes} B`;
+  const units = ["KB", "MB", "GB"];
+  let value = bytes;
+  let unit = -1;
+  do {
+    value /= 1024;
+    unit += 1;
+  } while (value >= 1024 && unit < units.length - 1);
+  return `${value.toFixed(value >= 100 ? 0 : value >= 10 ? 1 : 2)} ${units[unit]}`;
+}
+
+function formatSavings(originalBytes: number, outputBytes: number) {
+  const savedBytes = originalBytes - outputBytes;
+  const savedPercent = originalBytes === 0 ? 0 : (savedBytes / originalBytes) * 100;
+  return `${formatBytes(originalBytes)} -> ${formatBytes(outputBytes)} (${savedBytes >= 0 ? "saved" : "increased"} ${formatBytes(Math.abs(savedBytes))}, ${Math.abs(savedPercent).toFixed(1)}%)`;
+}
+
 function parseArgs(argv: string[]): Options {
   const options: Options = { dryRun: false, deleteOriginals: false, force: false, quality: CONFIG.webpQuality, maxWidth: CONFIG.maxWidth };
   for (let i = 0; i < argv.length; i += 1) {
@@ -47,47 +67,6 @@ function parseArgs(argv: string[]): Options {
 
 function printHelp() {
   console.log(`Optimize post images as WebP.\n\nUsage:\n  npm run optimize:images -- --dry-run\n  npm run optimize:images -- --post <slug>\n\nOptions:\n  --dry-run, -n          Show planned changes without writing files.\n  --post <slug>         Process one post bundle.\n  --delete-originals    Delete originals instead of renaming them.\n  --force               Re-encode existing WebP files.\n  --quality <number>    WebP quality. Default: 85.\n  --max-width <number>  Maximum width. Default: 1260.`);
-}
-
-async function listFiles(root: string): Promise<string[]> {
-  const entries = await readdir(root, { withFileTypes: true });
-  const files = await Promise.all(entries.map(async (entry) => {
-    const file = path.join(root, entry.name);
-    if (entry.isDirectory()) return listFiles(file);
-    return entry.isFile() ? [file] : [];
-  }));
-  return files.flat().sort();
-}
-
-async function exists(file: string) {
-  try { await stat(file); return true; } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") return false;
-    throw error;
-  }
-}
-
-function formatBytes(bytes: number) {
-  if (bytes < 1024) return `${bytes} B`;
-  const units = ["KB", "MB", "GB"];
-  let value = bytes;
-  let unit = -1;
-  do {
-    value /= 1024;
-    unit += 1;
-  } while (value >= 1024 && unit < units.length - 1);
-  return `${value.toFixed(value >= 100 ? 0 : value >= 10 ? 1 : 2)} ${units[unit]}`;
-}
-
-function backupPath(file: string) {
-  const extension = path.extname(file);
-  return path.join(path.dirname(file), `${path.basename(file, extension)}${backupSuffix}${extension}`);
-}
-
-function formatSavings(originalBytes: number, outputBytes: number) {
-  const savedBytes = originalBytes - outputBytes;
-  const savedPercent = originalBytes === 0 ? 0 : (savedBytes / originalBytes) * 100;
-
-  return `${formatBytes(originalBytes)} -> ${formatBytes(outputBytes)} (${savedBytes >= 0 ? "saved" : "increased"} ${formatBytes(Math.abs(savedBytes))}, ${Math.abs(savedPercent).toFixed(1)}%)`;
 }
 
 async function main() {
@@ -115,7 +94,7 @@ async function main() {
       continue;
     }
     const output = `${source.slice(0, -path.extname(source).length)}${optimizedSuffix}.webp`;
-    const backup = backupPath(source);
+    const backup = backupPath(source, backupSuffix);
     if (!options.dryRun && !options.deleteOriginals && await exists(backup)) throw new Error(`Backup already exists: ${backup}`);
     console.log(`[convert] ${source} (${width || "?"}px) -> ${output}`);
     if (options.dryRun) { converted += 1; continue; }

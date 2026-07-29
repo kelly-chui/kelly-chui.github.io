@@ -6,6 +6,9 @@ categories:
   - Archive
 series: []
 tags: []
+features:
+  - katex
+  - mermaid
 
 draft: true
 original: ""

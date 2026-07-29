@@ -1,9 +1,11 @@
 #!/usr/bin/env tsx
 
-import { mkdir, readFile, readdir, rename, stat, unlink, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rename, stat, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { spawn } from "node:child_process";
 import ffmpegPath from "ffmpeg-static";
+import { exists, isDirectory, listFiles } from "./lib/fs";
+import { backupPath } from "./lib/media";
 
 type Options = {
   dryRun: boolean;
@@ -35,6 +37,24 @@ const CONFIG = {
 const sourceExtension = CONFIG.sourceExtension;
 const backupSuffix = CONFIG.backupSuffix;
 const optimizedSuffix = CONFIG.optimizedSuffix;
+
+function formatBytes(bytes: number) {
+  if (bytes < 1024) return `${bytes} B`;
+  const units = ["KB", "MB", "GB"];
+  let value = bytes;
+  let unit = -1;
+  do {
+    value /= 1024;
+    unit += 1;
+  } while (value >= 1024 && unit < units.length - 1);
+  return `${value.toFixed(value >= 100 ? 0 : value >= 10 ? 1 : 2)} ${units[unit]}`;
+}
+
+function formatSavings(originalBytes: number, outputBytes: number) {
+  const savedBytes = originalBytes - outputBytes;
+  const savedPercent = originalBytes === 0 ? 0 : (savedBytes / originalBytes) * 100;
+  return `${formatBytes(originalBytes)} -> ${formatBytes(outputBytes)} (${savedBytes >= 0 ? "saved" : "increased"} ${formatBytes(Math.abs(savedBytes))}, ${Math.abs(savedPercent).toFixed(1)}%)`;
+}
 
 function parseArgs(argv: string[]): Options {
   const options: Options = {
@@ -150,98 +170,6 @@ function buildOutputPath(source: string, inputRoot: string, outputDir?: string) 
   return path.join(path.dirname(source), baseName);
 }
 
-async function exists(targetPath: string) {
-  try {
-    await stat(targetPath);
-    return true;
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
-      return false;
-    }
-
-    throw error;
-  }
-}
-
-async function isDirectory(targetPath: string) {
-  try {
-    return (await stat(targetPath)).isDirectory();
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
-      return false;
-    }
-
-    throw error;
-  }
-}
-
-async function listFiles(root: string, recursive: boolean): Promise<string[]> {
-  const entries = await readdir(root, { withFileTypes: true });
-  const nested = await Promise.all(
-    entries.map(async (entry) => {
-      const entryPath = path.join(root, entry.name);
-
-      if (entry.isDirectory()) {
-        return recursive ? listFiles(entryPath, true) : [];
-      }
-
-      if (entry.isFile() && entry.name !== ".DS_Store") {
-        return [entryPath];
-      }
-
-      return [];
-    }),
-  );
-
-  return nested.flat().sort();
-}
-
-function formatBytes(bytes: number) {
-  if (bytes < 1024) {
-    return `${bytes} B`;
-  }
-
-  const units = ["KB", "MB", "GB"];
-  let value = bytes;
-  let unit = -1;
-
-  do {
-    value /= 1024;
-    unit += 1;
-  } while (value >= 1024 && unit < units.length - 1);
-
-  return `${value.toFixed(value >= 100 ? 0 : value >= 10 ? 1 : 2)} ${units[unit]}`;
-}
-
-function backupPath(file: string) {
-  const extension = path.extname(file);
-  return path.join(path.dirname(file), `${path.basename(file, extension)}${backupSuffix}${extension}`);
-}
-
-function formatSavings(originalBytes: number, outputBytes: number) {
-  const savedBytes = originalBytes - outputBytes;
-  const savedPercent = originalBytes === 0 ? 0 : (savedBytes / originalBytes) * 100;
-
-  return `${formatBytes(originalBytes)} -> ${formatBytes(outputBytes)} (${savedBytes >= 0 ? "saved" : "increased"} ${formatBytes(Math.abs(savedBytes))}, ${Math.abs(savedPercent).toFixed(1)}%)`;
-}
-
-async function updateMarkdownReference(source: string, output: string) {
-  const index = path.join(path.dirname(source), "index.md");
-
-  if (!(await exists(index))) {
-    return;
-  }
-
-  const sourceName = path.basename(source);
-  const outputName = path.basename(output);
-  const text = await readFile(index, "utf8");
-  const updated = text.replaceAll(sourceName, outputName);
-
-  if (updated !== text) {
-    await writeFile(index, updated);
-  }
-}
-
 function buildFfmpegArgs(source: string, output: string, options: Options) {
   const args = [
     "-hide_banner",
@@ -325,7 +253,7 @@ async function main() {
   for (const source of targets) {
     const output = buildOutputPath(source, inputIsDirectory ? inputPath : path.dirname(source), options.outputDir);
     const outputDir = path.dirname(output);
-    const backup = backupPath(source);
+    const backup = backupPath(source, backupSuffix);
 
     if (!options.force && await exists(output)) {
       console.log(`[skip] ${source} -> ${output} (exists)`);
@@ -363,7 +291,12 @@ async function main() {
         throw new Error(`Optimized video was not created: ${output}`);
       }
       if (!options.outputDir) {
-        await updateMarkdownReference(source, output);
+        const index = path.join(path.dirname(source), "index.md");
+        if (await exists(index)) {
+          const text = await readFile(index, "utf8");
+          const updated = text.replaceAll(path.basename(source), path.basename(output));
+          if (updated !== text) await writeFile(index, updated);
+        }
       }
       const outputBytes = (await stat(output)).size;
       totalOriginalBytes += originalBytes;
