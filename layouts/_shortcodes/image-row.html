@@ -1,0 +1,17 @@
+{{- $style := slice -}}
+{{- with .Get "width" -}}
+  {{- $style = $style | append (printf "--image-row-width: %s;" .) -}}
+{{- end -}}
+{{- with .Get "itemWidth" -}}
+  {{- $style = $style | append (printf "--image-row-item-width: %s;" .) -}}
+{{- end -}}
+{{- with .Get "gap" -}}
+  {{- $style = $style | append (printf "--image-row-gap: %s;" .) -}}
+{{- end -}}
+{{- $styleAttr := "" -}}
+{{- with $style -}}
+  {{- $styleAttr = printf ` style="%s"` (delimit . " " | safeCSS) -}}
+{{- end -}}
+<div class="image-row"{{ $styleAttr | safeHTMLAttr }}>
+  {{ .Inner }}
+</div>
