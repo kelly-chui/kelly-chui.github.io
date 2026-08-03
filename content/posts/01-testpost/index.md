@@ -10,6 +10,8 @@ features:
   - katex
   - mermaid
 
+pinned: true
+
 draft: true
 original: ""
 ---
@@ -97,8 +99,7 @@ let ys = xs.map { $0 * $0 + 2 * $0 + 1 }
 
 ## Video
 
-{{< video src="test.mp4" width="360" autoplay="true" loop="true" caption="비디오" >}}
-
+{{< video src="test.mp4" width="360" autoplay="true" loop="true" caption="비디오" align="center" >}}
 ## Raw Markdown Image
 
 ![](image-001.gif#center)

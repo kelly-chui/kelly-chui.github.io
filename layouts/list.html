@@ -43,9 +43,14 @@
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- $pinnedPages := where $pages "Params.pinned" true }}
+{{- $unpinnedPages := where $pages "Params.pinned" "!=" true }}
+{{- $pages = $pinnedPages | append ($unpinnedPages.ByDate.Reverse) }}
+{{- else }}
+{{- $pages = $pages.ByDate.Reverse }}
 {{- end }}
 
-{{- $paginator := .Paginate ($pages.ByDate.Reverse) }}
+{{- $paginator := .Paginate $pages }}
 
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- partial "home_info.html" . }}
