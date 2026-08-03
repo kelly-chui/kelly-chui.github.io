@@ -10,7 +10,7 @@ type Options = {
   staticImagesDir: string;
 };
 
-type ReferenceKind = "markdown" | `theme-image:${string}` | `video:${string}`;
+type ReferenceKind = "markdown" | `image:${string}` | `theme-image:${string}` | `video:${string}`;
 
 type MediaReference = {
   file: string;
@@ -37,6 +37,7 @@ const CONFIG = {
 } as const;
 
 const markdownImagePattern = /!\[[^\]]*]\(\s*([^\s)]+)(?:\s+(?:"[^"]*"|'[^']*'|\([^)]*\)))?\s*\)/g;
+const imagePattern = /{{<\s*image\b([^>]*)>}}/g;
 const themeImagePattern = /{{<\s*theme-image\b([^>]*)>}}/g;
 const videoPattern = /{{<\s*video\b([^>]*)>}}/g;
 const shortcodeArgPattern = /(\w+)\s*=\s*"([^"]*)"|(\w+)\s*=\s*'([^']*)'/g;
@@ -195,6 +196,22 @@ function extractReferences(file: string, text: string): MediaReference[] {
         raw: match[1].trim(),
         kind: "markdown",
       });
+    }
+
+    for (const match of line.matchAll(imagePattern)) {
+      for (const argMatch of match[1].matchAll(shortcodeArgPattern)) {
+        const key = argMatch[1] ?? argMatch[3];
+        const raw = argMatch[2] ?? argMatch[4];
+
+        if (["src", "image"].includes(key)) {
+          references.push({
+            file,
+            line: lineNumber,
+            raw: raw.trim(),
+            kind: `image:${key}`,
+          });
+        }
+      }
     }
 
     for (const match of line.matchAll(themeImagePattern)) {
