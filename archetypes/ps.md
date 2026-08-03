@@ -6,13 +6,13 @@ categories:
   - Problem Solving
 series:
 tags:
+features:
+  - katex
 
 draft: true
 original: ""
 ---
 
 ## 문제
-
-## 풀이
 
 ## 코드
