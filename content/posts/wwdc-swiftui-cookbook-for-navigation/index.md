@@ -1,11 +1,11 @@
 ---
-title: "SwiftUI. The Swiftui Cookbook for Navigation"
+title: "SwiftUI. The Swiftui Cookbook for Navigation - WWDC22"
 date: 2026-07-23T22:36:54+09:00
 
 categories:
   - iOS
-series:
   - WWDC
+series:
   - SwiftUI
 tags:
   - Navigation
@@ -13,6 +13,8 @@ tags:
 
 draft: false
 original: ""
+aliases:
+  - /posts/wwdc-swiftui-cookbook-for-navigation/
 ---
 
 ## The SwiftUI cookbook for navigation

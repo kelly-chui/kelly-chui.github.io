@@ -33,7 +33,7 @@ LeetCode에 어제에 이어서 XOR 연산 문제가 나왔다. 일반적인 사
 Observation 관련 WWDC 세션을 봤다. 예전부터 Observation이 Combine을 래핑한 것이 아닐까? 라는 생각을 종종 했었는데, WWDC 세션을 다 보고 난뒤 더 찾아보니, 이제는 SwiftUI가 Combine에서 거의 독립한 상태라고 한다.
 
 - [Discover Observation in SwiftUI - WWDC23](https://developer.apple.com/videos/play/wwdc2023/10149/)
-- [Observation 정리 노트]({{< relref "posts/ios-swiftui-wwdc-discover-observation-in-swiftui" >}})
+- [Observation 정리 노트]({{< relref "posts/wwdc-swiftui-discover-observation-in-swiftui" >}})
 
 ### 블로그 스크립트 정리
 

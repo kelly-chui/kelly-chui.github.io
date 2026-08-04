@@ -1,17 +1,19 @@
 ---
-title: "iOS. Demystify SwiftUI (3)"
+title: "iOS. Demystify SwiftUI (3) - WWDC21"
 date: 2026-07-22T23:13:56+09:00
 
 categories:
   - iOS
-series:
   - WWDC
+series:
   - SwiftUI
 tags:
   - WWDC
 
 draft: false
 original: ""
+aliases:
+  - /posts/wwdc-swiftui-demystify-swiftui-3/
 ---
 
 ## Dependencies: SwiftUI는 무엇이 바뀌었는지 어떻게 알까?

@@ -1,5 +1,5 @@
 ---
-title: "Meet async/await in Swift (2)"
+title: "Swift Concurrency. Meet async/await in Swift (2) - WWDC21"
 date: 2026-08-03T23:01:47+09:00
 
 categories:
@@ -14,6 +14,8 @@ features:
 
 draft: false
 original: ""
+aliases:
+  - /posts/wwdc-swift-concurrency-meet-async-await-in-swift-2/
 ---
 
 1편에서는 async await를 어떻게 사용했는지 알아봤다면, 여기서는 테스트와 실제 앱 코드에서 async/await를 사용하는 법을 알아본다. 또한 기존에 존재하는 completion handler 기반 API를 continuation을 사용하여, async/await를 사용하는 async alternative로 변환하는 방법을 알아본다.

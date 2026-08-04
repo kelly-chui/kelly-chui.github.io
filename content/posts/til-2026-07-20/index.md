@@ -82,7 +82,7 @@ WWDC를 다시 보고 정리하려고 했고, 처음에 볼 것으로 Demystify 
 
 일단 View Builder 자체가 일종의 DSL이라는 사실, 그리고 Opaque 타입에 대해서 안 이후에 본 것이라, 처음에 봤을 때에 비해 느낌이 꽤 달랐다. 이번에 보면서 가장 신기한건 Structural Identity, 제네릭과 그 구조 자체만으로 View를 구분할 수 있다는 것이 가장 새롭게 느껴졌다.
 
-[Demystify SwiftUI 정리 노트 1]({{< relref "posts/ios-swiftui-wwdc-demystify-swiftui-1" >}}) 
+[Demystify SwiftUI 정리 노트 1]({{< relref "posts/wwdc-swiftui-demystify-swiftui-1" >}}) 
 
 이전처럼 세션을 보면서 중간에 든 의문은 Note에 적고, 다 끝난 후에 다시 그 부분으로 돌아가서 공부하는 방식으로 정리했다.
 

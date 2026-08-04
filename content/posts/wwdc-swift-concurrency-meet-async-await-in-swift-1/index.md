@@ -1,5 +1,5 @@
 ---
-title: "Meet async/await in Swift"
+title: "Swift Concurrency. Meet async/await in Swift (1) - WWDC21"
 date: 2026-08-03T20:03:38+09:00
 
 categories:
@@ -14,6 +14,8 @@ features:
 
 draft: false
 original: ""
+aliases:
+  - /posts/wwdc-swift-concurrency-meet-async-await-in-swift-1/
 ---
 
 completion handler로 작성한 비동기 코드는 쉽게 장황해지고, 복잡해지고, 부정확해진다. 
@@ -200,8 +202,8 @@ func fetchThumbnail(for id: String) async throws -> UIImage {
 
 ```mermaid
 flowchart LR
-    A[요청 수행] --> B[리턴된 값을 변수에 할당]
-    B --> C[문제가 발생하면 에러 던지기]
+    A["요청 수행"] --> B["리턴된 값을 변수에 할당"]
+    B --> C["문제가 발생하면 에러 던지기"]
 ```
 
 즉, async/await를 쓰면 

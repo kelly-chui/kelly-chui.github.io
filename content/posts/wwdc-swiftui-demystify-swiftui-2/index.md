@@ -1,17 +1,19 @@
 ---
-title: "SwiftUI. Demystify SwiftUI (2)"
+title: "SwiftUI. Demystify SwiftUI (2) - WWDC21"
 date: 2026-07-21T21:42:49+09:00
 
 categories:
   - iOS
-series:
   - WWDC
+series:
   - SwiftUI
 tags:
   - WWDC
 
 draft: false
 original: ""
+aliases:
+  - /posts/wwdc-swiftui-demystify-swiftui-2/
 ---
 
 ## Lifetime

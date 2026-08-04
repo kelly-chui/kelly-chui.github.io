@@ -1,16 +1,22 @@
 ---
-title: "SwiftUI. SwiftUI Essentials"
+title: "SwiftUI. Essentials - WWDC24"
 date: 2026-07-27T22:18:58+09:00
 
 categories:
+  - iOS
+  - WWDC
 series:
+  - SwiftUI
 tags:
+  - WWDC
 
 features:
   - mermaid
 
 draft: false
 original: ""
+aliases:
+  - /posts/wwdc-swiftui-essentials/
 ---
 
 SwiftUI는 선언형 UI 프레임워크다.
@@ -78,7 +84,7 @@ SwiftUI 뷰는 명령형 명령을 받는 오래 지속되는 객체 인스턴�
 뷰는 선언적 설명이므로 뷰 하나를 여러 개로 나누어도 앱 성능은 저하되지 않는다. 따라서 성능을 위해 코드의 구조를 억지로 변경할 필요가 없다. (UIKit에서는 뷰 계층이 깊어져서 별도의 비용이 생길수도 있었다.)
 
 {{< callout type="note" title="Identity 때문에 구조를 신경 써야 하지 않을까?" >}}
-[WWDC21. Demystify SwiftUI]({{< relref "posts/ios-swiftui-wwdc-demystify-swiftui-1" >}}) 세션에서 `if` 때문에 SwiftUI의 Identity가 달라지는 현상을 봤다. 하지만 말하는 것은 "성능을 위해 큰 View 하나로 뭉쳐 둘 필요가 없다"는 의미에 가깝다. 작은 커스텀 View로 나누는 리팩토링 자체는 SwiftUI 성능을 해치지 않는다. 
+[WWDC21. Demystify SwiftUI]({{< relref "posts/wwdc-swiftui-demystify-swiftui-1" >}}) 세션에서 `if` 때문에 SwiftUI의 Identity가 달라지는 현상을 봤다. 하지만 말하는 것은 "성능을 위해 큰 View 하나로 뭉쳐 둘 필요가 없다"는 의미에 가깝다. 작은 커스텀 View로 나누는 리팩토링 자체는 SwiftUI 성능을 해치지 않는다. 
 
 다만 `if` 분기 위치를 바꾸거나 `.id(_:)`를 새로 주는 것처럼 뷰의 Identity가 달라지는 구조 변경은 State Lifetime이나 애니메이션에 영향을 줄 수 있다. 성능을 위해 구조를 숨기는 문제와, Identity를 의도에 맞게 유지하는 문제는 구분한다.
 {{< /callout >}}
@@ -127,7 +133,7 @@ struct HStack<Content: View>: View {
 
 여기서는 `HStack` 이니셜라이저 안에 `ViewBuilder`가 있다. SwiftUI의 컨테이너 뷰에서 자주 사용되는 패턴이며, SwiftUI 코드는 Swift 문법보다는 사실상 별개의 DSL이라는 것을 알 수 있다! (생각해보면 많은 부분이 Swift 문법과 다르다.)
 
-`ViewBuilder`에 대한 자세한 설명은 [WWDC21. Demystify SwiftUI]({{< relref "posts/ios-swiftui-wwdc-demystify-swiftui-1" >}})에 있다.
+`ViewBuilder`에 대한 자세한 설명은 [WWDC21. Demystify SwiftUI]({{< relref "posts/wwdc-swiftui-demystify-swiftui-1" >}})에 있다.
 
 #### Modifier
 

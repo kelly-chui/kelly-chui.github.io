@@ -1,17 +1,20 @@
 ---
-title: "Swift. Swift Concurrency: Behind the Scenes"
+title: "Swift Concurrency. Behind the Scenes - WWDC21"
 date: 2025-08-25
 
 categories:
   - Swift
-series:
   - WWDC
+series:
+  - Swift Concurrency
 tags:
   - Actor
   - Concurrency
 
 draft: false
 original: ""
+aliases:
+  - /posts/wwdc-swift-concurrency-behind-the-scenes/
 ---
 
 ## Threading model

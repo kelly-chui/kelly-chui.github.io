@@ -20,7 +20,7 @@ original: ""
 
 각각 Hash Table과 구현 능력을 요구하는 PS 문제였다. IQ Test 부분이 구현이 살짝 번거로운 부분이 있었다.
 
-- [SwiftUI. SwiftUI Essentials]({{< relref "posts/ios-swiftui-wwdc-swiftui-essentials" >}})
+- [SwiftUI. SwiftUI Essentials]({{< relref "posts/wwdc-swiftui-essentials" >}})
 
 WWDC 24에서 나온 SwiftUI Essentials 세션을 봤다. 24분 영상인데 정보 밀도가 엄청 높고 예제에서 보여준 것들도 많아서, 직접 예제를 돌리고 캡처하고, 동영상 녹화하고 하는데 꽤 시간이 들었다.
 

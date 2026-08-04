@@ -1,11 +1,11 @@
 ---
-title: "SwiftUI. Discover Observation in SwiftUI"
+title: "SwiftUI. Discover Observation in SwiftUI - WWDC23"
 date: 2026-07-24T17:41:15+09:00
 
 categories:
   - iOS
-series:
   - WWDC
+series:
   - SwiftUI
 tags:
   - Observer Pattern
@@ -16,6 +16,8 @@ features:
 
 draft: false
 original: ""
+aliases:
+  - /posts/wwdc-swiftui-discover-observation-in-swiftui/
 ---
 
 SwiftUI의 Observation은 모델의 프로퍼티 변화를 추적하고, 그 변화에 맞춰 UI를 업데이트하는 기능이다. `@Observable` 매크로를 사용하면 별도의 `ObservableObject`, `@Published`, `@ObservedObject` 없이도 일반 Swift 타입에 가까운 형태로 관찰 가능한 모델을 만들 수 있다.
@@ -143,7 +145,7 @@ struct DonutListView: View {
 {{< callout type="note" title="@State와 View Lifetime" >}}
 `@State`는 View Value 안에 직접 저장되는 값이 아니라 SwiftUI가 View의 Identity에 연결해 관리하는 저장소다. 그래서 `body`가 다시 평가되어 View Value가 새로 만들어져도, Identity가 유지되는 동안 `@State` 값은 유지된다.
 
-이 내용은 [SwiftUI. Demystify SwiftUI (2)](/posts/ios-swiftui-wwdc-demystify-swiftui-2/)에서 View Lifetime과 함께 정리했다.
+이 내용은 [SwiftUI. Demystify SwiftUI (2)](/posts/wwdc-swiftui-demystify-swiftui-2/)에서 View Lifetime과 함께 정리했다.
 {{< /callout >}}
 
 ### @Environment
