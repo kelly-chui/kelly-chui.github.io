@@ -1,0 +1,12 @@
+.post-content pre.mermaid {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  background: transparent;
+}
+
+.post-content pre.mermaid svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

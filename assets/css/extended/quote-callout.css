@@ -59,6 +59,16 @@
     margin-bottom: 0;
 }
 
+/* Tint code blocks toward the callout accent without changing syntax colors. */
+.callout .code-theme-github {
+    --code-block-bg: color-mix(in srgb, var(--callout-accent) 14%, #f7f7f7);
+}
+
+.callout code {
+    background: color-mix(in srgb, var(--callout-accent) 14%, var(--code-block-bg)) !important;
+    color: var(--primary);
+}
+
 .callout[data-callout="note"] {
     --callout-accent: rgb(63, 131, 248);
 }
@@ -81,6 +91,24 @@
 
 :root[data-theme="dark"] .callout {
     --callout-bg: color-mix(in srgb, var(--callout-accent) 12%, transparent);
+}
+
+:root[data-theme="dark"] .callout .code-theme-github {
+    --code-block-bg: color-mix(in srgb, var(--callout-accent) 20%, #111516);
+}
+
+:root[data-theme="dark"] .callout code {
+    background: color-mix(in srgb, var(--callout-accent) 20%, var(--code-block-bg)) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root[data-theme="auto"] .callout .code-theme-github {
+        --code-block-bg: color-mix(in srgb, var(--callout-accent) 20%, #111516);
+    }
+
+    :root[data-theme="auto"] .callout code {
+        background: color-mix(in srgb, var(--callout-accent) 20%, var(--code-block-bg)) !important;
+    }
 }
 
 @supports not (color: color-mix(in srgb, white 50%, black)) {

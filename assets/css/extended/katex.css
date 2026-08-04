@@ -1,0 +1,10 @@
+/* Keep long display equations inside the post column instead of widening the page. */
+.post-content .katex {
+    font-size: 1em;
+}
+
+.post-content .katex-display {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}

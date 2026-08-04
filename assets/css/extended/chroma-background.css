@@ -1,0 +1,38 @@
+/* Code block surface and fallback colors. Syntax token colors come from GitHub Chroma styles. */
+:root {
+  --code-block-bg: #f7f7f7;
+  --code-block-fg: #1f2328;
+}
+
+html[data-theme="dark"] {
+  --code-block-bg: #111516;
+  --code-block-fg: #e6edf3;
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-theme="auto"] {
+    --code-block-bg: #111516;
+    --code-block-fg: #e6edf3;
+  }
+}
+
+.code-theme-github,
+.code-theme-github pre,
+.code-theme-github pre code {
+  background: var(--code-block-bg) !important;
+}
+
+.code-theme-github pre code {
+  color: var(--code-block-fg) !important;
+}
+
+html[data-theme="dark"] .code-theme-github .chroma .n,
+html[data-theme="dark"] .code-theme-github .chroma .nx,
+html[data-theme="dark"] .code-theme-github .chroma .p,
+html[data-theme="dark"] .code-theme-github .chroma .bp,
+html[data-theme="auto"] .code-theme-github .chroma .n,
+html[data-theme="auto"] .code-theme-github .chroma .nx,
+html[data-theme="auto"] .code-theme-github .chroma .p,
+html[data-theme="auto"] .code-theme-github .chroma .bp {
+  color: var(--code-block-fg);
+}

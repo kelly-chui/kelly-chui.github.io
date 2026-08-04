@@ -1,0 +1,5 @@
+{{- $options := merge .Options (dict "noClasses" false) -}}
+{{- $result := transform.HighlightCodeBlock . $options -}}
+<div class="code-theme-github">
+  {{- $result.Wrapped -}}
+</div>

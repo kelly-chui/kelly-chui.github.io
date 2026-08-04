@@ -43,8 +43,8 @@ block = true
 title = true
 
 [markup.highlight]
-noClasses = true
+noClasses = false
 codeFences = true
 guessSyntax = true
 lineNos = false
-style = "monokai"
+style = "github"

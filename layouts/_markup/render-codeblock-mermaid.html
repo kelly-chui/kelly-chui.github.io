@@ -1,6 +1,6 @@
-{{- $features := .Page.Param "features" -}}
-{{- if and (eq .Type "mermaid") (in $features "mermaid") -}}
-<pre class="mermaid">{{ .Inner }}</pre>
+{{- if in (.Page.Param "features") "mermaid" -}}
+  {{- .Page.Store.Set "hasMermaid" true -}}
+  <pre class="mermaid" data-mermaid-source="{{ .Inner | urlquery }}"></pre>
 {{- else -}}
-{{ highlight .Inner .Type "" }}
+  {{ highlight .Inner .Type "" }}
 {{- end -}}
