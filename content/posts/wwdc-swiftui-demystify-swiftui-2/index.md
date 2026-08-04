@@ -30,10 +30,10 @@ View는 Lifetime 동안 여러 상태를 가진다. 각각의 상태는 서로 �
 
 ```swift
 struct PurrDecibelView: View {
-	var intensity: Double
-	var body: some View {
-		// ...
-	}
+    var intensity: Double
+    var body: some View {
+        // ...
+    }
 }
 ```
 
@@ -48,7 +48,7 @@ SwiftUI가 `body`를 실행할 때마다 새로운 View Value가 만들어진다
 
 ```swift
 var body: some View {
-	PurrDecibelView(intensity: 25)
+    PurrDecibelView(intensity: 25)
 }
 ```
 
@@ -56,7 +56,7 @@ var body: some View {
 
 ```swift
 var body: some View {
-	PurrDecibelView(intensity: 50)
+    PurrDecibelView(intensity: 50)
 }
 ```
 
@@ -84,14 +84,14 @@ View Identity와 Lifetime의 관계를 이해하면 SwiftUI가 상태를 유지�
 
 ```swift
 struct CatRecorder: View {
-	@State var title = ""
-	@StateObject var mic = Microphone ()
-	var body: some View {
-		VStack {
-			TextField ("Title:", text: $title)
-			MicView(mic)
-		}
-	}
+    @State var title = ""
+    @StateObject var mic = Microphone ()
+    var body: some View {
+        VStack {
+            TextField ("Title:", text: $title)
+            MicView(mic)
+        }
+    }
 }
 ```
 
@@ -113,12 +113,12 @@ SwiftUI가 View에서 `State`나 `StateObject`를 발견하면, 해당 데이터
 
 ```swift
 var body: some View {
-	if dayTime {
-		CatRecorder()
-	} else {
-		CatRecorder()
-			.nightTimeStyle()
-	}
+    if dayTime {
+        CatRecorder()
+    } else {
+        CatRecorder()
+            .nightTimeStyle()
+    }
 }
 ```
 
@@ -146,7 +146,7 @@ SwiftUI에는 데이터의 Identity를 View의 Explicit Identity로 사용하는
 
 ```swift
 ForEach(0..<5) { offset in
-	Text("🐑 \(offset)")
+    Text("🐑 \(offset)")
 }
 ```
 
@@ -165,12 +165,12 @@ ForEach(0..<5) { offset in
 
 ```swift
 struct RescueCat {
-	// ...
-	var tagID: UUID // 여기서 Apple 공식은 Id가 아닌 ID임을 알 수 있다...
+    // ...
+    var tagID: UUID // 여기서 Apple 공식은 Id가 아닌 ID임을 알 수 있다...
 }
 
 ForEach(rescueCats, id: \.tagID) { rescueCat in
-	ProfileView(rescueCat)
+    ProfileView(rescueCat)
 }
 ```
 
@@ -188,13 +188,13 @@ ForEach(rescueCats, id: \.tagID) { rescueCat in
 
 ```swift
 struct RescueCat: Identifiable {
-	// ...
-	var tagID: UUID
-	var id: UUID { tageID }
+    // ...
+    var tagID: UUID
+    var id: UUID { tageID }
 }
 
 ForEach(rescueCats) { rescueCat in
-	ProfileView(rescueCat)
+    ProfileView(rescueCat)
 }
 ```
 
@@ -206,10 +206,10 @@ Swift에서는 타입 시스템을 이용해 데이터가 시간의 흐름 속�
 
 ```swift
 extension ForEach where Content: View, Data.Element: Identifiable, ID == Data.Element.ID {
-	public init(
-		_ data: Data,
-		@ViewBuilder content: @escaping (Data.Element) -> Content
-	)
+    public init(
+        _ data: Data,
+        @ViewBuilder content: @escaping (Data.Element) -> Content
+    )
 }
 ```
 

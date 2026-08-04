@@ -4,7 +4,7 @@ date: 2025-02-10
 
 categories:
   - Swift
-series: []
+series:
 tags:
   - Method Dispatch
   - Protocol

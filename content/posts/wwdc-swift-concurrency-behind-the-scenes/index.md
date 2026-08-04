@@ -54,8 +54,8 @@ let feed in feedsToUpdate {
         do {
             let articles = try deserializeArticles(from: data)
             databaseQueue.sync {
-	              updateDatabase(with: articles)
-	          }
+                  updateDatabase(with: articles)
+              }
         } catch { /* ... */ }
     }
     dataTask.resume()
@@ -146,15 +146,15 @@ await withThrowingTaskGroup(of: [Article].self) { group in
 func save(...) async throws -> [ID] { ... }
 
 func add(_ newArticles: [Article]) async throws {
-		let ids = try await database.save(newArticles, for: self)
-		for (id, article) in zip(ids, newAritcles) {
-				articles[id] = article
-		}
+        let ids = try await database.save(newArticles, for: self)
+        for (id, article) in zip(ids, newAritcles) {
+                articles[id] = article
+        }
 }
 
 func updateDatabase(...) async {
-		// skip old articles ...
-		await feed.add(articles)
+        // skip old articles ...
+        await feed.add(articles)
 }
 ```
 

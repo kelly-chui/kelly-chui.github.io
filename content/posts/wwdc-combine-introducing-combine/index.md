@@ -45,12 +45,12 @@ Publisher는 자신이 발행하는 값의 타입과 실패할 때 전달하는 
 
 ```swift
 protocol Publisher {
-		associatedtype Output // 생성할 값의 종류
-		associatedtype Failure: Error // 생성할 에러의 종류
-		
-		func subscribe<S: Subscriber>(_ subscriber: S) 
-				where S.Input == Output, S.Failure == Failure
-		// Subscriber의 input, output이 Publisher의 input, output과 매치되어야 한다.
+        associatedtype Output // 생성할 값의 종류
+        associatedtype Failure: Error // 생성할 에러의 종류
+        
+        func subscribe<S: Subscriber>(_ subscriber: S) 
+                where S.Input == Output, S.Failure == Failure
+        // Subscriber의 input, output이 Publisher의 input, output과 매치되어야 한다.
 }
 ```
 
@@ -64,13 +64,13 @@ Subscriber는 Publisher가 발행한 데이터를 구독하고 처리한다. 이
 
 ```swift
 protocol Subscriber {
-		associatedtype Input
-		associatedtype Failure: Error
-		
-		// Subscription: Subscriber가 Publisher에서 Subscriber로 가는 데이터 플로우를 제어하는 방법
-		func receive(subscription: Subscription)
-		func receive(_ input: Input) -> Subscribers.Demand
-		func receive(completion: Subscribers.Completion<Failure>)
+        associatedtype Input
+        associatedtype Failure: Error
+        
+        // Subscription: Subscriber가 Publisher에서 Subscriber로 가는 데이터 플로우를 제어하는 방법
+        func receive(subscription: Subscription)
+        func receive(_ input: Input) -> Subscribers.Demand
+        func receive(completion: Subscribers.Completion<Failure>)
 ```
 
 ### Operators
@@ -83,12 +83,12 @@ Operator는 Publisher와 Subscriber 사이에서 데이터를 변환하거나 �
 
 ```swift
 extension Publishers {
-		struct Map<Upstream: Publisher, Output>: Publisher {
-				typealias Failure = Upstream.Failure
-				
-				let upstream: Upstream
-				let transform: (Upstream.Output) -> Output
-			}
+        struct Map<Upstream: Publisher, Output>: Publisher {
+                typealias Failure = Upstream.Failure
+                
+                let upstream: Upstream
+                let transform: (Upstream.Output) -> Output
+            }
 }
 ```
 

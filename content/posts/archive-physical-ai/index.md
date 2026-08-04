@@ -4,7 +4,7 @@ date: 2026-02-06T01:39:00+09:00
 
 categories:
   - Archive
-series: []
+series:
 tags:
   - NVIDIA
   - Physical AI

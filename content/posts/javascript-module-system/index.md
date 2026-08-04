@@ -4,7 +4,7 @@ date: 2025-10-07
 
 categories:
   - TS/JS
-series: []
+series:
 tags:
   - CommonJS
   - ES Modules

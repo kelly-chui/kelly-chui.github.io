@@ -4,7 +4,7 @@ date: 2026-06-29T16:38:00+09:00
 
 categories:
   - Archive
-series: []
+series:
 tags:
   - I2C
   - RTOS

@@ -4,7 +4,7 @@ date: 2024-01-26
 
 categories:
   - Swift
-series: []
+series:
 tags:
   - Metatype
 

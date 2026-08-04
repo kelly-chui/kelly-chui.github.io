@@ -4,7 +4,7 @@ date: 2024-08-20
 
 categories:
   - DevOps
-series: []
+series:
 tags:
   - Version Control
 

@@ -273,8 +273,8 @@ let result = await collage.draw()
 
 ```swift
 func thumbnailURLRequest(for id: String) -> URLRequest {
-	// ...
-	return request
+    // ...
+    return request
 }
 ```
 

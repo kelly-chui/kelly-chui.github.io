@@ -54,11 +54,11 @@ View는 사용자 인터페이스의 기본 구성 단위다. SwiftUI 앱에서 
 
 ```swift
 List(pets) { pet in
-	HStack {
-		Label(pet.name, systemImage: pet.kind.systemImage)
-		Spacer()
-		Text(pet.trick)
-	}
+    HStack {
+        Label(pet.name, systemImage: pet.kind.systemImage)
+        Spacer()
+        Text(pet.trick)
+    }
 }
 ```
 
@@ -98,11 +98,11 @@ SwiftUI에서 조합성은 사용자 인터페이스를 만드는 핵심 방식�
 
 ```swift
 HStack {
-	Image(whiskers.profileImage)
-	VStack(alignment: .leading) {
-		Label(pet.name, systemImage: pet.kind.systemImage)
-		Text(pet.trick)
-	}
+    Image(whiskers.profileImage)
+    VStack(alignment: .leading) {
+        Label(pet.name, systemImage: pet.kind.systemImage)
+        Text(pet.trick)
+    }
 }
 ```
 
@@ -127,7 +127,7 @@ HStack
 
 ```swift
 struct HStack<Content: View>: View {
-	public init(@ViewBuilder content: () -> Content)
+    public init(@ViewBuilder content: () -> Content)
 }
 ```
 
@@ -176,29 +176,29 @@ modifier를 사용하면 결과가 생성되는 방식과 결과를 커스텀하
 
 ```swift
 struct PetRowView: View {
-	var pet: Pet
+    var pet: Pet
 
-	var body: some View {
-		HStack {
-			profileImage
-			VStack(alignment: .leading) {
-				Text(pet.name)
-				Text(pet.trickName)
-					.font(.subheadline)
-					.foregroundStyle(.secondary)
-			}
-			Spacer()
-		}
-	}
+    var body: some View {
+        HStack {
+            profileImage
+            VStack(alignment: .leading) {
+                Text(pet.name)
+                Text(pet.trickName)
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+            Spacer()
+        }
+    }
 
-	private var profileImage: some View {
-		Image(whiskers.profileImage)
-			.clipShape(.circle)
-			.shadow(radius: 3)
-			.overlay {
-				Circle().stroke(.green, lineWidth: 2)
-			}
-	}
+    private var profileImage: some View {
+        Image(whiskers.profileImage)
+            .clipShape(.circle)
+            .shadow(radius: 3)
+            .overlay {
+                Circle().stroke(.green, lineWidth: 2)
+            }
+    }
 }
 ```
 
@@ -213,7 +213,7 @@ struct PetRowView: View {
 
 ```swift
 List(model.allPets) { pet in
-	PetRowView(pet: pet)
+    PetRowView(pet: pet)
 }
 ```
 
@@ -223,9 +223,9 @@ List(model.allPets) { pet in
 
 ```swift
 List {
-	ForEach(model.allPets) { pet in
-		PetRowView(pet: pet)
-	}
+    ForEach(model.allPets) { pet in
+        PetRowView(pet: pet)
+    }
 }
 ```
 
@@ -241,16 +241,16 @@ List {
 
 ```swift
 List {
-	Section("My Pets") {
-		ForEach(model.myPets) { pet in
-			PetRowView(pet: pet)
-		}
-	}
-	Section("Other Pets") {
-		ForEach(model.otherPets) { pet in
-			PetRowView(pet: pet)
-		}
-	}
+    Section("My Pets") {
+        ForEach(model.myPets) { pet in
+            PetRowView(pet: pet)
+        }
+    }
+    Section("Other Pets") {
+        ForEach(model.otherPets) { pet in
+            PetRowView(pet: pet)
+        }
+    }
 }
 ```
 
@@ -261,13 +261,13 @@ List {
 
 ```swift
 PetRowView(pet: pet)
-	.swipeActions(edge: .leading) {
-		Button("Award", systemImage: "trophy") {
-			pet.giveAward()
-		}
-		.tint(.orange)
-		ShareLink(item: pet, preview: SharePreview(...))
-	}
+    .swipeActions(edge: .leading) {
+        Button("Award", systemImage: "trophy") {
+            pet.giveAward()
+        }
+        .tint(.orange)
+        ShareLink(item: pet, preview: SharePreview(...))
+    }
 ```
 
 ![](image-010-optimized-image.webp#center)
@@ -283,7 +283,7 @@ SwiftUI는 백그라운드에서 UI 표현을 유지한다. 데이터가 변경�
 
 ```swift
 Button("Award", systemImage: "trophy") {
-	pet.giveAward()
+    pet.giveAward()
 }
 ```
 
@@ -292,17 +292,17 @@ award 버튼을 탭하면, 연관된 펫 객체의 `hasAward` 상태가 `true`�
 
 ```swift
 struct PetRowView: View {
-	var pet: Pet
+    var pet: Pet
 
-	var body: some View {
-		// ...
-		if pet.hasAward {
-			Image(systemName: "trophy.fill")
-				.foregroundStyle(.orange)
-		}
-		// ...
-	}
-	// ...
+    var body: some View {
+        // ...
+        if pet.hasAward {
+            Image(systemName: "trophy.fill")
+                .foregroundStyle(.orange)
+        }
+        // ...
+    }
+    // ...
 }
 ```
 
@@ -323,21 +323,21 @@ SwiftUI는 상태 관리를 위한 여러 도구를 제공하는데, 가장 중�
 
 ```swift
 struct RatingView: View {
-	@State private var rating: Int = 5
+    @State private var rating: Int = 5
 
-	var body: some View {
-		Button("Decrease", systemImage: "minus.circle") {
-			rating -= 1
-		}
-		.disabled(rating == 0)
+    var body: some View {
+        Button("Decrease", systemImage: "minus.circle") {
+            rating -= 1
+        }
+        .disabled(rating == 0)
 
-		Text("\(rating)")
+        Text("\(rating)")
 
-		Button("Increase", systemImage: "plus.circle") {
-			rating += 1
-		}
-		.disabled(rating == 10)
-	}
+        Button("Increase", systemImage: "plus.circle") {
+            rating += 1
+        }
+        .disabled(rating == 10)
+    }
 }
 ```
 
@@ -348,9 +348,9 @@ struct RatingView: View {
 
 ```swift
 Button("Decrease", systemImage: "minus.circle") {
-	withAnimation {
-		rating -= 1
-	}
+    withAnimation {
+        rating -= 1
+    }
 }
 ```
 
@@ -361,7 +361,7 @@ Button("Decrease", systemImage: "minus.circle") {
 
 ```swift
 Text("\(rating)")
-	.contentTransition(.numericText(value: Double(rating)))
+    .contentTransition(.numericText(value: Double(rating)))
 ```
 
 직접적으로 전환 효과가 적용되는 부분이 `Text`라서 커스텀 전환 Modifier는 `Text`에 붙인다. `numericText`는 숫자 변화에 맞게 제공되는 빌트인 전환 효과다.
@@ -377,14 +377,14 @@ Text("\(rating)")
 
 ```swift
 struct RatingContainerView: View {
-	@State private var rating: Int = 5
+    @State private var rating: Int = 5
 
-	var body: some View {
-		Gauge(value: rating, in: 0...10) {
-			Text("Rating")
-		}
-		RatingView()
-	}
+    var body: some View {
+        Gauge(value: rating, in: 0...10) {
+            Text("Rating")
+        }
+        RatingView()
+    }
 }
 ```
 
@@ -393,17 +393,17 @@ struct RatingContainerView: View {
 {{< video src="video-004-optimized-video.mp4" width="240" autoplay="true" loop="true" align="center" >}}
 ```swift
 struct RatingView: View {
-	@Binding private var rating: Int
-	// ...
+    @Binding private var rating: Int
+    // ...
 }
 
 struct RatingContainerView: View {
-	@State private var rating: Int = 5
+    @State private var rating: Int = 5
 
-	var body: some View {
-		// ...
-		RatingView(rating: $rating)
-	}
+    var body: some View {
+        // ...
+        RatingView(rating: $rating)
+    }
 }
 ```
 
@@ -451,15 +451,15 @@ Modifier도 마찬가지인데, `searchable`을 한번 보자.
 
 ```swift
 struct PetListView: View {
-	var viewModel: PetStoreViewModel
+    var viewModel: PetStoreViewModel
 
-	var body: some View {
-		List {
-			Section { ... }
-			Section { ... }
-		}
-		.searchable(text: $viewModel.searchText)
-	}
+    var body: some View {
+        List {
+            Section { ... }
+            Section { ... }
+        }
+        .searchable(text: $viewModel.searchText)
+    }
 }
 ```
 
@@ -486,11 +486,11 @@ SwiftUI의 기능은 View에만 국한되지 않는다. 앱 전체를 정의하�
 ```swift
 @main
 struct SwiftUIEssentialsApp: App {
-	var body: some Scene {
-		WindowGroup {
-			ContentView()
-		}
-	}
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
 }
 ```
 
@@ -501,17 +501,17 @@ macOS처럼 멀티 윈도우를 지원하는 플랫폼에서는 추가적인 sce
 ```swift
 @main
 struct SwiftUIEssentialsApp: App {
-	var body: some Scene {
-		WindowGroup {
-			ContentView()
-		}
-		WindowGroup("Training History", id: "history", for: TrainingHistory.ID.self) {
-			// ...
-		}
-		WindowGroup("Pet Detail", id: "detail", for: Pet.ID.self) {
-			// ...
-		}
-	}
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+        WindowGroup("Training History", id: "history", for: TrainingHistory.ID.self) {
+            // ...
+        }
+        WindowGroup("Pet Detail", id: "detail", for: Pet.ID.self) {
+            // ...
+        }
+    }
 }
 ```
 
@@ -519,20 +519,20 @@ struct SwiftUIEssentialsApp: App {
 
 ```swift
 struct ScoreboardWidget: Widget {
-	var body: some WidgetConfiguration { ... }
+    var body: some WidgetConfiguration { ... }
 }
 
 struct ScoreboardWidgetView: View {
-	var petTrick: PetTrick
+    var petTrick: PetTrick
 
-	var body: some View {
-		ScoreCard(rating: petTrick.rating)
-			.overlay(alignment: .bottom) {
-				Text(petTrick.pet.name)
-					.padding()
-			}
-			.widgetURL(petTrick.pet.url)
-	}
+    var body: some View {
+        ScoreCard(rating: petTrick.rating)
+            .overlay(alignment: .bottom) {
+                Text(petTrick.pet.name)
+                    .padding()
+            }
+            .widgetURL(petTrick.pet.url)
+    }
 }
 ```
 
@@ -546,10 +546,10 @@ SwiftUI는 모든 Apple 플랫폼에서 사용할 수 있으며, 한 플랫폼�
 
 ```swift
 ScoreCardStack(rating: $rating)
-	.focusable()
-	#if os(watchOS)
-	.digitalCrownRotation($rating, from: 0, through: 10)
-	#endif
+    .focusable()
+    #if os(watchOS)
+    .digitalCrownRotation($rating, from: 0, through: 10)
+    #endif
 ```
 
 ### SDK interoperability

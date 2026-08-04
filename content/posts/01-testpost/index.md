@@ -4,7 +4,7 @@ date: 2026-07-11
 
 categories:
   - Archive
-series: []
+series:
 tags: []
 features:
   - katex

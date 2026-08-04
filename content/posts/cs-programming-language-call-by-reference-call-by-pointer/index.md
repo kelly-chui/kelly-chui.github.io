@@ -4,7 +4,7 @@ date: 2025-06-07
 
 categories:
   - Computer Science
-series: []
+series:
 tags:
   - C++
   - Pointer

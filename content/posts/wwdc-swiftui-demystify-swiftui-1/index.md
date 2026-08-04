@@ -82,16 +82,16 @@ SwiftUI의 View는 값 타입이기 때문에 이런 방식의 포인터 Identit
 
 ```swift
 List {
-	Section {
-		ForEach (rescueDogs, id: \.dogTagID) { rescueDog in
-			ProfileView (rescueDog)
-		}
-	}
+    Section {
+        ForEach (rescueDogs, id: \.dogTagID) { rescueDog in
+            ProfileView (rescueDog)
+        }
+    }
 Section("Status") {
-	ForEach (adoptedDogs, id: \.dogTagID) { rescueDog in
-		ProfileView (rescueDog, foundForeverHome: true)
-		}
-	}
+    ForEach (adoptedDogs, id: \.dogTagID) { rescueDog in
+        ProfileView (rescueDog, foundForeverHome: true)
+        }
+    }
 }
 ```
 
@@ -104,16 +104,16 @@ Section("Status") {
 {{< video src="video-003-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 ```swift
 ScrollViewReader { proxy in
-	ScrollView {
-		HeaderView (rescueDog)
-			.id(headerID)
-		Text(rescueDog.backstory)
-		Button("Jump to Top") {
-			withAnimation {
-				proxy.scrollTo(headerID)
-			}
-		}
-	}
+    ScrollView {
+        HeaderView (rescueDog)
+            .id(headerID)
+        Text(rescueDog.backstory)
+        Button("Jump to Top") {
+            withAnimation {
+                proxy.scrollTo(headerID)
+            }
+        }
+    }
 }
 ```
 
@@ -135,11 +135,11 @@ ScrollViewReader { proxy in
 
 ```swift
 var body: some View {
-	if rescueDogs.isEmpty {
-		AdoptionDirectory(selection: rescueDogs)
-	} else {
-		DogList (rescueDogs)
-	}
+    if rescueDogs.isEmpty {
+        AdoptionDirectory(selection: rescueDogs)
+    } else {
+        DogList (rescueDogs)
+    }
 }
 ```
 
@@ -151,11 +151,11 @@ SwiftUI는 이를 위해 View 계층의 Type Structure를 분석한다. SwiftUI�
 
 ```swift
 some View =
-	_ConditionalContent<
-		AdoptionDirectory,
-		
-		DogList
-	>
+    _ConditionalContent<
+        AdoptionDirectory,
+        
+        DogList
+    >
 ```
 
 `if`는 내부적으로 `_ConditionalContent`라는 타입으로 변환된다. 이 타입은 `true`일 때의 View와 `false`일 때의 View를 제네릭 타입으로 가진다. 이러한 변환은 `ViewBuilder`가 하는데, `View` 프로토콜은 `body` 프로퍼티를 암묵적으로 `ViewBuilder`로 감싸준다.
@@ -181,13 +181,13 @@ SwiftUI는 `body`를 실행해서 나온 결과만 보는 것이 아니라, `Vie
 {{< video src="video-001-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 ```swift
 VStack {
-	if dog.isGood {
-		PawView(tint: .green)
-		Spacer()
-	} else {
-		Spacer()
-		PawView(tint: .red)
-	}
+    if dog.isGood {
+        PawView(tint: .green)
+        Spacer()
+    } else {
+        Spacer()
+        PawView(tint: .red)
+    }
 }
 ```
 
@@ -196,10 +196,10 @@ VStack {
 {{< video src="video-002-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 ```swift
 PawView(tint: dog.isGood ? .green : .red)
-	.frame(
-		maxHeight: .infinity,
-		alignment: dog.isGood ? .top : .bottom
-	)
+    .frame(
+        maxHeight: .infinity,
+        alignment: dog.isGood ? .top : .bottom
+    )
 ```
 
 반대로 하나의 `PawView`만 두고 색상과 레이아웃만 변경하면 상태가 바뀌어도 View가 부드럽게 이동한다. Identity가 유지되는 하나의 View를 수정하고 있기 때문이다. 두 방법 모두 쓸 수 있지만, SwiftUI는 두 번째 방식을 권장하는 편이다. 더 자연스럽게 전환되기 때문이다.
@@ -214,23 +214,23 @@ View의 Lifetime과 State를 유지하는 데도 도움이 된다.
 
 ```swift
 func view (for dog: Dog) -> some View {
-	var dogView: AnyView
-	if dog.breed == .bulldog {
-		dogView = AnyView (BulldogView())
-	} else if dog.breed == .pomeranian {
-		dogView = AnyView(PomeranianView())
-	} else if dog.breed == .borderCollie {
-		dogView = AnyView(BorderCollieView())
-		if sheepNearby {
-			dogView = AnyView(HStack {
-				dogView
-				SheepView()
-			})
-		}
-	} else {
-		dogView = AnyView(UnknownBreedView())
-	}
-	return dogView
+    var dogView: AnyView
+    if dog.breed == .bulldog {
+        dogView = AnyView (BulldogView())
+    } else if dog.breed == .pomeranian {
+        dogView = AnyView(PomeranianView())
+    } else if dog.breed == .borderCollie {
+        dogView = AnyView(BorderCollieView())
+        if sheepNearby {
+            dogView = AnyView(HStack {
+                dogView
+                SheepView()
+            })
+        }
+    } else {
+        dogView = AnyView(UnknownBreedView())
+    }
+    return dogView
 }
 ```
 
@@ -250,10 +250,10 @@ func view (for dog: Dog) -> some View {
 
 ```swift
 dogView = AnyView(HStack {
-	BorderCollieView()
-	if sheepNearby {
-		SheepView()
-	}
+    BorderCollieView()
+    if sheepNearby {
+        SheepView()
+    }
 })
 ```
 
@@ -267,20 +267,20 @@ dogView = AnyView(HStack {
 
 ```swift
 func view (for dog: Dog) -> some View {
-	if dog.breed == .bulldog {
-		return AnyView(BulldogView())
-	} else if dog.breed == .pomeranian {
-		return AnyView(PomeranianView())
-	} else if dog.breed == .borderCollie {
-		return AnyView(HStack {
-			BorderCollieView()
-			if sheepNearby {
-				SheepView()
-			}
-		})
-	} else {
-		return AnyView(UnknownBreedView())
-	}
+    if dog.breed == .bulldog {
+        return AnyView(BulldogView())
+    } else if dog.breed == .pomeranian {
+        return AnyView(PomeranianView())
+    } else if dog.breed == .borderCollie {
+        return AnyView(HStack {
+            BorderCollieView()
+            if sheepNearby {
+                SheepView()
+            }
+        })
+    } else {
+        return AnyView(UnknownBreedView())
+    }
 }
 ```
 
@@ -291,20 +291,20 @@ SwiftUI에서는 `if`문이 서로 다른 View 타입을 반환하는 것이 가
 ```swift
 @ViewBuilder
 func view (for dog: Dog) -> some View {
-	if dog.breed == .bulldog {
-		BulldogView()
-	} else if dog.breed == .pomeranian {
-		PomeranianView()
-	} else if dog.breed == .borderCollie {
-		HStack {
-			BorderCollieView()
-			if sheepNearby {
-				SheepView()
-			}
-		}
-	} else {
-		UnknownBreedView()
-	}
+    if dog.breed == .bulldog {
+        BulldogView()
+    } else if dog.breed == .pomeranian {
+        PomeranianView()
+    } else if dog.breed == .borderCollie {
+        HStack {
+            BorderCollieView()
+            if sheepNearby {
+                SheepView()
+            }
+        }
+    } else {
+        UnknownBreedView()
+    }
 }
 ```
 
@@ -318,21 +318,21 @@ func view (for dog: Dog) -> some View {
 
 ```swift
 some View =
-	_ConditionalContent<
-		_ConditionalContent<
-			BulldogView,
-			PomeranianView
-		>,
-		_ConditionalContent<
-			HStack<
-				TupleView<(
-					BorderCollieView,
-					SheepView?
-				)>
-			>,
-			UnknownBreedView
-		>
-	>
+    _ConditionalContent<
+        _ConditionalContent<
+            BulldogView,
+            PomeranianView
+        >,
+        _ConditionalContent<
+            HStack<
+                TupleView<(
+                    BorderCollieView,
+                    SheepView?
+                )>
+            >,
+            UnknownBreedView
+        >
+    >
 ```
 
 함수의 조건문 구조가 그대로 `_ConditionalContent` 트리로 표현된다.
@@ -342,21 +342,21 @@ some View =
 ```swift
 @ViewBuilder
 func view(for dog: Dog) -> some View {
-	switch dog.breed {
-	case .bulldog:
-		BulldogView()
-	case .pomeranian:
-		PomeranianView()
-	case .borderCollie:
-		HStack {
-			BorderCollieView()
-			if sheepNearby {
-				SheepView()
-			}
-		}
-	default:
-		UnknownBreedView()
-	}
+    switch dog.breed {
+    case .bulldog:
+        BulldogView()
+    case .pomeranian:
+        PomeranianView()
+    case .borderCollie:
+        HStack {
+            BorderCollieView()
+            if sheepNearby {
+                SheepView()
+            }
+        }
+    default:
+        UnknownBreedView()
+    }
 }
 ```
 

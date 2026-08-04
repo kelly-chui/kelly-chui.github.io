@@ -4,7 +4,7 @@ date: 2025-05-31
 
 categories:
   - Swift
-series: []
+series:
 tags:
   - C/C++
   - Method Dispatch

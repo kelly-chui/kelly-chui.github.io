@@ -39,8 +39,8 @@ SwiftUI는 처음부터 코드로 UI를 작성하는 프레임워크였기 때�
 
 ```swift
 NavigationLink(
-	"Details",
-	isActive: $item.showDetail
+    "Details",
+    isActive: $item.showDetail
 ) { DetailView() }
 ```
 
@@ -50,7 +50,7 @@ NavigationLink(
 
 ```swift
 NavigationStack(path: $path) {
-	NaviagtionLink("Details", value: value)
+    NaviagtionLink("Details", value: value)
 }
 ```
 
@@ -66,7 +66,7 @@ NavigationStack(path: $path) {
 
 ```swift
 NavigationStack(path: $path) {
-	RecipeDeatil
+    RecipeDeatil
 }
 ```
 
@@ -78,9 +78,9 @@ NavigationStack(path: $path) {
 
 ```swift
 NavigationSplitView {
-	RecipeCategories()
+    RecipeCategories()
 } detail: {
-	RecipeGrid()
+    RecipeGrid()
 }
 ```
 
@@ -105,18 +105,18 @@ NavigationSplitView {
 
 ```swift
 var body: some View {
-	NavigationStack {
-		List(Category.allCases) { category in
-			Section (category.localizedName) {
-				ForEach (dataModel. recipes(in: category)) { recipe in
-					NavigationLink(recipe.name) {
-						RecipeDetail(recipe: recipe)
-					}
-				}
-			}
-		}
-		.navigationTitle("Categories")
-	}
+    NavigationStack {
+        List(Category.allCases) { category in
+            Section (category.localizedName) {
+                ForEach (dataModel. recipes(in: category)) { recipe in
+                    NavigationLink(recipe.name) {
+                        RecipeDetail(recipe: recipe)
+                    }
+                }
+            }
+        }
+        .navigationTitle("Categories")
+    }
 }
 ```
 
@@ -126,19 +126,19 @@ var body: some View {
 
 ```swift
 var body: some View {
-	NavigationStack {
-		List(Category.allCases) { category in
-			Section (category.localizedName) {
-				ForEach (dataModel. recipes(in: category)) { recipe in
-					NavigationLink(recipe.name, value: recipe)
-				}
-			}
-		}
-		.navigationTitle("Categories")
-		.navigationDestination(for: Recipe.self) { recipe in
-			RecipeDetail(recipe: recipe)
-		}
-	}
+    NavigationStack {
+        List(Category.allCases) { category in
+            Section (category.localizedName) {
+                ForEach (dataModel. recipes(in: category)) { recipe in
+                    NavigationLink(recipe.name, value: recipe)
+                }
+            }
+        }
+        .navigationTitle("Categories")
+        .navigationDestination(for: Recipe.self) { recipe in
+            RecipeDetail(recipe: recipe)
+        }
+    }
 }
 ```
 
@@ -190,19 +190,19 @@ Value를 전달하는 `NavigationLink`를 탭하면 그 값이 `path`에 추가�
 @State private var path: [Recipe] = []
 
 var body: some View {
-	NavigationStack(path: $path) {
-		List(Category.allCases) { category in
-			Section (category.localizedName) {
-				ForEach (dataModel. recipes(in: category)) { recipe in
-					NavigationLink(recipe.name, value: recipe)
-				}
-			}
-		}
-		.navigationTitle("Categories")
-		.navigationDestination(for: Recipe.self) { recipe in
-			RecipeDetail(recipe: recipe)
-		}
-	}
+    NavigationStack(path: $path) {
+        List(Category.allCases) { category in
+            Section (category.localizedName) {
+                ForEach (dataModel. recipes(in: category)) { recipe in
+                    NavigationLink(recipe.name, value: recipe)
+                }
+            }
+        }
+        .navigationTitle("Categories")
+        .navigationDestination(for: Recipe.self) { recipe in
+            RecipeDetail(recipe: recipe)
+        }
+    }
 }
 ```
 
@@ -212,10 +212,10 @@ var body: some View {
 
 ```swift
 func showRecipeOfTheDay() {
-	path = [dataModel.recipeOfTheDay]
+    path = [dataModel.recipeOfTheDay]
 }
 func popToRoot() {
-	path.removeAll()
+    path.removeAll()
 }
 ```
 
@@ -231,19 +231,19 @@ func popToRoot() {
 @State private var selectedRecipe: Recipe?
 
 var body: some View {
-	NavigationSplitView {
-		List(Category.allCases, selection: $selectedCategory) { category in
-			NavigationLink(category.localizedName, value: category)
-		}
-		.navigationTitle("Categories")
-	} content: {
-		List (dataModel.recipes(in: selectedCategory), selection: $selectedRecipe) { recipe in
-			NavigationLink(recipe.name, value: recipe)
-		}
-		.navigationTitle(selectedCategory?.localizedName ?? "Recipes")
-	} detail: {
-		RecipeDetail(recipe: selectedRecipe)
-	}
+    NavigationSplitView {
+        List(Category.allCases, selection: $selectedCategory) { category in
+            NavigationLink(category.localizedName, value: category)
+        }
+        .navigationTitle("Categories")
+    } content: {
+        List (dataModel.recipes(in: selectedCategory), selection: $selectedRecipe) { recipe in
+            NavigationLink(recipe.name, value: recipe)
+        }
+        .navigationTitle(selectedCategory?.localizedName ?? "Recipes")
+    } detail: {
+        RecipeDetail(recipe: selectedRecipe)
+    }
 }
 ```
 
@@ -286,16 +286,16 @@ List의 `selection`과 `NavigationSplitView`를 함께 사용하면 SwiftUI가 �
 @State private var selectedCategory: Category?
 
 var body: some View {
-	NavigationSplitView {
-		List(Category.allCases, selection: selectedCategory) { category in
-			NavigationLink(category.localizedName, value: category)
-		}
-		.navigationTitle("Categories")
-	} detail: {
-		NavigationStack {
-			RecipeGrid(category: selectedCategory)
-		}
-	}
+    NavigationSplitView {
+        List(Category.allCases, selection: selectedCategory) { category in
+            NavigationLink(category.localizedName, value: category)
+        }
+        .navigationTitle("Categories")
+    } detail: {
+        NavigationStack {
+            RecipeGrid(category: selectedCategory)
+        }
+    }
 }
 ```
 
@@ -303,20 +303,20 @@ var body: some View {
 
 ```swift
 struct RecipeGrid: View {
-	var category: Category?
-	var body: some View {
-		if let category = category {
-			ScrollView {
-				LazyVGrid(columns: columns) {
-					ForEach(dataModel.recipes(in: category)) { recipe in
-						NavigationLink(value: recipe) { RecipeTile (recipe: recipe) }
-					}
-				}
-			}
-			.navigationTitle(category.name)
-			.navigationDestination(for: Recipe.self) { recipe in RecipeDetail(recipe: recipe) }
-		} else { ... }
-	}
+    var category: Category?
+    var body: some View {
+        if let category = category {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(dataModel.recipes(in: category)) { recipe in
+                        NavigationLink(value: recipe) { RecipeTile (recipe: recipe) }
+                    }
+                }
+            }
+            .navigationTitle(category.name)
+            .navigationDestination(for: Recipe.self) { recipe in RecipeDetail(recipe: recipe) }
+        } else { ... }
+    }
 }
 ```
 
@@ -331,13 +331,13 @@ struct RecipeGrid: View {
 @State private var path: [Recipe] = []
 
 var body: some View {
-	NavigationSplitView { ... }
+    NavigationSplitView { ... }
 }
 
 func showRecipeOfTheDay() {
-	let recipe = dataModel.recipeOfTheDay
-	selectedCategory = recipe.category
-	path = [recipe]
+    let recipe = dataModel.recipeOfTheDay
+    selectedCategory = recipe.category
+    path = [recipe]
 }
 ```
 
@@ -355,8 +355,8 @@ func showRecipeOfTheDay() {
 
 ```swift
 class NavigationModel: ObservableObject {
-	@Published var selectedCategory: Category?
-	@Published var path: [Recipe] = []
+    @Published var selectedCategory: Category?
+    @Published var path: [Recipe] = []
 }
 ```
 
@@ -370,16 +370,16 @@ State들을 이 모델 객체로 옮기고, 더 이상 SwiftUI View 내부의 �
 @StateObject private var navModel = NavigationModel()
 
 var body: some View {
-	NavigationSplitView {
-		List(Category.allCases, selection: $navModel.selectedCategory) { category in
-			NavigationLink(category.localizedName, value: category)
-		}
-		.navigationTitle("Categories")
-	} detail: {
-		NavigationStack(path: $navModel.path) {
-			RecipeGrid(category: navModel.selectedCategory)
-		}
-	}
+    NavigationSplitView {
+        List(Category.allCases, selection: $navModel.selectedCategory) { category in
+            NavigationLink(category.localizedName, value: category)
+        }
+        .navigationTitle("Categories")
+    } detail: {
+        NavigationStack(path: $navModel.path) {
+            RecipeGrid(category: navModel.selectedCategory)
+        }
+    }
 }
 ```
 
@@ -395,26 +395,26 @@ Swift는 `Codable` 구현을 자동으로 생성할 수 있지만, 여기서는 
 
 ```swift
 class NavigationModel: ObservableObject, Codable {
-	@Published var selectedCategory: Category?
-	@Published var path: [Recipe] = []
-	
-	enum CodingKeys: String, CodingKey {
-		case selectedCategory
-		case recipePathIDs
-	}
-	func encode(to encoder: Encoder) throws {
-		var container = encoder.container(keyedBy: CodingKeys.self)
-		try container.encodeIfPresent(selectedCategory, forkey: .selectedCategory)
-		try container.encode(path.map(\.id), forkey: .recipePathIds)
-	}
-	required init(from decoder: Decoder) throws {
-		let container = try decoder. container (keyedBy: CodingKeys.self)
-		self. selectedCategory = try container.decodelfPresent (
-			Category. self, forkey: .selectedCategory)
-		let recipePathIds = try container.decode([Recipe.ID].self, forkey: .\recipePathIds)
-		self path = recipePathIds. compactMap { DataModel.shared[$0] }
-	}
-	var jsonData: Data? { ... }
+    @Published var selectedCategory: Category?
+    @Published var path: [Recipe] = []
+    
+    enum CodingKeys: String, CodingKey {
+        case selectedCategory
+        case recipePathIDs
+    }
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encodeIfPresent(selectedCategory, forkey: .selectedCategory)
+        try container.encode(path.map(\.id), forkey: .recipePathIds)
+    }
+    required init(from decoder: Decoder) throws {
+        let container = try decoder. container (keyedBy: CodingKeys.self)
+        self. selectedCategory = try container.decodelfPresent (
+            Category. self, forkey: .selectedCategory)
+        let recipePathIds = try container.decode([Recipe.ID].self, forkey: .\recipePathIds)
+        self path = recipePathIds. compactMap { DataModel.shared[$0] }
+    }
+    var jsonData: Data? { ... }
 }
 ```
 
@@ -433,7 +433,7 @@ NavigationModel을 저장하기 위한 `SceneStorage`를 추가한다. SceneStor
 @SceneStorage("navigation") private var data: Data?
 
 var body: some View {
-	NavigationSplitView { ... }
+    NavigationSplitView { ... }
 }
 ```
 
@@ -448,15 +448,15 @@ View에 `task` modifier 추가하기
 @SceneStorage("navigation") private var data: Data?
 
 var body: some View {
-	NavigationSplitView { ... }
-		.task {
-			if let data = data {
-				navModel.jsonData = data
-			}
-			for await _ in navModel.objectWillChangeSequence {
-				data = navModel.jsonData
-			}
-		}
+    NavigationSplitView { ... }
+        .task {
+            if let data = data {
+                navModel.jsonData = data
+            }
+            for await _ in navModel.objectWillChangeSequence {
+                data = navModel.jsonData
+            }
+        }
 }
 ```
 

@@ -97,9 +97,9 @@ async 'fetchThumbnail(for:)' used in a context that does not support concurrency
 
 ```swift
 .onAppear {
-	Task {
-		self.image = try? await self.viewModel.fetchThumbnail(for: post.id)
-	}
+    Task {
+        self.image = try? await self.viewModel.fetchThumbnail(for: post.id)
+    }
 }
 ```
 
@@ -141,19 +141,19 @@ Swift importer는 Objective-C로 작성된 Apple SDK 선언을 Swift에서 자�
 import ClockKit
 
 extension ComplicationController: CLKComplicationDataSource {
-	func getCurrentTimelineEntry (
-		for complication: CLKComplication,
-		withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void
-	) {
-		let date = Date()
-		self.viewModel.fetchThumbnail(for: post.id) { thumbnail, error in
-			guard let thumbnail = thumbnail else {
-				return handler(nil)
-			}
-			let entry = self.createTimelineEntry(for: thumbnail, date: date)
-			return handler(entry)
-		}
-	}
+    func getCurrentTimelineEntry (
+        for complication: CLKComplication,
+        withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void
+    ) {
+        let date = Date()
+        self.viewModel.fetchThumbnail(for: post.id) { thumbnail, error in
+            guard let thumbnail = thumbnail else {
+                return handler(nil)
+            }
+            let entry = self.createTimelineEntry(for: thumbnail, date: date)
+            return handler(entry)
+        }
+    }
 }
 ```
 
@@ -224,9 +224,9 @@ func persistentPosts() async throws -> [Post]
 
 ```swift
 func persistentPosts() async throws -> [Post] {
-	self.getPersistentPosts { post, error in
-		// Return `result` back somehow? Throw the error too?
-	}
+    self.getPersistentPosts { post, error in
+        // Return `result` back somehow? Throw the error too?
+    }
 }
 ```
 
@@ -256,16 +256,16 @@ completion handler 기반 메소드를 `async` 함수로 감쌀 때는 completio
 
 ```swift
 func persistentPosts() async throws -> [Post] {
-	typealias PostContinuation = CheckedContinuation<[Post], Error>
-	return try await withCheckedThrowingContinuation { (continuation: PostContinuation) in
-		self.getPersistentPosts{ post, error in
-			if let error = error {
-				continuation.resume(throwing: error)
-			} else {
-				continuation.resume(returning: post)
-			}
-		}
-	}
+    typealias PostContinuation = CheckedContinuation<[Post], Error>
+    return try await withCheckedThrowingContinuation { (continuation: PostContinuation) in
+        self.getPersistentPosts{ post, error in
+            if let error = error {
+                continuation.resume(throwing: error)
+            } else {
+                continuation.resume(returning: post)
+            }
+        }
+    }
 }
 ```
 
@@ -289,9 +289,9 @@ func persistentPosts() async throws -> [Post] {
 
 ```swift
 if let error = error {
-	continuation.resume(throwing: error)
+    continuation.resume(throwing: error)
 } else {
-	// resume 없으면 경고
+    // resume 없으면 경고
 }
 ```
 
@@ -301,10 +301,10 @@ if let error = error {
 
 ```swift
 if let error = error {
-	continuation.resume(throwing: error)
+    continuation.resume(throwing: error)
 } else {
-	continuation.resume(returning: posts)
-	continuation.resume(returning: posts) // fatal error!
+    continuation.resume(returning: posts)
+    continuation.resume(returning: posts) // fatal error!
 }
 ```
 

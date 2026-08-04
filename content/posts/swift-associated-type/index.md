@@ -4,7 +4,7 @@ date: 2025-01-26
 
 categories:
   - Swift
-series: []
+series:
 tags:
   - Associated Type
   - Generics

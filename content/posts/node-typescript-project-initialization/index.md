@@ -4,7 +4,7 @@ date: 2025-10-08
 
 categories:
   - TS/JS
-series: []
+series:
 tags:
   - npm
   - TypeScript

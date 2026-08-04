@@ -63,7 +63,7 @@ original: "notion-export/블로그 이관/javascript-basics/6 브라우저 및 �
 
 ```jsx
 window.onload = function () {
-		...
+        ...
 };
 ```
 
@@ -77,14 +77,14 @@ window.onload = function () {
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Document Object Model</title>
-		<script>alert('Process - 0')</script>
+        <title>Document Object Model</title>
+        <script>alert('Process - 0')</script>
 </head>
 <body>
-		<h1>Process - 1</h1>
-		<script>alert('Process - 2')</script>
-		<h2>Process - 2</h2>
-		<script>alert('Process - 3')</script>
+        <h1>Process - 1</h1>
+        <script>alert('Process - 2')</script>
+        <h2>Process - 2</h2>
+        <script>alert('Process - 3')</script>
 </body>
 </html>
 ```

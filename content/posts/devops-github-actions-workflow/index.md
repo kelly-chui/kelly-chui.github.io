@@ -4,7 +4,7 @@ date: 2024-11-05
 
 categories:
   - DevOps
-series: []
+series:
 tags:
   - CI/CD
   - GitHub Actions

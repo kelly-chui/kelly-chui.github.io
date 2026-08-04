@@ -23,23 +23,23 @@ Combine에서는 값이 시간의 흐름에 따라 전달되는 과정을 Publis
 
 ```swift
 let trickNamePublisher = NotificationCenter.default.publisher(for: .newTrickDownloaded)
-	.map { notification in
-		return notification.userInfo?["data"] as! Data
-	} // Output: Data, Failure: Never
-	.tryMap { data in
-		let decoder = JSONDecoder()
-		try decoder.decode(MagicTrick.self, from: data)
-	} // Output: MagicTrick, Failure: Error
+    .map { notification in
+        return notification.userInfo?["data"] as! Data
+    } // Output: Data, Failure: Never
+    .tryMap { data in
+        let decoder = JSONDecoder()
+        try decoder.decode(MagicTrick.self, from: data)
+    } // Output: MagicTrick, Failure: Error
 ```
 
 `decode` 연산자를 사용하면 위 변환을 다음과 같이 줄여서 작성할 수 있다.
 
 ```swift
 let trickNamePublisher = NotificationCenter.default.publisher(for: .newTrickDownloaded)
-	.map { notification in
-		return notification.userInfo?["data"] as! Data
-	} // Output: Data, Failure: Never
-	.decode(MagicTrick.self, JSONDecoder()) // Output: MagicTrick, Failure: Error
+    .map { notification in
+        return notification.userInfo?["data"] as! Data
+    } // Output: Data, Failure: Never
+    .decode(MagicTrick.self, JSONDecoder()) // Output: MagicTrick, Failure: Error
 ```
 
 ## Error Handling
@@ -55,7 +55,7 @@ let trickNamePublisher = NotificationCenter.default.publisher(for: .newTrickDown
 실패가 발생하지 않는다고 선언하고 `Failure`를 `Never`로 바꾸는 가장 간단한 방법이다.
 
 ```swift
-	.assertNoFailure() // Output: MagicTrick, Failure: Never
+    .assertNoFailure() // Output: MagicTrick, Failure: Never
 ```
 
 정상 값이 업스트림에서 도착하면 다운스트림 Subscriber에 전달한다.
@@ -67,9 +67,9 @@ let trickNamePublisher = NotificationCenter.default.publisher(for: .newTrickDown
 에러가 도착하면 현재 Publisher를 새로운 Publisher로 교체한다.
 
 ```swift
-	.catch {
-		return Just(MagicTrick.placeholder) // Recovery 클로저
-	} // Output: MagicTrick, Failure: Never
+    .catch {
+        return Just(MagicTrick.placeholder) // Recovery 클로저
+    } // Output: MagicTrick, Failure: Never
 ```
 
 정상 값이 업스트림에서 도착하면 다운스트림 Subscriber에 전달한다.
@@ -84,16 +84,16 @@ let trickNamePublisher = NotificationCenter.default.publisher(for: .newTrickDown
 
 ```swift
 let trickNamePublisher = NotificationCenter.default.publisher(for: .newTrickDownloaded)
-	.map { notification in
-		return notification.userInfo?["data"] as! Data
-	} // Output: Data, Failure: Never
-	.flatMap { data in
-		return Just(data)
-			.decode(MagicTrick.self, JSONDecoder())
-			.catch {
-				return Just(MagicTrck.placeholder)
-			}
-	} // Output: MagicTrick, Failure: Never
+    .map { notification in
+        return notification.userInfo?["data"] as! Data
+    } // Output: Data, Failure: Never
+    .flatMap { data in
+        return Just(data)
+            .decode(MagicTrick.self, JSONDecoder())
+            .catch {
+                return Just(MagicTrck.placeholder)
+            }
+    } // Output: MagicTrick, Failure: Never
 ```
 
 ### KeyPath로 값 추출하기
@@ -102,17 +102,17 @@ let trickNamePublisher = NotificationCenter.default.publisher(for: .newTrickDown
 
 ```swift
 let trickNamePublisher = NotificationCenter.default.publisher(for: .newTrickDownloaded)
-	.map { notification in
-		return notification.userInfo?["data"] as! Data
-	} // Output: Data, Failure: Never
-	.flatMap { data in
-		return Just(data)
-			.decode(MagicTrick.self, JSONDecoder())
-			.catch {
-				return Just(MagicTrck.placeholder)
-			}
-	} // Output: MagicTrick, Failure: Never
-	.publisher(for: \.name) // Output: String, Failure: Never
+    .map { notification in
+        return notification.userInfo?["data"] as! Data
+    } // Output: Data, Failure: Never
+    .flatMap { data in
+        return Just(data)
+            .decode(MagicTrick.self, JSONDecoder())
+            .catch {
+                return Just(MagicTrck.placeholder)
+            }
+    } // Output: MagicTrick, Failure: Never
+    .publisher(for: \.name) // Output: String, Failure: Never
 ```
 
 ## Scheduled Operators
@@ -125,31 +125,31 @@ let trickNamePublisher = NotificationCenter.default.publisher(for: .newTrickDown
 
 ```swift
 let trickNamePublisher = NotificationCenter.default.publisher(for: .newTrickDownloaded)
-	.map { notification in
-		return notification.userInfo?["data"] as! Data
-	} // Output: Data, Failure: Never
-	.flatMap { data in
-		return Just(data)
-			.decode(MagicTrick.self, JSONDecoder())
-			.catch {
-				return Just(MagicTrck.placeholder)
-			}
-	} // Output: MagicTrick, Failure: Never
-	.publisher(for: \.name) // Output: String, Failure: Never
-	.receive(on: RunLoop.main) // Output: String, Failure: Never 유지
+    .map { notification in
+        return notification.userInfo?["data"] as! Data
+    } // Output: Data, Failure: Never
+    .flatMap { data in
+        return Just(data)
+            .decode(MagicTrick.self, JSONDecoder())
+            .catch {
+                return Just(MagicTrck.placeholder)
+            }
+    } // Output: MagicTrick, Failure: Never
+    .publisher(for: \.name) // Output: String, Failure: Never
+    .receive(on: RunLoop.main) // Output: String, Failure: Never 유지
 ```
 
 ## Subscriber
 
 ```swift
 protocol Subscriber {
-	associatedtype Input
-	associatedtype Failure: Error
-	
-	// Subscription: Subscriber가 Publisher에서 Subscriber로 가는 데이터 플로우를 제어하는 방법
-	func receive(subscription: Subscription)
-	func receive(_ input: Input) -> Subscribers.Demand
-	func receive(completion: Subscribers.Completion<Failure>)
+    associatedtype Input
+    associatedtype Failure: Error
+    
+    // Subscription: Subscriber가 Publisher에서 Subscriber로 가는 데이터 플로우를 제어하는 방법
+    func receive(subscription: Subscription)
+    func receive(_ input: Input) -> Subscribers.Demand
+    func receive(completion: Subscribers.Completion<Failure>)
 }
 ```
 
@@ -179,7 +179,7 @@ canceller.cancel()
 ```swift
 let trickNamePublisher = ... // <String, Never>
 let canceller = trickNamePublisher.sink { trickName in
-	// Do something with trickName
+    // Do something with trickName
 }
 ```
 
@@ -191,7 +191,7 @@ Combine에는 구독을 일찍 종료하는 취소 기능이 내장되어 있다
 
 ```swift
 protocol Cancellable {
-	func cancel()
+    func cancel()
 }
 
 final class AnyCancellable: Cancellable {} // 소멸될 때 자동으로 `cancel()`호출
@@ -206,8 +206,8 @@ final class AnyCancellable: Cancellable {} // 소멸될 때 자동으로 `cancel
 
 ```swift
 protocol Subject: Publisher, AnyObject {
-	func send(_ value: Output)
-	func send(completion: Subscribers.Completion<Failure>)
+    func send(_ value: Output)
+    func send(completion: Subscribers.Completion<Failure>)
 }
 ```
 
@@ -224,7 +224,7 @@ let magicWordsSubject = PassthroughSubject<String, Never>()
 trickNamePublisher.subscribe(magicWordsSubject) // Subscriber 처럼 업스트림 퍼블리셔를 subscribe 할 수 있음
 
 let canceller = magicWordsSubject.sink { value in
-	// do something with the value
+    // do something with the value
 } // Publisher처럼 sink 연산자를 호출할 수 있음
 magicWordsSubject.send("Please") // 직접 값을 보내기
 
@@ -239,8 +239,8 @@ SwiftUI가 Subscriber를 소유하고, 개발자는 Publisher를 제공하면 �
 
 ```swift
 protocol BindableObject { // 현재는 ObservableObject로 이름이 바뀜
-	associatedtype PublisherType: Publisher where PublisherType.Failure == Never
-	var didChange: PublisherType { get }
+    associatedtype PublisherType: Publisher where PublisherType.Failure == Never
+    var didChange: PublisherType { get }
 }
 ```
 
@@ -253,18 +253,18 @@ protocol BindableObject { // 현재는 ObservableObject로 이름이 바뀜
     
     ```swift
     class WizardModel: BindableObject { // ObservableObject
-    	var trick: WizardTrick { didSet { didChange.send() } }
-    	var wand: wand? { didSet { didChange.send() } }
-    	
-    	let didChange = PassthroughSubject<Void, Never>()
+        var trick: WizardTrick { didSet { didChange.send() } }
+        var wand: wand? { didSet { didChange.send() } }
+        
+        let didChange = PassthroughSubject<Void, Never>()
     }
     
     struct TrickView: View {
-    	@ObjectBinding var model: WizardModel // @ObservedObject로 이름 바뀜
-    	
-    	var body: some View {
-    		Text(model.trick.name)
-    	}
+        @ObjectBinding var model: WizardModel // @ObservedObject로 이름 바뀜
+        
+        var body: some View {
+            Text(model.trick.name)
+        }
     }
     ```
     
@@ -280,7 +280,7 @@ Combine의 장점은 작은 Publisher와 연산자를 조합해 더 큰 데이�
 ```swift
 @Published var password: String = ""
 @IBAction func passwordChanged(_ sender: UITextField) {
-	password = send.text ?? ""
+    password = send.text ?? ""
 }
 ```
 
@@ -295,7 +295,7 @@ let currentPassword: String = self.password
 
 // 프레픽스로 $를 붙인 경우에는 래핑된 값에 접근하게 되며, 퍼블리셔에서 사용하는 모든 연산자 사용 가능
 let printerSubscription = $password.sink { // sink를 사용해서 구독
-	print("The published value is '\($0)'")
+    print("The published value is '\($0)'")
 }
 
 // password의 값이 변경되면, 그 때 Subscriber가 변경된 값을 받게 된다.
@@ -309,12 +309,12 @@ self.password = "password"
 @Published var passwordAgain: String = ""
 
 var validatedPassword: CombineLatest<Published<String>, Published<String>, String?> {
-	return CombineLatest($password, $passwordAgain) { password, passwordAgain in
-		guard password == passwordAgain, password.count > 8 else { return nil }
-		return password
-	} // <String?, Never>
-	.map { $0 == "password1" ? nil : $0 } // <String?, Never>
-	.eraseToAnyPublisher() // <String, Never> 타입 유지
+    return CombineLatest($password, $passwordAgain) { password, passwordAgain in
+        guard password == passwordAgain, password.count > 8 else { return nil }
+        return password
+    } // <String?, Never>
+    .map { $0 == "password1" ? nil : $0 } // <String?, Never>
+    .eraseToAnyPublisher() // <String, Never> 타입 유지
 }
 ```
 
@@ -325,10 +325,10 @@ var validatedPassword: CombineLatest<Published<String>, Published<String>, Strin
 @Published var username: String = ""
 
 var validatedUsername: AnyPublisher<String, Never> {
-	return $username
-		.debounce(for: 0.5, scheduler: RunLoop.main)
-		.removeDuplicates() // <String, Never>
-		.eraseToAnyPublisher() // <String, Never>
+    return $username
+        .debounce(for: 0.5, scheduler: RunLoop.main)
+        .removeDuplicates() // <String, Never>
+        .eraseToAnyPublisher() // <String, Never>
 }
 ```
 
@@ -343,17 +343,17 @@ var validatedUsername: AnyPublisher<String, Never> {
 @Published var username: String = ""
 
 var validatedUsername: AnyPublisher<String, Never> {
-	return $username
-		.debounce(for: 0.5, scheduler: RunLoop.main)
-		.removeDuplicates() // <String, Never>
-		.flatMap { username in
-			return Future { promise in
-				self.usernameAvailable(username) { available in
-					promise(.success(available ? username : nil))
-				}
-			}
-		}
-		.eraseToAnyPublisher() // <String?, Never>
+    return $username
+        .debounce(for: 0.5, scheduler: RunLoop.main)
+        .removeDuplicates() // <String, Never>
+        .flatMap { username in
+            return Future { promise in
+                self.usernameAvailable(username) { available in
+                    promise(.success(available ? username : nil))
+                }
+            }
+        }
+        .eraseToAnyPublisher() // <String?, Never>
 }
 
 // func usernameAvailable(_ username: Stirng, completion: (Bool) -> Void)
@@ -366,11 +366,11 @@ var validatedUsername: AnyPublisher<String, Never> {
 
 ```swift
 var validatedCredentials: AnyPublisher<(String, String), Never> {
-	return CombineLatest(validatedUsername, validatedPassword) { username, password in
-		guard let uname = username, let pwd = password else { return nil }
-		return (uname, pwd)
-	}
-	.eraseToAnyPublisher()
+    return CombineLatest(validatedUsername, validatedPassword) { username, password in
+        guard let uname = username, let pwd = password else { return nil }
+        return (uname, pwd)
+    }
+    .eraseToAnyPublisher()
 } // <(String, String)?, Never>
 
 @IBOutlet var signupButton: UIButton!
@@ -378,11 +378,11 @@ var validatedCredentials: AnyPublisher<(String, String), Never> {
 var signupButtonStream: AnyCancellable?
 
 override func viewDidLoad() {
-	super.viewDidLoad()
-	
-	self.signButtonStream = self.validatedCredentials
-		.map { $0 != nil }
-		.receive(on: RunLoop.main)
-		.assign(to: \.isEnabled, on: signupButton)
+    super.viewDidLoad()
+    
+    self.signButtonStream = self.validatedCredentials
+        .map { $0 != nil }
+        .receive(on: RunLoop.main)
+        .assign(to: \.isEnabled, on: signupButton)
 }
 ```

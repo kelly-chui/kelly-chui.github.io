@@ -4,7 +4,7 @@ date: 2024-11-11
 
 categories:
   - Computer Science
-series: []
+series:
 tags:
   - Architecture Pattern
   - iOS

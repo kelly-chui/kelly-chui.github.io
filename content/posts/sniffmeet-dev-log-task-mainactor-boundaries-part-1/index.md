@@ -132,7 +132,7 @@ func execute() throws -> UserInfo {
 
 ```swift
 guard let userID = SessionManager.shared.session?.user?.userID else { 
-	return 
+    return 
 }
 ```
 

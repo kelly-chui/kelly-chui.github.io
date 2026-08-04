@@ -40,16 +40,16 @@ Identity는 같은 View인지 판단하고, Lifetime은 상태를 유지하며, 
 
 ```swift
 struct DogView: View {
-	@Binding var dog: Dog
-	var treat: Treat
+    @Binding var dog: Dog
+    var treat: Treat
 
-	var body: some View {
-		Button {
-			dog.reward(treat)
-		} label: {
-			PawView()
-		}
-	}
+    var body: some View {
+        Button {
+            dog.reward(treat)
+        } label: {
+            PawView()
+        }
+    }
 }
 ```
 
@@ -114,21 +114,21 @@ SwiftUI가 변경된 데이터를 올바른 View에 전달하려면 Identifier�
 enum Animal { case dog, cat }
 
 struct Pet: Identifiable {
-	var name: String
-	var kind: Animal
-	var id: UUID { UUID() }
+    var name: String
+    var kind: Animal
+    var id: UUID { UUID() }
 }
 
 struct FavoritePets: View {
-	var pets: [Pet]
+    var pets: [Pet]
 
-	var body: some View {
-		List {
-			ForEach(pets) { pet in
-				PetView(pet)
-			}
-		}
-	}
+    var body: some View {
+        List {
+            ForEach(pets) { pet in
+                PetView(pet)
+            }
+        }
+    }
 }
 ```
 
@@ -145,15 +145,15 @@ struct FavoritePets: View {
 
 ```swift
 struct FavoritePets: View {
-	var pets: [Pet]
+    var pets: [Pet]
 
-	var body: some View {
-		List {
-			ForEach(pets.indices, id: \.self) { index in
-				PetView(pets[index])
-			}
-		}
-	}
+    var body: some View {
+        List {
+            ForEach(pets.indices, id: \.self) { index in
+                PetView(pets[index])
+            }
+        }
+    }
 }
 ```
 
@@ -168,7 +168,7 @@ struct FavoritePets: View {
 
 ```swift
 ForEach(pets, id: \.databaseID) { pet in
-	PetView(pet)
+    PetView(pet)
 }
 ```
 
@@ -187,17 +187,17 @@ ForEach(pets, id: \.databaseID) { pet in
 
 ```swift
 struct TreatJar: View {
-	var treats: [Treat]
+    var treats: [Treat]
 
-	var body: some View {
-		ScrollView {
-			LazyVGrid(...) {
-				ForEach(treats, id: \.name) { treat in
-					TreatCell(treat)
-				}
-			}
-		}
-	}
+    var body: some View {
+        ScrollView {
+            LazyVGrid(...) {
+                ForEach(treats, id: \.name) { treat in
+                    TreatCell(treat)
+                }
+            }
+        }
+    }
 }
 ```
 
@@ -210,7 +210,7 @@ struct TreatJar: View {
 
 ```swift
 ForEach(treats, id: \.serialNumber) { treat in
-	TreatCell(treat)
+    TreatCell(treat)
 }
 ```
 
@@ -231,20 +231,20 @@ Identifier는 데이터가 제공하는 Explicit Identity만을 의미하지 않
 
 ```swift
 ForEach(treats, id: \.serialNumber) { treat in
-	TreatCell(treat)
-		.modifier(ExpirationModifier(date: treat.expiryDate))
+    TreatCell(treat)
+        .modifier(ExpirationModifier(date: treat.expiryDate))
 }
 
 struct ExpirationModifier: ViewModifier {
-	var date: Date
+    var date: Date
 
-	func body(content: Content) -> some View {
-		if date < .now {
-			content.opacity(0.3)
-		} else {
-			content
-		}
-	}
+    func body(content: Content) -> some View {
+        if date < .now {
+            content.opacity(0.3)
+        } else {
+            content
+        }
+    }
 }
 ```
 
@@ -266,11 +266,11 @@ Modifier의 `body` 역시 View를 반환하므로, 그 안의 조건문도 Struc
 
 ```swift
 struct ExpirationModifier: ViewModifier {
-	var date: Date
+    var date: Date
 
-	func body(content: Content) -> some View {
-		content.opacity(date < .now ? 0.3 : 1.0)
-	}
+    func body(content: Content) -> some View {
+        content.opacity(date < .now ? 0.3 : 1.0)
+    }
 }
 ```
 

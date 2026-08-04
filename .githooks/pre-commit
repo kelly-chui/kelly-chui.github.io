@@ -5,5 +5,6 @@ set -e
 echo "[pre-commit] Fixing EOF and running content checks..."
 npm run check:eof -- --fix
 git add -u
+npm run check:code-indentation
 npm run check:optimized-images
 npm run check:images

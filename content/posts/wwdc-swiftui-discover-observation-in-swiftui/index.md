@@ -37,8 +37,8 @@ SwiftUI의 Observation은 모델의 프로퍼티 변화를 추적하고, 그 변
 ```swift
 @Observable
 class FoodTruckModel {
-	var orders: [Order] = []
-	var donuts = Donut.all
+    var orders: [Order] = []
+    var donuts = Donut.all
 }
 ```
 
@@ -46,20 +46,20 @@ class FoodTruckModel {
 
 ```swift
 struct DonutMenu: View {
-	let model: FoodTruckModel
+    let model: FoodTruckModel
 
-	var body: some View {
-		List {
-			Section("Donuts") {
-				ForEach(model.donuts) { donut in
-					Text(donut.name)
-				}
-				Button("Add new donut") {
-					model.addDonut()
-				}
-			}
-		}
-	}
+    var body: some View {
+        List {
+            Section("Donuts") {
+                ForEach(model.donuts) { donut in
+                    Text(donut.name)
+                }
+                Button("Add new donut") {
+                    model.addDonut()
+                }
+            }
+        }
+    }
 }
 ```
 
@@ -79,29 +79,29 @@ Computed Property를 사용해도 Observation은 자연스럽게 동작한다.
 ```swift
 @Observable
 class FoodTruckModel {
-	var orders: [Order] = []
-	var donuts = Donut.all
-	var orderCount: Int { orders.count }
+    var orders: [Order] = []
+    var donuts = Donut.all
+    var orderCount: Int { orders.count }
 }
 
 struct DonutMenu: View {
-	let model: FoodTruckModel
+    let model: FoodTruckModel
 
-	var body: some View {
-		List {
-			Section("Donuts") {
-				ForEach(model.donuts) { donut in
-					Text(donut.name)
-				}
-				Button("Add new donut") {
-					model.addDonut()
-				}
-			}
-			Section("Orders") {
-				LabeledContent("Count", value: "\(model.orderCount)")
-			}
-		}
-	}
+    var body: some View {
+        List {
+            Section("Donuts") {
+                ForEach(model.donuts) { donut in
+                    Text(donut.name)
+                }
+                Button("Add new donut") {
+                    model.addDonut()
+                }
+            }
+            Section("Orders") {
+                LabeledContent("Count", value: "\(model.orderCount)")
+            }
+        }
+    }
 }
 ```
 
@@ -122,21 +122,21 @@ View가 자기 생명주기 동안 직접 소유해야 하는 상태라면 `@Sta
 
 ```swift
 struct DonutListView: View {
-	var donutList: DonutList
-	@State private var donutToAdd: Donut?
+    var donutList: DonutList
+    @State private var donutToAdd: Donut?
 
-	var body: some View {
-		List(donutList.donuts) { DonutView(donut: $0) }
-		Button("Add Donut") { donutToAdd = Donut() }
-			.sheet(item: $donutToAdd) {
-				TextField("Name", text: $donutToAdd.name)
-				Button("Save") {
-					donutList.donuts.append(donutToAdd)
-					donutToAdd = nil
-				}
-				Button("Cancel") { donutToAdd = nil }
-			}
-	}
+    var body: some View {
+        List(donutList.donuts) { DonutView(donut: $0) }
+        Button("Add Donut") { donutToAdd = Donut() }
+            .sheet(item: $donutToAdd) {
+                TextField("Name", text: $donutToAdd.name)
+                Button("Save") {
+                    donutList.donuts.append(donutToAdd)
+                    donutToAdd = nil
+                }
+                Button("Cancel") { donutToAdd = nil }
+            }
+    }
 }
 ```
 
@@ -155,22 +155,22 @@ struct DonutListView: View {
 ```swift
 @Observable
 class Account {
-	var userName: String?
+    var userName: String?
 }
 
 struct FoodTruckMenuView: View {
-	@Environment(Account.self) var account
+    @Environment(Account.self) var account
 
-	var body: some View {
-		if let name = account.userName {
-			HStack {
-				Text(name)
-				Button("Log out") { account.logOut() }
-			}
-		} else {
-			Button("Login") { account.showLogin() }
-		}
-	}
+    var body: some View {
+        if let name = account.userName {
+            HStack {
+                Text(name)
+                Button("Log out") { account.logOut() }
+            }
+        } else {
+            Button("Login") { account.showLogin() }
+        }
+    }
 }
 ```
 
@@ -189,15 +189,15 @@ Observation을 사용하면 Environment로 같은 객체를 넓게 전달하더�
 ```swift
 @Observable
 class Donut {
-	var name: String
+    var name: String
 }
 
 struct DonutView: View {
-	@Bindable var donut: Donut
+    @Bindable var donut: Donut
 
-	var body: some View {
-		TextField("Name", text: $donut.name)
-	}
+    var body: some View {
+        TextField("Name", text: $donut.name)
+    }
 }
 ```
 
@@ -252,23 +252,23 @@ Observation은 저장 프로퍼티 하나만 추적하는 기능이 아니다. O
 ```swift
 @Observable
 class Donut {
-	var name: String
+    var name: String
 }
 
 struct DonutList: View {
-	var donuts: [Donut]
+    var donuts: [Donut]
 
-	var body: some View {
-		List(donuts) { donut in
-			HStack {
-				Text(donut.name)
-				Spacer()
-				Button("Randomize") {
-					donut.name = randomName()
-				}
-			}
-		}
-	}
+    var body: some View {
+        List(donuts) { donut in
+            HStack {
+                Text(donut.name)
+                Spacer()
+                Button("Randomize") {
+                    donut.name = randomName()
+                }
+            }
+        }
+    }
 }
 ```
 
@@ -298,17 +298,17 @@ Computed Property가 Observable 타입 내부의 저장 프로퍼티를 기반�
 ```swift
 @Observable
 class Donut {
-	var name: String {
-		get {
-			access(keyPath: \.name)
-			return someNonObservableLocation.name
-		}
-		set {
-			withMutation(keyPath: \.name) {
-				someNonObservableLocation.name = newValue
-			}
-		}
-	}
+    var name: String {
+        get {
+            access(keyPath: \.name)
+            return someNonObservableLocation.name
+        }
+        set {
+            withMutation(keyPath: \.name) {
+                someNonObservableLocation.name = newValue
+            }
+        }
+    }
 }
 ```
 
@@ -322,11 +322,11 @@ getter에서는 `access(keyPath:)`로 이 프로퍼티를 읽었다고 알린다
 
 ```swift
 public class FoodTruckModel: ObservableObject {
-	@Published public var truck = Truck()
-	@Published public var orders: [Order] = []
-	@Published public var donuts = Donut.all
-	var dailyOrderSummaries: [City.ID: [OrderSummary]] = [:]
-	var monthlyOrderSummaries: [City.ID: [OrderSummary]] = [:]
+    @Published public var truck = Truck()
+    @Published public var orders: [Order] = []
+    @Published public var donuts = Donut.all
+    var dailyOrderSummaries: [City.ID: [OrderSummary]] = [:]
+    var monthlyOrderSummaries: [City.ID: [OrderSummary]] = [:]
 }
 ```
 
@@ -339,11 +339,11 @@ public class FoodTruckModel: ObservableObject {
 ```swift
 @Observable
 class FoodTruckModel {
-	public var truck = Truck()
-	public var orders: [Order] = []
-	public var donuts = Donut.all
-	var dailyOrderSummaries: [City.ID: [OrderSummary]] = [:]
-	var monthlyOrderSummaries: [City.ID: [OrderSummary]] = [:]
+    public var truck = Truck()
+    public var orders: [Order] = []
+    public var donuts = Donut.all
+    var dailyOrderSummaries: [City.ID: [OrderSummary]] = [:]
+    var monthlyOrderSummaries: [City.ID: [OrderSummary]] = [:]
 }
 ```
 
@@ -351,13 +351,13 @@ View 쪽도 단순해진다.
 
 ```swift
 struct AccountView: View {
-	@ObservedObject var model: FoodTruckModel
+    @ObservedObject var model: FoodTruckModel
 
-	@EnvironmentObject private var accountStore: AccountStore
-	@Environment(\.authorizationController) private var authorizationController
+    @EnvironmentObject private var accountStore: AccountStore
+    @Environment(\.authorizationController) private var authorizationController
 
-	@State private var isSignUpSheetPresented = false
-	@State private var isSignOutAlertPresented = false
+    @State private var isSignUpSheetPresented = false
+    @State private var isSignOutAlertPresented = false
 }
 ```
 
@@ -365,13 +365,13 @@ struct AccountView: View {
 
 ```swift
 struct AccountView: View {
-	var model: FoodTruckModel
+    var model: FoodTruckModel
 
-	@Environment(AccountStore.self) private var accountStore
-	@Environment(AuthorizationController.self) private var authorizationController
+    @Environment(AccountStore.self) private var accountStore
+    @Environment(AuthorizationController.self) private var authorizationController
 
-	@State private var isSignUpSheetPresented = false
-	@State private var isSignOutAlertPresented = false
+    @State private var isSignUpSheetPresented = false
+    @State private var isSignOutAlertPresented = false
 }
 ```
 
@@ -379,11 +379,11 @@ Binding이 필요한 경우에만 `@Bindable`을 사용한다.
 
 ```swift
 struct DonutEditor: View {
-	@Bindable var donut: Donut
+    @Bindable var donut: Donut
 
-	var body: some View {
-		TextField("Name", text: $donut.name)
-	}
+    var body: some View {
+        TextField("Name", text: $donut.name)
+    }
 }
 ```
 
