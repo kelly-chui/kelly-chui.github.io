@@ -10,6 +10,9 @@ tags:
   - iOS
   - VIPER
 
+features:
+  - mermaid
+
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/VIPER 패턴 dafade8f376583d1a047819dff44758e.md"
 ---

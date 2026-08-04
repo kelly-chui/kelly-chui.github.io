@@ -8,6 +8,8 @@ series: []
 tags:
     - C++
     - Math
+features:
+  - katex
 
 draft: false
 original: ""

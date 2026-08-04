@@ -6,6 +6,9 @@ categories:
 series:
 tags:
 
+features:
+  - mermaid
+
 draft: false
 original: ""
 ---
@@ -23,8 +26,7 @@ SwiftUI에서 핵심은 view와 modifier인데, 이 세션에서는 custom view�
 
 가장 인상깊었던 부분은 적응형 view다. 아무래도 선언형 프레임워크다 보니, UIKit처럼 세세하게 컨트롤 하지 않고. '이건 뭘 하는 버튼' 식으로 코드를 짜니까, 그 버튼이 있는 환경에 맞게 버튼의 모양이 바뀐다. UIKit은 버튼의 액션 뿐만 아니라 모양도 하나하나 지정해주기 때문에, 이 부분에서 '선언형 UI 프레임워크와 명령형 UI 프레임워크의 차이'가 가장 확실하게 와닿았다.
 
-{{< video src="video-006-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-006-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 View에 대한 설명이 끝난 뒤에는 SwiftUI의 앱 구조를 다룬다. App, Scene, WindowGroup도 View와 비슷한 선언형 구조를 따르며, 하나의 일관된 방식으로 앱을 구성할 수 있다. (App, Window, Scene, View가 모두 비슷한 구조를 가진다) 그리고 SwiftUI는 멀티 플랫폼 이라는 사실도 말한다.
 
 마지막으로는 UIKit과 SwiftUI의 상호 운용성을 설명한다. SwiftUI는 UIKit을 대체하는 프레임워크라기보다 함께 사용할 수 있는 프레임워크에 가깝다. 지금은 아니지만 애플 디벨로퍼 아카데미에 있을땐 카메라를 로드하려면 UIKit을 불러와야 했다. 그리고 아직 SwiftUI가 못하는 것들이 `UICollectionView`의 상세한 레이아웃 설정이라든지 몇개 있긴 하다.
@@ -279,8 +281,7 @@ Button("Award", systemImage: "trophy") {
 }
 ```
 
-{{< video src="video-001-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-001-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 award 버튼을 탭하면, 연관된 펫 객체의 `hasAward` 상태가 `true`로 변경된다. SwiftUI는 이 `pet`에 의존하는 모든 뷰를 추적한다. 예를 들면 `List`의 각 row를 표시하는 뷰가 여기에 해당한다.
 
 ```swift
@@ -349,8 +350,7 @@ Button("Decrease", systemImage: "minus.circle") {
 
 상태를 변경하는 코드를 `withAnimation`으로 감싸면, 그 결과 발생하는 View 업데이트에 애니메이션이 적용된다.
 
-{{< video src="video-002-optimized-video.mp4" width="240" autoplay="true" loop="true" >}}
-
+{{< video src="video-002-optimized-video.mp4" width="240" autoplay="true" loop="true" align="center" >}}
 전환 효과를 커스터마이즈할 수도 있다.
 
 ```swift
@@ -360,8 +360,7 @@ Text("\(rating)")
 
 직접적으로 전환 효과가 적용되는 부분이 `Text`라서 커스텀 전환 Modifier는 `Text`에 붙인다. `numericText`는 숫자 변화에 맞게 제공되는 빌트인 전환 효과다.
 
-{{< video src="video-003-optimized-video.mp4" width="240" autoplay="true" loop="true" >}}
-
+{{< video src="video-003-optimized-video.mp4" width="240" autoplay="true" loop="true" align="center" >}}
 `@State`와 애니메이션을 사용하면 원하는 상호작용을 하는 View를 만들 수 있다.
 
 {{< callout type="note" title="@State와 상태" >}}
@@ -385,8 +384,7 @@ struct RatingContainerView: View {
 
 게이지와 `RatingView`를 결합한 View인데, `RatingView`에도 State가 있고 이 View에도 State가 있다. 서로 다른 State는 서로 다른 Source of Truth인데 둘 다 같은 rating을 표현한다. 이러면 `RatingView`에서 버튼으로 값을 증가시켜도 게이지에는 반영되지 않는다.
 
-{{< video src="video-004-optimized-video.mp4" width="240" autoplay="true" loop="true" >}}
-
+{{< video src="video-004-optimized-video.mp4" width="240" autoplay="true" loop="true" align="center" >}}
 ```swift
 struct RatingView: View {
 	@Binding private var rating: Int
@@ -409,8 +407,7 @@ struct RatingContainerView: View {
 
 그러면 서로 연동되어 잘 동작한다.
 
-{{< video src="video-005-optimized-video.mp4" width="240" autoplay="true" loop="true" >}}
-
+{{< video src="video-005-optimized-video.mp4" width="240" autoplay="true" loop="true" align="center" >}}
 #### 적응형 기능
 
 SwiftUI는 자동으로 다크 모드, 다이나믹 타입을 지원하고, Localization도 적용할 수 있다.
@@ -437,8 +434,7 @@ SwiftUI는 자동으로 다크 모드, 다이나믹 타입을 지원하고, Loca
 Toggle("Nocturnal Mode", systemImage: "moon", isOn: $pet.isNocturnal)
 ```
 
-{{< video src="video-006-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-006-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 {{< callout type="note" title="적응성도 선언형의 장점일까?" >}}
 맞다. 명령형 방식에서는 특정 UI 요소를 어떤 모양으로 만들고 어디에 붙일지 비교적 구체적으로 지시하는 경우가 많다. 반면 선언형 방식에서는 "여기에 토글이 있다", "여기에 검색이 있다"처럼 더 높은 수준의 의도를 표현한다. SwiftUI는 그 의도를 현재 플랫폼, 컨테이너, 접근성 설정에 맞는 표현으로 바꿀 수 있다.
 {{< /callout >}}
@@ -470,8 +466,7 @@ struct PetListView: View {
 
 다른 modifier를 추가하면 검색 경험을 커스터마이징할 수도 있다.
 
-{{< video src="video-007-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-007-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 그런데 자신만의 UX를 만들고 싶을 때는 한 단계 더 낮은 수준의 API도 제공한다.
 
 {{< callout type="note" title="낮은 수준의 API는 명령형에 가까울까?" >}}

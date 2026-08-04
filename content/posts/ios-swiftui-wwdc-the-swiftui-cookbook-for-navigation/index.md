@@ -92,8 +92,7 @@ NavigationSplitView {
 
 ### 첫 번째 예제
 
-{{< video src="video-001-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-001-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 - 기본적인 View 스택, 카테고리마다 하나의 Section이 있고, 누르면 Detail로 들어간다.
 - 어떤 레시피에서든 관련 레시피를 탭하면 해당 레시피가 다시 스택 위로 push된다.
 - 뒤로 가기 버튼을 누르면 원래 레시피로 돌아오고, 다시 한번 뒤로 가면 카테고리 목록으로 돌아간다.
@@ -222,8 +221,7 @@ func popToRoot() {
 
 ### Multi-column 예제
 
-{{< video src="video-002-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-002-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 큰 화면의 기기에서는 여러 화면을 계속 push하지 않고도 계층 구조를 한 번에 확인할 수 있어 유용하다.
 
 ```swift
@@ -266,8 +264,7 @@ List의 `selection`과 `NavigationSplitView`를 함께 사용하면 SwiftUI가 �
 
 ### NavigationSplitView와 NavigationStack을 둘 다 사용해서 만든 예제
 
-{{< video src="video-003-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-003-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 이제 카테고리 선택과 Detail 영역 안의 화면 이동을 하나의 구조에서 함께 사용할 수 있다.
 카테고리를 선택하면 Detail 영역에서 해당 카테고리의 모든 레시피가 Grid 형태로 표시된다.
 

@@ -8,6 +8,8 @@ series:
 tags:
   - Math
   - Sieve of Eratosthenes
+features:
+  - katex
 
 draft: false
 original: ""

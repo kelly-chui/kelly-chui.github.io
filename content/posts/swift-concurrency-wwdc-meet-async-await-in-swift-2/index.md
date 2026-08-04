@@ -12,7 +12,7 @@ tags:
 features:
   - mermaid
 
-draft: true
+draft: false
 original: ""
 ---
 
@@ -60,7 +60,7 @@ class MockViewModelSpec: XCTestCase {
 iOS 17 이후부터는 SwiftUI 모델의 상태 변화를 관찰하는 용도라면 Combine의 `@ObservableObject`, `@Published` 기반 코드보다 Observation의 `@Observable` 매크로를 사용하자.
 {{< /callout >}}
 
-{{< image src="image-003.png" width="360px" align="center">}}
+{{< image src="image-003-optimized-image.webp" width="360px" align="center">}}
 
 리스트의 각 row에 있는 섬네일 View를 담당하는 SwiftUI 코드를 보자.
 
@@ -232,7 +232,7 @@ func persistentPosts() async throws -> [Post] {
 
 (`persistentPosts`를) 호출한 함수는 `persistentPosts`의 결과를 기다리며 일시 중단된 상태다. 적절한 시점에 결과를 전달해 caller 함수가 나머지 작업을 계속 진행하도록 해야 한다. (`persistentPosts`가 `async` 함수니 당연히 이를 호출한 함수도 `async` 함수다)
 
-{{<image src="image-004.png" >}}
+{{<image src="image-004-optimized-image.webp" >}}
 
 현재 원하는 동작은 `async` 버전의 `persistentPosts`가 호출되면 Core Data를 fetch 하고, 시간이 지나 Core Data가 completion handler를 호출하면 조회 결과가 `persistentPosts`를 기다리던 호출자에게 돌아가는 것이다.
 
@@ -293,7 +293,7 @@ if let error = error {
 }
 ```
 
-{{< image src="image-001.png">}}
+{{< image src="image-001-optimized-image.webp">}}
 
 반대로 `resume`을 여러 번 호출하는 것은 프로그램 오류다. 두 번째 `resume`이 호출되면 런타임은 trap으로 앱을 종료한다.
 
@@ -306,7 +306,7 @@ if let error = error {
 }
 ```
 
-{{< image src="image-002.png">}}
+{{< image src="image-002-optimized-image.webp">}}
 
 ### Delegate를 직접 async alternative로 바꾸기
 

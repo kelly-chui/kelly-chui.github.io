@@ -99,8 +99,7 @@ Section("Status") {
 
 ### ScrollViewReader 예제
 
-{{< video src="video-003-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-003-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 ```swift
 ScrollViewReader { proxy in
 	ScrollView {
@@ -177,8 +176,7 @@ SwiftUI는 `body`를 실행해서 나온 결과만 보는 것이 아니라, `Vie
 
 ### good dog, bad dog 예제
 
-{{< video src="video-001-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-001-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 ```swift
 VStack {
 	if dog.isGood {
@@ -193,8 +191,7 @@ VStack {
 
 `if`를 사용하여 조건마다 서로 다른 View를 생성하면 SwiftUI는 이 둘을 서로 다른 Identity를 가진 별개의 View라고 이해한다. 그래서 상태가 바뀔 때 기존 View가 사라지고 새로운 View가 나타나는 전환을 수행한다.
 
-{{< video src="video-002-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-002-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 ```swift
 PawView(tint: dog.isGood ? .green : .red)
 	.frame(

@@ -12,7 +12,7 @@ tags:
 features:
   - mermaid
 
-draft: true
+draft: false
 original: ""
 ---
 
@@ -37,13 +37,13 @@ func prepareThumbnail(of size: CGSize, completionHandler: @escaping(UIImage?) ->
 동기 호출에서는 현재 스레드가 바로 그 함수를 실행한다. 함수가 끝날 때까지 호출한 코드가 다음으로 진행할 수 없으므로, 스레드가 해당 작업에 묶인다.
 {{< /callout >}}
 
-![image-001.png](image-001.png)
+![image-001-optimized-image.webp](image-001-optimized-image.webp)
 
 예를 들어 `fetchThumbnail`이 UIKit의 `preparingThumbnail`을 호출하면, 섬네일 생성이 끝날 때까지 현재 실행 흐름(스레드)이 기다린다.
 
 반대로 비동기 API를 호출하면 작업이 실행되는 동안 현재 스레드는 다른 작업을 수행할 수 있다. 작업이 끝나면 API가 completion handler를 호출해 결과를 전달한다.
 
-![](image-002.png)
+![](image-002-optimized-image.webp)
 
 SDK에는 이런 API가 많고, 작업이 완료되었음을 알리는 방식도 다양하다.
 
@@ -55,7 +55,7 @@ SDK에는 이런 API가 많고, 작업이 완료되었음을 알리는 방식도
 
 ### UIKit 섬네일 이미지 리스트 예시
 
-{{< image src="image-003.png" width="360px" align="center">}}
+{{< image src="image-003-optimized-image.webp" width="360px" align="center">}}
 
 서버에 저장된 이미지의 섬네일을 보여주는 리스트를 예로 들어 보자.
 
@@ -267,7 +267,7 @@ let result = await collage.draw()
 
 어떤 함수를 호출하면 현재 실행 흐름은 호출된 함수의 작업을 수행한다. 동기 함수라면 함수가 끝날 때까지 현재 스레드는 해당 작업에 묶인다.
 
-![image-004.png](image-004.png)
+![image-004-optimized-image.webp](image-004-optimized-image.webp)
 
 ```swift
 func thumbnailURLRequest(for id: String) -> URLRequest {
@@ -280,7 +280,7 @@ func thumbnailURLRequest(for id: String) -> URLRequest {
 
 `async` 함수도 일반 함수처럼 종료하면 호출한 함수로 결과를 돌려준다. 다만 실행 중 `await` 지점에서 일시 중단(suspend)될 수 있다는 점이 다르다.
 
-![image-005.png](image-005.png)
+![image-005-optimized-image.webp](image-005-optimized-image.webp)
 
 현재 task가 `await`에서 일시 중단되면, 그 task가 사용하던 스레드는 다른 작업을 실행할 수 있다. 이후 런타임이 해당 task를 다시 스케줄링하면, task는 중단 지점 다음부터 작업을 이어서 한다. 재개되는 스레드가 이전과 같다는 보장은 없다.
 

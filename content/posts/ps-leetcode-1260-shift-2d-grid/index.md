@@ -9,6 +9,8 @@ tags:
   - LeetCode
   - Modular
   - Python
+features:
+  - katex
 
 draft: false
 original: ""

@@ -9,6 +9,8 @@ tags:
   - Dynamic Programming
   - GCD
   - Python
+features:
+  - katex
 
 draft: false
 original: ""

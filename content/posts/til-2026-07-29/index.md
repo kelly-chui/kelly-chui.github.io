@@ -10,7 +10,7 @@ tags:
   - Hugo
   - Git
 
-draft: true
+draft: false
 original: ""
 ---
 

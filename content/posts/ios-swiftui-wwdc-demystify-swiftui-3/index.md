@@ -130,8 +130,7 @@ struct FavoritePets: View {
 }
 ```
 
-{{< video src="video-001-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-001-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 `Pet`에는 Identifier가 있지만 문제가 있다. `id`에 접근할 때마다 새로운 UUID가 만들어지므로, 같은 `Pet`도 매번 다른 항목처럼 보인다.
 
 {{< callout type="note" title="var id: UUID { UUID() }" >}}
@@ -160,8 +159,7 @@ struct FavoritePets: View {
 
 새로운 펫을 가장 앞에 추가하면 기존 펫들의 Index가 모두 밀리고, SwiftUI는 항목이 이동한 것이 아니라 여러 항목의 Identity가 바뀐 것으로 해석할 수 있다.
 
-{{< video src="video-002-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-002-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 버튼이 Index 0에 새로운 요소를 삽입했는데 실제 애니메이션에서는 끝에 삽입된 것처럼 보일 수 있다. SwiftUI가 데이터 자체가 아니라 바뀐 Index를 기준으로 추적하기 때문이다.
 
 이런 경우에는 데이터베이스에서 가져온 ID처럼 영속적인 Identifier를 사용해야 한다.
@@ -172,8 +170,7 @@ ForEach(pets, id: \.databaseID) { pet in
 }
 ```
 
-{{< video src="video-003-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-003-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 좋은 Identifier에는 안정성뿐만 아니라 유일성도 필요하다. 각 Identifier는 같은 시점에 하나의 View에만 대응해야 한다.
 
 {{< callout type="note" title="안정성과 유일성" >}}

@@ -12,6 +12,9 @@ tags:
   - Nearby Interaction
   - VIPER
 
+features:
+  - mermaid
+
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/Private & Shared 15/NI, MPC 유즈케이스 분리 da4369c610504524b41752ed777a1712.md"
 ---

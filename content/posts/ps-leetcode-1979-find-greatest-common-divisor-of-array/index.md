@@ -8,7 +8,7 @@ series:
 tags:
   - GCD
 
-draft: true
+draft: false
 original: ""
 ---
 

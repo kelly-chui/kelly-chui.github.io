@@ -11,6 +11,9 @@ tags:
   - Observer Pattern
   - WWDC
 
+features:
+  - mermaid
+
 draft: false
 original: ""
 ---
@@ -100,8 +103,7 @@ struct DonutMenu: View {
 }
 ```
 
-{{< video src="video-001-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-001-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 `orderCount`는 저장 프로퍼티가 아니라 Computed Property다. 하지만 값을 계산하는 과정에서 `orders`를 읽는다. `body`가 `model.orderCount`에 접근하면 결국 `orders` 접근도 함께 추적되므로, `orders`가 바뀔 때 View가 업데이트될 수 있다.
 
 {{< callout type="note" title="Computed Property도 추적될까?" >}}
@@ -268,8 +270,7 @@ struct DonutList: View {
 }
 ```
 
-{{< video src="video-002-optimized-video.mp4" width="360" autoplay="true" loop="true" >}}
-
+{{< video src="video-002-optimized-video.mp4" width="360" autoplay="true" loop="true" align="center" >}}
 이 예제에서 `DonutList`는 `Donut` 배열을 가지고 있고, 각각의 `Donut`은 Observable이다. `Text(donut.name)`은 각 도넛 인스턴스의 `name`을 읽는다. 따라서 어떤 도넛의 `name`이 바뀌었는지에 따라 필요한 View만 업데이트할 수 있다. 따라서 Randomize 버튼으로 도넛 이름을 변경해도, 해당 View만 적절하게 업데이트한다.
 
 심지어는 Observable 모델의 배열을 사용할 수도 있고, 다른 Observable 모델을 포함하는 모델을 만들 수도 있습니다. 
