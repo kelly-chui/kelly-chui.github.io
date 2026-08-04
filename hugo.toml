@@ -10,10 +10,12 @@ pagerSize = 10
 [taxonomies]
 category = "categories"
 tag = "tags"
+algorithmTag = "algorithmTags"
 series = "series"
 
 [params]
 defaultTheme = "auto"
+mainSections = ["posts", "til", "ps"]
 
 [params.homeInfoParams]
 Title = "Kelly Dev"
@@ -30,9 +32,19 @@ url = "/posts/"
 weight = 2
 
 [[menu.main]]
+name = "TIL"
+url = "/til/"
+weight = 3
+
+[[menu.main]]
+name = "PS"
+url = "/ps/"
+weight = 4
+
+[[menu.main]]
 name = "About"
 url = "/about/"
-weight = 3
+weight = 5
 
 [markup]
 [markup.goldmark.parser]

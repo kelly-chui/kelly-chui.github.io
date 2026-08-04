@@ -6,6 +6,7 @@ categories:
   - Problem Solving
 series:
 tags:
+algorithmTags:
 features:
   - katex
 
@@ -14,5 +15,7 @@ original: ""
 ---
 
 ## 문제
+
+## 풀이
 
 ## 코드

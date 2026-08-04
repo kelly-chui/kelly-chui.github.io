@@ -1,0 +1,9 @@
+{{- $tags := .tags -}}
+{{- $current := .current | default "" -}}
+{{- if $tags }}
+<nav class="ps-tag-chips" aria-label="Algorithm tags">
+  {{- range sort $tags }}
+  <a class="ps-tag-chip{{ if eq (urlize .) (urlize $current) }} active{{ end }}" href="{{ (printf "/algorithmtags/%s/" (urlize .)) | relURL }}">{{ . }}</a>
+  {{- end }}
+</nav>
+{{- end }}
