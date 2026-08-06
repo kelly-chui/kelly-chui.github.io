@@ -40,10 +40,17 @@
   {{- partial "ps-algorithm-tags.html" (dict "tags" $algorithmTags "current" "") }}
 {{- else if and (eq .Kind "term") (eq .Data.Plural "algorithmTags") }}
   {{- $algorithmTags := slice }}
-  {{- range $name, $_ := site.Taxonomies.algorithmTags }}{{ $algorithmTags = $algorithmTags | append $name }}{{ end }}
+
+  {{- range site.RegularPages }}
+    {{- range .Params.algorithmTags }}
+      {{- if not (in $algorithmTags .) }}
+        {{- $algorithmTags = $algorithmTags | append . }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+
   {{- partial "ps-algorithm-tags.html" (dict "tags" $algorithmTags "current" .Data.Term) }}
 {{- end }}
-
 {{- if .Content }}
 <div class="post-content md-content">
   {{- if not (.Param "disableAnchoredHeadings") }}
