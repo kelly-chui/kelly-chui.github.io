@@ -7,7 +7,7 @@ categories:
 series:
 tags:
 
-draft: true
+draft: false
 original: ""
 ---
 
