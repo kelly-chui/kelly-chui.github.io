@@ -1,12 +1,11 @@
 #!/usr/bin/env tsx
 
-import { readFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { isDirectory, listFiles } from "./lib/fs";
 
-type EofIssue = {
-  file: string;
-  reason: "missing-final-newline" | "empty-file";
+type Options = {
+  rootDir: string;
 };
 
 const CONFIG = {
@@ -18,7 +17,7 @@ const CONFIG = {
 const textExtensions = new Set<string>(CONFIG.textExtensions);
 const textFileNames = new Set<string>(CONFIG.textFileNames);
 
-function parseArgs(argv: string[]) {
+function parseArgs(argv: string[]): Options {
   let rootDir: string = CONFIG.rootDir;
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -41,13 +40,13 @@ function parseArgs(argv: string[]) {
 }
 
 function printHelp() {
-  console.log(`Check final newlines for content files.
+  console.log(`Add missing final newlines for content files.
 
 Usage:
-  npm run check:eof
+  npm run fix:eof
 
 Options:
-  --root-dir <path>   Root directory to check. Default: content
+  --root-dir <path>   Root directory to fix. Default: content
 `);
 }
 
@@ -56,30 +55,15 @@ function isTextFile(filePath: string) {
   return textFileNames.has(fileName) || textExtensions.has(path.extname(filePath).toLowerCase());
 }
 
-async function checkFile(file: string): Promise<EofIssue | undefined> {
+async function fixFile(file: string) {
   const bytes = await readFile(file);
 
-  if (bytes.length === 0) {
-    return { file, reason: "empty-file" };
+  if (bytes.length === 0 || bytes.at(-1) === 0x0a) {
+    return false;
   }
 
-  if (bytes.at(-1) === 0x0a) {
-    return undefined;
-  }
-
-  return { file, reason: "missing-final-newline" };
-}
-
-function printReport(issues: EofIssue[]) {
-  if (issues.length > 0) {
-    console.log("[Missing Final Newline]");
-    for (const issue of issues) {
-      console.log(`- ${issue.file}${issue.reason === "empty-file" ? " (empty file)" : ""}`);
-    }
-    console.log();
-  }
-
-  console.log(`Summary: ${issues.length} issue(s)`);
+  await writeFile(file, Buffer.concat([bytes, Buffer.from("\n")]));
+  return true;
 }
 
 async function main() {
@@ -92,20 +76,16 @@ async function main() {
   const files = await listFiles(options.rootDir, {
     include: (filePath) => isTextFile(filePath),
   });
-  const issues: EofIssue[] = [];
 
+  let fixed = 0;
   for (const file of files) {
-    const issue = await checkFile(file);
-    if (issue) {
-      issues.push(issue);
+    if (await fixFile(file)) {
+      fixed += 1;
+      console.log(`- ${file}`);
     }
   }
 
-  printReport(issues);
-
-  if (issues.length > 0) {
-    process.exitCode = 1;
-  }
+  console.log(`Summary: ${fixed} file(s) fixed`);
 }
 
 main().catch((error: unknown) => {

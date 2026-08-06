@@ -4,7 +4,7 @@ import { readFile, rename, stat, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 import { exists, listFiles } from "./lib/fs";
-import { backupPath } from "./lib/media";
+import { backupPath, CONTENT_ROOT, DEFAULT_MEDIA_POLICY, isMediaSourceFile } from "./lib/media";
 
 type Options = {
   dryRun: boolean;
@@ -16,17 +16,14 @@ type Options = {
 };
 
 const CONFIG = {
-  postsDir: "content/posts",
+  contentDir: CONTENT_ROOT,
   maxWidth: 1260,
   webpQuality: 85,
-  sourceExtensions: [".png", ".jpg", ".jpeg", ".webp"],
-  backupSuffix: "-original-image",
-  optimizedSuffix: "-optimized-image",
 } as const;
 
-const sourceExtensions = new Set<string>(CONFIG.sourceExtensions);
-const backupSuffix = CONFIG.backupSuffix;
-const optimizedSuffix = CONFIG.optimizedSuffix;
+const sourceExtensions = DEFAULT_MEDIA_POLICY.sourceExtensions;
+const backupSuffix = DEFAULT_MEDIA_POLICY.backupSuffix;
+const optimizedSuffix = DEFAULT_MEDIA_POLICY.optimizedSuffix;
 
 function formatBytes(bytes: number) {
   if (bytes < 1024) return `${bytes} B`;
@@ -71,18 +68,30 @@ function printHelp() {
 
 async function main() {
   const options = parseArgs(process.argv.slice(2));
-  const postsRoot = path.resolve(CONFIG.postsDir);
-  const files = await listFiles(postsRoot);
-  const selected = options.post ? path.join(postsRoot, options.post) : undefined;
-  const targets = files.filter((file) => {
-    if (selected && !file.startsWith(`${selected}${path.sep}`)) return false;
+  const contentRoot = path.resolve(CONFIG.contentDir);
+  const files = await listFiles(contentRoot);
+  const selected = options.post ? path.join(contentRoot, options.post) : undefined;
+  const targets: string[] = [];
+
+  for (const file of files) {
+    if (path.basename(file) === "index.md") {
+      continue;
+    }
+
+    if (selected && !file.startsWith(`${selected}${path.sep}`)) {
+      continue;
+    }
+
+    const bundleDir = path.dirname(file);
+    if (!(await exists(path.join(bundleDir, "index.md")))) {
+      continue;
+    }
+
     const name = path.basename(file);
-    return (
-      sourceExtensions.has(path.extname(file).toLowerCase()) &&
-      !name.includes(backupSuffix) &&
-      !name.includes(optimizedSuffix)
-    );
-  });
+    if (isMediaSourceFile(file) && !name.includes(backupSuffix) && !name.includes(optimizedSuffix)) {
+      targets.push(file);
+    }
+  }
   let converted = 0;
   let totalOriginalBytes = 0;
   let totalOutputBytes = 0;

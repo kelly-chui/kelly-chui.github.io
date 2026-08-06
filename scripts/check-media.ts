@@ -2,11 +2,18 @@
 
 import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
+import {
+  CONTENT_ROOT,
+  DEFAULT_MEDIA_POLICY,
+  isBackupMediaName,
+  isMediaSourceFile,
+  isOptimizedMediaName,
+} from "./lib/media";
 
 type Options = {
   post?: string;
   strict: boolean;
-  postsDir: string;
+  contentDir: string;
   staticImagesDir: string;
 };
 
@@ -26,22 +33,25 @@ type Report = {
   crossPost: MediaReference[];
   external: MediaReference[];
   unsupportedAbsolute: MediaReference[];
+  unoptimized: string[];
 };
 
 const CONFIG = {
-  postsDir: "content/posts",
+  contentDir: CONTENT_ROOT,
   staticImagesDir: "static/images",
-  imageExtensions: [".avif", ".gif", ".jpeg", ".jpg", ".png", ".svg", ".webp"],
   videoExtensions: [".mov", ".mp4", ".m4v", ".webm"],
   staticAssetPrefix: "/images/assets/",
 } as const;
+
+const imageExtensions = new Set(DEFAULT_MEDIA_POLICY.sourceExtensions);
+const videoExtensions = new Set(CONFIG.videoExtensions);
+const bundleMediaExtensions = new Set<string>([...imageExtensions, ...videoExtensions]);
 
 const markdownImagePattern = /!\[[^\]]*]\(\s*([^\s)]+)(?:\s+(?:"[^"]*"|'[^']*'|\([^)]*\)))?\s*\)/g;
 const imagePattern = /{{<\s*image\b([^>]*)>}}/g;
 const themeImagePattern = /{{<\s*theme-image\b([^>]*)>}}/g;
 const videoPattern = /{{<\s*video\b([^>]*)>}}/g;
 const shortcodeArgPattern = /(\w+)\s*=\s*"([^"]*)"|(\w+)\s*=\s*'([^']*)'/g;
-const bundleMediaExtensions = new Set<string>([...CONFIG.imageExtensions, ...CONFIG.videoExtensions]);
 
 function normalize(value: string) {
   return value.normalize("NFC");
@@ -50,7 +60,7 @@ function normalize(value: string) {
 function parseArgs(argv: string[]): Options {
   const options: Options = {
     strict: false,
-    postsDir: CONFIG.postsDir,
+    contentDir: CONFIG.contentDir,
     staticImagesDir: CONFIG.staticImagesDir,
   };
 
@@ -64,8 +74,8 @@ function parseArgs(argv: string[]): Options {
       case "--strict":
         options.strict = true;
         break;
-      case "--posts-dir":
-        options.postsDir = argv[++index];
+      case "--content-dir":
+        options.contentDir = argv[++index];
         break;
       case "--static-images-dir":
         options.staticImagesDir = argv[++index];
@@ -87,10 +97,7 @@ async function exists(targetPath: string) {
     await stat(targetPath);
     return true;
   } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
-      return false;
-    }
-
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") return false;
     throw error;
   }
 }
@@ -99,10 +106,7 @@ async function isDirectory(targetPath: string) {
   try {
     return (await stat(targetPath)).isDirectory();
   } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
-      return false;
-    }
-
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") return false;
     throw error;
   }
 }
@@ -112,54 +116,46 @@ async function listFiles(root: string): Promise<string[]> {
   const nested = await Promise.all(
     entries.map(async (entry) => {
       const entryPath = path.join(root, entry.name);
-
-      if (entry.isDirectory()) {
-        return listFiles(entryPath);
-      }
-
-      if (entry.isFile() && entry.name !== ".DS_Store") {
-        return [entryPath];
-      }
-
-      return [];
+      if (entry.isDirectory()) return listFiles(entryPath);
+      return entry.isFile() && entry.name !== ".DS_Store" ? [entryPath] : [];
     }),
   );
-
   return nested.flat().sort();
 }
 
 function printHelp() {
-  console.log(`Check image and video references for Hugo post page bundles.
+  console.log(`Check media references and optimization state for content bundles.
 
 Usage:
-  npm run check:images
-  npm run check:images -- --strict
-  npm run check:images -- --post <slug>
+  npm run check:media
+  npm run check:media -- --strict
+  npm run check:media -- --post <slug>
 
 Options:
-  --post <slug>                Check one post bundle.
-  --strict                     Fail on unused bundle images too.
-  --posts-dir <path>           Posts directory. Default: content/posts
-  --static-images-dir <path>   Static images directory. Default: static/images
+  --post <slug>            Check one content bundle.
+  --strict                 Fail on unused bundle media too.
+  --content-dir <path>     Content directory. Default: content
+  --static-images-dir <path> Static images directory. Default: static/images
 `);
 }
 
-async function collectPostIndexes(postsDir: string, selectedSlug?: string) {
-  if (selectedSlug) {
-    const indexPath = path.join(postsDir, selectedSlug, "index.md");
-    return (await exists(indexPath)) ? [indexPath] : [];
+async function collectPostIndexes(contentDir: string, selectedSlug?: string) {
+  const files = await listFiles(contentDir);
+  const indexes: string[] = [];
+
+  for (const file of files) {
+    if (path.basename(file) !== "index.md") {
+      continue;
+    }
+
+    if (selectedSlug && !file.includes(`${path.sep}${selectedSlug}${path.sep}`)) {
+      continue;
+    }
+
+    indexes.push(file);
   }
 
-  const indexes = await Promise.all(
-    (await readdir(postsDir, { withFileTypes: true }))
-      .filter((entry) => entry.isDirectory())
-      .map(async (entry) => {
-        const indexPath = path.join(postsDir, entry.name, "index.md");
-        return (await exists(indexPath)) ? [indexPath] : [];
-      }),
-  );
-
-  return indexes.flat().sort();
+  return indexes.sort();
 }
 
 function isExternal(raw: string) {
@@ -171,16 +167,10 @@ function splitResourceSuffix(raw: string): [string, string] {
   const queryIndex = raw.indexOf("?");
   const suffixIndexes = [hashIndex, queryIndex].filter((index) => index !== -1);
 
-  if (suffixIndexes.length === 0) {
-    return [raw, ""];
-  }
+  if (suffixIndexes.length === 0) return [raw, ""];
 
   const suffixIndex = Math.min(...suffixIndexes);
   return [raw.slice(0, suffixIndex), raw.slice(suffixIndex)];
-}
-
-function isBundleMediaFile(filePath: string) {
-  return bundleMediaExtensions.has(path.extname(filePath).toLowerCase());
 }
 
 function extractReferences(file: string, text: string): MediaReference[] {
@@ -190,26 +180,15 @@ function extractReferences(file: string, text: string): MediaReference[] {
     const lineNumber = lineIndex + 1;
 
     for (const match of line.matchAll(markdownImagePattern)) {
-      references.push({
-        file,
-        line: lineNumber,
-        raw: match[1].trim(),
-        kind: "markdown",
-      });
+      references.push({ file, line: lineNumber, raw: match[1].trim(), kind: "markdown" });
     }
 
     for (const match of line.matchAll(imagePattern)) {
       for (const argMatch of match[1].matchAll(shortcodeArgPattern)) {
         const key = argMatch[1] ?? argMatch[3];
         const raw = argMatch[2] ?? argMatch[4];
-
         if (["src", "image"].includes(key)) {
-          references.push({
-            file,
-            line: lineNumber,
-            raw: raw.trim(),
-            kind: `image:${key}`,
-          });
+          references.push({ file, line: lineNumber, raw: raw.trim(), kind: `image:${key}` });
         }
       }
     }
@@ -218,14 +197,8 @@ function extractReferences(file: string, text: string): MediaReference[] {
       for (const argMatch of match[1].matchAll(shortcodeArgPattern)) {
         const key = argMatch[1] ?? argMatch[3];
         const raw = argMatch[2] ?? argMatch[4];
-
         if (["light", "dark", "src", "image"].includes(key)) {
-          references.push({
-            file,
-            line: lineNumber,
-            raw: raw.trim(),
-            kind: `theme-image:${key}`,
-          });
+          references.push({ file, line: lineNumber, raw: raw.trim(), kind: `theme-image:${key}` });
         }
       }
     }
@@ -234,14 +207,8 @@ function extractReferences(file: string, text: string): MediaReference[] {
       for (const argMatch of match[1].matchAll(shortcodeArgPattern)) {
         const key = argMatch[1] ?? argMatch[3];
         const raw = argMatch[2] ?? argMatch[4];
-
         if (key === "src") {
-          references.push({
-            file,
-            line: lineNumber,
-            raw: raw.trim(),
-            kind: "video:src",
-          });
+          references.push({ file, line: lineNumber, raw: raw.trim(), kind: "video:src" });
         }
       }
     }
@@ -288,11 +255,7 @@ async function checkPost(indexPath: string, options: Options, report: Report) {
 
     if (resourcePath.startsWith("/images/assets/")) {
       const target = staticAssetTarget(reference, options.staticImagesDir);
-
-      if (!target || !(await exists(target))) {
-        report.missing.push(reference);
-      }
-
+      if (!target || !(await exists(target))) report.missing.push(reference);
       continue;
     }
 
@@ -312,7 +275,6 @@ async function checkPost(indexPath: string, options: Options, report: Report) {
     }
 
     const target = localBundleTarget(reference, bundleDir);
-
     if (!target || !target.startsWith(bundleDir) || !(await exists(target))) {
       report.missing.push(reference);
       continue;
@@ -322,20 +284,27 @@ async function checkPost(indexPath: string, options: Options, report: Report) {
   }
 
   for (const file of await listFiles(bundleDir)) {
-    if (path.basename(file) === "index.md" || !isBundleMediaFile(file)) {
+    if (path.basename(file) === "index.md" || !bundleMediaExtensions.has(path.extname(file).toLowerCase())) {
+      continue;
+    }
+
+    const fileName = path.basename(file);
+    if (isBackupMediaName(fileName) || isOptimizedMediaName(fileName)) {
       continue;
     }
 
     if (!referencedBundleFiles.has(path.resolve(file))) {
       report.unused.push(file);
     }
+
+    if (isMediaSourceFile(file)) {
+      report.unoptimized.push(file);
+    }
   }
 }
 
 function printReferences(title: string, references: MediaReference[]) {
-  if (references.length === 0) {
-    return;
-  }
+  if (references.length === 0) return;
 
   console.log(`[${title}]`);
   for (const reference of references) {
@@ -353,38 +322,42 @@ function printReport(report: Report, strict: boolean) {
 
   if (report.unused.length > 0) {
     console.log("[Unused]");
-    for (const file of report.unused) {
-      console.log(`- ${file}`);
-    }
+    for (const file of report.unused) console.log(`- ${file}`);
+    console.log();
+  }
+
+  if (report.unoptimized.length > 0) {
+    console.log("[Unoptimized]");
+    for (const file of report.unoptimized) console.log(`- ${file}`);
     console.log();
   }
 
   console.log(
     `Summary: ${report.missing.length} missing, ${report.legacy.length} legacy, ` +
       `${report.crossPost.length} cross-post, ${report.unsupportedAbsolute.length} unsupported, ` +
-      `${report.unused.length} unused, ${report.external.length} external`,
+      `${report.unused.length} unused, ${report.unoptimized.length} unoptimized, ${report.external.length} external`,
   );
 
   if (strict && report.unused.length > 0) {
-    console.log("Strict mode: unused images are treated as failures.");
+    console.log("Strict mode: unused media are treated as failures.");
   }
 }
 
 async function main() {
   const options = parseArgs(process.argv.slice(2));
 
-  if (!(await isDirectory(options.postsDir))) {
-    throw new Error(`Posts directory not found: ${options.postsDir}`);
+  if (!(await isDirectory(options.contentDir))) {
+    throw new Error(`Content directory not found: ${options.contentDir}`);
   }
 
   if (!(await isDirectory(options.staticImagesDir))) {
     throw new Error(`Static images directory not found: ${options.staticImagesDir}`);
   }
 
-  const indexes = await collectPostIndexes(options.postsDir, options.post);
+  const indexes = await collectPostIndexes(options.contentDir, options.post);
 
   if (options.post && indexes.length === 0) {
-    throw new Error(`Post bundle not found: ${path.join(options.postsDir, options.post, "index.md")}`);
+    throw new Error(`Post bundle not found: ${options.post}`);
   }
 
   const report: Report = {
@@ -394,6 +367,7 @@ async function main() {
     crossPost: [],
     external: [],
     unsupportedAbsolute: [],
+    unoptimized: [],
   };
 
   for (const indexPath of indexes) {
@@ -407,6 +381,7 @@ async function main() {
     report.legacy.length > 0 ||
     report.crossPost.length > 0 ||
     report.unsupportedAbsolute.length > 0 ||
+    report.unoptimized.length > 0 ||
     (options.strict && report.unused.length > 0);
 
   if (hasFailure) {

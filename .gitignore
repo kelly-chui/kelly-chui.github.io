@@ -19,12 +19,12 @@ Desktop.ini
 # Node
 node_modules/
 
-# Image optimization backups
-/content/posts/**/*-original-image.png
-/content/posts/**/*-original-image.jpg
-/content/posts/**/*-original-image.jpeg
-/content/posts/**/*-original-image.webp
-/content/posts/**/*-original-video.mov
-/content/posts/**/*-original-video.mp4
-/content/posts/**/*-original-video.m4v
-/content/posts/**/*-original-video.webm
+# Media optimization backups
+/content/**/*-original-image.png
+/content/**/*-original-image.jpg
+/content/**/*-original-image.jpeg
+/content/**/*-original-image.webp
+/content/**/*-original-video.mov
+/content/**/*-original-video.mp4
+/content/**/*-original-video.m4v
+/content/**/*-original-video.webm

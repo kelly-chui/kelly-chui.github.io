@@ -5,7 +5,7 @@ import path from "node:path";
 import { spawn } from "node:child_process";
 import ffmpegPath from "ffmpeg-static";
 import { exists, isDirectory, listFiles } from "./lib/fs";
-import { backupPath } from "./lib/media";
+import { backupPath, CONTENT_ROOT, VIDEO_MEDIA_POLICY } from "./lib/media";
 
 type Options = {
   dryRun: boolean;
@@ -22,21 +22,19 @@ type Options = {
 };
 
 const CONFIG = {
-  postsDir: "content/posts",
+  contentDir: CONTENT_ROOT,
   defaultCrf: 23,
   defaultPreset: "medium",
   defaultFps: 30,
   sourceExtension: ".mov",
   outputExtension: ".mp4",
-  backupSuffix: "-original-video",
-  optimizedSuffix: "-optimized-video",
   audioCodec: "aac",
   videoCodec: "libx264",
 } as const;
 
 const sourceExtension = CONFIG.sourceExtension;
-const backupSuffix = CONFIG.backupSuffix;
-const optimizedSuffix = CONFIG.optimizedSuffix;
+const backupSuffix = VIDEO_MEDIA_POLICY.backupSuffix;
+const optimizedSuffix = VIDEO_MEDIA_POLICY.optimizedSuffix;
 
 function formatBytes(bytes: number) {
   if (bytes < 1024) return `${bytes} B`;
@@ -63,7 +61,7 @@ function parseArgs(argv: string[]): Options {
     force: false,
     keepVfr: false,
     recursive: true,
-    input: CONFIG.postsDir,
+    input: CONFIG.contentDir,
     crf: CONFIG.defaultCrf,
     preset: CONFIG.defaultPreset,
     fps: CONFIG.defaultFps,
@@ -99,7 +97,7 @@ function parseArgs(argv: string[]): Options {
         break;
       case "--post":
         options.post = argv[++index];
-        options.input = path.join(CONFIG.postsDir, options.post);
+        options.input = path.join(CONFIG.contentDir, "posts", options.post);
         options.recursive = true;
         break;
       case "--crf":
@@ -229,15 +227,23 @@ async function main() {
   }
 
   const inputIsDirectory = await isDirectory(inputPath);
-  const sourceFiles = inputIsDirectory ? await listFiles(inputPath, options.recursive) : [inputPath];
-  const targets = sourceFiles.filter((file) => {
+  const sourceFiles = inputIsDirectory ? await listFiles(inputPath, { recursive: options.recursive }) : [inputPath];
+  const targets: string[] = [];
+
+  for (const file of sourceFiles) {
     const name = path.basename(file);
-    return (
-      path.extname(file).toLowerCase() === sourceExtension &&
-      !name.includes(backupSuffix) &&
-      !name.includes(optimizedSuffix)
-    );
-  });
+
+    if (path.extname(file).toLowerCase() !== sourceExtension || name.includes(backupSuffix) || name.includes(optimizedSuffix)) {
+      continue;
+    }
+
+    const bundleDir = path.dirname(file);
+    if (!(await exists(path.join(bundleDir, "index.md")))) {
+      continue;
+    }
+
+    targets.push(file);
+  }
 
   if (targets.length === 0) {
     console.log("No MOV files found.");

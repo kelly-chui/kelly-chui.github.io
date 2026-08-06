@@ -48,8 +48,8 @@ for (bool& ai: a) {
 katex 수식의 렌더링 사이즈가 본문 글과 잘 어울리지 않는다고 생각해서 `1.21rem`에서 `1rem`으로 축소했다.
 
 {{< image-row gap="1rem" >}}
-{{< image src="image-002.png" caption="1.21rem" >}}
-{{< image src="image-003.png" caption="1rem" >}}
+{{< image src="image-002-optimized-image.webp" caption="1.21rem" >}}
+{{< image src="image-003-optimized-image.webp" caption="1rem" >}}
 {{< /image-row >}}
 
 코드블록의 폰트를 IBM-Plex-Mono로 바꿨다. 
@@ -60,7 +60,7 @@ Mono가 뭔지 궁금해서 찾아봤는데 MonoSpace, 각 문자들의 간격�
 
 TIL과 PS 관련 글들을 Posts가 아닌 별개로 분류했다. PS 문제만 모아져 있는 메뉴 섹션에서는 상단에 Tag 칩들을 보이게 하고 싶었다.
 
-{{< image src="image-001.png" >}}
+{{< image src="image-001-optimized-image.webp" >}}
 
 문제가 딱 하나 있었는데 저 태그를 누르면 PS 글이 아닌 글들도 보이게 된다. (당연히 선택한 태그는 가져야 하지만) 
 
