@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "hugo server -D --watch --poll 700ms --baseURL http://localhost:1313/",
+    "dev": "hugo server -D --baseURL http://localhost:1313/",
     "check": "npm run check:text",
     "check:text": "npm run check:eof && npm run check:codeblock",
     "check:media": "tsx scripts/check-media.ts",
