@@ -19,8 +19,8 @@ aliases:
 ## 오늘 한 내용
 
 - LeetCode 3558 풀이
-- [DB 모듈에서 capability와 use case 분리]({{< relref "posts/dev-data-server-light-02-db-crud" >}})
-- [File Storage 모듈의 계약과 서비스 설계]({{< relref "posts/dev-data-server-light-04-file-storage" >}})
+- [DB 모듈에서 capability와 use case 분리]({{< relref "posts/devbox-light-server-02-db-crud" >}})
+- [File Storage 모듈의 계약과 서비스 설계]({{< relref "posts/devbox-light-server-04-file-storage" >}})
 
 ## 배운 내용
 

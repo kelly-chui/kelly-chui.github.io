@@ -27,7 +27,7 @@ original: ""
 
 Ollama에서 공식적으로 VSCode 익스텐션을 제공한다. 단순히 설치만 하면된다.
 
-{{< image src="image-001.png" width="480" align="center" >}}
+{{< image src="image-001-optimized-image.webp" width="480" align="center" >}}
 
 로컬 LLM을 VS Code에서 사용하려면, 빌트인 되어있는 Copilot Chat 기능을 이용해야 한다. Copilot Chat의 UI와 코드 컨텍스트 수집 기능을 사용하고, 실제 응답을 생성하는 언어 모델은 Ollama에서 실행 중인 로컬 모델을 사용할 것이다.
 
@@ -37,11 +37,11 @@ Copliot Chat에서 에이전트 코딩을 위한 '기능'만을 지금 로컬에
 
 macOS에서 단축키는 Control + Command + I인데, Copilot 기능이 켜져있지 않으면, Shift + Command + P로 `Chat: `을 검색해서 Copilot 기능을 먼저 활성화한다.
 
-{{< image src="image-002.png" width="360" align="center" >}}
+{{< image src="image-002-optimized-image.webp" width="360" align="center" >}}
 
 사이드바 하단에서 Auto로 선택되어 있는 부분에서 설치되어 있는 로컬 LLM 모델을 선택할 수 있다.
 
-{{< image src="image-003.png" width="360" align="center" >}}
+{{< image src="image-003-optimized-image.webp" width="360" align="center" >}}
 
 세 가지 모드를 선택할 수 있다. 여기서는 Plan으로 테스트하고, 실제 코드 수정은 이후 Xcode와 연동한 뒤 Xcode에서 진행한다.
 
@@ -53,7 +53,7 @@ macOS에서 단축키는 Control + Command + I인데, Copilot 기능이 켜져�
 
 길이 설정은 ollama 데스크톱의 설정에서 쉽게 할 수 있다. 여기선 대략 16k 정도로 잡았다.
 
-{{< image src="image-006.png" align="center" >}}
+{{< image src="Image-006-optimized-image.webp" align="center" >}}
 
 ### qwen2.5-coder:7B/14B, qwen3:9B 사용하기
 
@@ -61,11 +61,11 @@ macOS에서 단축키는 Control + Command + I인데, Copilot 기능이 켜져�
 
 그래서 단순한 타입 불일치 에러를 만들었다. 기존에 `Set`이었던 프로퍼티의 타입을 `Array`로 바꿨다.
 
-{{< image src="image-008.png" width="480" align="center" >}}
+{{< image src="image-008-optimized-image.webp" width="480" align="center" >}}
 
 이런 간단한 에러는 생각보다 잘 찾는다. 수정은 Xcode에서 해보자.
 
-{{< image src="image-009.png" width="360" align="center" >}}
+{{< image src="image-009-optimized-image.webp" width="360" align="center" >}}
 
 ## Xcode에 Ollama 연결하기
 
@@ -73,11 +73,11 @@ Xcode도 내부에 AI Agents 대화 기능이 빌트인 되어 있어서, 단순
 
 우선 settings > Intelligence > Add a Chat Provider > Locally Hosted로 Ollama를 추가한다.
 
-{{< image src="image-011.png" align="center" >}}
+{{< image src="image-011-optimized-image.webp" align="center" >}}
 
 포트를 바꾸지 않았다면, Ollama의 기본 포트 '11434'를 사용하면 된다.
 
-{{< image src="image-012.png" width="360" align="center" >}}
+{{< image src="image-012-optimized-image.webp" width="360" align="center" >}}
 
 추가가 끝나면 'Chat'에서 Ollama를 선택할 수 있다. 이 방식은 Xcode가 현재 코드나 사용자가 선택한 컨텍스트를 로컬 LLM에 전달하고 응답을 받는 일반적인 채팅 방식이다. 하지만 여러 파일을 탐색하고 수정하거나, 프로젝트를 빌드하고 테스트하는 것처럼 실제 개발 작업을 수행하려면 코딩 에이전트가 필요하다.
 
@@ -105,11 +105,11 @@ OpenCode에서 자동으로 Ollama 모델을 잡아주진 않으므로 설정을
 ollama launch opencode
 ```
 
-{{< image src="image-015.png" align="center" >}}
+{{< image src="image-015-optimized-image.webp" align="center" >}}
 
 원하는 모델(여기선 qwen3)을 선택하면, 자동으로 OpenCode에 내 컴퓨터에서 호스팅하는 로컬 LLM이 모델로 잡히게된다.
 
-{{< image src="image-016.png" align="center" >}}
+{{< image src="image-016-optimized-image.webp" align="center" >}}
 
 여기까지 하면 OpenCode에서 설정할 것은 끝났다. 다음은 OpenCode와 Xcode를 연동해야한다. 
 
@@ -117,7 +117,7 @@ ollama launch opencode
 
 우선 OpenCode가 MCP를 사용할 수 있도록, MCP 기능을 켠다.
 
-{{< image src="image-014.png" align="center" >}}
+{{< image src="image-014-optimized-image.webp" align="center" >}}
 
 그리고 Xcode MCP 서버를 연다. MCP 서버가 열려있어야 OpenCode에서 Xcode 파일 탐색, 빌드, 테스트와 같은 개발 기능을 불러와서 쓸 수 있다.
 
@@ -133,17 +133,17 @@ which opencode
 
 OpenCode가 설치된 디렉토리를 확인하고, Xcode의 Settings > Intelligence > Add and Agent...에 확인한 정보를 작성한다.
 
-{{< image src="image-018.png" align="center" >}}
+{{< image src="image-018-optimized-image.webp" align="center" >}}
 
 Arguments에는 `acp`를 추가해야 하는데, OpenCode를 기본 모드가 아닌 ACP 서버 모드로 띄워야 하기 때문이다.
 
-{{< image src="image-019.png" width="240" align="center" >}}
+{{< image src="image-019-optimized-image.webp" width="240" align="center" >}}
 
 다 완료했으면, 대화 모델 목록에 'Chat' 말고 'Agents'에 OpenCode가 나오게 된다. 이러면 모든 연결을 마무리 하게 된거다.
 
 아까 만들었던 타입 불일치 에러를 수정하도록 시켜보자.
 
-{{< image src="image-021.png" width="360" align="center" >}}
+{{< image src="image-021-optimized-image.webp" width="360" align="center" >}}
 
 중간에 한 번 파일 읽기에 실패했지만, 바로 다른 Xcode 툴을 선택해 다시 파일을 읽었다. 이후 에러 발생 부분을 찾아, 프로퍼티를 다시 `Set` 타입으로 수정했다. 
 

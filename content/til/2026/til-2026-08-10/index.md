@@ -7,13 +7,13 @@ categories:
 series:
 tags:
 
-draft: true
+draft: false
 original: ""
 ---
 
 ## 오늘 한 내용
 
-- dev-data-server-light
+- devbox-light-server
   - Docker 이미지 작성 및 컨테이너 실행
   - `.data` 볼륨 연결과 healthcheck 추가
   - GitHub Actions에서 테스트 이후 이미지를 빌드하도록 구성
@@ -60,4 +60,4 @@ PR에서는 테스트와 빌드까지만 확인하고, 실제 publish는 `main` 
 
 Dockerfile과 `.dockerignore`를 추가하고, 컨테이너에서 서버가 살아 있는지 확인할 수 있도록 healthcheck를 연결했다. JSON 영속성에서 사용하던 `.data`는 컨테이너 내부에만 두면 컨테이너 삭제와 함께 사라지므로 호스트 디렉터리를 볼륨으로 연결했다.
 
-마지막으로 테스트가 성공한 뒤에만 이미지를 만들고, `main`에 push된 경우에만 GHCR에 publish하도록 GitHub Actions를 구성했다. 이 작업으로 dev-data-server-light의 MVP를 실제 실행 가능한 이미지 단위로 묶었다.
+마지막으로 테스트가 성공한 뒤에만 이미지를 만들고, `main`에 push된 경우에만 GHCR에 publish하도록 GitHub Actions를 구성했다. 이 작업으로 devbox-light-server의 MVP를 실제 실행 가능한 이미지 단위로 묶었다.

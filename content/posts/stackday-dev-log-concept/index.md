@@ -15,7 +15,7 @@ tags:
 features:
   - mermaid
 
-draft: true
+draft: false
 
 original: ""
 ---
@@ -26,7 +26,7 @@ original: ""
 
 나도 매일 LeetCode Daily를 풀고, Bing 출석체크를 하고, 매일 TIL 을 적으려고 한다.
 
-{{< image src="image-001.png" width="360" align="center" >}}
+{{< image src="image-001-optimized-image.webp" width="360" align="center" >}}
 
 하지만 기본적으로 Reminder, Todo 앱과 습관 형성 앱은 차이가 있다. 
 
@@ -53,7 +53,7 @@ StackDay는 이 두 가지 감정에서 출발한 습관 추적 앱이다. 과�
 
 스트릭은 분명하게 직관적이고 간단한 동기부여지만, 역효과를 만들기도 한다. 예를 들어서 LeetCode Daily 스트릭을 쌓아가고 있는데, 하루 안하면 쌓인 스트릭이 와르르 무너지게 된다.
 
-{{< image src="image-003.png" align="center" caption="초기화된 LeetCode 스트릭" >}}
+{{< image src="image-003-optimized-image.webp" align="center" caption="초기화된 LeetCode 스트릭" >}}
 
 즉 공든 탑이 한순간에 와르르 무너지는 경험을 할 수 있다. 
 
@@ -80,7 +80,7 @@ StackDay는 이 두 가지 감정에서 출발한 습관 추적 앱이다. 과�
 
 구현을 시작한지 2일이 안되어서 싹 버리기로 했다.
 
-{{< image src="image-004.png" >}}
+{{< image src="image-004-optimized-image.webp" >}}
 
 기본적으로 '습관을 반복하는 앱'과 '해야 할 일을 기록하는 앱'은 다른 앱이다. 해결하려는 문제부터 다르고, 결국 데이터 자체도 달라져야 한다.
 

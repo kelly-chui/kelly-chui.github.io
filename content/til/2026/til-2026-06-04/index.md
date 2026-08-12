@@ -18,7 +18,7 @@ aliases:
 
 ## 오늘 한 내용
 
-- [`dev-data-server-light`의 DB 모듈 설계 정리]({{< relref "posts/dev-data-server-light-02-db-crud" >}})
+- [`dev-data-server-light`의 DB 모듈 설계 정리]({{< relref "posts/devbox-light-server-02-db-crud" >}})
 - System 모듈과 DB 인터페이스 구현 방향 검토
 - 저장소와 애플리케이션 로직의 경계 정리
 
@@ -26,7 +26,7 @@ aliases:
 
 ### 이름도 설계의 일부
 
-처음에는 `DocumentStore`, `StoredDocument`, `DocumentBody`라는 이름을 사용했다. 하지만 [DB CRUD 인터페이스를 설계하는 과정]({{< relref "posts/dev-data-server-light-02-db-crud" >}})에서 이 이름들이 프로젝트가 특정 Document Database를 전제로 한다는 인상을 준다는 것을 발견했다.
+처음에는 `DocumentStore`, `StoredDocument`, `DocumentBody`라는 이름을 사용했다. 하지만 [DB CRUD 인터페이스를 설계하는 과정]({{< relref "posts/devbox-light-server-02-db-crud" >}})에서 이 이름들이 프로젝트가 특정 Document Database를 전제로 한다는 인상을 준다는 것을 발견했다.
 
 In-Memory, SQL, JSON File 등 여러 구현을 염두에 둔다면 인터페이스도 구현 방식에서 자유로워야 한다. 그래서 `RecordStore`, `StoredRecord`, `RecordData`처럼 더 중립적인 이름으로 바꿨다.
 

@@ -3,5 +3,6 @@
 set -e
 
 echo "[pre-commit] Running content checks..."
+npm run check:eof
 npm run check:codeblock
 npm run check:media

@@ -23,7 +23,7 @@ Codex는 iOS 개발할 때만 사용하고, 다른 작업은 주로 무료 모�
 
 ## 맥북 에어 사양
 
-![](image-001.png#center)
+![](image-001-optimized-image.webp#center)
 { width="360" }
 
 ## 설치

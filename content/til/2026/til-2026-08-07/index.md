@@ -46,7 +46,7 @@ original: ""
 
 노트북에 블로그를 새로 클론받고 `npm install`을 실행하니 보안 관련 경고가 나왔다.
 
-{{< image src="image-001.png" >}}
+{{< image src="image-001-optimized-image.webp" >}}
 
 어떤 패키지가 문제인지 `npm audit`으로 확인해보니 Mermaid였다. 블로그에서 Mermaid 렌더링이 불안정해서 GitHub 방식을 참고해 새로 설치했는데, 그때 설치한 버전에서 문제가 생긴 것 같다.
 
@@ -58,7 +58,7 @@ changed 1 package, and audited 144 packages in 4s
 
 `npm audit fix`를 사용하면 문제가 없는 버전으로 패키지를 교체해준다.
 
-{{< video src="video-001.mov" >}}
+{{< video src="video-001-optimized-video.mp4" >}}
 
 수정 후에도 여전히 새로고침 연타나 테마를 변경해도 Mermaid가 문제없이 렌더링되는 것을 확인했다.
 

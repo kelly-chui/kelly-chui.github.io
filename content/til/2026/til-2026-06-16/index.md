@@ -19,7 +19,7 @@ aliases:
 ## 오늘 한 내용
 
 - Antigravity IDE의 에이전트, 에디터, 터미널, 브라우저 구조 살펴보기
-- [File Storage 구현 순서와 `StorageService` 설계]({{< relref "posts/dev-data-server-light-04-file-storage" >}})
+- [File Storage 구현 순서와 `StorageService` 설계]({{< relref "posts/devbox-light-server-04-file-storage" >}})
 
 ## 배운 내용
 

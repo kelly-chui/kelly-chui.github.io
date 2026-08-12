@@ -18,7 +18,7 @@ aliases:
 
 ## 오늘 한 내용
 
-- [`dev-data-server-light`의 계층형 구조를 모듈형 구조로 바꾸는 작업 검토]({{< relref "posts/dev-data-server-light-00-concept" >}})
+- [`dev-data-server-light`의 계층형 구조를 모듈형 구조로 바꾸는 작업 검토]({{< relref "posts/devbox-light-server-00-concept" >}})
 - `AGENTS.md`가 새 디렉토리 구조와 충돌하지 않도록 정리
 - Database, Route, Service의 책임 재검토
 
