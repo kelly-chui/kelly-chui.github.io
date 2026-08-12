@@ -1,6 +1,6 @@
 ---
 title: "devbox-light-server (6). Json 영속성"
-date: 2026-08-10T17:14:08+09:00
+date: 2026-08-10T14:14:08+09:00
 
 categories:
   - Project

@@ -1,6 +1,6 @@
 ---
 title: "devbox-light-server (7). Dockerizing, MVP 마무리"
-date: 2026-08-10T14:42:56+09:00
+date: 2026-08-10T17:42:56+09:00
 
 categories:
   - Project
