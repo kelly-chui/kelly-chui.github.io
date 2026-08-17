@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .File.ContentBaseName `-` ` ` | title }}"
+title: "TIL. {{ dateFormat `Jan 2, 2006` .Date }}"
 date: {{ .Date }}
 
 categories:
