@@ -4,6 +4,9 @@
 <script src="{{ "js/vendor/auto-render.min.js" | relURL }}"></script>
 <script src="{{ "js/katex-init.js" | relURL }}"></script>
 {{- end }}
+{{- if .IsPage }}
+<script src="{{ "js/post-toc.js" | relURL }}"></script>
+{{- end }}
 {{- if and .IsPage (in $features "mermaid") (.Store.Get "hasMermaid") }}
 <script src="{{ "js/vendor/mermaid.min.js" | relURL }}"></script>
 <script src="{{ "js/mermaid-github.js" | relURL }}"></script>
