@@ -1,0 +1,16 @@
+.post-content .jsxgraph-figure {
+  margin: 1.5rem auto;
+  max-width: 42rem;
+}
+
+.post-content .jsxgraph-figure .jxgbox {
+  width: 100%;
+  height: 24rem;
+  border: 1px solid var(--border);
+  background: var(--entry);
+}
+
+.post-content .jsxgraph-figure .JXGtext,
+.post-content .jsxgraph-figure .JXGinfobox {
+  color: var(--content) !important;
+}

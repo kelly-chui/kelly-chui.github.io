@@ -9,6 +9,7 @@ tags: []
 features:
   - katex
   - mermaid
+  - jsxgraph
 
 pinned: true
 
@@ -38,6 +39,17 @@ $$
   \left(\int_{-\infty}^{\infty} e^{-x^2/2}\,dx\right)
   e^{-st}\,dt
 $$
+
+## JSXGraph
+
+한 그래프 안에 여러 함수를 그릴 수 있는지 확인한다.
+
+{{< jsxgraph
+  id="test-functions"
+  functions="sin(x)|log(x)|0.2 * x^2 - 2 * x"
+  boundingbox="-10,10,10,-10"
+  label="사인 함수, 로그 함수, 이차 함수 그래프"
+>}}
 
 ### 예외 (코드블록, 인라인)
 

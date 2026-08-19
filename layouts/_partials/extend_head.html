@@ -2,3 +2,6 @@
 {{- if and .IsPage (in $features "katex") }}
 <link rel="stylesheet" href="{{ "css/vendor/katex.min.css" | relURL }}">
 {{- end }}
+{{- if and .IsPage (in $features "jsxgraph") }}
+<link rel="stylesheet" href="{{ "css/vendor/jsxgraph.css" | relURL }}">
+{{- end }}

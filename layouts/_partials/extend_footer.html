@@ -8,3 +8,7 @@
 <script src="{{ "js/vendor/mermaid.min.js" | relURL }}"></script>
 <script src="{{ "js/mermaid-github.js" | relURL }}"></script>
 {{- end }}
+{{- if and .IsPage (in $features "jsxgraph") (.Store.Get "hasJSXGraph") }}
+<script src="{{ "js/vendor/jsxgraphcore.js" | relURL }}"></script>
+<script src="{{ "js/jsxgraph-init.js" | relURL }}"></script>
+{{- end }}

@@ -1,0 +1,13 @@
+{{- .Page.Store.Set "hasJSXGraph" true -}}
+<div class="jsxgraph-figure">
+  <div
+    id="{{ .Get "id" | default (printf "jsxgraph-%d" .Ordinal) }}"
+    class="jxgbox"
+    data-jsxgraph-function="{{ .Get "function" }}"
+    data-jsxgraph-functions="{{ .Get "functions" }}"
+    data-jsxgraph-boundingbox="{{ .Get "boundingbox" | default "-5,5,5,-5" }}"
+    data-jsxgraph-axis="{{ .Get "axis" | default "true" }}"
+    role="img"
+    aria-label="{{ .Get "label" | default "함수 그래프" }}"
+  ></div>
+</div>
