@@ -3,12 +3,10 @@ title: "LeetCode 1260. Shift 2D Grid"
 date: 2026-07-20
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Simulation
 
-algorithmTags:
+psTags:
   - Simulation
 features:
   - katex

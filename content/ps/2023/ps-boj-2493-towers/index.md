@@ -3,12 +3,10 @@ title: "BOJ 2493. 탑"
 date: 2023-07-10
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Stack
 
-algorithmTags:
+psTags:
   - Stack
 
 draft: false

@@ -3,7 +3,6 @@ title: "TIL. Aug 5, 2026"
 date: 2026-08-05T21:30:22+09:00
 
 categories:
-  - TIL
 series:
 tags:
 
@@ -11,13 +10,11 @@ draft: false
 original: ""
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - [LeetCode 3310]({{< relref "ps/2026/ps-leetcode-3310-remove-methods-from-project" >}})
 - [Codeforces 451B]({{< relref "ps/2026/ps-codeforces-451b-sort-the-array" >}})
 - Stack day 코드 뒤엎기
-
-## 배운 내용
 
 ### Swift BFS에서 조금 더 쉽게 큐 사용하기
 
@@ -75,8 +72,6 @@ Xcode가 컴파일 에러를 여러개 내고, 수정하려고 할 때 쯤, 잠�
 
 AGENTS나 SKILL은 잘 작성되어 있어서, 완전히 이상한 코드는 없었다. 너무 과도한 추상화를 요구해서 앱이 말도 안되게 어려워졌을 뿐.
 
-## 해결 내용
-
 ### VSCode 파일 추적 문제, 맥 초기화
 
 그저께 맥 Trash에서 파일 하나가 디스크 유틸리티나 안전 모드에서도 삭제되지 않는 문제가 있어서, 맥을 재설치 했는데 또 뭐가 꼬였는지 VSCode에서 깃이 제대로 파일 변경을 추적하지 못했다. 여러 해결방법을 시도해봤는데 안되어서 결국 맥을 재설치까진 아니더라도, 초기화했다.
@@ -93,7 +88,7 @@ OS 재설치 하면서 Apple git의 문제인가 싶어서, 몇년만에 Homebre
 
 결론적으로 이제 VSCode에서 변경 추적이 매우 잘 된다. 두 번하니까 복구하기도 어렵지 않더라.
 
-## 내일 할 것
+## 다음에 할 것
 
 - Stack day 도메인 규칙을 확실하게 정하자. 코드로 구현하기 전에.
 - 저번에 본 effectful property 라는 주제에 대해서 글 하나 작성하기.

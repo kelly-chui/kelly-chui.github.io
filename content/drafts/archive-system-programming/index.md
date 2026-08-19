@@ -3,7 +3,6 @@ title: "Archive. System Programming 정리 노트"
 date: 2026-06-29T16:38:00+09:00
 
 categories:
-  - Archive
 series:
 tags:
   - I2C
@@ -12,8 +11,10 @@ tags:
   - System Programming
   - UART
 
-draft: false
+draft: true
 original: "notion-export/블로그 이관/ETC/System Programming 38eade8f37658082b273c253f1a7530d.md"
+aliases:
+  - /posts/archive-system-programming/
 ---
 
 학부연구원 시절 FPGA랑 임베디드 살짝 하면서 적어놨던 노트를 최근 클라우드 정리할 때 발견해서, 간단하게 블로그에 포스팅함.

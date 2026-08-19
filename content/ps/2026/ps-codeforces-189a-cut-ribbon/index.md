@@ -3,12 +3,10 @@ title: "Codeforces 189A. Cut Ribbon"
 date: 2026-07-29T10:55:29+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DP
 
-algorithmTags:
+psTags:
   - DP
 features:
   - katex

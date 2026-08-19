@@ -8,8 +8,7 @@ series:
   - JavaScript Basics
 weight: 3
 tags:
-  - Array
-  - Iteration
+  - JavaScript Syntax
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/3 자바스크립트 사용자 정의 자료형 활용 2dcade8f3765824ebcea811c42e91fb6.md"

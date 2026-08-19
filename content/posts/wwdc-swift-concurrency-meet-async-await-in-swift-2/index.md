@@ -3,12 +3,11 @@ title: "Swift Concurrency. Meet async/await in Swift (2) - WWDC21"
 date: 2026-08-03T23:01:47+09:00
 
 categories:
-  - Swift
   - WWDC
 series:
-  - Swift Concurrency
 tags:
-  - Concurrency
+  - Swift Concurrency
+  - async/await
 features:
   - mermaid
 
@@ -353,3 +352,5 @@ async/await를 적용한다고 해서 기존 API를 한 번에 전부 바꿔야 
 - Apple SDK에는 completion handler와 delegate API에 대응하는 async alternative가 많이 있다. 먼저 이 API가 있는지 찾아보는 편이 직접 브리징하는 것보다 간단하고 안전하다.
 - 직접 async alternative를 만들어야 한다면 `withCheckedThrowingContinuation`으로 completion handler의 결과를 `return` 또는 `throw`로 연결할 수 있다.
 - continuation은 모든 실행 경로에서 정확히 한 번 `resume`해야 한다. 하나의 결과를 기다리는 데 적합하며, 여러 이벤트를 계속 전달하는 delegate API에는 `AsyncStream`이 더 잘 맞을 수 있다.
+tags:
+  - Swift Concurrency

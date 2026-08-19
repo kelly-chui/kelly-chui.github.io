@@ -3,12 +3,10 @@ title: "Programmers. 미로 탈출 명령어"
 date: 2025-08-23
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Backtracking
 
-algorithmTags:
+psTags:
   - Backtracking
 
 draft: false

@@ -5,9 +5,8 @@ date: 2024-09-20
 categories:
   - iOS
 series:
-  - UIKit
 tags:
-  - UITableView
+  - UIKit
 
 draft: false
 aliases:
@@ -106,3 +105,5 @@ private func makeCloseAction() -> UIContextualAction  {
     return closeAction
 }
 ```
+tags:
+  - UIKit

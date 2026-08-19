@@ -3,15 +3,16 @@ title: "TIL. Aug 9, 2026"
 date: 2026-08-09T22:16:51+09:00
 
 categories:
-  - TIL
 series:
 tags:
+  - Domain Modeling
+  - Persistence
 
 draft: false
 original: ""
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - dev-data-server-light
   - DB, Auth Token, Storage에 JSON 기반 영속성 추가
@@ -19,8 +20,6 @@ original: ""
   - 실행 환경에 따라 JSON과 in-memory 저장소를 선택하도록 구성
 - Stack Day
   - `Habit`, `Habit Entry`, `Completion`의 역할을 나눠 데이터 모델링
-
-## 배운 내용
 
 ### 저장 방식은 애플리케이션의 관심사가 아니다
 
@@ -46,13 +45,11 @@ Stack Day의 오늘 화면에 보이는 항목을 그대로 저장할지 고민�
 
 완료 취소도 Entry의 상태를 바꾸는 일이 아니라 Completion을 제거하는 일로 설명할 수 있다. 저장해야 하는 원본과 화면에 보여줄 파생 데이터를 나누니, 과거 기록 수정과 통계 정책도 훨씬 자연스럽게 정리됐다.
 
-## 해결한 것
-
 서버를 재시작해도 유저, 토큰, 파일 데이터가 유지되도록 저장소를 구현했다. 저장소 구현체를 의존성 조립부에서 선택하도록 만들어 서비스와 라우터는 JSON인지 메모리인지 알 필요가 없게 했다.
 
 Stack Day는 `Habit`을 저장하고 실제 수행 기록인 `Completion`을 별도로 저장하는 방향으로 모델을 정리했다. 오늘 화면의 Entry는 저장하지 않고 필요한 시점에 계산한다.
 
-## 내일 할 것
+## 다음에 할 것
 
 - dev-data-server-light Docker 이미지 만들기
 - GitHub Actions에서 GHCR 배포 연결하기

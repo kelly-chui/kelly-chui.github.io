@@ -5,11 +5,8 @@ date: 2024-08-27
 categories:
   - iOS
 series:
-  - UIKit
 tags:
-  - Auto Layout
-  - Intrinsic Content Size
-  - UIStackView
+  - UIKit
 
 draft: false
 original: "https://junmusu.tistory.com/165"
@@ -317,3 +314,5 @@ stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
 - 스택 뷰의 크기를 제한하지 않으면 내부 arranged subview들의 크기와 간격을 기준으로 스택 뷰의 크기가 계산된다.
 
 스택 뷰를 사용할 때는 먼저 축 방향 크기가 제한되어 있는지 확인하는 것이 좋다. 같은 `distribution` 설정이라도 스택 뷰의 크기가 고정되어 있는지, 내부 컨텐츠로 결정되는지에 따라 결과가 달라질 수 있기 때문이다.
+tags:
+  - UIKit

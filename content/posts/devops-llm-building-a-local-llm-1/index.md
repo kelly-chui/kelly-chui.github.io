@@ -5,10 +5,9 @@ date: 2026-07-21T10:34:39+09:00
 categories:
   - DevOps
 series:
-  - Local LLM
 tags:
   - LLM
-  - Local AI
+  - Local LLM
   - Ollama
 
 draft: false
@@ -137,3 +136,5 @@ docker run -d -p 1234:8080 \
 Ollama 자체를 Docker로 띄우는 방법도 있지만, Metal 가속을 쓰기 어려워진다. 따라서 Ollama Desktop을 기본으로 사용하고 Open WebUI를 사용할지는 나중에 결정하는 것이 더 편하다.
 
 다음에는 이렇게 띄운 로컬 LLM을 Xcode나 VS Code 같은 개발 도구에 연결해서 사용하는 방법을 정리해볼 생각이다.
+tags:
+  - Local LLM

@@ -3,11 +3,9 @@ title: "LeetCode 1510. Stone Game IV"
 date: 2026-08-10T20:32:58+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DP
-algorithmTags:
+psTags:
   - DP
 features:
   - katex

@@ -3,11 +3,9 @@ title: "Codeforces 459B. Pashmak and Flowers"
 date: 2026-08-07T20:55:17+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Math
-algorithmTags:
+psTags:
   - Math
 features:
   - katex

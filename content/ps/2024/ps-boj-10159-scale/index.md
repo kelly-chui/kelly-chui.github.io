@@ -3,12 +3,10 @@ title: "BOJ 10159. 저울"
 date: 2024-04-07
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Floyd-Warshall
 
-algorithmTags:
+psTags:
   - Floyd-Warshall
 
 draft: false

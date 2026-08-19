@@ -3,13 +3,10 @@ title: "Combine. Introducing Combine - WWDC19"
 date: 2024-03-17
 
 categories:
-  - Swift
   - WWDC
 series:
-  - Legacy
 tags:
   - Combine
-  - Observer Pattern
 
 draft: false
 original: "notion-export/블로그 이관/Swift/Combine d84ade8f376583aa8e6a81dc3736c877.md"

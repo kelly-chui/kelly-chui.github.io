@@ -3,12 +3,10 @@ title: "LeetCode 3754. Concatenate Non-Zero Digits and Multiply by Sum I"
 date: 2026-07-07T14:30:01+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Simulation
 
-algorithmTags:
+psTags:
   - Simulation
 
 draft: false

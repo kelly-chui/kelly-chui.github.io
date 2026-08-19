@@ -3,15 +3,16 @@ title: "TIL. Aug 10, 2026"
 date: 2026-08-10T23:42:07+09:00
 
 categories:
-  - TIL
 series:
 tags:
+  - GitHub Actions
+  - Dockerizing
 
 draft: false
 original: ""
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - devbox-light-server
   - Docker 이미지 작성 및 컨테이너 실행
@@ -21,8 +22,6 @@ original: ""
 - PS
   - [LeetCode 1510]({{< relref "ps/2026/ps-leetcode-1510-stone-game-iv" >}})
   - [LeetCode 1140]({{< relref "ps/2026/ps-leetcode-1140-stone-game-ii" >}})
-
-## 배운 내용
 
 ### Stone Game의 승패 DP
 
@@ -55,8 +54,6 @@ permissions:
 ```
 
 PR에서는 테스트와 빌드까지만 확인하고, 실제 publish는 `main` 브랜치에 push됐을 때만 실행하도록 했다. 이미지 태그는 `main`과 짧은 커밋 SHA를 함께 사용했다. `main`은 최신 이미지를 실행하기 편하고, 커밋 SHA는 특정 시점의 이미지를 다시 실행하거나 문제를 추적할 때 유용하다.
-
-## 해결한 것
 
 Dockerfile과 `.dockerignore`를 추가하고, 컨테이너에서 서버가 살아 있는지 확인할 수 있도록 healthcheck를 연결했다. JSON 영속성에서 사용하던 `.data`는 컨테이너 내부에만 두면 컨테이너 삭제와 함께 사라지므로 호스트 디렉터리를 볼륨으로 연결했다.
 

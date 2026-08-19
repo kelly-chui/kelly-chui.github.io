@@ -3,12 +3,11 @@ title: "Codeforces 550A. Two Substrings"
 date: 2026-08-14T12:17:14+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-algorithmTags:
+psTags:
   - String
-  - Implementation
+  - Simulation
 features:
 
 draft: false

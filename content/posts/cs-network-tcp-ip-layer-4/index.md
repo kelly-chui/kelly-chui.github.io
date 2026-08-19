@@ -5,7 +5,6 @@ date: 2024-03-13
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - OSI Model
   - TCP/IP
@@ -81,3 +80,5 @@ PDU는 헤더와 페이로드로 구성됨
 - 전송 계층: 세그먼트(TCP), 데이터그램(UDP)
 - 인터넷 계층: 패킷
 - 링크 계층: 프레임(데이터 링크 계층), 비트(물리 계층)
+tags:
+  - Network

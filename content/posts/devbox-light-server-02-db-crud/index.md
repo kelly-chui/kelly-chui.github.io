@@ -1,17 +1,16 @@
 ---
-title: "dev-data-server-light. 2. Database CRUD"
+title: "devbox-light-server. 2. Database CRUD"
 date: 2026-06-30
 
 categories:
   - Project
 series:
-  - dev-data-server-light
+  - devbox-light-server
 weight: 3
 tags:
   - Database
   - DIP
   - Express
-  - TypeScript
 
 draft: false
 aliases:

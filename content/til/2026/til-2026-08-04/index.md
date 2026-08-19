@@ -3,7 +3,6 @@ title: "TIL. Aug 4, 2026"
 date: 2026-08-04T23:50:02+09:00
 
 categories:
-  - TIL
 series:
 tags:
 
@@ -11,13 +10,13 @@ draft: false
 original: ""
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - [LeetCode 3731]({{< relref "ps/2026/ps-leetcode-3731-find-missing-elements" >}})
 - [Codeforces 580c]({{< relref "ps/2026/ps-codeforces-580c-kefa-and-park" >}})
 - 블로그 레이아웃, 숏코드, 콘텐츠, 스크립트, 기능 정리
 
-## ps
+### ps
 
 Codeforces 580c가 그래프(트리)를 순회하는 문제였는데, 각 노드의 값이 0 혹은 1이라서 `bool` 타입 벡터를 사용하고 입력을 받으려 했다.
 
@@ -39,7 +38,7 @@ for (bool& ai: a) {
 
 위와 같은 경우가 아니더라도, 굳이 `bool` 타입 벡터를 쓸 필요도 없는게, 프록시 객체가 원소를 뽑아오는 것도 다른 벡터보다 더 많은 계산 시간이 필요하다. 그래서 그냥 `int` 벡터로 문제를 풀었다.
 
-## 블로그
+### 블로그
 
 일단 글들의 태그도 정리했고, WWDC관련 글들을 같은 카테고리로 묶었다. 아마 블로그를 처음 만든 날 다음으로 큰 변화가 있었다.
 

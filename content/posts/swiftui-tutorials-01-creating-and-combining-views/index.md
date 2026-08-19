@@ -5,11 +5,8 @@ date: 2024-06-25
 categories:
   - iOS
 series:
-  - SwiftUI
 tags:
-  - Layout
-  - Preview
-  - View
+  - SwiftUI
 
 draft: false
 original: "https://junmusu.tistory.com/187"
@@ -649,3 +646,5 @@ struct MapView: View {
 * * *
  
 > 출처: [SwiftUI Tutorials](<https://developer.apple.com/tutorials/swiftui>)
+tags:
+  - SwiftUI

@@ -5,11 +5,8 @@ date: 2024-06-25
 categories:
   - iOS
 series:
-  - SwiftUI
 tags:
-  - Binding
-  - ObservableObject
-  - State
+  - SwiftUI
 
 draft: false
 original: "https://junmusu.tistory.com/189"
@@ -549,3 +546,5 @@ struct LandmarkDetail: View {
 * * *
 
 > 출처: [SwiftUI Tutorials](<https://developer.apple.com/tutorials/swiftui>)
+tags:
+  - SwiftUI

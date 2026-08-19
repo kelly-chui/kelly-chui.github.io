@@ -3,12 +3,10 @@ title: "BOJ 14719. 빗물"
 date: 2024-05-28
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Stack
 
-algorithmTags:
+psTags:
   - Stack
 
 draft: false

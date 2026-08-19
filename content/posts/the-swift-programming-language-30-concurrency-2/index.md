@@ -7,7 +7,7 @@ categories:
 series:
   - The Swift Programming Language
 tags:
-  - Concurrency
+  - Swift Concurrency
 
 weight: 30
 

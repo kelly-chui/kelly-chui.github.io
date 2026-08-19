@@ -5,11 +5,8 @@ date: 2024-09-04
 categories:
   - iOS
 series:
-  - UIKit
 tags:
-  - Responder Chain
-  - UIEvent
-  - UIResponder
+  - UIKit
 
 draft: false
 original: "https://junmusu.tistory.com/168"
@@ -69,3 +66,5 @@ First responder가 이벤트를 처리하지 못하는 경우, 이벤트는 다�
 - `UIResponder`는 이벤트를 처리하거나 다음 리스폰더로 전달한다.
 - 이벤트는 먼저 First responder에게 전달된다.
 - 처리되지 않은 이벤트는 Responder chain을 따라 전달된다.
+tags:
+  - UIKit

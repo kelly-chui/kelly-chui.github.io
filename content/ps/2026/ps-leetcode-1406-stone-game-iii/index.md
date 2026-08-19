@@ -3,12 +3,10 @@ title: "Leetcode 1406. Stone Game III"
 date: 2026-08-03T12:31:05+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DP
 
-algorithmTags:
+psTags:
   - DP
 features:
   - katex

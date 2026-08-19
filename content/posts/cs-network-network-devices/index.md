@@ -5,11 +5,8 @@ date: 2024-03-14
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Network Device
-  - Router
-  - Switch
 
 draft: false
 aliases:
@@ -93,3 +90,5 @@ IP 주소 기반 라우팅이 아니라 프레임의 목적지 MAC 주소를 보
 ## 리피터
 
 들어오는 신호를 증폭하여 다른 쪽으로 전달
+tags:
+  - Network

@@ -3,12 +3,10 @@ title: "Codeforces 279B. Books"
 date: 2026-07-30T23:08:53+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Two Pointers
 
-algorithmTags:
+psTags:
   - Two Pointers
 features:
   - katex

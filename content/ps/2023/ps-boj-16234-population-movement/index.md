@@ -3,12 +3,10 @@ title: "BOJ 16234. 인구 이동"
 date: 2023-07-06
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
 
-algorithmTags:
+psTags:
   - BFS
 
 draft: false

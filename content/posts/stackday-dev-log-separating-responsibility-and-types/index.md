@@ -7,8 +7,6 @@ categories:
 series:
   - StackDay
 tags:
-  - iOS
-  - Swift
   - Domain Modeling
 features:
   - mermaid

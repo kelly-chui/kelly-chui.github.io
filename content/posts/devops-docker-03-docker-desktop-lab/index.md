@@ -8,7 +8,6 @@ series:
   - Docker
 tags:
   - Container
-  - Docker Desktop
 
 draft: false
 aliases:

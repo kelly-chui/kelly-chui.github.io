@@ -5,9 +5,8 @@ date: 2025-01-30
 categories:
   - Computer Science
 series:
-  - Algorithm
 tags:
-  - CCW
+  - Counter-Clockwise
   - Computational Geometry
 
 features:
@@ -75,3 +74,5 @@ CCW 계산과 바운딩 박스 검사는 입력 크기와 관계없이 일정한
 
 - Time Complexity: O(1)
 - Space Complexity: O(1)
+tags:
+  - Algorithm

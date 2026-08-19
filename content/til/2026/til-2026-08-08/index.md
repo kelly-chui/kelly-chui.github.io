@@ -3,7 +3,6 @@ title: "TIL. Aug 8, 2026"
 date: 2026-08-08T21:38:24+09:00
 
 categories:
-  - TIL
 series:
 tags:
 
@@ -11,15 +10,13 @@ draft: false
 original: ""
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - PS
   - [LeetCode 3302]({{< relref "ps/2026/ps-leetcode-3302-find-the-lexicographically-smallest-valid-sequence" >}})
   - [Codeforces 1294C]({{< relref "ps/2026/ps-codeforces-1294c-product-of-three-numbers" >}})
 - Stack Day의 컨셉과 MVP 범위 다시 정리
 - 기존에 작성하던 Stack Day 코드를 정리하고, 다음 구현을 위한 기준 작성
-
-## 배운 내용
 
 ### LeetCode 3302와 CPU 스케줄링
 
@@ -43,13 +40,11 @@ Stack Day를 처음에는 매일 해야 할 일을 관리하는 앱처럼 만들
 
 처음 MVP에서는 매일 수행 여부를 기록하는 습관만 지원하기로 했다. 로그인, 서버 동기화, 알림 같은 기능은 일단 제외하고, 습관 생성부터 완료 기록과 과거 기록 확인까지의 핵심 흐름을 먼저 검증한다.
 
-## 해결한 것
-
 초반에 작성한 Stack Day 코드를 그대로 끌고 가지 않고, 앱의 컨셉과 MVP 범위를 다시 정리했다. 구현 중간에 방향을 바꾸는 비용이 아깝기는 하지만, 기준이 없는 상태에서 코드를 계속 추가하는 것보다는 지금 멈추는 편이 낫다고 판단했다.
 
 내일부터는 이 컨셉과 정책을 기준으로 실제 도메인 용어와 데이터 구조를 정리할 예정이다.
 
-## 내일 할 것
+## 다음에 할 것
 
 - dev-data-server-light 영속성 구현
 - Stack Day 도메인과 데이터 모델링

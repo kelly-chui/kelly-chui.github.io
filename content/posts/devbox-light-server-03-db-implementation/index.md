@@ -1,17 +1,15 @@
 ---
-title: "dev-data-server-light. 3. Database Implementation"
+title: "devbox-light-server. 3. Database Implementation"
 date: 2026-07-02
 
 categories:
   - Project
 series:
-  - dev-data-server-light
+  - devbox-light-server
 weight: 4
 tags:
   - Database
   - DIP
-  - Testing
-  - TypeScript
 
 draft: false
 aliases:

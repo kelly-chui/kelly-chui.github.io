@@ -3,16 +3,15 @@ title: "TIL. Aug 7, 2026"
 date: 2026-08-07T22:07:31+09:00
 
 categories:
-  - TIL
 series:
 tags:
-  - AI Agent
+  - AI Agents
 
 draft: false
 original: ""
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - PS
   - [Codeforces 459B]({{< relref "ps/2026/ps-codeforces-459b-pashmak-and-flowers" >}})
@@ -20,8 +19,6 @@ original: ""
   - Auth 기능 추가
   - 에이전트 설정 정리
 - 블로그 클론 이후 Mermaid 재설치와 `npm audit` 확인
-
-## 배운 내용
 
 ### AI 에이전트 설정 문서의 역할
 
@@ -37,8 +34,6 @@ original: ""
 ### 개발용 서버의 Auth
 
 실제 서비스 수준의 인증을 구현하기보다, 클라이언트에서 로그인과 인증 상태를 테스트할 수 있는 최소한의 구조를 만들었다. `AuthService`가 인증 규칙을 담당하고, 유저 조회는 `DatabaseService`, 토큰 저장은 `TokenStore`가 맡도록 역할을 나눴다.
-
-## 해결 내용
 
 개발용 서버에 로그인, 토큰 검증, 로그아웃 흐름을 추가했다. 블로그를 새로 클론한 뒤 발생한 Mermaid 관련 보안 경고는 `npm audit`으로 원인을 확인하고 패키지를 갱신했다.
 
@@ -62,6 +57,6 @@ changed 1 package, and audited 144 packages in 4s
 
 수정 후에도 여전히 새로고침 연타나 테마를 변경해도 Mermaid가 문제없이 렌더링되는 것을 확인했다.
 
-## 내일 할 것
+## 다음에 할 것
 
 - Stack Day 컨셉과 MVP 범위 다시 정리하기

@@ -3,13 +3,10 @@ title: "BOJ 1260. dfs와 bfs"
 date: 2022-11-06
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
-  - DFS
 
-algorithmTags:
+psTags:
   - BFS
   - DFS
 

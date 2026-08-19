@@ -5,7 +5,6 @@ date: 2024-04-30
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Data Link Layer
   - Ethernet
@@ -77,3 +76,5 @@ original: "notion-export/블로그 이관/ComputerScience/Network/Physical & Dat
 > 반이중화(Half Duplex): 송신과 수신을 번갈아 수행한다.
 > 
 > 전이중화(Full Duplex): 송신과 수신을 동시에 수행할 수 있다.
+tags:
+  - Network

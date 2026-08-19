@@ -3,12 +3,10 @@ title: "BOJ 1726. 로봇"
 date: 2022-11-18
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
 
-algorithmTags:
+psTags:
   - BFS
 
 draft: false

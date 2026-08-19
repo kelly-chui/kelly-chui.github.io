@@ -8,10 +8,9 @@ series:
   - StackDay
 weight: 2
 tags:
-  - iOS
   - Domain Modeling
   - Data Modeling
-  - MVP
+  - Persistence
 features:
   - mermaid
 

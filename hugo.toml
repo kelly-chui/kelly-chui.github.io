@@ -10,7 +10,7 @@ pagerSize = 10
 [taxonomies]
 category = "categories"
 tag = "tags"
-algorithmTag = "algorithmTags"
+psTag = "psTags"
 series = "series"
 
 [params]

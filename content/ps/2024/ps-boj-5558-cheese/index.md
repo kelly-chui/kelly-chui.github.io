@@ -3,12 +3,10 @@ title: "BOJ 5558. チ ズ cheese"
 date: 2024-04-12
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
 
-algorithmTags:
+psTags:
   - BFS
 
 draft: false
@@ -84,4 +82,3 @@ for cheese in range(1, n + 1):
 
 print(answer)
 ```
-

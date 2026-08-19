@@ -7,9 +7,7 @@ categories:
 series:
   - SniffMEET
 tags:
-  - ISP
-  - Networking
-  - Request Builder
+  - Software Architecture
   - Supabase
 
 draft: false

@@ -3,12 +3,10 @@ title: "BOJ 1753. 최단경로"
 date: 2023-03-05
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Dijkstra
 
-algorithmTags:
+psTags:
   - Dijkstra
 
 draft: false

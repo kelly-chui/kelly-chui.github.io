@@ -5,10 +5,9 @@ date: 2025-02-02
 categories:
   - Computer Science
 series:
-  - Operating System
 tags:
-  - Heap
-  - Stack
+  - Heap Memory
+  - Stack Memory
   - Virtual Memory
 
 draft: false
@@ -90,3 +89,5 @@ LIFO 구조로, 함수 호출 시 생성되는 스택 프레임(로컬 변수, �
 ## 레퍼런스
 
 [About the Virtual Memory System](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/ManagingMemory/Articles/AboutMemory.html)
+tags:
+  - Operating System

@@ -3,12 +3,10 @@ title: "Leetcode 3532. Path Existence Queries in a Graph I"
 date: 2026-07-09T09:21:23+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Union Find
 
-algorithmTags:
+psTags:
   - Union Find
 
 draft: false

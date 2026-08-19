@@ -5,7 +5,6 @@ date: 2025-03-04
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Tunneling
   - VPN
@@ -52,3 +51,5 @@ VPN 서버를 통해 인터넷에 접속하면 목적지 서버에는 사용자�
 ## 레퍼런스
 
 - [What is a VPN | Cloudflare](https://www.cloudflare.com/ko-kr/learning/access-management/what-is-a-vpn/)
+tags:
+  - Network

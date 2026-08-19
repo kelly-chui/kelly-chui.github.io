@@ -8,9 +8,6 @@ series:
   - SniffMEET
 tags:
   - Instruments
-  - iOS
-  - OSLog
-  - OSSignposter
   - Performance
 
 draft: false

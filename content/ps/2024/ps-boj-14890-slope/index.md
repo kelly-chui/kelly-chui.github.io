@@ -3,14 +3,10 @@ title: "BOJ 14890. 경사로"
 date: 2024-04-19
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Implementation
-  - Simulation
 
-algorithmTags:
-  - Implementation
+psTags:
   - Simulation
 
 draft: false

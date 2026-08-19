@@ -7,9 +7,6 @@ categories:
 series:
   - SniffMEET
 tags:
-  - iOS
-  - UIKit
-  - UITabBarController
   - VIPER
 
 draft: false

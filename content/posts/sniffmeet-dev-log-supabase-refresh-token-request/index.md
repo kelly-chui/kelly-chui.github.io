@@ -9,7 +9,6 @@ series:
 tags:
   - Authentication
   - HTTP
-  - Refresh Token
   - Supabase
 
 draft: false

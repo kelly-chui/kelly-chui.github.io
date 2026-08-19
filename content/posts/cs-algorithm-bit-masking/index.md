@@ -5,7 +5,6 @@ date: 2025-06-12
 categories:
   - Computer Science
 series:
-  - Algorithm
 tags:
   - Bit Masking
   - Bitwise Operation
@@ -154,3 +153,5 @@ let difference = set1 & (~B)
 ## 기타 의문점
 
 비트마스킹으로 상태를 표현한건 자료구조일까? `set`은 자료구조인데.
+tags:
+  - Algorithm

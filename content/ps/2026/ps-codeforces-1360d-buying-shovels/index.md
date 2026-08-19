@@ -3,10 +3,9 @@ title: "Codeforces 1360D. Buying Shovels"
 date: 2026-08-16T10:53:55+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-algorithmTags:
+psTags:
 features:
   - katex
 

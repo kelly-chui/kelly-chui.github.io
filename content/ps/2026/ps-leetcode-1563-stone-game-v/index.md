@@ -3,10 +3,9 @@ title: "LeetCode 1563. Stone Game V"
 date: 2026-08-17T11:30:13+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-algorithmTags:
+psTags:
   - DP
 features:
   - katex

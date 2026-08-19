@@ -3,12 +3,10 @@ title: "TIL. Jul 13, 2026"
 date: 2026-07-13
 
 categories:
-  - TIL
 series:
 tags:
   - Hugo
   - Mermaid
-  - Python
 
 draft: false
 original: "https://junmusu.tistory.com/200"
@@ -16,14 +14,12 @@ aliases:
   - /posts/til-2026-07-13/
 ---
 
-## 키워드
+## 오늘의 기록
 
 - Python 로컬 변수 스코프.
 - Python에서 람다식 정리, Swift 인라인 클로저와 다른점.
 - 블로그 마이그레이션 하면서 이전에 썼던 iOS 관련 글 복습
 - 블로그에서 카테고리를 몇개를 해야하는가?
-
-## 내용
 
 ### Python 로컬 변수 스코프 문제
 
@@ -95,11 +91,11 @@ Python에서는 map보다 리스트 컴프리헨션을 더 많이 쓴다.
 [x * 2 for x in arr]
 ```
 
-## Mermaid 다크모드 대응시키기.
+### Mermaid 다크모드 대응시키기.
 
 Mermaid가 처음 블로그의 테마로 SVG가 그려지고, 이후에 테마가 변해도 그대로 유지되어서 가시성이 나빠지는 문제가 있었는데, 수정했다. 따로 포스팅 할 예정이다.
 
-## 블로그 카테고리 수는 몇 개가 좋을까.
+### 블로그 카테고리 수는 몇 개가 좋을까.
 
 CS, PS, TIL, iOS, Express, Swift, TS, JS, DevOps 등등 다 카테고리로 쪼개려니 고민이 많았다. 특히 Call by Reference, Call by Pointer 비교와 같은 글은 어느 카테고리로 분리해야하는지도 감이 안잡혔다.
 
@@ -107,7 +103,7 @@ CS, PS, TIL, iOS, Express, Swift, TS, JS, DevOps 등등 다 카테고리로 쪼�
 
 일단 CS 카테고리 내부로 넣어놓고. 나중에 글이 좀 차면 분리하자.
 
-## 다음에 해볼 것
+## 다음에 할 것
 
 - Diffable DataSource, Swift Macro 등등.. 다시 보니까 설명을 못할 것 같은 개념들 WWDC 영상 다시 시청하고 정리하기
 - SniffMeet 개발문서 정리하기

@@ -3,13 +3,10 @@ title: "Codeforces 230B. T-Primes"
 date: 2026-07-28T10:39:27+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Math
-  - Sieve of Eratosthenes
 
-algorithmTags:
+psTags:
   - Math
   - Sieve of Eratosthenes
 features:

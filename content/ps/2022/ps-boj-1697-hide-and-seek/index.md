@@ -3,12 +3,10 @@ title: "BOJ 1697. 숨바꼭질"
 date: 2022-11-07
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
 
-algorithmTags:
+psTags:
   - BFS
 
 draft: false

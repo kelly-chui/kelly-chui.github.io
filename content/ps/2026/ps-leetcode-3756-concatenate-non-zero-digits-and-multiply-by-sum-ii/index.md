@@ -3,13 +3,11 @@ title: "LeetCode 3756. Concatenate Non-Zero Digits and Multiply by Sum II"
 date: 2026-07-08T14:30:01+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Prefix Sum
 
-algorithmTags:
-  - Prefix Sum
+psTags:
+  - Prefix Technique
 
 draft: false
 original: ""

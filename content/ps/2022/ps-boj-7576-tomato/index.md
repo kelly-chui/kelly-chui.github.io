@@ -3,13 +3,10 @@ title: "BOJ 7576. 토마토"
 date: 2022-11-10
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
-  - Multi-source BFS
 
-algorithmTags:
+psTags:
   - BFS
   - Multi-source BFS
 

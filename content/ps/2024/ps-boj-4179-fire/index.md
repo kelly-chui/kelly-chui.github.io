@@ -3,12 +3,10 @@ title: "BOJ 4179. 불"
 date: 2024-06-10
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
 
-algorithmTags:
+psTags:
   - BFS
 
 draft: false

@@ -3,12 +3,10 @@ title: "SwiftUI. Essentials - WWDC24"
 date: 2026-07-27T22:18:58+09:00
 
 categories:
-  - iOS
   - WWDC
 series:
-  - SwiftUI
 tags:
-  - WWDC
+  - SwiftUI
 
 features:
   - mermaid
@@ -606,3 +604,5 @@ SwiftUI는 선언형, 조합형, 상태 기반 View라는 기반 위에 만들�
 - 어느 단계에서든 점진적으로 SwiftUI를 도입할 수 있다
 
 기존 앱에 SwiftUI를 조금씩 도입해 보고, 다른 SwiftUI 세션도 함께 시청해 보자. 새 앱은 SwiftUI로 만들고!
+tags:
+  - SwiftUI

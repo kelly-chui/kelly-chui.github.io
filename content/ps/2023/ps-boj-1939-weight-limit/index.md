@@ -3,12 +3,10 @@ title: "BOJ 1939. 중량 제한"
 date: 2023-07-07
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Binary Search
 
-algorithmTags:
+psTags:
   - Binary Search
 
 draft: false

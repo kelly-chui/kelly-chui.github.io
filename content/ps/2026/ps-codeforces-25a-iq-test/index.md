@@ -3,13 +3,11 @@ title: "Codeforces 25A. IQ Test"
 date: 2026-07-27T16:26:14+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Implementation
 
-algorithmTags:
-  - Implementation
+psTags:
+  - Simulation
 
 draft: false
 original: ""

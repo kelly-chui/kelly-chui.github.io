@@ -3,7 +3,6 @@ title: "Archive. NVIDIA Physical AI 생태계 정리 노트"
 date: 2026-02-06T01:39:00+09:00
 
 categories:
-  - Archive
 series:
 tags:
   - NVIDIA
@@ -12,8 +11,10 @@ tags:
   - ROS 2
   - Simulation
 
-draft: false
+draft: true
 original: "notion-export/블로그 이관/ETC/Physical AI 2feade8f3765800ebb51d8975ed6a8e9.md"
+aliases:
+  - /posts/archive-physical-ai/
 ---
 
 최근 NVIDIA의 피지컬 AI 생태계를 접할 기회가 있었는데, Omniverse, Isaac Sim, Cosmos, GR00T처럼 처음 보는 용어가 한꺼번에 등장해서 각각이 어떤 역할을 하는지 궁금해졌다.

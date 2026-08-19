@@ -5,7 +5,6 @@ date: 2025-02-01
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Load Balancing
   - Reverse Proxy
@@ -109,3 +108,5 @@ DNS 서버에서 여러 서버의 IP 주소를 순차적으로 반환하는 방�
 ## 레퍼런스
 
 - [로드 밸런싱이란 무엇인가요? - 로드 밸런싱 알고리즘 설명 - AWS](https://aws.amazon.com/ko/what-is/load-balancing/)
+tags:
+  - Network

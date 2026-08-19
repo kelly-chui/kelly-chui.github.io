@@ -5,7 +5,6 @@ date: 2025-05-03
 categories:
   - Computer Science
 series:
-  - Database
 tags:
   - Relational Database
   - SQL
@@ -63,3 +62,5 @@ original: "notion-export/블로그 이관/ComputerScience/DB/Database basic 1e8a
 - DML(Data Manipulation Language): 데이터 조작 언어 (SELECT, INSERT, UPDATE, DELETE 등)
 - DCL(Data Control Language): 권한 제어 언어 (GRANT, REVOKE 등)
 - TCL(Transaction Control Language): 트랜잭션 제어 언어 (COMMIT, ROLLBACK, SAVEPOINT 등)
+tags:
+  - Database

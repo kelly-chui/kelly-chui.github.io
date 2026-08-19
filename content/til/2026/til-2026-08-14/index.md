@@ -3,15 +3,15 @@ title: "TIL. Aug 14, 2026"
 date: 2026-08-14T23:30:00+09:00
 
 categories:
-  - TIL
 series:
 tags:
+  - Domain Modeling
 
 draft: false
 original: ""
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - PS
   - [Codeforces 550A. Two Substrings]({{< relref "ps/2026/ps-codeforces-550a-two-substrings" >}})
@@ -21,8 +21,6 @@ original: ""
   - `CreateHabitUseCase`와 `RecordCompletionUseCase` 구현
   - [StackDay. UseCase와 Entity는 각각 어디까지 책임져야 할까]({{< relref "posts/stackday-dev-log-usecase-entity-responsibilities" >}})
   - [StackDay. Repository의 save를 insert와 update로 나눈 이유]({{< relref "posts/stackday-dev-log-repository-contracts" >}})
-
-## 배운 내용
 
 ### UseCase와 Entity의 책임
 

@@ -3,12 +3,10 @@ title: "Programmers. 디스크 컨트롤러"
 date: 2025-08-02
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Priority Queue
 
-algorithmTags:
+psTags:
   - Priority Queue
 
 draft: false

@@ -3,13 +3,11 @@ title: "Programmers. 풍선 터트리기"
 date: 2025-08-05
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Implementation
 
-algorithmTags:
-  - Implementation
+psTags:
+  - Simulation
 
 draft: false
 aliases:

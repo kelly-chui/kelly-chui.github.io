@@ -3,11 +3,9 @@ title: "Codeforces 1294C. Product of Three Numbers"
 date: 2026-08-08T22:41:23+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Math
-algorithmTags:
+psTags:
   - Math
 features:
   - katex

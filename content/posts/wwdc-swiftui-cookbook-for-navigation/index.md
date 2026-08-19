@@ -3,13 +3,11 @@ title: "SwiftUI. The Swiftui Cookbook for Navigation - WWDC22"
 date: 2026-07-23T22:36:54+09:00
 
 categories:
-  - iOS
   - WWDC
 series:
-  - SwiftUI
 tags:
+  - SwiftUI
   - Navigation
-  - WWDC
 
 draft: false
 original: ""
@@ -470,3 +468,5 @@ var body: some View {
 - `NavigationStack`을 사용할 때 `navigationDestination`은 Stack 안이나 그 하위 View에 둘 수 있다. 하위 View에서 선언된 destination도 해당 Stack의 destination 매핑에 포함된다.
 - `NavigationLink` 근처에 destination을 두면 흐름을 읽기 쉽지만, Lazy Container 안에 destination을 두면 destination 등록 시점이 불명확해질 수 있으므로 안정적인 상위 View에 두는 편이 좋다.
 - 여러 컬럼을 사용하는 앱이라면 처음부터 `NavigationSplitView`를 기준으로 구조를 잡는 편이 좋다. 좁은 화면에서는 SwiftUI가 이를 단일 컬럼 형태로 바꿔 표시할 수 있기 때문이다.
+tags:
+  - SwiftUI

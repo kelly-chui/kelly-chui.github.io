@@ -5,7 +5,6 @@ date: 2025-01-12
 categories:
   - Computer Science
 series:
-  - Operating System
 tags:
   - Context Switching
   - Process
@@ -78,3 +77,5 @@ TCB(Thread Control Block)는 운영체제가 스레드를 관리하기 위해 �
 - 프로그램 카운터(PC): 다음에 실행할 명령어의 주소
 - CPU 레지스터: 스레드 실행에 필요한 레지스터 값
 - 스택 포인터(SP): 현재 스레드의 스택 위치
+tags:
+  - Operating System

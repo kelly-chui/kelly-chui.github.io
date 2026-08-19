@@ -3,13 +3,10 @@ title: "Leetcode 3336. Find the Number of Subsequences With Equal GCD"
 date: 2026-07-14T09:28:12+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DP
-  - GCD
 
-algorithmTags:
+psTags:
   - DP
   - GCD
 features:

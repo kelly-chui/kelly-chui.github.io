@@ -3,12 +3,10 @@ title: "BOJ 13144. list of unique numbers"
 date: 2024-06-12
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Two Pointers
 
-algorithmTags:
+psTags:
   - Two Pointers
 
 draft: false

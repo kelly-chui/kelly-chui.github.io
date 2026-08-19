@@ -3,12 +3,10 @@ title: "BOJ 6087. 레이저 통신"
 date: 2023-07-05
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Dijkstra
 
-algorithmTags:
+psTags:
   - Dijkstra
 
 draft: false

@@ -5,9 +5,8 @@ date: 2025-01-31
 categories:
   - Computer Science
 series:
-  - Network
 tags:
-  - TCP
+  - TCP/IP
   - Transport Layer
   - UDP
 
@@ -56,3 +55,5 @@ TCP는 신뢰성을 우선으로 하고, UDP는 속도와 실시간성을 우선
 
 - 데이터의 정확성과 순서가 중요하다면 TCP를 사용한다.
 - 일부 패킷 손실이 발생하더라도 실시간성이 더 중요하다면 UDP를 사용한다.
+tags:
+  - Network

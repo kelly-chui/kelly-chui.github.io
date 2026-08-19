@@ -3,13 +3,11 @@ title: "SwiftUI. Discover Observation in SwiftUI - WWDC23"
 date: 2026-07-24T17:41:15+09:00
 
 categories:
-  - iOS
   - WWDC
 series:
-  - SwiftUI
 tags:
-  - Observer Pattern
-  - WWDC
+  - SwiftUI
+  - Observation
 
 features:
   - mermaid
@@ -404,3 +402,5 @@ Observation의 핵심은 모델 전체가 아니라 View가 실제로 읽은 프
 - 기존 `ObservableObject`, `@Published`, `@ObservedObject`, `@EnvironmentObject` 사용처는 대부분 더 단순한 형태로 옮길 수 있다.
 
 이전 SwiftUI가 "어떤 객체가 바뀌었는가"에 가까웠다면, Observation 이후의 SwiftUI는 "이 View가 실제로 읽은 값이 바뀌었는가"에 더 가까워졌다. 이 차이를 이해하면 프로퍼티 래퍼 선택도 훨씬 단순해진다.
+tags:
+  - SwiftUI

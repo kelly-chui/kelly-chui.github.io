@@ -8,7 +8,7 @@ series:
   - JavaScript Basics
 weight: 5
 tags:
-  - Prototype
+  - JavaScript Syntax
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/5 자바스크립트 내장 객체 e13ade8f3765825ebc26810cee5e81e0.md"

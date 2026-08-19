@@ -5,7 +5,6 @@ date: 2024-04-30
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - OSI Model
   - TCP/IP
@@ -68,3 +67,5 @@ original: "notion-export/블로그 이관/ComputerScience/Network/Network basic 
 | 네트워크 | 패킷 |
 | 데이터 링크 | 프레임 |
 | 물리 | 비트 |
+tags:
+  - Network

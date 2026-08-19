@@ -7,9 +7,8 @@ categories:
 series:
   - SniffMEET
 tags:
-  - Access Control
+  - Software Architecture
   - RLS
-  - Storage
   - Supabase
 
 draft: false

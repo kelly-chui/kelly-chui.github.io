@@ -3,12 +3,10 @@ title: "Codeforces 4C. Registration System"
 date: 2026-07-27T11:07:19+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Hash Table
 
-algorithmTags:
+psTags:
   - Hash Table
 
 draft: false

@@ -8,7 +8,6 @@ series:
   - SniffMEET
 tags:
   - Authorization
-  - PostgreSQL
   - RLS
   - Supabase
 

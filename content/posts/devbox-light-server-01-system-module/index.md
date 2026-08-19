@@ -1,17 +1,14 @@
 ---
-title: "dev-data-server-light. 1. System"
+title: "devbox-light-server. 1. System"
 date: 2026-06-25
 
 categories:
   - Project
 series:
-  - dev-data-server-light
+  - devbox-light-server
 weight: 2
 tags:
-  - Backend
   - Express
-  - TDD
-  - TypeScript
 
 draft: false
 aliases:

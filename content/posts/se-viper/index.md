@@ -7,7 +7,6 @@ categories:
 series:
 tags:
   - Architecture Pattern
-  - iOS
   - VIPER
 
 features:

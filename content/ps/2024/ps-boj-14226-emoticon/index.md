@@ -3,12 +3,10 @@ title: "BOJ 14226. 이모티콘"
 date: 2024-04-09
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
 
-algorithmTags:
+psTags:
   - BFS
 
 draft: false

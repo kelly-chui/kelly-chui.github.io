@@ -3,12 +3,11 @@ title: "Swift Concurrency. Meet async/await in Swift (1) - WWDC21"
 date: 2026-08-03T20:03:38+09:00
 
 categories:
-  - Swift
   - WWDC
 series:
-  - Swift Concurrency
 tags:
-  - Concurrency
+  - Swift Concurrency
+  - async/await
 features:
   - mermaid
 
@@ -322,3 +321,5 @@ let (data, response) = try await URLSession.shared.data(for: request)
 - `async` 함수가 재개되면, 그 함수가 호출했던 `async` 함수의 리턴 값이나 에러가 재개된 함수로 전달되고, 실행은 멈췄던 바로 그 지점부터 계속 이어진다.
 
 즉, `async/await`는 비동기 작업을 동기처럼 보이게 만드는 기능이 아니다. 비동기라는 사실은 그대로 유지하고 completion handler가 하지 못했던 제어 흐름을 다시 함수 안으로 가져와 `return`과 `throw`를 사용할 수 있게 하고, 컴파일러가 그 흐름을 검증할 수 있게 만든 언어 기능이다.
+tags:
+  - Swift Concurrency

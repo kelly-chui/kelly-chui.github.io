@@ -3,12 +3,10 @@ title: "BOJ 17298. 오큰수"
 date: 2023-07-10
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Stack
 
-algorithmTags:
+psTags:
   - Stack
 
 draft: false

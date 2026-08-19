@@ -3,12 +3,10 @@ title: "BOJ 1520. 내리막 길"
 date: 2023-07-06
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DP
 
-algorithmTags:
+psTags:
   - DP
 
 draft: false
@@ -74,4 +72,3 @@ for _ in 0..<m {
 var dp = [[Int]](repeating: [Int](repeating: -1, count: n), count: m)
 print(dfs(location: (0, 0)))
 ```
-

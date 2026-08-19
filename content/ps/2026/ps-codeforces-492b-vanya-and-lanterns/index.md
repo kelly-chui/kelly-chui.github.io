@@ -3,12 +3,10 @@ title: "Codeforces 492B. Vanya and Lanterns"
 date: 2026-07-24T02:34:52+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Sorting
 
-algorithmTags:
+psTags:
   - Sorting
 
 draft: false

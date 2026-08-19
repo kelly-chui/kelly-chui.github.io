@@ -7,8 +7,6 @@ categories:
 series:
   - SniffMEET
 tags:
-  - iOS
-  - Router
   - Software Architecture
   - VIPER
 

@@ -5,11 +5,10 @@ date: 2025-02-01
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - ARP
   - Data Link Layer
-  - IP
+  - IP Address
   - MAC
 
 draft: false
@@ -49,3 +48,5 @@ original: "notion-export/블로그 이관/ComputerScience/Network/ARP 18dade8f37
 RARP는 IP 주소만 알려줄 뿐, 서브넷 마스크, 기본 게이트웨이, DNS 서버 등의 네트워크 설정은 함께 제공하지 못하고. 동일한 네트워크에서만 동작하므로 범위 제약도 있다.
 
 DHCP는 IP 주소뿐만 아니라 다양한 네트워크 설정을 함께 제공할 수 있으며, 현재는 RARP를 거의 완전히 대체하였다.
+tags:
+  - Network

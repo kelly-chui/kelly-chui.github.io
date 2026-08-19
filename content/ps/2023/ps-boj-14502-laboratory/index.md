@@ -3,13 +3,10 @@ title: "BOJ 14502. 연구소"
 date: 2023-07-05
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
-  - DFS
 
-algorithmTags:
+psTags:
   - BFS
   - DFS
 

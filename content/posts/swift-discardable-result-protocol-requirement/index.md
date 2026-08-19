@@ -7,7 +7,7 @@ categories:
 series:
 tags:
   - Method Dispatch
-  - Protocol
+  - Protocols
 
 draft: false
 ---

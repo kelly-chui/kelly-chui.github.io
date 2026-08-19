@@ -3,11 +3,9 @@ title: "Codeforces 451B. Sort the Array"
 date: 2026-08-05T21:03:54+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Two Pointers
-algorithmTags:
+psTags:
   - Two Pointers
 features:
   - katex

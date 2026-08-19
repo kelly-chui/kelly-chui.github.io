@@ -3,12 +3,10 @@ title: "BOJ 2667. 단지 번호 붙이기"
 date: 2022-11-07
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
 
-algorithmTags:
+psTags:
   - BFS
 
 draft: false

@@ -7,11 +7,7 @@ categories:
 series:
   - StackDay
 tags:
-  - iOS
-  - Swift
   - Domain Modeling
-  - Date
-  - TimeZone
 
 draft: false
 original: ""

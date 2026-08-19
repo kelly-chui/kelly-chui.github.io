@@ -3,11 +3,9 @@ title: "LeetCode 3731. Find Missing Elements"
 date: 2026-08-04T09:33:33+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Sorting
-algorithmTags:
+psTags:
   - Sorting
 features:
   - katex

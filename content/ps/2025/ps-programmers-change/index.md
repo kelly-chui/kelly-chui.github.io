@@ -3,12 +3,10 @@ title: "Programmers. 거스름돈"
 date: 2025-08-03
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DP
 
-algorithmTags:
+psTags:
   - DP
 
 draft: false

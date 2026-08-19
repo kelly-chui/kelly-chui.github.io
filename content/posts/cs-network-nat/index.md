@@ -5,7 +5,6 @@ date: 2025-02-05
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - IP Address
   - NAT
@@ -81,3 +80,5 @@ VPN 환경에서는 NAT를 이용해 사설 네트워크와 공인 네트워크 
 #### 로드 밸런싱
 
 NAT를 활용하여 들어오는 트래픽을 여러 서버로 분산할 수 있다.
+tags:
+  - Network

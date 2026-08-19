@@ -7,9 +7,8 @@ categories:
 series:
   - SniffMEET
 tags:
-  - Anonymous Sign-In
   - Authentication
-  - Session
+  - Session Management
   - Supabase
 
 draft: false

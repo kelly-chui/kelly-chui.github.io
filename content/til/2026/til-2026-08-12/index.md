@@ -3,24 +3,19 @@ title: "TIL. Aug 12, 2026"
 date: 2026-08-12T23:30:00+09:00
 
 categories:
-  - TIL
 series:
 tags:
-  - Swift
-  - Two Pointers
-  - Hash Table
+  - Domain Modeling
 
 draft: false
 original: ""
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - [LeetCode 2958. Length of Longest Subarray With at Most K Frequency]({{< relref "ps/2026/ps-leetcode-2958-length-of-longest-subarray-with-at-most-k-frequency" >}})
 - [LeetCode 2996. Smallest Missing Integer Greater Than Sequential Prefix Sum]({{< relref "ps/2026/ps-leetcode-2996-smallest-missing-integer-greater-than-sequential-prepix-sum" >}})
 - [StackDay. 엔티티와 계산 책임 분리하기]({{< relref "posts/stackday-dev-log-derived-value-responsibility" >}})
-
-## 배운 내용
 
 ### 파생 값을 구현할 때의 책임 분리
 
@@ -39,6 +34,6 @@ AI 에이전트가 작성한 내용중에 별로인 것들을 몇개 직접 수�
 
 자세한 구현 과정 및 수정 과정은 [StackDay 개발일지]({{< relref "posts/stackday-dev-log-derived-value-responsibility" >}})에 정리했다.
 
-## 내일 할 것
+## 다음에 할 것
 
 - StackDay 도메인 구현 마무리하기.

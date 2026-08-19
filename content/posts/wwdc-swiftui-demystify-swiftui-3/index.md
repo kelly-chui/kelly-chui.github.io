@@ -3,12 +3,11 @@ title: "iOS. Demystify SwiftUI (3) - WWDC21"
 date: 2026-07-22T23:13:56+09:00
 
 categories:
-  - iOS
   - WWDC
 series:
-  - SwiftUI
 tags:
-  - WWDC
+  - SwiftUI
+  - Dependencies
 
 draft: false
 original: ""
@@ -328,3 +327,5 @@ SwiftUI의 View 업데이트를 이해하려면 “화면을 다시 그린다”
 > 지금 만들고 있는 것은 새로운 View인가, 아니면 같은 View의 다른 상태인가?
 
 이 질문을 기준으로 Identity와 조건 분기를 바라보면, State가 초기화되거나 애니메이션이 이상하게 동작하는 이유도 더 쉽게 추적할 수 있다.
+tags:
+  - SwiftUI

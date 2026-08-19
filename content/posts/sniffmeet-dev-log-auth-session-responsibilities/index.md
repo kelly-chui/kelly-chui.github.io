@@ -8,9 +8,7 @@ series:
   - SniffMEET
 tags:
   - Authentication
-  - Session
-  - Singleton
-  - Swift
+  - Session Management
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/SessionManager와 AuthManager 역할 분리하기 f37ade8f376583d99abf817d3597c14d.md"

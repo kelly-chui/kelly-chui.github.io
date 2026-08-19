@@ -5,11 +5,10 @@ date: 2025-01-31
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Congestion Control
   - Flow Control
-  - TCP
+  - TCP/IP
   - Transport Layer
 
 draft: false
@@ -97,3 +96,5 @@ ACK를 이용해서 송신 데이터의 양을 조절하는 방식, ACK를 받�
 - Fast Retransmit과 Fast Recovery를 도입한다.
 - 3중복 ACK를 받으면 Fast Retransmit으로 손실된 세그먼트를 재전송하고 Fast Recovery를 거쳐 혼잡 회피로 전환한다.
 - 재전송 타이머가 만료된 경우에는 더 심한 혼잡으로 보고 `cwnd`를 크게 낮춘 뒤 Slow Start로 돌아간다.
+tags:
+  - Network

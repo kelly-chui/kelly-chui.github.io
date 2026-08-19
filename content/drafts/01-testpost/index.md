@@ -3,7 +3,6 @@ title: "TestPost"
 date: 2026-07-11
 
 categories:
-  - Archive
 series:
 tags: []
 features:
@@ -15,6 +14,8 @@ pinned: true
 
 draft: true
 original: ""
+aliases:
+  - /posts/01-testpost/
 ---
 
 ## Mermaid

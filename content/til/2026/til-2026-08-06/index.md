@@ -3,23 +3,21 @@ title: "TIL. Aug 6, 2026"
 date: 2026-08-06T22:58:30+09:00
 
 categories:
-  - TIL
 series:
 tags:
+  - Domain Modeling
 
 draft: false
 original: ""
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - [LeetCode 3345]({{< relref "ps/2026/ps-leetcode-3345-smallest-divisible-digit-product-i" >}})
 - [Codeforces 489C]({{< relref "ps/2026/ps-codeforces-489c-given-length-and-sum-of-digits" >}})
 - 블로그 스크립트 구조화, `npm run` 스크립트 정리
 - StackDay 프로젝트 도메인, 데이터 모델, 유즈케이스, MVP 범위 정리
 - Codex SKILL 공부
-
-## 배운 내용
 
 ### 그리디 의심하기
 
@@ -68,8 +66,6 @@ Day Stack을 한번 뒤엎어야 했던 어제의 실패를 반면교사 삼아�
 
 결국 Skill은 AI에게 코드를 작성하는 방법을 가르치는 도구가 아니라, 프로젝트만의 규칙과 판단 기준을 전달하는 도구에 가깝다는 걸 배웠다. 저번에 본 '너의 AGENTS.md가 냄새나는 이유' 페이퍼에서 배운 내용과 잘 조합해서 작성해보려 한다.
 
-## 해결한 것
-
 ### 블로그 스크립트 구조화
 
 블로그 스크립트들이 정리가 안되어있어서 한번 구조를 다시 잡았다.
@@ -82,7 +78,7 @@ Day Stack을 한번 뒤엎어야 했던 어제의 실패를 반면교사 삼아�
 
 pre-commit에서 수정이 발생되어서 커밋과 다른 부분들도 수정되던 문제, 미디어 검사 기준이 따로 놀던 문제, 그리고 작성한 공통 스크립트를 사용 안하던 문제들을 해결했다.
 
-## 내일 할 것
+## 다음에 할 것
 
 - StackDay MVP 기능 구현 시작
 - Codex build-ios-apps Skill 분석 후 프로젝트에 적용

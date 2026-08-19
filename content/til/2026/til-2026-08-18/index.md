@@ -2,14 +2,12 @@
 title: "TIL. Aug 18, 2026"
 date: 2026-08-18T23:30:00+09:00
 categories:
-  - TIL
 tags:
-  - Swift
   - Domain Modeling
 draft: false
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - Stack Day
   - `LocalDay` 날짜 모델 도입
@@ -17,8 +15,6 @@ draft: false
   - 완료 기록·취소·보관·삭제 UseCase를 날짜 모델에 맞게 수정
   - `InMemoryHabitRepository`, `InMemoryCompletionRepository` 구현 및 테스트 추가
   - [StackDay. Date로 하루를 표현하면 생기는 문제]({{< relref "posts/stackday-dev-log-localday-time-boundary" >}})
-
-## 배운 내용
 
 ### LocalDay 도입하기
 
@@ -33,7 +29,7 @@ Stack Day에서는 `Date` 하나로 특정 시점과 특정 날짜를 모두 표
 
 `LocalDay`는 날짜 표현을 위한 타입일 뿐이다. 일정 정책이나 count 기반 습관의 진행 상태는 실제 요구사항이 생길 때 별도 모델로 설계하기로 했다.
 
-### 내일 할 것
+## 다음에 할 것
 
 - Stack Day MVP 완성하기
 - 블로그 UI 정리하기

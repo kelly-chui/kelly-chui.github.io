@@ -3,12 +3,10 @@ title: "Programmers. 최고의 집합"
 date: 2025-07-20
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Math
 
-algorithmTags:
+psTags:
   - Math
 
 draft: false

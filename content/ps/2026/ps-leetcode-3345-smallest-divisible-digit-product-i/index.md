@@ -3,11 +3,9 @@ title: "Leetcode 3345. Smallest Divisible Digit Product I"
 date: 2026-08-06T13:32:20+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Brute Force
-algorithmTags:
+psTags:
   - Brute Force
 features:
   - katex

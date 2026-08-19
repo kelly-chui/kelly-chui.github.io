@@ -5,12 +5,8 @@ date: 2025-09-25
 categories:
   - iOS
 series:
-  - SwiftUI
 tags:
-  - Binding
-  - ObservableObject
-  - Property Wrapper
-  - State
+  - SwiftUI
 
 draft: false
 aliases:
@@ -70,3 +66,5 @@ SwiftUI에서는 상태를 저장하거나 다른 뷰에 전달할 때 프로퍼
 | `@EnvironmentObject` | 공유된 데이터 모델을 여러 뷰에서 사용할 수 있도록 전달할 때 사용된다. SwiftUI 환경에서 자동으로 주입된다. | SwiftUI의 상위 뷰에서 공통으로 전달받은 객체를 하위 뷰에서 사용할 때 | 상태 소유 X (환경에서 전달받음) |
 | `@Environment` | SwiftUI에서 미리 정의된 환경 변수를 주입받아 사용할 때 사용된다. | 시스템 또는 부모 뷰에서 설정된 환경 값을 사용할 때 | 상태 소유 X (환경에서 전달됨) |
 | `@Published` | `ObservableObject` 프로토콜을 따르는 객체에서 특정 프로퍼티가 변경될 때 이를 자동으로 알림으로 보낸다. | 객체 내부에서 상태 변화를 알리고 싶을 때 | 상태 소유 (객체가 상태를 소유) |
+tags:
+  - SwiftUI

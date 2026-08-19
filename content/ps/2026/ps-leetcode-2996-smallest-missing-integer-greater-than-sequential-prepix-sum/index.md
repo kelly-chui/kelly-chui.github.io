@@ -3,11 +3,9 @@ title: "LeetCode 2996. Smallest Missing Integer Greater Than Sequential Prefix S
 date: 2026-08-12T22:47:12+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Hash Table
-algorithmTags:
+psTags:
   - Hash Table
 features:
   - katex
