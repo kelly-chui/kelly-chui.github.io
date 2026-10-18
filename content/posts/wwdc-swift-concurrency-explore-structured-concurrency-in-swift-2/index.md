@@ -3,8 +3,11 @@ title: "Swift Concurrency. Explore Structured Concurrency in Swift (2) - WWDC21"
 date: 2026-08-17T19:50:17+09:00
 
 categories:
+  - WWDC
 series:
 tags:
+  - Swift Concurrency
+  - Structured Task
 
 draft: false
 original: ""

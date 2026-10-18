@@ -3,13 +3,10 @@ title: "LeetCode 3518. Smallest Palindromic Rearrangement II"
 date: 2026-07-29T10:36:59+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Greedy
-  - Permutation
 
-algorithmTags:
+psTags:
   - Greedy
   - Permutation
 features:

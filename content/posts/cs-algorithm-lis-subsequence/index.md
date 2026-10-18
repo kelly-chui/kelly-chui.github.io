@@ -5,11 +5,10 @@ date: 2025-04-03
 categories:
   - Computer Science
 series:
-  - Algorithm
 tags:
   - Binary Search
   - Dynamic Programming
-  - LIS
+  - Longest Increasing Subsequence
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Algorithm/LIS(Subsequence) 1caade8f37658030a7c6f0656bde7c84.md"
@@ -127,3 +126,5 @@ DP 방식은 각 원소를 마지막 원소로 하는 LIS의 길이를 저장하
 
 - 시간 복잡도: O(n log n)
 - 공간 복잡도: O(n)
+tags:
+  - Algorithm

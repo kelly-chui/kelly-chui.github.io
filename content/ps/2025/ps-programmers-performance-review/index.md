@@ -3,12 +3,10 @@ title: "Programmers. 인사고과"
 date: 2025-08-06
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Sorting
 
-algorithmTags:
+psTags:
   - Sorting
 
 draft: false
@@ -58,4 +56,3 @@ func solution(_ scores:[[Int]]) -> Int {
     return answer
 }
 ```
-

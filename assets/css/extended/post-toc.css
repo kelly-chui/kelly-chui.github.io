@@ -1,0 +1,27 @@
+.post-single { position: relative; }
+.post-toc { display: none; }
+@media screen and (min-width: 1080px) {
+  .post-toc { display: block; position: sticky; top: 32px; float: right; width: 190px; transform: translateX(calc(100% + 48px)); margin-bottom: -300px; }
+  .post-toc-toggle { display: block; margin: 0 0 12px; padding: 0; border: 0; color: var(--primary); background: transparent; font: inherit; font-size: 13px; font-weight: 600; }
+  .post-toc-nav { max-height: calc(100vh - 80px); overflow-y: auto; border-left: 1px solid var(--border); scrollbar-width: none; }
+  .post-toc-nav::-webkit-scrollbar { display: none; }
+  .post-toc-nav ul { margin: 0; padding: 0; list-style: none; }
+  .post-toc-nav ul ul { padding-left: 12px; }
+  .post-toc-nav li { margin: 0; }
+  .post-toc-nav a { display: block; padding: 3px 0 3px 12px; color: var(--secondary); font-size: 12px; line-height: 1.45; text-decoration: none; }
+  .post-toc-nav a:hover, .post-toc-nav a.is-active { color: var(--primary); }
+  .post-toc-nav a.is-active { margin-left: -1px; border-left: 2px solid var(--primary); font-weight: 600; }
+}
+@media screen and (max-width: 1079px) {
+  .post-toc { display: block; margin: 24px 0; border-left: 2px solid var(--border); }
+  .post-toc-toggle { display: flex; width: 100%; align-items: center; justify-content: space-between; padding: 8px 12px; border: 0; color: var(--primary); background: transparent; font: inherit; font-size: 18px; font-weight: 600; text-align: left; cursor: pointer; }
+  .post-toc-toggle::after { content: "⌄"; color: var(--secondary); font-size: 18px; transition: transform 150ms ease; }
+  .post-toc.is-open .post-toc-toggle::after { transform: rotate(180deg); }
+  .post-toc-nav { display: block; max-height: 0; padding: 0 12px; overflow: hidden; opacity: 0; transition: max-height 220ms ease, padding 220ms ease, opacity 180ms ease; }
+  .post-toc.is-open .post-toc-nav { max-height: 2400px; padding-bottom: 10px; opacity: 1; }
+  .post-toc-nav ul { margin: 0; padding: 0; list-style: none; }
+  .post-toc-nav ul ul { padding-left: 16px; }
+  .post-toc-nav li { margin: 0; }
+  .post-toc-nav a { display: block; padding: 4px 0; color: var(--secondary); font-size: 14px; line-height: 1.45; text-decoration: none; }
+  .post-toc-nav a:hover { color: var(--primary); }
+}

@@ -3,12 +3,10 @@ title: "BOJ 7490. 0 만들기"
 date: 2024-06-10
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DFS
 
-algorithmTags:
+psTags:
   - DFS
 
 draft: false

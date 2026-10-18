@@ -3,12 +3,11 @@ title: "Swift Concurrency. Explore Structured Concurrency in Swift (1) - WWDC21"
 date: 2026-08-15T15:54:01+09:00
 
 categories:
-  - Swift
   - WWDC
 series:
-  - Swift Concurrency
 tags:
-  - Concurrency
+  - Swift Concurrency
+  - Structured Task
 
 draft: false
 original: ""
@@ -459,3 +458,5 @@ task group은 입력 배열의 각 ID를 별도의 task로 fork하고, `for try 
 - task group은 입력 데이터에 따라 task의 개수가 달라지거나, 여러 작업의 결과를 동적으로 수집해야 할 때 적합하다.
 - 두 방식 모두 child task의 수명과 오류, cancellation을 parent task의 scope 안에서 관리해 task leak과 data race를 줄여준다.
 - cancellation은 항상 task tree의 아래로 전파된다.
+tags:
+  - Swift Concurrency

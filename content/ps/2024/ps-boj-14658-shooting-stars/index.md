@@ -3,12 +3,10 @@ title: "BOJ 14658. 하늘에서 별똥별이 빗발친다"
 date: 2024-04-07
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Brute Force
 
-algorithmTags:
+psTags:
   - Brute Force
 
 draft: false

@@ -3,12 +3,10 @@ title: "Leetcode 1464. Maximum Product of Two Element in an Array"
 date: 2026-07-26T10:34:58+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Sorting
 
-algorithmTags:
+psTags:
   - Sorting
 
 draft: false

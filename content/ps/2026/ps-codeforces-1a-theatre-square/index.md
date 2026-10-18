@@ -3,12 +3,10 @@ title: "Codeforces 1A. Theatre Square"
 date: 2026-07-21T10:28:57+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Math
 
-algorithmTags:
+psTags:
   - Math
 features:
   - katex

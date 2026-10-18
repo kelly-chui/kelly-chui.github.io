@@ -31,25 +31,25 @@
 {{- end }}
 
 {{- if eq .Section "ps" }}
-  {{- $algorithmTags := slice }}
+  {{- $psTags := slice }}
   {{- range .RegularPagesRecursive }}
-    {{- range .Params.algorithmTags }}
-      {{- if not (in $algorithmTags .) }}{{ $algorithmTags = $algorithmTags | append . }}{{ end }}
+    {{- range .Params.psTags }}
+      {{- if not (in $psTags .) }}{{ $psTags = $psTags | append . }}{{ end }}
     {{- end }}
   {{- end }}
-  {{- partial "ps-algorithm-tags.html" (dict "tags" $algorithmTags "current" "") }}
-{{- else if and (eq .Kind "term") (eq .Data.Plural "algorithmTags") }}
-  {{- $algorithmTags := slice }}
+  {{- partial "ps-algorithm-tags.html" (dict "tags" $psTags "current" "") }}
+{{- else if and (eq .Kind "term") (eq .Data.Plural "psTags") }}
+  {{- $psTags := slice }}
 
   {{- range site.RegularPages }}
-    {{- range .Params.algorithmTags }}
-      {{- if not (in $algorithmTags .) }}
-        {{- $algorithmTags = $algorithmTags | append . }}
+    {{- range .Params.psTags }}
+      {{- if not (in $psTags .) }}
+        {{- $psTags = $psTags | append . }}
       {{- end }}
     {{- end }}
   {{- end }}
 
-  {{- partial "ps-algorithm-tags.html" (dict "tags" $algorithmTags "current" .Data.Term) }}
+  {{- partial "ps-algorithm-tags.html" (dict "tags" $psTags "current" .Data.Term) }}
 {{- end }}
 {{- if .Content }}
 <div class="post-content md-content">

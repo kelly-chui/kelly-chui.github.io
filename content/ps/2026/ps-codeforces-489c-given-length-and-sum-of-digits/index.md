@@ -3,11 +3,9 @@ title: "Codeforces 489C. Given Length and Sum of Digits"
 date: 2026-08-06T13:40:23+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Greedy
-algorithmTags:
+psTags:
   - Greedy
 features:
   - katex

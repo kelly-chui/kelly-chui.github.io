@@ -5,7 +5,6 @@ date: 2025-01-12
 categories:
   - Computer Science
 series:
-  - Operating System
 tags:
   - Deadlock
   - Process
@@ -65,3 +64,5 @@ original: "notion-export/블로그 이관/ComputerScience/OS/데드락 179ade8f3
 ## 상호 배제와 비선점의 차이
 
 상호 배제는 한 자원을 동시에 몇 개의 작업이 사용할 수 있는지에 관한 조건이다. 비선점은 이미 할당된 자원을 운영체제가 작업 도중에 회수할 수 있는지에 관한 조건이다. 하나는 동시 사용 가능성, 다른 하나는 강제 회수 가능성을 설명하므로 서로 다른 조건이다.
+tags:
+  - Operating System

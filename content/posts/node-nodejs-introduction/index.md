@@ -6,7 +6,6 @@ categories:
   - TS/JS
 series:
 tags:
-  - JavaScript
   - npm
 
 draft: false

@@ -5,11 +5,8 @@ date: 2024-08-21
 categories:
   - iOS
 series:
-  - UIKit
 tags:
-  - Modal Presentation
-  - Navigation
-  - UIViewController
+  - UIKit
 
 draft: false
 original: "https://junmusu.tistory.com/163"
@@ -62,3 +59,5 @@ present(_:animated:completion:)
 
 ### iPadOS
 ![](image-002.gif)
+tags:
+  - UIKit

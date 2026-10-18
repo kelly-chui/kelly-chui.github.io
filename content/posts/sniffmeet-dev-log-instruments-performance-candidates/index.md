@@ -7,10 +7,7 @@ categories:
 series:
   - SniffMEET
 tags:
-  - CPU
   - Instruments
-  - iOS
-  - Network
   - Performance
 
 draft: false

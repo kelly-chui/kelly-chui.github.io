@@ -3,12 +3,10 @@ title: "Leetcode 3536. Maximum Product of Two Digits"
 date: 2026-07-25T21:13:47+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Sorting
 
-algorithmTags:
+psTags:
   - Sorting
 
 draft: false

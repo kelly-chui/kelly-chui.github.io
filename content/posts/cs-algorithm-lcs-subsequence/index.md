@@ -5,10 +5,9 @@ date: 2025-01-02
 categories:
   - Computer Science
 series:
-  - Algorithm
 tags:
   - Dynamic Programming
-  - LCS
+  - Longest Common Subsequence
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Algorithm/LCS(Subsequence) d1f908d7018248008ebeaa2b35e5027c.md"
@@ -126,3 +125,5 @@ DP 테이블의 마지막 값인 `dp[m][n]`은 LCS의 길이만 나타낸다. �
 
 - 시간 복잡도: O(mn)
 - 공간 복잡도: O(mn)
+tags:
+  - Algorithm

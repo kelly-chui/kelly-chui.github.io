@@ -3,12 +3,10 @@ title: "BOJ 12100. 2048(Easy)"
 date: 2024-04-14
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DFS
 
-algorithmTags:
+psTags:
   - DFS
 
 draft: false

@@ -3,10 +3,8 @@ title: "TIL. Aug 13, 2026"
 date: 2026-08-13T21:30:00+09:00
 
 categories:
-  - TIL
 series:
 tags:
-  - Swift
   - Segment Tree
 features:
   - katex
@@ -17,13 +15,11 @@ aliases:
   - /posts/til-2026-08-13/
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - [Data Structure. Segment Tree]({{< relref "posts/cs-data-structure-segment-tree" >}})
 - [LeetCode 2213. Longest Substring of One Repeating Character]({{< relref "ps/2026/ps-leetcode-2213-longest-substring-of-one-repeating-character" >}})
 - [StackDay. 책임 분리와 타입 분리]({{< relref "posts/stackday-dev-log-separating-responsibility-and-types" >}})
-
-## 배운 내용
 
 ### StackDay 통계 계산
 
@@ -61,7 +57,7 @@ Segment Tree 자체보다 두 노드를 병합하는 연산을 정의하는 게 
 
 따라서 String.count는 단순히 저장된 바이트 수를 길이로 사용할 수 없고, 실제 Character의 경계를 따라가며 개수를 세어야 하므로 $O(n)$의 시간이 걸린다.
 
-## 내일 할 것
+## 다음에 할 것
 
 - mibangmunrok AGENTS 최신화하기
 - Stackday '습관 생성' 유즈케이스 및 뷰 완성하기.

@@ -3,12 +3,10 @@ title: "BOJ 11000. 강의실 배정"
 date: 2023-06-16
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Greedy
 
-algorithmTags:
+psTags:
   - Greedy
 
 draft: false

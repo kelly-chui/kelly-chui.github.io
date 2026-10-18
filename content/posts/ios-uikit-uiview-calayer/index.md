@@ -5,10 +5,8 @@ date: 2024-09-17
 categories:
   - iOS
 series:
-  - UIKit
 tags:
-  - CALayer
-  - UIView
+  - UIKit
 
 draft: false
 original: "https://junmusu.tistory.com/166"
@@ -193,3 +191,5 @@ override func viewDidAppear(_ animated: Bool) {
 `UIView`는 화면에 콘텐츠를 보여주고 사용자 입력을 처리하는 역할을 한다. 반면 `CALayer`는 실제 그래픽 렌더링과 애니메이션을 담당한다. 
 
 `UIView`는 내부에 `CALayer`를 가지고 있고, 이를 통해 시각적인 작업을 위임한다. 따라서 복잡한 그래픽 효과나 애니메이션을 구현할 때는 `CALayer`를 직접 다루는 것이 효과적이다.
+tags:
+  - UIKit

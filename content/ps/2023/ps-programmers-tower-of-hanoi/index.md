@@ -3,12 +3,10 @@ title: "Programmers. 하노이의 탑"
 date: 2023-05-03
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Recursion
 
-algorithmTags:
+psTags:
   - Recursion
 
 draft: false

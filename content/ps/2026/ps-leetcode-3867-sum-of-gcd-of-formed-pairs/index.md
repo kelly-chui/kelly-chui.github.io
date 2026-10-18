@@ -3,13 +3,10 @@ title: "Leetcode 3867. Sum of GCD of Formed Pairs"
 date: 2026-07-16T10:29:15+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - GCD
-  - Two Pointers
 
-algorithmTags:
+psTags:
   - GCD
   - Two Pointers
 

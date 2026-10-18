@@ -11,7 +11,6 @@ tags:
   - Persistence
   - File Storage
   - DIP
-  - TypeScript
 features:
   - mermaid
 

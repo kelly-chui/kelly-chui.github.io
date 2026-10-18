@@ -5,7 +5,6 @@ date: 2025-01-31
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Datagram
   - Transport Layer
@@ -74,3 +73,5 @@ UDP 헤더와 데이터가 전송 중 손상됐는지 검출한다. 체크섬이
 ## 다음 내용
 
 TCP와 UDP의 차이점과 사용 목적은 별도의 글에서 정리한다.
+tags:
+  - Network

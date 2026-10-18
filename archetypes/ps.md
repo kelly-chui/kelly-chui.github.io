@@ -18,7 +18,7 @@ categories:
   - Problem Solving
 series:
 tags:
-algorithmTags:
+psTags:
 features:
   - katex
 

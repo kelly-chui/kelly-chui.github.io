@@ -3,12 +3,9 @@ title: "TIL. May 19, 2026"
 date: 2026-05-19
 
 categories:
-  - TIL
 series:
 tags:
   - Express
-  - Middleware
-  - Routing
 
 draft: false
 original: "https://junmusu.tistory.com/192"

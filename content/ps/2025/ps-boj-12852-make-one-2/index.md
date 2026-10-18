@@ -3,12 +3,10 @@ title: "BOJ 12852. 1로 만들기 2"
 date: 2025-04-30
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DP
 
-algorithmTags:
+psTags:
   - DP
 
 

@@ -3,11 +3,9 @@ title: "LeetCode 3310. Remove Methods From Project"
 date: 2026-08-05T21:10:33+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
-algorithmTags:
+psTags:
   - BFS
 features:
   - katex

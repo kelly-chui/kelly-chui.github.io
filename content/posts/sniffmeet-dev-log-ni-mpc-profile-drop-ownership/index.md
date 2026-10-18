@@ -7,9 +7,6 @@ categories:
 series:
   - SniffMEET
 tags:
-  - iOS
-  - Multipeer Connectivity
-  - Nearby Interaction
   - VIPER
 
 features:

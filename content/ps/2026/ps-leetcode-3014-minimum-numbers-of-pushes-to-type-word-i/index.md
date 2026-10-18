@@ -3,12 +3,10 @@ title: "Leetcode 3014. Minimum Numbers of Pushes to Type Word I"
 date: 2026-07-30T22:58:21+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Greedy
 
-algorithmTags:
+psTags:
   - Greedy
 
 draft: false

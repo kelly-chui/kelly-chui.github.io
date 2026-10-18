@@ -3,10 +3,8 @@ title: "TIL. Jul 28, 2026"
 date: 2026-07-28T21:09:14+09:00
 
 categories:
-  - TIL
 series:
 tags:
-  - C++
 
 draft: false
 original: ""
@@ -14,12 +12,10 @@ aliases:
   - /posts/til-2026-07-28/
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - [Codeforces 230B. T-Primes]({{< relref "ps/2026/ps-codeforces-230b-t-primes" >}}) 
 - [Leetcode 3517. Smallest Palindromic Rearrangement I]({{< relref "ps/2026/ps-leetcode-3517-smallest-palindromic-rearrangement-i" >}}) 
-
-## 배운 내용
 
 ### C++ 배열 vs 벡터
 
@@ -37,7 +33,7 @@ Codeforces에서는 C++로만 코드를 작성하는데, 최근에는 벡터보�
 
 PS 코드에서 `using namespace std`를 안 쓰는 것도, `endl`만을 고집하는 것도 생각해보면 꽤 이상한 고집일 수도 있다. 유연하게 생각하고 효율적인 코드를 작성해보자.
 
-## 내일 할 것
+## 다음에 할 것
 
 블로그 아키타입, 숏 코드, 스크립트들이 난잡하다. 한번 구조화를 하고 공통된 부분을 뽑아내야 할 것 같다. 파일 불러오기 같은건 공통 스크립트로 사용할 수 있을 것 같다.
 

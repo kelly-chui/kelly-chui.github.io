@@ -3,10 +3,8 @@ title: "TIL. Jul 21, 2026"
 date: 2026-07-21T23:59:22+09:00
 
 categories:
-  - TIL
 series:
 tags:
-  - 
   - Hugo
 
 draft: false
@@ -15,13 +13,11 @@ aliases:
   - /posts/til-2026-07-21/
 ---
 
-## 키워드
+## 오늘의 기록
 
 - Codeforces 가입
 - 로컬 LLM opencode에 연결하고 ACP로 Xcode에 연동하기
 - SwiftUI WWDC 세션, 특히 View Value와 View Identity
-
-## 내용
 
 ### PS 풀기, Codeforces 가입
 

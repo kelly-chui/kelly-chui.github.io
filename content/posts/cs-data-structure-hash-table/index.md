@@ -5,7 +5,6 @@ date: 2025-01-11
 categories:
   - Computer Science
 series:
-  - Data Structure
 tags:
   - Hash Table
 
@@ -82,3 +81,5 @@ Load Factor가 일정 기준을 넘으면 더 큰 배열을 만들고 기존 데
 - 삭제: 평균 O(1), 최악 O(n)
 - 검색: 평균 O(1), 최악 O(n)
 - 공간 복잡도: O(n)
+tags:
+  - Data Structure

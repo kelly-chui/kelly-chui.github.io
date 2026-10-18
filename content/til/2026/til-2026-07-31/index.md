@@ -3,7 +3,6 @@ title: "TIL. Jul 31, 2026"
 date: 2026-07-31T21:00:57+09:00
 
 categories:
-  - TIL
 series:
 tags:
 
@@ -13,13 +12,11 @@ aliases:
   - /posts/til-2026-07-31/
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - LeetCode 3016, LeetCode 1979 풀이
 - Codeforces 455A 풀이
 - AGENTS.md, SKILL.md 관련 자료 학습
-
-## 배운 내용
 
 ### PS
 
@@ -33,7 +30,7 @@ Arxiv에 올라온 "Configuration Smells in AGENTS.md Files: Common Mistakes in 
 
 특히 AGENTS.md를 점검하기 위한 체크리스트와 SKILL Leakage에 대한 내용이 인상적이었다. 지금까지 작성했던 AGENTS와 SKILL을 다시 돌아보게 되었고, 관련 내용은 따로 포스팅으로 정리해 볼 예정이다.
 
-## 내일 할 것
+## 다음에 할 것
 
 주말인 만큼 휴식도 하면서, 시간이 나면 AGENTS.md와 SKILL Leakage에 대해 오늘 배운 내용을 포스팅으로 정리하기.
 

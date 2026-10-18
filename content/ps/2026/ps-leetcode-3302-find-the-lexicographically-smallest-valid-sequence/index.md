@@ -3,12 +3,9 @@ title: "LeetCode 3302. Find the Lexicographically Smallest Valid Sequence"
 date: 2026-08-08T21:06:44+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Greedy
-  - DP
-algorithmTags:
+psTags:
   - Greedy
   - DP
 features:

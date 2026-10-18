@@ -3,12 +3,10 @@ title: "Programmers. 순위"
 date: 2025-08-05
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DFS
 
-algorithmTags:
+psTags:
   - DFS
 
 draft: false

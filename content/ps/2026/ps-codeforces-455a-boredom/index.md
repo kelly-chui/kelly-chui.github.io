@@ -3,12 +3,10 @@ title: "Codeforces 455A. Boredom"
 date: 2026-07-31T20:22:51+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DP
 
-algorithmTags:
+psTags:
   - DP
 features:
   - katex

@@ -5,7 +5,6 @@ date: 2025-11-25
 categories:
   - Computer Science
 series:
-  - Algorithm
 tags:
   - Dynamic Programming
   - Kadane's Algorithm
@@ -126,3 +125,5 @@ best = max(best, current)
 - 공간 복잡도: `O(1)`
 
 배열을 한 번만 순회하고, `current`와 `best` 두 값만 저장하기 때문이다.
+tags:
+  - Algorithm

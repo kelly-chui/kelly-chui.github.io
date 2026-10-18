@@ -3,12 +3,10 @@ title: "LeetCode 1081. Smallest Subsequence of Distinct Characters"
 date: 2026-07-20
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Stack
 
-algorithmTags:
+psTags:
   - Stack
 
 draft: false

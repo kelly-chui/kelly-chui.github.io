@@ -3,12 +3,10 @@ title: "BOJ 4195. 친구 네트워크"
 date: 2023-02-23
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Union Find
 
-algorithmTags:
+psTags:
   - Union Find
 
 draft: false

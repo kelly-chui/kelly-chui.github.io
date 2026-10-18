@@ -1,17 +1,16 @@
 ---
-title: "dev-data-server-light. 4. File Storage"
+title: "devbox-light-server. 4. File Storage"
 date: 2026-07-02
 
 categories:
   - Project
 series:
-  - dev-data-server-light
+  - devbox-light-server
 weight: 5
 tags:
   - DIP
   - Express
   - File Storage
-  - TypeScript
 
 draft: false
 aliases:

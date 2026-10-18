@@ -5,7 +5,6 @@ date: 2026-08-13T14:18:26+09:00
 categories:
   - Computer Science
 series:
-  - Data Structure
 tags:
   - Segment Tree
 features:
@@ -211,3 +210,5 @@ $$
 - 빌드: $O(n)$
 - 쿼리: $O(\log n)$
 - 업데이트: $O(\log n)$
+tags:
+  - Data Structure

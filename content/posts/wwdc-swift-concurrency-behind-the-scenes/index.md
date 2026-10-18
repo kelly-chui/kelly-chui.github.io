@@ -3,13 +3,11 @@ title: "Swift Concurrency. Behind the Scenes - WWDC21"
 date: 2025-08-25
 
 categories:
-  - Swift
   - WWDC
 series:
-  - Swift Concurrency
 tags:
+  - Swift Concurrency
   - Actor
-  - Concurrency
 
 draft: false
 original: ""
@@ -303,3 +301,5 @@ func loadArticle(with id: [ID]) async throws -> [Article]
 - Swift Concurrency는 `await`와 continuation을 이용해 스레드를 블록하지 않고 작업을 전환한다.
 - cooperative thread pool이 효율적으로 동작하도록 세마포어나 조건 변수로 스레드를 오래 블록하지 않아야 한다.
 - Actor는 변경 가능한 상태를 보호하고, `MainActor`는 UI 상태를 메인 스레드에서 안전하게 관리한다.
+tags:
+  - Swift Concurrency

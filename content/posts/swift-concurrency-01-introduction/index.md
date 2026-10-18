@@ -5,10 +5,9 @@ date: 2025-08-03
 categories:
   - Swift
 series:
-  - Swift Concurrency
 tags:
   - Actor
-  - Concurrency
+  - Swift Concurrency
 
 draft: false
 original: "https://junmusu.tistory.com/190"
@@ -231,3 +230,5 @@ Swift Concurrency는 기존 GCD를 대체하기 위해 등장한 것이 아니�
 [Swift Concurrency Manifesto](<https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782#part-1-asyncawait-beautiful-asynchronous-apis>)
 
 [The Swift Programming Language (6.2) Concurrency](<https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency>)
+tags:
+  - Swift Concurrency

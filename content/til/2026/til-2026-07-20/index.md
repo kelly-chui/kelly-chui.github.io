@@ -3,10 +3,8 @@ title: "TIL. Jul 20, 2026"
 date: 2026-07-20T22:18:49+09:00
 
 categories:
-  - TIL
 series:
 tags:
-  - Python
   - Hugo
 
 draft: false
@@ -15,15 +13,13 @@ aliases:
   - /posts/til-2026-07-20/
 ---
 
-## 키워드
+## 오늘의 기록
 
 - 단조 스택
 - Hugo Flat Post -> Page Bundle
 - 블로그 스크립트는 어떤 언어로?
 - Xcode 프로젝트명 바꾸기
 - SwiftUI Identity
-
-## 내용
 
 ### LeetCode 1081, Substring, Subsequence, Monotonic Stack
 

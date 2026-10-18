@@ -7,7 +7,6 @@ categories:
 series:
   - Docker
 tags:
-  - Docker Hub
   - Docker Image
 
 draft: false

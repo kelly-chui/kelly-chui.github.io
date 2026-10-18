@@ -5,10 +5,9 @@ date: 2025-01-31
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Four-Way Handshake
-  - TCP
+  - TCP/IP
   - Three-Way Handshake
   - Transport Layer
 
@@ -82,3 +81,5 @@ TCP 연결을 해제하는 과정,
     1. TCP 연결을 즉시 종료하면, 지연된 패킷이 다음 연결에 잘못 전달될 수 있기 때문에 기존 연결의 패킷이 모두 사라질 때 까지 대기
 2. 마지막 ACK 손실에 대응
     1. 클라이언트가 보낸 마지막 ACK가 손실되면 서버가 FIN을 다시 전송할 수 있다. TIME_WAIT 동안 클라이언트가 이 FIN을 받고 ACK를 재전송할 수 있다.
+tags:
+  - Network

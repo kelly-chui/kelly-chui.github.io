@@ -7,8 +7,7 @@ categories:
 series:
   - SniffMEET
 tags:
-  - Dependency Injection
-  - Layered Architecture
+  - Software Architecture
   - VIPER
 
 draft: false

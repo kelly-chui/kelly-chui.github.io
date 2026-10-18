@@ -5,7 +5,6 @@ date: 2024-12-31
 categories:
   - Computer Science
 series:
-  - Algorithm
 tags:
   - Binary Search
   - Off-by-One
@@ -156,3 +155,5 @@ Binary Search를 구현할 때 가장 많이 발생하는 실수는 종료 조�
 
 [이분 탐색(Binary Search) 헷갈리지 않게 구현하기](https://www.acmicpc.net/blog/view/109)
 [Binary Search in Detail](https://labuladong.gitbook.io/algo-en/iii.-algorithmic-thinking/detailedbinarysearch)
+tags:
+  - Algorithm

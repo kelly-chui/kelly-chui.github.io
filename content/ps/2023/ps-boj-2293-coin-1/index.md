@@ -3,12 +3,10 @@ title: "BOJ 2293. 동전 1"
 date: 2023-07-10
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DP
 
-algorithmTags:
+psTags:
   - DP
 
 draft: false

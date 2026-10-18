@@ -5,11 +5,8 @@ date: 2024-09-15
 categories:
   - iOS
 series:
-  - UIKit
 tags:
-  - Auto Layout
-  - UITableView
-  - UITextView
+  - UIKit
 
 draft: false
 aliases:
@@ -117,3 +114,5 @@ extension ViewController: GrowingCellProtocol {
 ## 레퍼런스
 
 - [The Dynamic Height of UITextView Inside UITableViewCell](https://www.swiftdevcenter.com/the-dynamic-height-of-uitextview-inside-uitableviewcell-swift/)
+tags:
+  - UIKit

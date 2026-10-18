@@ -7,10 +7,9 @@ categories:
 series:
   - StackDay
 tags:
-  - iOS
-  - Swift
-  - Architecture
-  - Repository
+  - Software Architecture
+  - Repository Pattern
+  - Persistence
 
 draft: false
 original: ""

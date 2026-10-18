@@ -8,7 +8,6 @@ series:
   - Docker
 tags:
   - Docker Image
-  - Dockerfile
 
 draft: false
 aliases:

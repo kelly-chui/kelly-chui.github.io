@@ -3,10 +3,9 @@ title: "Leetcode 3702. Longest Subsequence With Non-Zero Bitwise XOR"
 date: 2026-08-15T12:38:30+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-algorithmTags:
+psTags:
   - Math
   - Bitwise Operation
 features:

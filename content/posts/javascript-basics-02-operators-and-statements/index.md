@@ -8,9 +8,7 @@ series:
   - JavaScript Basics
 weight: 2
 tags:
-  - Expression
-  - Operator
-  - Statement
+  - JavaScript Syntax
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/2 연산자와 명령문 02cade8f3765828abe1c81ec1cd9cb8b.md"

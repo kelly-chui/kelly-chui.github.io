@@ -3,12 +3,10 @@ title: "BOJ 2668. 숫자고르기"
 date: 2024-06-04
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DFS
 
-algorithmTags:
+psTags:
   - DFS
 
 draft: false
@@ -108,4 +106,3 @@ int main() {
     return 0;
 }
 ```
-

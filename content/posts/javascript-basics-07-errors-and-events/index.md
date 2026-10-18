@@ -9,8 +9,7 @@ series:
 weight: 7
 tags:
   - DOM
-  - Error Handling
-  - Event
+  - Browser APIs
 
 draft: false
 original: "notion-export/블로그 이관/javascript-basics/7 자바스크립트 예외처리 및 이벤트 처리 27fade8f3765825295dc819696f69de4.md"

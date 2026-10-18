@@ -3,13 +3,10 @@ title: "BOJ 16398. 행성 연결"
 date: 2023-02-25
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - MST
-  - Kruskal
 
-algorithmTags:
+psTags:
   - MST
   - Kruskal
 

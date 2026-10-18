@@ -5,11 +5,8 @@ date: 2024-06-25
 categories:
   - iOS
 series:
-  - SwiftUI
 tags:
-  - Identifiable
-  - List
-  - Navigation
+  - SwiftUI
 
 draft: false
 original: "https://junmusu.tistory.com/188"
@@ -787,3 +784,5 @@ Device Setting에서 다른 장치 및 컨픽을 실험하여 다른 조건에�
 * * *
  
 > 출처: [SwiftUI Tutorials](<https://developer.apple.com/tutorials/swiftui>)
+tags:
+  - SwiftUI

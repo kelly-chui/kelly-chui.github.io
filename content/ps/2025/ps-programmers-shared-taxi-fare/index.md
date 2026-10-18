@@ -3,12 +3,10 @@ title: "Programmers. 합승 택시 요금"
 date: 2025-08-14
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Floyd-Warshall
 
-algorithmTags:
+psTags:
   - Floyd-Warshall
 
 draft: false

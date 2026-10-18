@@ -3,14 +3,10 @@ title: "BOJ 14499. 주사위 굴리기"
 date: 2024-04-15
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Implementation
-  - Simulation
 
-algorithmTags:
-  - Implementation
+psTags:
   - Simulation
 
 draft: false

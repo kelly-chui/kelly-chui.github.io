@@ -3,11 +3,9 @@ title: "LeetCode 1140. Stone Game II"
 date: 2026-08-10T22:18:06+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DP
-algorithmTags:
+psTags:
   - DP
 features:
   - katex

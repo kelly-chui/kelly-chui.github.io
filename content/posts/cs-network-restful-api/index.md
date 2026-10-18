@@ -5,7 +5,6 @@ date: 2025-02-01
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Application Layer
   - HTTP
@@ -97,3 +96,5 @@ Get, PUT, POST, DELETE와 같은 HTTP 메소드를 이용해서 구성
 - [REST API란 무엇인가요? | IBM](https://www.ibm.com/kr-ko/topics/rest-apis)
 - [What is a RESTful API? | AWS](https://aws.amazon.com/what-is/restful-api/)
 - [What Is a REST API? Examples, Uses & Challenges | Postman Blog](https://blog.postman.com/rest-api-examples/)
+tags:
+  - Network

@@ -5,7 +5,6 @@ date: 2025-05-17
 categories:
   - Computer Science
 series:
-  - Operating System
 tags:
   - Kernel
   - System Call
@@ -63,3 +62,5 @@ CPU는 애플리케이션이 시스템 자원에 직접 접근하는 것을 방�
     - 운영체제 서비스를 제공받을 수 있다.
 - 유저 모드: 유저 영역에 있는 코드를 실행할 때의 모드
     - 운영체제 서비스를 제공받을 수 없다. (자원에 접근이 불가능함)
+tags:
+  - Operating System

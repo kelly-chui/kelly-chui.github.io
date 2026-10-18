@@ -5,7 +5,6 @@ date: 2025-01-19
 categories:
   - Computer Science
 series:
-  - Operating System
 tags:
   - IPC
   - Message Passing
@@ -53,3 +52,5 @@ Multi-select: Process
 여러 프로세스가 동일한 메모리 공간을 공유하여 데이터를 주고받는 방법, 속도가 빠르다는 장점이 있지만 격리성이 보장되지 않기 때문에 동기화가 필요하다.
 
 - iOS에서는 잘 사용되지 않음
+tags:
+  - Operating System

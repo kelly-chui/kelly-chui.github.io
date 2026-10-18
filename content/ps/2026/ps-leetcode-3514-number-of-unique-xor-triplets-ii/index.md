@@ -3,12 +3,10 @@ title: "Leetcode 3514. Number of Unique XOR Triplets II"
 date: 2026-07-24T11:34:15+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Bitwise Operation
 
-algorithmTags:
+psTags:
   - Bitwise Operation
 features:
   - katex

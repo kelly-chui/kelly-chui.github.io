@@ -7,10 +7,8 @@ categories:
 series:
   - StackDay
 tags:
-  - iOS
-  - Swift
   - Domain Modeling
-  - Architecture
+  - Software Architecture
 
 draft: false
 original: ""

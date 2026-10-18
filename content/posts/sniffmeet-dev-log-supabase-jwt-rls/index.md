@@ -8,7 +8,6 @@ series:
   - SniffMEET
 tags:
   - Authentication
-  - JWT
   - RLS
   - Supabase
 

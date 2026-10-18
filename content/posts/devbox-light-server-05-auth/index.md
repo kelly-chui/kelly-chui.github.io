@@ -11,7 +11,6 @@ tags:
   - DIP
   - Express
   - File Storage
-  - TypeScript
 features:
   - mermaid
 

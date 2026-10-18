@@ -7,10 +7,8 @@ categories:
 series:
   - StackDay
 tags:
-  - iOS
-  - Swift
   - Domain Modeling
-  - Repository
+  - Repository Pattern
 
 draft: false
 original: ""

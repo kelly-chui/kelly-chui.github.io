@@ -3,10 +3,9 @@ title: "Leetcode 3090. Maximum Length Substring With Two Occurrences"
 date: 2026-08-14T11:53:07+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-algorithmTags:
+psTags:
   - String
   - Two Pointers
 features:

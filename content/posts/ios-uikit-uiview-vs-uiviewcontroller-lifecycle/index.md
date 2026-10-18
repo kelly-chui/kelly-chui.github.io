@@ -5,11 +5,8 @@ date: 2024-08-20
 categories:
   - iOS
 series:
-  - UIKit
 tags:
-  - UIView
-  - UIViewController
-  - View Lifecycle
+  - UIKit
 
 draft: false
 aliases:
@@ -67,3 +64,5 @@ original: "notion-export/블로그 이관/UIKit/UIView와 UIViewControllerᄋ
 ![](image-002-optimized-image.webp)
 
 옵셔널 언래핑 에러가 뜬다. (이 시점에서 암시적 언래핑은 강제 언래핑과 같게 되기 때문)
+tags:
+  - UIKit

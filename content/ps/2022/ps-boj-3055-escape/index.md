@@ -3,13 +3,10 @@ title: "BOJ 3055. 탈출"
 date: 2022-11-17
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
-  - Multi-source BFS
 
-algorithmTags:
+psTags:
   - BFS
   - Multi-source BFS
 

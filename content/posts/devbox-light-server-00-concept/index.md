@@ -1,16 +1,14 @@
 ---
-title: "dev-data-server-light. 0. Concept"
+title: "devbox-light-server. 0. Concept"
 date: 2026-06-24
 
 categories:
   - Project
 series:
-  - dev-data-server-light
+  - devbox-light-server
 weight: 1
 tags:
-  - DIP
   - Express
-  - TypeScript
 
 draft: false
 aliases:

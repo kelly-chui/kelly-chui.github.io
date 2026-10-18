@@ -3,12 +3,10 @@ title: "Leetcode 1979. Find Greatest Common Divisor of Array"
 date: 2026-07-31T20:36:12+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - GCD
 
-algorithmTags:
+psTags:
   - GCD
 
 draft: false

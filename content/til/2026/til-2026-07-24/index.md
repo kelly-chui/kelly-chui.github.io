@@ -3,7 +3,6 @@ title: "TIL. Jul 24, 2026"
 date: 2026-07-24T21:23:17+09:00
 
 categories:
-  - TIL
 series:
 tags:
 
@@ -13,13 +12,11 @@ aliases:
   - /posts/til-2026-07-24/
 ---
 
-## 키워드
+## 오늘의 기록
 
 - XOR 비트연산
 - Observation
 - 블로그 스크립트 정리, git hook
-
-## 내용
 
 ### XOR 연산
 
@@ -43,7 +40,7 @@ Observation 관련 WWDC 세션을 봤다. 예전부터 Observation이 Combine을
 
 이미지와 동영상을 원본 그대로 올리는 것은 비효율적이니, Wepb와 mp4로 파일을 변환하고, 다시 올리는 스크립트들은 hook에 연동했고, EOF 확인이나 이미지 정합성 같은 부분은 깃헙 액션에 연동했다.
 
-### 다음에 해야 하는 것
+## 다음에 할 것
 
 - WWDC SwiftConcurrency 부분을 다시 보고 정리하기
 - 블로그 구조 정리하기 (파일 구조가 아닌, 포스트 보여주는 구조)

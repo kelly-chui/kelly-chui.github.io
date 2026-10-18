@@ -3,12 +3,10 @@ title: "BOJ 2193. 이친수"
 date: 2025-04-30
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - DP
 
-algorithmTags:
+psTags:
   - DP
 
 draft: false

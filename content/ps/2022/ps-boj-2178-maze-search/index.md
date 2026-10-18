@@ -3,12 +3,10 @@ title: "BOJ 2178. 미로 탐색"
 date: 2022-11-06
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
 
-algorithmTags:
+psTags:
   - BFS
 
 draft: false

@@ -8,7 +8,6 @@ series:
   - Docker
 tags:
   - Container
-  - Virtualization
 
 draft: false
 aliases:

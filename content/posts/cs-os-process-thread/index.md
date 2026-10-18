@@ -5,9 +5,8 @@ date: 2025-01-12
 categories:
   - Computer Science
 series:
-  - Operating System
 tags:
-  - Concurrency
+  - Swift Concurrency
   - Process
   - Thread
 
@@ -84,3 +83,5 @@ CPU 스케줄러가 준비 상태의 프로세스를 선택하면 실행 상태�
 프로세스는 서로 메모리를 공유하지 않기 때문에 안정성이 높지만, 생성 비용과 프로세스 간 통신 비용이 크다.
 
 반면 스레드는 같은 메모리 공간을 공유하기 때문에 생성 비용이 적고 데이터 공유가 쉽지만, 레이스 컨디션이 발생할 수 있다.
+tags:
+  - Operating System

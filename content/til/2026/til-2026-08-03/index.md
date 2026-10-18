@@ -3,9 +3,9 @@ title: "TIL. Aug 3, 2026"
 date: 2026-08-03T23:31:07+09:00
 
 categories:
-  - TIL
 series:
 tags:
+  - Swift Concurrency
 
 draft: false
 original: ""
@@ -13,13 +13,11 @@ aliases:
   - /posts/til-2026-08-03/
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - LeetCode 1406 Stone Game III
 - Codeforces 520B Two Buttons
 - WWDC `Meet async/await in Swift` 세션 시청 및 정리.
-
-## 배운 내용
 
 ### PS
 
@@ -35,11 +33,9 @@ Codeforces 520B는 두 연산을 그래프의 간선으로 보고 BFS로 최단 
 
 XCTest의 `async` 테스트, 동기 컨텍스트에서 비동기 작업을 시작하는 `Task`, 기존 completion handler API를 async alternative로 연결하는 continuation도 함께 살펴봤다. SwiftUI에서는 화면 생명주기에 맞춰 작업을 관리할 때 `.onAppear` 안의 `Task`보다 `.task(id:)`가 더 적절할 수 있다는 점도 기억해 두자.
 
-## 해결 내용
-
 - 아직 async alternative가 없는 기존 API는 continuation을 사용해 `async/await` 형태로 감쌀 수 있다. 이때 continuation을 한 번만 재개(resume)하고, 모든 실행 경로에서 재개되도록 관리해야 한다.
 
-## 내일 할 것
+## 다음에 할 것
 
 - 블로그 katex 렌더링이 예쁘지 않다. 폰트 사이즈 같은 것 좀 줄여야 할 것 같다.
 - stack day MVP

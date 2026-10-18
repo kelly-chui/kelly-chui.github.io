@@ -5,13 +5,12 @@ date: 2025-02-02
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Application Layer
   - Authentication
   - Cookie
   - HTTP
-  - Session
+  - Session Management
 
 draft: false
 original: "notion-export/블로그 이관/ComputerScience/Network/쿠키, 세션 18dade8f376580059437d849c3d3979d.md"
@@ -71,3 +70,5 @@ original: "notion-export/블로그 이관/ComputerScience/Network/쿠키, 세션
 | 저장 내용 | 데이터 자체 | 세션 데이터(서버), 세션 ID는 쿠키 |
 | 보안 | 상대적으로 낮음 | 상대적으로 높음 |
 | 용량 | 작음(약 4KB) | 서버 자원에 따라 달라짐 |
+tags:
+  - Network

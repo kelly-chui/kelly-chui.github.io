@@ -5,9 +5,10 @@ date: 2026-02-09T17:36:10+09:00
 categories:
   - Project
 series:
-  - Punchin
+  - Mibangmunrok
 tags:
   - Image Processing
+  - Core Graphics
 
 draft: false
 original: ""

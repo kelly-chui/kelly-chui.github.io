@@ -5,7 +5,6 @@ date: 2025-01-12
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Application Layer
   - URI
@@ -43,3 +42,5 @@ URI
 ├── URL
 └── URN
 ```
+tags:
+  - Network

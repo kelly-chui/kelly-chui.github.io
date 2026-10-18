@@ -3,10 +3,9 @@ title: "Codeforces 580C. Kefa and Park"
 date: 2026-08-04T11:34:01+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-algorithmTags:
+psTags:
   - DFS
 features:
   - katex

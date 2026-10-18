@@ -3,11 +3,9 @@ title: "Leetcode 2213. Longest Substring of One Repeating Character"
 date: 2026-08-13T20:45:10+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Segment Tree
-algorithmTags:
+psTags:
   - Segment Tree
 features:
   - katex

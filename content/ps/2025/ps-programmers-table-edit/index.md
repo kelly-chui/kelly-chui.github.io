@@ -3,12 +3,10 @@ title: "Programmers. 표 편집"
 date: 2025-08-14
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Linked List
 
-algorithmTags:
+psTags:
   - Linked List
 
 draft: false
@@ -117,4 +115,3 @@ func solution(_ n:Int, _ k:Int, _ cmd:[String]) -> String {
     return alive.joined()
 }
 ```
-

@@ -6,7 +6,6 @@ categories:
   - Swift
 series:
 tags:
-  - C/C++
   - Method Dispatch
   - Objective-C
 

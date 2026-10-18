@@ -8,7 +8,6 @@ series:
   - StackDay
 weight: 2
 tags:
-  - iOS
 features:
   - mermaid
 

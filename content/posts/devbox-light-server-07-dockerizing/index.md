@@ -11,7 +11,10 @@ tags:
   - Persistence
   - File Storage
   - DIP
-  - TypeScript
+  - Dockerizing
+
+features:
+  - mermaid
 
 draft: false
 aliases:

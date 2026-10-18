@@ -5,7 +5,6 @@ date: 2025-02-01
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Application Layer
   - DNS
@@ -83,3 +82,5 @@ DNS 레코드를 일정 시간 저장해 두는 과정, DNS 서버를 타고가�
 ## 레퍼런스
 
 [DNS란 무엇인가요? | IBM](https://www.ibm.com/kr-ko/think/topics/dns)
+tags:
+  - Network

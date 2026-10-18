@@ -8,8 +8,7 @@ series:
   - JavaScript Basics
 weight: 6
 tags:
-  - BOM
-  - Browser API
+  - Browser APIs
   - DOM
 
 draft: false

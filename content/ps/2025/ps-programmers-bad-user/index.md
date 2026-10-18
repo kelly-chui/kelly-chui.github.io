@@ -3,12 +3,10 @@ title: "Programmers. 불량 사용자"
 date: 2025-07-21
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Backtracking
 
-algorithmTags:
+psTags:
   - Backtracking
 
 draft: false

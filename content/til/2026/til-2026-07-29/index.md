@@ -3,12 +3,9 @@ title: "TIL. Jul 29, 2026"
 date: 2026-07-29T20:53:29+09:00
 
 categories:
-  - TIL
 series:
 tags:
-  - SRP
   - Hugo
-  - Git
 
 draft: false
 original: ""
@@ -16,15 +13,13 @@ aliases:
   - /posts/til-2026-07-29/
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - [LeetCode 3518: Smallest Palindromic Rearrangement II]({{< relref "ps/2026/ps-leetcode-3518-smallest-palindromic-rearrangement-ii" >}})
 - [Codeforces 189A: Cut Ribbon]({{< relref "ps/2026/ps-codeforces-189a-cut-ribbon" >}})
 - 블로그 깃 훅 제거
 - 블로그 스크립트 구조화
 - 블로그 커밋 목록 정리
-
-## 해결 내용
 
 PS 두 문제를 푼 이후에, 블로그에서 스크립트와 깃 훅을 교체하고, 하루종일 깃과 씨름했다. Hugo 프로젝트의 커밋 로그가 너무 더러웠고, Squash, Rebase로 한 번 정리하려는데, 중간에 워킹 트리가 한번 꼬여버렸다.
 
@@ -68,7 +63,7 @@ SRP를 잘 생각해서 이 코드가 같은 이유로 변경되는 코드인지
 
 커밋을 123개에서 50개 이하로 줄였다. 오늘 가장 많은 시간을 할애한 작업 같다. diff와 파일 변경사항을 보며 처음부터 커밋을 한땀한땀 합쳤다...
 
-## 내일 할 것
+## 다음에 할 것
 
 - async/await 관련 스위프트 영상 보기
 - 미방문록 POC 정리 및 메인 MVP 만들기

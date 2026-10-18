@@ -5,7 +5,6 @@ date: 2025-02-01
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Proxy
   - Reverse Proxy
@@ -78,3 +77,5 @@ original: "notion-export/블로그 이관/ComputerScience/Network/프록시 18ca
 > Note.
 >
 > 로드 밸런서는 리버스 프록시 형태로 구현되는 경우가 많지만, 모든 리버스 프록시가 로드 밸런서는 아니다.
+tags:
+  - Network

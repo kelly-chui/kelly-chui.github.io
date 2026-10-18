@@ -3,13 +3,10 @@ title: "Combine. Combine in Practice - WWDC19"
 date: 2024-03-18
 
 categories:
-  - Swift
   - WWDC
 series:
-  - Legacy
 tags:
   - Combine
-  - Observer Pattern
 
 draft: false
 original: "notion-export/블로그 이관/Swift/Combine in Practice 266ade8f376583f1ad67818d14cb406d.md"

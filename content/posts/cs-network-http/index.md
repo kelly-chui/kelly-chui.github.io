@@ -5,7 +5,6 @@ date: 2024-03-14
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Application Layer
   - HTTP
@@ -112,3 +111,5 @@ HTTP/1.1과 HTTP/2는 일반적으로 TLS가 보호하는 TCP 연결 위에서 �
 #### 보안 세션
 
 TLS 핸드셰이크로 합의한 키와 암호화 매개변수를 이용해 애플리케이션 데이터를 보호한다. 과거의 SSL은 현재 사용하지 않으며, 일반적으로 TLS라는 이름을 사용한다.
+tags:
+  - Network

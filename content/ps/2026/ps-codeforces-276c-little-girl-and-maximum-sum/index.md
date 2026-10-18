@@ -3,13 +3,12 @@ title: "Codeforces 276C. Little Girl and Maximum Sum"
 date: 2026-08-15T12:48:53+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-algorithmTags:
+psTags:
   - Greedy
   - Sorting
-  - Prefix Sum
+  - Prefix Technique
 features:
   - katex
 

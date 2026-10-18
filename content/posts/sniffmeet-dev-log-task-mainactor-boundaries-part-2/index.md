@@ -8,8 +8,6 @@ series:
   - SniffMEET
 tags:
   - Combine
-  - MainActor
-  - Swift
   - Swift Concurrency
 
 draft: false

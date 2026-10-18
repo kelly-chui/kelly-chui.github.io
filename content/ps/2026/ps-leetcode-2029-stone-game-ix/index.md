@@ -3,10 +3,9 @@ title: "LeetCode 2029. Stone Game IX"
 date: 2026-08-16T10:22:55+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-algorithmTags:
+psTags:
   - Math
 features:
   - katex

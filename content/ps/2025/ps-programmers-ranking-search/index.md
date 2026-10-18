@@ -3,13 +3,10 @@ title: "Programmers. 순위 검색"
 date: 2025-01-07
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Binary Search
-  - Hash Table
 
-algorithmTags:
+psTags:
   - Binary Search
   - Hash Table
 

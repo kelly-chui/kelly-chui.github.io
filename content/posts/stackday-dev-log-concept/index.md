@@ -8,9 +8,6 @@ series:
   - StackDay
 weight: 1
 tags:
-  - iOS
-  - SwiftUI
-  - MVP
   - Domain Modeling
 features:
   - mermaid

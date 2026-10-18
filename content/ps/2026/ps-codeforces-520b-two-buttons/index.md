@@ -3,12 +3,10 @@ title: "Codeforces 520B. Two Buttons"
 date: 2026-08-03T13:30:19+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - BFS
 
-algorithmTags:
+psTags:
   - BFS
 features:
   - katex

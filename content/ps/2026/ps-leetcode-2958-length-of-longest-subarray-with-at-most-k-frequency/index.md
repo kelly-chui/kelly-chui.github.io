@@ -3,11 +3,9 @@ title: "LeetCode 2958. Length of Longest Subarray With at Most K Frequency"
 date: 2026-08-12T21:14:37+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Two Pointers
-algorithmTags:
+psTags:
   - Two Pointers
 features:
   - katex

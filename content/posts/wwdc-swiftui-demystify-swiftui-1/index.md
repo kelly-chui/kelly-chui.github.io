@@ -3,12 +3,11 @@ title: "SwiftUI. Demystify SwiftUI (1) - WWDC21"
 date: 2026-07-20T21:51:21+09:00
 
 categories:
-  - iOS
   - WWDC
 series:
-  - SwiftUI
 tags:
-  - WWDC
+  - SwiftUI
+  - Identity
 
 draft: false
 original: ""
@@ -366,3 +365,5 @@ func view(for dog: Dog) -> some View {
 
 - Explicit Identity를 사용하면 데이터나 사용자 정의 ID를 View의 Identity와 연결할 수 있다.
 - Structural Identity를 사용하면 SwiftUI는 View의 타입과 계층 구조만으로 각각의 View를 식별할 수 있다.
+tags:
+  - SwiftUI

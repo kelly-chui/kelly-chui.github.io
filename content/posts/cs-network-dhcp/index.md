@@ -5,7 +5,6 @@ date: 2025-02-01
 categories:
   - Computer Science
 series:
-  - Network
 tags:
   - Application Layer
   - DHCP
@@ -71,3 +70,5 @@ RARP는 고정 방식으로 IP를 할당했기 때문에 IP 관리가 비효율�
 
 [동적 호스트 프로토콜(DHCP)의 뜻과 작동 원리 알아보기](https://nordvpn.com/ko/blog/what-is-dhcp/)
 [DHCP란 무엇입니까? IP 주소 할당을 이해하기 위한 간단한 안내서](https://fiberroad.com/ko/resources/glossary/what-is-dhcp/)
+tags:
+  - Network

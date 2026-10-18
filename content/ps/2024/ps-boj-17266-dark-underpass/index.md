@@ -3,12 +3,10 @@ title: "BOJ 17266. 어두운 굴다리"
 date: 2024-05-06
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Math
 
-algorithmTags:
+psTags:
   - Math
 
 draft: false

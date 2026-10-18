@@ -7,10 +7,9 @@ categories:
 series:
   - SniffMEET
 tags:
-  - Encapsulation
-  - Session
+  - Software Architecture
+  - Session Management
   - Supabase
-  - Swift
 
 draft: false
 original: "notion-export/블로그 이관/SniffMEET/Supabase Session 구조 개선하기 302ade8f376582dc878d813cfb5f67ba.md"

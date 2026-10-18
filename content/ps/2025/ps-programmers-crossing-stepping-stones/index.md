@@ -3,13 +3,10 @@ title: "Programmers. 징검다리 건너기"
 date: 2025-07-22
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Binary Search
-  - Sliding Window
 
-algorithmTags:
+psTags:
   - Binary Search
   - Sliding Window
 
@@ -131,4 +128,3 @@ func solution(_ stones:[Int], _ k:Int) -> Int {
     return result
 }
 ```
-

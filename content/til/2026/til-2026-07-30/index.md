@@ -3,7 +3,6 @@ title: "TIL. Jul 30, 2026"
 date: 2026-07-30T23:19:17+09:00
 
 categories:
-  - TIL
 series:
 tags:
 
@@ -13,14 +12,12 @@ aliases:
   - /posts/til-2026-07-30/
 ---
 
-## 오늘 한 내용
+## 오늘의 기록
 
 - [Codeforces 279B]({{< relref "ps/2026/ps-codeforces-279b-books" >}})
 - [LeetCode 3014]({{< relref "ps/2026/ps-leetcode-3014-minimum-numbers-of-pushes-to-type-word-i" >}})
 - 과거 Bicubic, Smart CCTV 프로젝트 정리
 - 미방문록 회의, AGENTS 수정.
-
-## 배운 내용
 
 ### SKILL 사용하기
 
@@ -78,7 +75,7 @@ let frequencies = word.reduce(into: [Character: Int]()) { $0[$1, default: 0] += 
 
 일반적인 `reduce`는 매번 새로운 값을 반환하는 반면, `reduce(into:)`는 누적값을 inout으로 직접 수정하기 때문에 딕셔너리나 배열처럼 복사 비용이 큰 타입을 다룰 때 더 효율적이다.
 
-## 내일 할 것
+## 다음에 할 것
 
 async/await 관련 WWDC영상을 아직 보지 못했다. Behind the Scene은 봤는데, 기본 세션을 보지 않아서 놓친 부분이 있으면 더 학습해야 한다.
 

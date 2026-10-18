@@ -6,8 +6,6 @@ categories:
   - TS/JS
 series:
 tags:
-  - CommonJS
-  - ES Modules
   - Module System
 
 draft: false

@@ -3,12 +3,10 @@ title: "Programmers. 단속 카메라"
 date: 2025-07-21
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Greedy
 
-algorithmTags:
+psTags:
   - Greedy
 
 draft: false

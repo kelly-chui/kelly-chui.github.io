@@ -3,12 +3,11 @@ title: "SwiftUI. Demystify SwiftUI (2) - WWDC21"
 date: 2026-07-21T21:42:49+09:00
 
 categories:
-  - iOS
   - WWDC
 series:
-  - SwiftUI
 tags:
-  - WWDC
+  - SwiftUI
+  - State
 
 draft: false
 original: ""
@@ -229,3 +228,5 @@ View Value는 계속 만들어지고 사라지는 값이다. 반면 Identity는 
 - View Value는 일시적이고, View Value의 Lifetime에 의존해서는 안 된다. Identity는 View가 시간의 흐름 속에서도 같은 존재로 이어지도록 연속성을 부여한다. (UIKit에서 이어져 온 상식을 파괴하자)
 - View의 Identity를 직접 제어하면 `State`의 Lifetime이 어디서 시작되고 어디서 끝나는지도 명확하게 정할 수 있다.
 - 마지막으로 SwiftUI는 데이터 기반 컴포넌트에서 `Identifiable` 프로토콜을 적극적으로 활용한다. View로 만들 데이터에는 반드시 안정적인 Identifier를 선택해야 한다. 데이터의 Identity가 흔들리면 그 데이터로부터 만들어지는 View의 Lifetime도 함께 흔들린다.
+tags:
+  - SwiftUI

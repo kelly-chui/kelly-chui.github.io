@@ -3,13 +3,10 @@ title: "Leetcode 3517. Smallest Palindromic Rearrangement I"
 date: 2026-07-28T09:12:06+09:00
 
 categories:
-  - PS
 series:
 tags:
-  - Hash Table
-  - Sorting
 
-algorithmTags:
+psTags:
   - Hash Table
   - Sorting
 

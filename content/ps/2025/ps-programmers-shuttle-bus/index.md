@@ -3,12 +3,10 @@ title: "Programmers. 셔틀버스"
 date: 2025-08-03
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Simulation
 
-algorithmTags:
+psTags:
   - Simulation
 features:
   - katex

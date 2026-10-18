@@ -3,12 +3,10 @@ title: "LeetCode 1288. Remove Covered Intervals"
 date: 2026-07-06T12:33:49+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Sorting
 
-algorithmTags:
+psTags:
   - Sorting
 
 draft: false

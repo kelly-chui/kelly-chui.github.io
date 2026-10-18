@@ -3,12 +3,10 @@ title: "LeetCode 3499. Maximize Active Section With Trade I"
 date: 2026-07-21T10:29:30+09:00
 
 categories:
-  - Problem Solving
 series:
 tags:
-  - Greedy
 
-algorithmTags:
+psTags:
   - Greedy
 
 draft: false

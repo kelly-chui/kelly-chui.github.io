@@ -5,10 +5,10 @@ date: 2026-08-09T11:08:32+09:00
 categories:
   - DevOps
 series:
-  - Local LLM
 tags:
   - LLM
-  - Local AI
+  - Local LLM
+  - AI Agents
   - Ollama
 features:
   - mermaid
@@ -182,3 +182,5 @@ flowchart TB
 - [⁠Apple — Setting up coding intelligence](https://developer.apple.com/documentation/Xcode/setting-up-coding-intelligence?utm_source=chatgpt.com)
 - [⁠Apple — Giving external agents access to Xcode](https://developer.apple.com/documentation/xcode/giving-external-agents-access-to-xcode?utm_source=chatgpt.com)
 - [⁠OpenCode — ACP Support](https://dev.opencode.ai/docs/acp/?utm_source=chatgpt.com)
+tags:
+  - Local LLM
